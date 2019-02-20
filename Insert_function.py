@@ -30,3 +30,5 @@ def insert_function(data):
 
 	cursor.close()
 	conn.close()
+
+	#hahahahaha
