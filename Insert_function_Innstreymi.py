@@ -20,10 +20,10 @@ def insert_function_innstreymi(data):
 
 
 	# Write the lines 
-	insertstring = "insert into innstreymi (id,vinnslu_No,itemno,sending ,qty_perunit, quantity, total_qty,Date) values ('{}','{}','{}','{}','{}','{}','{}','{}');\n"
+	insertstring = "insert into innstreymi (id,vinnslu_No,itemno,sending ,qty_perunit, quantity, total_qty,Date,Put) values ('{}','{}','{}','{}','{}','{}','{}','{}','{}');\n"
 
 	for d in data:
-	    cursor.execute(insertstring.format(d,data[d][0],data[d][1],data[d][2],data[d][3],data[d][4],data[d][5],data[d][6]))
+	    cursor.execute(insertstring.format(d,data[d][0],data[d][1],data[d][2],data[d][3],data[d][4],data[d][5],data[d][6],data[d][7]))
 
 	conn.commit()
 

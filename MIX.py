@@ -7,8 +7,9 @@ from Insert_function_vinnsla import insert_function_vinnsla
 from Insert_function_item import insert_function_item
 from Insert_function_SENDING import insert_function_sending
 
+import re
 
-f1 = open('Voruhus_Hopur_InnstreymiDM_Afrit.csv')
+f1 = open('Vöruhús_Hópur_InnstreymiDM_Afrit_new.csv')
 f2 = open('Voruspjald_Voruhus_afrit.csv')
 f3 = open('Voruhus_Hopur_Utstreymi_Afrit.csv')
 f4 = open('Voruhus_Hopur_Mottaka&Tiltekt_Afrit.csv')
@@ -125,7 +126,7 @@ for x in range(0,len(Innstreymi)):
 		continue
 	Innstreymi[x]['No_'] = Innstreymi[x]['No_'].replace('_', '')
 
-	Innstreymi_Dict[x] = [Innstreymi[x]['No_'],Innstreymi[x]['Item No_'],Innstreymi[x]['Source No_'],(Innstreymi[x]['Qty_ per Unit of Measure']),(Innstreymi[x]['Quantity']),Innstreymi[x]['Qty_ (Base)'],Innstreymi[x]['Starting Date']]
+	Innstreymi_Dict[x] = [Innstreymi[x]['No_'],Innstreymi[x]['Item No_'],Innstreymi[x]['Source No_'],(Innstreymi[x]['Qty_ per Unit of Measure']),(Innstreymi[x]['Quantity']),Innstreymi[x]['Qty_ (Base)'],Innstreymi[x]['Starting Date'],Innstreymi[x]['Whse_ Activity No_']]
 
 for i in sorted(Innstreymi_Dict):
 	print(i, Innstreymi_Dict[i])
@@ -134,6 +135,7 @@ print(Innstreymi_Dict[1])
 print(Innstreymi_Dict[1][2])
 
 insert_function_innstreymi(Innstreymi_Dict)
+
 
 '''
 #Create Sending --------------------------------------------------
@@ -163,12 +165,13 @@ for x in range(0,len(Voruspjald)):
 	#for i in range(0, len(Voruspjald[x]['Description'])):
 
 	#Voruspjald[x]['Description'].strip(" ' ")
+	Voruspjald[x]['Description'] = re.sub("[!@'#$]", '', Voruspjald[x]['Description'])
 	
 
 	Voruspjald[x]['Unit Price'].replace((Voruspjald[x]['Unit Price'][(Voruspjald[x]['Unit Price'].find(',')):]),'')
 	Voruspjald[x]['Millilítrar'].replace((Voruspjald[x]['Millilítrar'][(Voruspjald[x]['Millilítrar'].find(',')):]),'')
 
-	Item_Dict[int(float(Voruspjald[x]['\ufeffNo_']))] = [Voruspjald[x]['Unit Price'],Voruspjald[x]['Söluflokkur'],Voruspjald[x]['Item Category Code'],Voruspjald[x]['ABC-Item'],Voruspjald[x]['Áfengisgjald (tegund)'],Voruspjald[x]['Base Unit of Measure'],Voruspjald[x]['Millilítrar'],Voruspjald[x]['Vendor No_']]
+	Item_Dict[int(float(Voruspjald[x]['\ufeffNo_']))] = [Voruspjald[x]['Unit Price'],Voruspjald[x]['Söluflokkur'],Voruspjald[x]['Item Category Code'],Voruspjald[x]['ABC-Item'],Voruspjald[x]['Áfengisgjald (tegund)'],Voruspjald[x]['Base Unit of Measure'],Voruspjald[x]['Millilítrar'],Voruspjald[x]['Vendor No_'],Voruspjald[x]['Description']]
 for i in sorted(Item_Dict):
 	print(i, Item_Dict[i])
 
