@@ -4,7 +4,7 @@ def insert_function(data):
 
 	#Connection to SQL
 	host = 'localhost'
-	dbname = 'atvr'
+	dbname = 'atvr2'
 	username = 'postgres'
 	pw = 'postgres'
 
@@ -21,14 +21,12 @@ def insert_function(data):
 
 
 	# Write the lines 
-	insertstring = "insert into item_category (name, tegund) values ('{}','{}');\n"
+	insertstring = "insert into item_category (name, tegund, Timevalue) values ('{}','{}',{});\n"
 
 	for d in data:
-	    cursor.execute(insertstring.format(d,data[d]))
+	    cursor.execute(insertstring.format(d,data[d][0],data[d][1]))
 
 	conn.commit()
 
 	cursor.close()
 	conn.close()
-
-	#hahahahaha

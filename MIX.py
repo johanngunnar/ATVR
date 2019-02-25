@@ -12,7 +12,7 @@ f1 = open('Voruhus_Hopur_InnstreymiDM_Afrit.csv')
 f2 = open('Voruspjald_Voruhus_afrit.csv')
 f3 = open('Voruhus_Hopur_Utstreymi_Afrit.csv')
 f4 = open('Voruhus_Hopur_Mottaka&Tiltekt_Afrit.csv')
-f5 = open('Voruspjald_Voruhus_afrit_ItemCAT.csv')
+f5 = open('Voruspjald_Voruhus_ITEM_CAT_new.csv')
 
 #Create List --------------------------------------------------
 Innstreymi = []
@@ -66,9 +66,17 @@ print('Innstreymi -------')
 #print(Innstreymi[1])  #call for line 1 (list )and value for location code (dictonary)
 print('Vöruspjald -------')
 print(Vinnsla[5])
+print(Voruspjald[2]['Heiti umboðsmanns'])
+print(Voruspjald[2]['Heiti umboðsmanns'].replace(' ', ''))
+
+print(Voruspjald[3328]['Unit Price'])
+print(Voruspjald[3328]['Unit Price'].find(','))
+print(Voruspjald[3328]['Unit Price'][2:])
+print(Voruspjald[3328]['Unit Price'].replace((Voruspjald[3328]['Unit Price'][(Voruspjald[3328]['Unit Price'].find(',')):]),''))
+
 #print(Item_Cat[5])
 
-'''
+
 #Create Vinnsla---------------------------------------------------
 Vinnsla_Dict = {}
 for x in range(0,len(Vinnsla)):
@@ -93,8 +101,7 @@ print(Vinnsla_Dict[1])
 print(Vinnsla_Dict[1][2])
 
 insert_function_vinnsla(Vinnsla_Dict)
-'''
-'''
+
 #Create Utstreymi---------------------------------------------------
 Utstreymi_Dict = {}
 for x in range(0,len(Utstreymi)):
@@ -110,7 +117,7 @@ print(Utstreymi_Dict[1])
 print(Utstreymi_Dict[1][2])
 
 insert_function_utstreymi(Utstreymi_Dict)
-'''
+
 #Create Innstreymi---------------------------------------------------
 Innstreymi_Dict = {}
 for x in range(0,len(Innstreymi)):
@@ -118,7 +125,7 @@ for x in range(0,len(Innstreymi)):
 		continue
 	Innstreymi[x]['No_'] = Innstreymi[x]['No_'].replace('_', '')
 
-	Innstreymi_Dict[x] = [Innstreymi[x]['No_'],Innstreymi[x]['Item No_'],Innstreymi[x]['Source No_'],(Innstreymi[x]['Qty_ per Unit of Measure']),(Innstreymi[x]['Quantity']),Innstreymi[x]['Qty_ (Base)']]
+	Innstreymi_Dict[x] = [Innstreymi[x]['No_'],Innstreymi[x]['Item No_'],Innstreymi[x]['Source No_'],(Innstreymi[x]['Qty_ per Unit of Measure']),(Innstreymi[x]['Quantity']),Innstreymi[x]['Qty_ (Base)'],Innstreymi[x]['Starting Date']]
 
 for i in sorted(Innstreymi_Dict):
 	print(i, Innstreymi_Dict[i])
@@ -127,6 +134,7 @@ print(Innstreymi_Dict[1])
 print(Innstreymi_Dict[1][2])
 
 insert_function_innstreymi(Innstreymi_Dict)
+
 '''
 #Create Sending --------------------------------------------------
 Sending_SET = set()
@@ -155,10 +163,12 @@ for x in range(0,len(Voruspjald)):
 	#for i in range(0, len(Voruspjald[x]['Description'])):
 
 	#Voruspjald[x]['Description'].strip(" ' ")
+	
 
+	Voruspjald[x]['Unit Price'].replace((Voruspjald[x]['Unit Price'][(Voruspjald[x]['Unit Price'].find(',')):]),'')
+	Voruspjald[x]['Millilítrar'].replace((Voruspjald[x]['Millilítrar'][(Voruspjald[x]['Millilítrar'].find(',')):]),'')
 
 	Item_Dict[int(float(Voruspjald[x]['\ufeffNo_']))] = [Voruspjald[x]['Unit Price'],Voruspjald[x]['Söluflokkur'],Voruspjald[x]['Item Category Code'],Voruspjald[x]['ABC-Item'],Voruspjald[x]['Áfengisgjald (tegund)'],Voruspjald[x]['Base Unit of Measure'],Voruspjald[x]['Millilítrar'],Voruspjald[x]['Vendor No_']]
-
 for i in sorted(Item_Dict):
 	print(i, Item_Dict[i])
 
@@ -172,7 +182,7 @@ Item_cat_numbersDict = {}
 #Load into dictonary key=number , value= tegund
 
 for x in range(0,len(Item_Cat)):
-		Item_cat_numbersDict[int(float(Item_Cat[x]['\ufeffItem Category Code']))] = Item_Cat[x]['Tegund']
+		Item_cat_numbersDict[int(float(Item_Cat[x]['\ufeffItem Category Code']))] = [Item_Cat[x]['Tegund'],Item_Cat[x]['Value']]
 
 #print key with value
 
@@ -183,8 +193,8 @@ for i in sorted(Item_cat_numbersDict):
 #print(Item_cat_numbersDict)
 
 #INSERT FUNCTIONS CALL ----
-insert_function_basic(Item_cat_numbersDict)
-#insert_function(Item_cat_numbersDict)
+#insert_function_basic(Item_cat_numbersDict)
+insert_function(Item_cat_numbersDict)
 '''
 
 '''
