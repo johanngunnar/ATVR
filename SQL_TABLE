@@ -21,6 +21,7 @@ CREATE TABLE item (
   UnitOfMeasure VARCHAR(250),
   MilliL VARCHAR(250),
 	Vendor VARCHAR(250),
+	Description VARCHAR(250),
 	/*Vendor_name VARCHAR(250),*/
 
   Foreign key(Tegund) References  Item_Category(name)
@@ -40,6 +41,7 @@ CREATE TABLE Innstreymi  (
   Quantity INTEGER,
   Total_Qty INTEGER,
   Date VARCHAR(250),
+  Put VARCHAR(250),
   /* date */
   Foreign key(ItemNo) References item(id),
   Foreign key(Sending) References Sending(id)
@@ -76,3 +78,46 @@ CREATE TABLE Vinnsla  (
 );
 
 
+/* SELECT SKIPANIR */
+
+/* Fjöldi tegunda*/
+
+select i.tegund, c.tegund, count(c.tegund)
+from item i, item_category c
+where i.tegund = c.name
+group by i.tegund,c.tegund
+order by count(c.tegund) DESC
+
+select count(Document_ID1)
+from vinnsla
+group by Document_ID1
+
+select i.Vinnslu_No,v.Document_ID1
+from innstreymi i, vinnsla v
+where v.Document_ID1 like '%PU%'
+order by  i.Vinnslu_No
+
+
+select *
+from Innstreymi i, item v, Item_Category c
+where i.itemno = v.id
+and v.Tegund = c.name
+and v.vendor = '420369-7789'
+and i.date = '09/02/2018'
+
+select c.tegund, sum(i.Quantity)
+from Innstreymi i, item v, Item_Category c
+where i.itemno = v.id
+and v.Tegund = c.name
+and v.vendor = '420369-7789'
+and i.date = '09/02/2018'
+Group by c.tegund
+
+select i.sending, i.put, i.date, i.itemno,i.Quantity, c.tegund, vi.Document_ID1, vi.Quantity, vi.picked, vi.Picked_Unit,vi.UserID,v.Description
+from Innstreymi i, item v, Item_Category c,vinnsla vi
+where i.itemno = v.id
+and i.put = vi.Document_ID1
+and v.Tegund = c.name
+and i.itemno = vi.itemno
+and v.vendor = '420369-7789'
+and i.date = '09/02/2018'
