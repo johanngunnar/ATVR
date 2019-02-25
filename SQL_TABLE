@@ -1,0 +1,78 @@
+/*Grunntöflur litlar breytingar*/
+
+CREATE TABLE Item_Category  (
+	name INTEGER PRIMARY KEY,
+	tegund VARCHAR(250),
+	Timevalue INTEGER
+);
+
+CREATE TABLE Sending (
+  id VARCHAR(250) PRIMARY KEY,
+  Vendor VARCHAR(250)
+);
+
+CREATE TABLE item (
+  id INTEGER PRIMARY KEY,
+  UnitPrice VARCHAR(250),
+  Soluflokkur VARCHAR(250),
+  Tegund INTEGER,
+  ABS VARCHAR(250),
+  Agengisgjald INTEGER,
+  UnitOfMeasure VARCHAR(250),
+  MilliL VARCHAR(250),
+	Vendor VARCHAR(250),
+	/*Vendor_name VARCHAR(250),*/
+
+  Foreign key(Tegund) References  Item_Category(name)
+  /*Foreign key(Soluflokkur) References  Soluflokkur(name),*/
+  /*Foreign key(vendor) References  vendor(kennitala)*/
+);
+
+/*Grunntöflur breytast mikið */
+
+CREATE TABLE Innstreymi  (
+  id INTEGER PRIMARY KEY,
+  ItemNo INTEGER,
+  Vinnslu_No VARCHAR(250),
+  Sending VARCHAR(250),
+  /*Description VARCHAR(250),*/
+  Qty_perUnit INTEGER,
+  Quantity INTEGER,
+  Total_Qty INTEGER,
+  Date VARCHAR(250),
+  /* date */
+  Foreign key(ItemNo) References item(id),
+  Foreign key(Sending) References Sending(id)
+);
+
+CREATE TABLE Utstreymi  (
+  id INTEGER PRIMARY KEY,
+  Destination VARCHAR(250),
+  ItemNo INTEGER,
+  /*Desctription VARCHAR(250),*/
+  Qty_perUnit INTEGER,
+  Quantity INTEGER,
+  Total_Qty INTEGER,
+  MillL_PUnit VARCHAR(250),
+  Liter VARCHAR(250),
+
+  Foreign key(ItemNo) References item(id)
+);
+
+CREATE TABLE Vinnsla  (
+  id INTEGER PRIMARY KEY,
+  Document_ID1 VARCHAR(250),
+  Document_ID2 VARCHAR(250),
+  UserID VARCHAR(250),
+  ItemNo INTEGER,
+  Qty_perUnit INTEGER,
+  Quantity INTEGER,
+  Total_Qty INTEGER,
+  Date_Scanned VARCHAR(250),
+  Picked VARCHAR(250),
+  Picked_Unit VARCHAR(250),
+
+  Foreign key(ItemNo) References item(id)
+);
+
+
