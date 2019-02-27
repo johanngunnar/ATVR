@@ -21,10 +21,10 @@ def insert_function_sending(data):
 
 
 	# Write the lines 
-	insertstring = "insert into sending (id,Vendor) values ('{}','{}');\n"
+	insertstring = "insert into Sending (id,SourceNo,ItemNo,RE_number,Shelf,Status,Counted_Quantity,Ordered_Qty,Date) values ('{}','{}','{}','{}','{}','{}','{}','{}','{}');\n"
 
 	for d in data:
-	    cursor.execute(insertstring.format(d,data[d][0]))
+	    cursor.execute(insertstring.format(d,data[d][0],data[d][1],data[d][2],data[d][3],data[d][4],data[d][5],data[d][6],data[d][7]))
 
 	conn.commit()
 

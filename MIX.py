@@ -14,6 +14,7 @@ f2 = open('Voruspjald_Voruhus_afrit.csv')
 f3 = open('Voruhus_Hopur_Utstreymi_Afrit.csv')
 f4 = open('Voruhus_Hopur_Mottaka&Tiltekt_Afrit.csv')
 f5 = open('Voruspjald_Voruhus_ITEM_CAT_new.csv')
+f6 = open('Voruhus_Hopur_REAfrit.csv')
 
 #Create List --------------------------------------------------
 Innstreymi = []
@@ -21,6 +22,7 @@ Utstreymi = []
 Voruspjald = []
 Vinnsla = []
 Item_Cat = []
+Sending = []
 
 # Load the DATA into LIST --------------------------------------
 
@@ -62,6 +64,12 @@ for row in dreader:
 
 f5.close()
 
+dreader = csv.DictReader(f6, delimiter=';')
+for row in dreader:
+    Sending.append(row)
+
+f6.close()
+
 #Check data -------------------------------------------------------
 print('Innstreymi -------')
 #print(Innstreymi[1])  #call for line 1 (list )and value for location code (dictonary)
@@ -77,7 +85,7 @@ print(Voruspjald[3328]['Unit Price'].replace((Voruspjald[3328]['Unit Price'][(Vo
 
 #print(Item_Cat[5])
 
-
+'''
 #Create Vinnsla---------------------------------------------------
 Vinnsla_Dict = {}
 for x in range(0,len(Vinnsla)):
@@ -139,19 +147,18 @@ insert_function_innstreymi(Innstreymi_Dict)
 
 '''
 #Create Sending --------------------------------------------------
-Sending_SET = set()
-for x in range(0,len(Innstreymi)):
-	Sending_SET.add(Innstreymi[x]['Source No_'])
 
 Sending_Dict = {}
-for x in Sending_SET:
-		Sending_Dict[x] = ' '
+for x in range(1,len(Sending)):
+	if Sending[x]['Shelf No_'] == '':
+		Sending[x]['Shelf No_'] = ' '
+	Sending_Dict[x] = [Sending[x]['Source No_'],Sending[x]['Item No_'],Sending[x]['Whse_ Receipt No_'],(Sending[x]['Shelf No_']),Sending[x]['Status'],Sending[x]['Counted Quantity'],Sending[x]['Ordered Qty_'],Sending[x]['Posting Date']]
 
 for i in sorted(Sending_Dict):
 	print(i, Sending_Dict[i])
 
 insert_function_sending(Sending_Dict)
-'''
+
 '''
 #Creat Item (Vöruspjald)--------------------------------------------
 Item_Dict = {}
