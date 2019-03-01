@@ -45,9 +45,9 @@ for x in arr:
 # Dictornary lykill kennitala, value index
 #----------------------------------------------------------------------------
 
-time_slot_length = 5
+time_slot_length = 10
 start_min_from_midnight = 450
-end_min_from_midnight = start_min_from_midnight+(60*8)
+end_min_from_midnight = start_min_from_midnight+(60*9)
 
 
 xaxis = []
