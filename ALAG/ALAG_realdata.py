@@ -25,7 +25,7 @@ cursor = conn.cursor()
 # Write the select Q
 #----------------------------------------------------------------------------
 
-selectstring = " select c.tegund, vi.Document_ID1, vi.UserID, vi.Quantity, vi.Qty_perUnit, vi.picked, vi.Picked_Unit,s.date,s.RE_number, s.Shelf, i.Vendor, i.Description from vinnsla vi, sending s, item i, Item_Category c where vi.itemno = i.id and s.ItemNo = i.id and s.RE_number = vi.Document_ID1 and c.name = i.Tegund and s.date = '09/02/2018' order by vi.Picked"
+selectstring = " select c.tegund, vi.Document_ID1, vi.UserID, vi.Quantity, vi.Qty_perUnit, vi.picked, vi.Picked_Unit,s.date,s.RE_number, s.Shelf, i.Vendor, i.Description, c.Timevalue from vinnsla vi, sending s, item i, Item_Category c where vi.itemno = i.id and s.ItemNo = i.id and s.RE_number = vi.Document_ID1 and c.name = i.Tegund and s.date = '09/02/2018' order by vi.Picked"
 
 cursor.execute(selectstring)
 arr = cursor.fetchall()
@@ -45,7 +45,7 @@ for x in arr:
 # Dictornary lykill kennitala, value index
 #----------------------------------------------------------------------------
 
-time_slot_length = 10
+time_slot_length = 5
 start_min_from_midnight = 450
 end_min_from_midnight = start_min_from_midnight+(60*9)
 
@@ -60,13 +60,13 @@ for i in range(start_min_from_midnight,(end_min_from_midnight),time_slot_length)
 
 print(xaxis)
 
-margfoldunarstudull = 1
-
 for i in range(0,len(arr)):
     first_num = int((arr[i][5])[0:2])
     second_num = int((arr[i][5])[3:5])
     for j in slot_dict:
         if (first_num*60 + second_num) <= j+time_slot_length:
+            #margfoldunarstudull = 1
+            margfoldunarstudull = arr[i][12]
             slot_dict[j] = [slot_dict[j][0] + (arr[i][3]* margfoldunarstudull)]
             break
 
@@ -75,12 +75,14 @@ print('This is the dictonary --')
 print(slot_dict)
 print('\n')
 
+
 #put Slot_dict values into a list
 slot_arr = []
 for i in slot_dict:
     slot_arr.append(slot_dict[i][0])
 
 print(slot_arr)
+
 
 #----------------------------------------------------------------------------
 # Plot the data
@@ -100,7 +102,7 @@ for i in range(start_min_from_midnight,end_min_from_midnight,60):
 plt.xticks(j, (timeslots[0],timeslots[1],timeslots[2],timeslots[3],timeslots[4],timeslots[5],timeslots[6],timeslots[7]))
 plt.title('Magn af kössum inn í kerfið')
 plt.xlabel('Timi')
-plt.ylabel('Fjöldi')
+plt.ylabel('Álag [Magn * Margfoldunarstuðull]')
 # Show the plot
 plt.show()
 

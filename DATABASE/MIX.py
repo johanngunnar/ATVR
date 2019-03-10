@@ -13,7 +13,7 @@ f1 = open('Vöruhús_Hópur_InnstreymiDM_Afrit_new.csv')
 f2 = open('Voruspjald_Voruhus_afrit.csv')
 f3 = open('Voruhus_Hopur_Utstreymi_Afrit.csv')
 f4 = open('Voruhus_Hopur_Mottaka&Tiltekt_Afrit.csv')
-f5 = open('Voruspjald_Voruhus_ITEM_CAT_new.csv')
+f5 = open('Voruspjald_Voruhus_afrit_ItemCAT_NEW.csv')
 f6 = open('Voruhus_Hopur_REAfrit.csv')
 
 #Create List --------------------------------------------------
@@ -85,7 +85,7 @@ print(Voruspjald[3328]['Unit Price'].replace((Voruspjald[3328]['Unit Price'][(Vo
 
 #print(Item_Cat[5])
 
-'''
+
 #Create Vinnsla---------------------------------------------------
 Vinnsla_Dict = {}
 for x in range(0,len(Vinnsla)):
@@ -145,9 +145,7 @@ print(Innstreymi_Dict[1][2])
 insert_function_innstreymi(Innstreymi_Dict)
 
 
-'''
 #Create Sending --------------------------------------------------
-
 Sending_Dict = {}
 for x in range(1,len(Sending)):
 	if Sending[x]['Shelf No_'] == '':
@@ -183,8 +181,8 @@ for i in sorted(Item_Dict):
 	print(i, Item_Dict[i])
 
 insert_function_item(Item_Dict)
-'''
-'''
+
+
 #Create Item_Category-------------------------------------------------
 
 Item_cat_numbersDict = {}

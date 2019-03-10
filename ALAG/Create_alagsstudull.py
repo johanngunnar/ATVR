@@ -1,5 +1,6 @@
 import csv
 from Alagsstudull import Create_alag
+from Update_alagsstudull import update_function_alagsstudull
 
 f1 = open('Voruspjald_Voruhus_afrit_ItemCAT_NEW.csv')
 
@@ -35,9 +36,11 @@ print(Item_cat_numbersDict)
 
 
 for i in Item_cat_numbersDict:
-	Item_cat_numbersDict[i][1] = Create_alag(Item_cat_numbersDict[i][0])
+	Item_cat_numbersDict[i][1] = round(Create_alag(Item_cat_numbersDict[i][0]), 2)
 	print(Item_cat_numbersDict[i][1])
 
 
 for i in sorted(Item_cat_numbersDict):
 	print(i, Item_cat_numbersDict[i])
+
+update_function_alagsstudull(Item_cat_numbersDict)

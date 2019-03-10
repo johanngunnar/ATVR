@@ -115,7 +115,7 @@ def Create_alag(tegund_nafn):
 	cursor.close()
 	conn.close()
 	if lagerbjor_alag_total == 0:
-		return 0
+		return 1
 	else:
 		medal_alag_a_kassa = lagerbjor_alag_total/lagerbjor_packs_total
 		print('Svo álagið er: {:.2f} per hreyfingu af {} '.format(lagerbjor_alag_total/lagerbjor_count,tegund_nafn))
