@@ -1,21 +1,38 @@
-param S := 4;
+param S := 15;
 param T := 2;
-param D := 2;
-param windowsize := 1;
+param D := 5;
+param windowsize := 0;
 
 
 param A :=
-1 6 
-2 4 
-3 2 
-4 4 
+1 6
+2 4
+3 2
+4 4
+5 2
+6 2
+7 9
+8 1
+9 5
+10 7
+11 4
+12 3
+13 3
+14 8
+15 3
 ;
 
 param Ttarget :=
 1 1 8
-2 1 1
+2 1 4
 1 2 8
-2 2 1
+2 2 4
+1 3 8
+2 3 4
+1 4 8
+2 4 4
+1 5 8
+2 5 4
 ;
 
 set Bannlisti :=
