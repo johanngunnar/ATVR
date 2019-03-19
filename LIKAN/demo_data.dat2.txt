@@ -42,6 +42,9 @@ set Bannlisti :=
 2 2	2
 ;
 
+set Fixlisti :=
+;
+
 end;
 
 

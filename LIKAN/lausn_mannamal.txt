@@ -1,0 +1,15 @@
+Sending 7 er á degi 1 í tímaslotti 1 
+Sending 10 er á degi 2 í tímaslotti 1 
+Sending 8 er á degi 3 í tímaslotti 1 
+Sending 14 er á degi 3 í tímaslotti 1 
+Sending 1 er á degi 4 í tímaslotti 1 
+Sending 12 er á degi 4 í tímaslotti 1 
+Sending 2 er á degi 5 í tímaslotti 1 
+Sending 5 er á degi 5 í tímaslotti 1 
+Sending 6 er á degi 5 í tímaslotti 1 
+Sending 11 er á degi 1 í tímaslotti 2 
+Sending 4 er á degi 2 í tímaslotti 2 
+Sending 3 er á degi 3 í tímaslotti 2 
+Sending 15 er á degi 3 í tímaslotti 2 
+Sending 9 er á degi 4 í tímaslotti 2 
+Sending 13 er á degi 5 í tímaslotti 2 

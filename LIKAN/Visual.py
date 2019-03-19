@@ -10,7 +10,6 @@ with open('solution.sol') as inputfile:
     for line in inputfile:
         results.append(line.strip().replace(')',' ').replace('(',' ').replace(',',' ').split())
 
-
 data = []
 alag = {}
 target = {}
@@ -18,7 +17,6 @@ with open('demo_data.dat2.txt') as inputfile:
 
     for line in inputfile:
         data.append(line)
-
 
 #------------------------------------------------
 #Carefull !!!!, hardcoded from the data file
@@ -46,21 +44,24 @@ print('Target: {}'.format(target))
 #Done loading Data
 #------------------------------------------------
 
+#Create lausn and print lausn_mannamal
+f= open("lausn_mannamal.txt","w+")
 lausn = {}
 for x in results[3:]:
 
 	seperator = ''
 	if int(x[4]) == 1:
 		seperator = ''
-		#lausn[(seperator.join(x)[2:4])] = x
-
 		key = seperator.join(x[2:4])
 		if key not in lausn:
 			lausn[key] = []
 		lausn[key].append(x)
 
+		f.write('Sending {} er á degi {} í tímaslotti {} \n'.format(x[1],x[3],x[2]))
 
 print('Lausnar Directory: {}'.format(lausn))
+f.close()
+
 
 ## -----------------------------------------------------------------
 #print
