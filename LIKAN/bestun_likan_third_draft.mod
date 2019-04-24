@@ -15,7 +15,7 @@ set Bannlisti within {s in 1..S, t in 1..T, d in 1..D};
 set Fixlisti within {s in 1..S, t in 1..T, d in 1..D};
 
 
-minimize MaxAlag: 100*TheMaxAlag + sum{t in 1..T, d in 1..D} SuperAlag[t,d];
+minimize MaxAlag: 10*TheMaxAlag + sum{t in 1..T, d in 1..D} SuperAlag[t,d];
 
 s.t. Alagsmaeling{t in 1..(T-windowsize), d in 1..D}: sum{s in 1..S, k in t..(t+windowsize)} A[s]*x[s,k,d] <= (Ttarget[t,d] + SuperAlag[t,d]);
 

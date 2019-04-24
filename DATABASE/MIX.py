@@ -42,6 +42,7 @@ for row in dreader:
 print(c)
 f2.close()
 
+
 dreader = csv.DictReader(f3, delimiter=';')
 for row in dreader:
     Utstreymi.append(row)
@@ -70,6 +71,7 @@ for row in dreader:
 
 f6.close()
 
+
 #Check data -------------------------------------------------------
 print('Innstreymi -------')
 #print(Innstreymi[1])  #call for line 1 (list )and value for location code (dictonary)
@@ -84,6 +86,7 @@ print(Voruspjald[3328]['Unit Price'][2:])
 print(Voruspjald[3328]['Unit Price'].replace((Voruspjald[3328]['Unit Price'][(Voruspjald[3328]['Unit Price'].find(',')):]),''))
 
 #print(Item_Cat[5])
+
 
 
 #Create Vinnsla---------------------------------------------------
@@ -157,6 +160,7 @@ for i in sorted(Sending_Dict):
 
 insert_function_sending(Sending_Dict)
 
+
 '''
 #Creat Item (Vöruspjald)--------------------------------------------
 Item_Dict = {}
@@ -176,13 +180,15 @@ for x in range(0,len(Voruspjald)):
 	Voruspjald[x]['Unit Price'].replace((Voruspjald[x]['Unit Price'][(Voruspjald[x]['Unit Price'].find(',')):]),'')
 	Voruspjald[x]['Millilítrar'].replace((Voruspjald[x]['Millilítrar'][(Voruspjald[x]['Millilítrar'].find(',')):]),'')
 
-	Item_Dict[int(float(Voruspjald[x]['\ufeffNo_']))] = [Voruspjald[x]['Unit Price'],Voruspjald[x]['Söluflokkur'],Voruspjald[x]['Item Category Code'],Voruspjald[x]['ABC-Item'],Voruspjald[x]['Áfengisgjald (tegund)'],Voruspjald[x]['Base Unit of Measure'],Voruspjald[x]['Millilítrar'],Voruspjald[x]['Vendor No_'],Voruspjald[x]['Description']]
+	Item_Dict[int(float(Voruspjald[x]['\ufeffNo_']))] = [Voruspjald[x]['Unit Price'],Voruspjald[x]['Söluflokkur'],Voruspjald[x]['Item Category Code'],Voruspjald[x]['ABC-Item'],Voruspjald[x]['Áfengisgjald (tegund)'],Voruspjald[x]['Base Unit of Measure'],Voruspjald[x]['Millilítrar'],Voruspjald[x]['Vendor No_'],Voruspjald[x]['Heiti umboðsmanns'],Voruspjald[x]['Description']]
+
 for i in sorted(Item_Dict):
 	print(i, Item_Dict[i])
 
 insert_function_item(Item_Dict)
+'''
 
-
+'''
 #Create Item_Category-------------------------------------------------
 
 Item_cat_numbersDict = {}

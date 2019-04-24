@@ -59,11 +59,13 @@ for i in range(0,Sendingar):
 f.write(";\r\n")
 f.write("\r\n")
 '''
+print('timevalue', arr[1][4])
+print('Qty', arr[1][3])
 
 #Write the ALAG
 f.write("param A := \r\n")
 for i in range(0,Sendingar):
-	f.write("{} {}\r\n".format(i+1,arr[i][4]))
+	f.write("{} {}\r\n".format(i+1,round(arr[i][4]*arr[i][3])))   #timevalue * Qty
 f.write(";\r\n")
 f.write("\r\n")
 
@@ -73,9 +75,9 @@ f.write("param Ttarget := \r\n")
 for i in range(1,Days+1):
 	for x in range(1,Timeslots+1):
 		if x in (1,2):
-			f.write("{} {} {}\r\n".format(x,i,10))
+			f.write("{} {} {}\r\n".format(x,i,150))
 		if x in (3,4):
-			f.write("{} {} {}\r\n".format(x,i,5))
+			f.write("{} {} {}\r\n".format(x,i,50))
 f.write(";\r\n")
 f.write("\r\n")
 
