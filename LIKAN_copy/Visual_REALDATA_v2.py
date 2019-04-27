@@ -3,6 +3,25 @@ import matplotlib.pyplot as plt
 import numpy as np
 import collections
 
+import psycopg2
+from Select_function import Select_string
+
+#Connection to SQL
+host = 'localhost'
+dbname = 'atvr2'
+username = 'postgres'
+pw = 'postgres'
+
+conn_string = "host='{}' dbname='{}' user='{}' password='{}'"
+
+try:
+    conn = psycopg2.connect(conn_string.format(host, dbname, username, pw))
+except psycopg2.OperationalError as e:
+    print('Connection failed')
+    print('Error: ', e)
+    exit()
+cursor = conn.cursor()
+
 #------------------------------------------------
 #Load solution data and demo_data
 results = []
@@ -23,7 +42,7 @@ with open('demo_data_real.txt') as inputfile:
 #Carefull !!!!, not hardcoded anymore
 #------------------------------------------------
 
-#Find places to start and end 
+#Find places to start and end for alag <------------
 alag_start = 0
 for line in data: 
 	alag_start = alag_start + 1
@@ -38,7 +57,7 @@ for line in data[alag_start:]:
 	alag_end = alag_end + 1
 print(alag_end)
 
-#-----------------------
+#------------------
 #create alag
 for i in data[alag_start:alag_end]:
 	i.strip()
@@ -52,8 +71,8 @@ print(i)
 print(i.find(' '))
 
 
-#-----------------------
-#Find places to start and end 
+#-------------------
+#Find places to start and end for target
 target_start = 0
 for line in data: 
 	target_start = target_start + 1
@@ -74,7 +93,6 @@ for i in data[target_start:target_end]:
 	#print(i)
 	key = i[0] + i[2]
 	target[int(key)] = [int(i[i.find(' ',2):].strip())]
-print('hey')
 print(i)
 print(i[i.find(' ',2):].strip())
 
@@ -85,29 +103,42 @@ print('Target: {}'.format(target))
 #Done loading Data
 #------------------------------------------------
 
-#Create lausn and print lausn_mannamal
+#Create select_data and lausn
 
+selectstring = Select_string()
+cursor.execute(selectstring)
+arr = cursor.fetchall()
+
+select_data = {}
+print ('\nShow me the databases:\n')
+count = 1
+for x in arr:
+	select_data[count] = [x[0],x[1],x[2],x[3],x[4],x[5],x[6],x[7],x[8]]
+	count = count + 1
+
+
+#CREATE MANNAMAL
+#-------------------------------
 f= open("lausn_mannamal.txt","w+")
 lausn = {}
-print_lausn = {}
-for x in results[23:]:
-
+for x in results[23:]:  #this is HARDCODED
 	seperator = ''
-	if int(x[4]) == 1:
+	if int(x[4]) == 1:  #lausn
 		seperator = ''
 		key = seperator.join(x[2:4])
 		if key not in lausn:
 			lausn[key] = []
 		lausn[key].append(x)
 
-		f.write('Sending {} er á degi {} í tímaslotti {} \n'.format(x[1],x[3],x[2]))
-
-
+		#meira ef lausn  -- Write the solution
+		for i in select_data:
+			if int(x[1]) == i:
+				f.write('Dagur {} í tímaslotti {}. Er sending {} er með ID: {} frá Vendor: {} með kennitölu {} \n'.format(x[3],x[2],i,select_data[i][0],select_data[i][7],select_data[i][6]))
+				f.write('Sendingin inniheldur {} stykki af {} með álagsvalue {} sem gerir álagið = {} \n'.format(select_data[i][3],select_data[i][8],select_data[i][4],(round(select_data[i][3]*select_data[i][4]))))
 f.close()
 
 
-print('ALAG ---------------')
-print(alag)
+
 
 #Create Lausn_for_print dictonary -------------------------
 Lausn_for_print = {}
@@ -120,7 +151,6 @@ for i in lausn:
 		counter = counter + 1
 
 	Lausn_for_print[i] = [alag_sum,counter]
-
 
 
 ## -----------------------------------------------------------------
@@ -151,47 +181,22 @@ plt.yticks(np.arange(5),['8:00','10:00','12:00', '14:00', '16:00', '14:00', 'S']
 
 #Print the solution for each slot
 for i in lausn:
-	#print(i)
 	#print the Target
 	mainstring = 'Target: {}'
 	#target[int(i)][0]
-	plt.text(float(int(i[1]))-0.5, float(int(i[0]))-0.1,mainstring.format(target[int(i)][0]), size=5,
+	plt.text(float(int(i[1]))-0.5, float(int(i[0]))-0.2,mainstring.format(target[int(i)][0]), size=5,
 			ha="center", va="bottom",
 			bbox=dict(boxstyle="square",ec=(0.1, 0.5, 0.5)))
-
-	#print sending + alag
-	'''
-	sending = []
-	for x in range(0,len(lausn[i])):
-		sending.append(lausn[i][x][1])
-		insertstring = 'Sending: {} \n Alag: {} '
-		#alag[lausn[i][x][1]][0]
-		plt.text(float(int(i[1]))-0.5, float(int(i[0]))-0.4-(x/6),insertstring.format(lausn[i][x][1],alag[float(lausn[i][x][1])][0]), size=6,
-	         ha="center", va="bottom",
-	         bbox=dict(boxstyle="square",ec=(0.1, 0.5, 0.9))
-	         )
-	'''
 	
 
 for i in Lausn_for_print:
 		insertstring = 'Fjöldi sendinga: {} \n Alag: {} '
 		#alag[lausn[i][x][1]][0]
-		plt.text(float(int(i[1]))-0.5, float(int(i[0]))-0.4,insertstring.format(Lausn_for_print[i][1],Lausn_for_print[i][0]), size=6,
+		plt.text(float(int(i[1]))-0.5, float(int(i[0]))-0.5,insertstring.format(Lausn_for_print[i][1],Lausn_for_print[i][0]), size=6,
 	         ha="center", va="bottom",
 	         bbox=dict(boxstyle="square",ec=(0.1, 0.5, 0.9))
 	         )
 	
-
-
-
-
-
-print('Lausn for print')
-print(Lausn_for_print)
-for i in Lausn_for_print:
-	print(i,Lausn_for_print[i])
-
-
 
 plt.show()
 

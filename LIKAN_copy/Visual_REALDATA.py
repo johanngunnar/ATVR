@@ -103,29 +103,16 @@ for x in results[23:]:
 		f.write('Sending {} er á degi {} í tímaslotti {} \n'.format(x[1],x[3],x[2]))
 
 
+od = collections.OrderedDict(sorted(print_lausn.items()))
+print('SORTED ---------------')
+print('Lausnar Directory: {}'.format(lausn))
 f.close()
-
-
-print('ALAG ---------------')
-print(alag)
-
-#Create Lausn_for_print dictonary -------------------------
-Lausn_for_print = {}
-for i in lausn: 
-	#Create Lausn_for_print dictonary = slot [alag_sum, fjoldi_sendinga]
-	counter = 0;
-	alag_sum = 0;
-	for x in range(0,len(lausn[i])):
-		alag_sum = alag_sum + alag[float(lausn[i][x][1])][0]
-		counter = counter + 1
-
-	Lausn_for_print[i] = [alag_sum,counter]
-
 
 
 ## -----------------------------------------------------------------
 #print
 ## -----------------------------------------------------------------
+
 
 #Determine the color
 Z = np.random.rand(4, 5)
@@ -160,7 +147,6 @@ for i in lausn:
 			bbox=dict(boxstyle="square",ec=(0.1, 0.5, 0.5)))
 
 	#print sending + alag
-	'''
 	sending = []
 	for x in range(0,len(lausn[i])):
 		sending.append(lausn[i][x][1])
@@ -170,28 +156,5 @@ for i in lausn:
 	         ha="center", va="bottom",
 	         bbox=dict(boxstyle="square",ec=(0.1, 0.5, 0.9))
 	         )
-	'''
-	
-
-for i in Lausn_for_print:
-		insertstring = 'Fjöldi sendinga: {} \n Alag: {} '
-		#alag[lausn[i][x][1]][0]
-		plt.text(float(int(i[1]))-0.5, float(int(i[0]))-0.4,insertstring.format(Lausn_for_print[i][1],Lausn_for_print[i][0]), size=6,
-	         ha="center", va="bottom",
-	         bbox=dict(boxstyle="square",ec=(0.1, 0.5, 0.9))
-	         )
-	
-
-
-
-
-
-print('Lausn for print')
-print(Lausn_for_print)
-for i in Lausn_for_print:
-	print(i,Lausn_for_print[i])
-
-
-
 plt.show()
 
