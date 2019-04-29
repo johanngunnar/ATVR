@@ -1,120 +1,120 @@
-Dagur 1 í tímaslotti 1. Er sending 1 er með ID: 477 frá Vendor:  með kennitölu 420369-7789 
-Sendingin inniheldur 270 stykki af Barabbas Dubbel nr. 57 með álagsvalue 1.35 sem gerir álagið = 364 
-Dagur 2 í tímaslotti 1. Er sending 3 er með ID: 492 frá Vendor:  með kennitölu 470169-1419 
-Sendingin inniheldur 216 stykki af Víking Páska Bock með álagsvalue 1.35 sem gerir álagið = 292 
-Dagur 3 í tímaslotti 1. Er sending 8 er með ID: 497 frá Vendor: Glóbus h.f. með kennitölu 570169-0339 
-Sendingin inniheldur 50 stykki af Koskenkorva með álagsvalue 1.3 sem gerir álagið = 65 
-Dagur 3 í tímaslotti 1. Er sending 9 er með ID: 498 frá Vendor: Globus hf með kennitölu 570169-0339 
-Sendingin inniheldur 36 stykki af Solaz með álagsvalue 2.21 sem gerir álagið = 80 
-Dagur 3 í tímaslotti 1. Er sending 50 er með ID: 543 frá Vendor:  með kennitölu 690416-1580 
-Sendingin inniheldur 10 stykki af Paulaner Hefe-Weissbier  með álagsvalue 0.52 sem gerir álagið = 5 
-Dagur 4 í tímaslotti 1. Er sending 6 er með ID: 495 frá Vendor: Allied Domecq Spirit með kennitölu 501117-0210 
-Sendingin inniheldur 18 stykki af Cockburns Special Reserve með álagsvalue 3.38 sem gerir álagið = 61 
-Dagur 4 í tímaslotti 1. Er sending 33 er með ID: 522 frá Vendor:  með kennitölu 570169-0339 
-Sendingin inniheldur 3 stykki af Barefoot Bubbly Pink Moscato með álagsvalue 2.01 sem gerir álagið = 6 
-Dagur 4 í tímaslotti 1. Er sending 36 er með ID: 525 frá Vendor: Globus hf með kennitölu 570169-0339 
-Sendingin inniheldur 4 stykki af Montes Pinot Noir Limited Selection með álagsvalue 2.21 sem gerir álagið = 9 
-Dagur 4 í tímaslotti 1. Er sending 37 er með ID: 526 frá Vendor: Globus hf með kennitölu 570169-0339 
-Sendingin inniheldur 2 stykki af Chateau Musar með álagsvalue 2.21 sem gerir álagið = 4 
-Dagur 4 í tímaslotti 1. Er sending 47 er með ID: 536 frá Vendor: Karl K. Karlsson hf með kennitölu 570169-0339 
-Sendingin inniheldur 5 stykki af Vina Maipo Vitral Reserva Chardonnay með álagsvalue 1.79 sem gerir álagið = 9 
-Dagur 4 í tímaslotti 1. Er sending 51 er með ID: 544 frá Vendor:  með kennitölu 420178-0349 
-Sendingin inniheldur 4 stykki af Jura Superstition með álagsvalue 4.62 sem gerir álagið = 18 
-Dagur 4 í tímaslotti 1. Er sending 52 er með ID: 545 frá Vendor: Lind ehf. með kennitölu 420178-0349 
-Sendingin inniheldur 144 stykki af Löwenbrau Original með álagsvalue 0.12 sem gerir álagið = 17 
-Dagur 4 í tímaslotti 1. Er sending 54 er með ID: 547 frá Vendor: Karl K. Karlsson hei með kennitölu 420178-0349 
-Sendingin inniheldur 216 stykki af Stella Artois með álagsvalue 0.12 sem gerir álagið = 26 
-Dagur 5 í tímaslotti 1. Er sending 2 er með ID: 491 frá Vendor:  með kennitölu 470169-1419 
-Sendingin inniheldur 36 stykki af Einstök Wee Heavy með álagsvalue 1.35 sem gerir álagið = 49 
-Dagur 5 í tímaslotti 1. Er sending 18 er með ID: 507 frá Vendor:  með kennitölu 570169-0339 
-Sendingin inniheldur 9 stykki af Innis & Gunn IPA með álagsvalue 1.35 sem gerir álagið = 12 
-Dagur 5 í tímaslotti 1. Er sending 25 er með ID: 514 frá Vendor:  með kennitölu 410999-2859 
-Sendingin inniheldur 81 stykki af Tempt Cool Granate Cider með álagsvalue 0.82 sem gerir álagið = 66 
-Dagur 5 í tímaslotti 1. Er sending 42 er með ID: 531 frá Vendor:  með kennitölu 570169-0339 
-Sendingin inniheldur 12 stykki af Havana Club 3 ára með álagsvalue 1.88 sem gerir álagið = 23 
-Dagur 1 í tímaslotti 2. Er sending 10 er með ID: 499 frá Vendor:  með kennitölu 570169-0339 
-Sendingin inniheldur 12 stykki af Senorio de los Llanos Reserva með álagsvalue 2.21 sem gerir álagið = 27 
-Dagur 1 í tímaslotti 2. Er sending 24 er með ID: 513 frá Vendor:  með kennitölu 410999-2859 
-Sendingin inniheldur 56 stykki af Polar Monkeys Chairman India Pale Ale með álagsvalue 1.35 sem gerir álagið = 76 
-Dagur 1 í tímaslotti 2. Er sending 39 er með ID: 528 frá Vendor: Glóbus h.f., með kennitölu 570169-0339 
-Sendingin inniheldur 4 stykki af Montecillo Gran Reserva með álagsvalue 2.21 sem gerir álagið = 9 
-Dagur 1 í tímaslotti 2. Er sending 46 er með ID: 535 frá Vendor: Eðalvín ehf. með kennitölu 570169-0339 
-Sendingin inniheldur 8 stykki af Tenuta SantAntonio Monti Garbi Ripasso með álagsvalue 2.21 sem gerir álagið = 18 
-Dagur 1 í tímaslotti 2. Er sending 49 er með ID: 542 frá Vendor:  með kennitölu 420178-0349 
-Sendingin inniheldur 6 stykki af Stella Artois með álagsvalue 0.12 sem gerir álagið = 1 
-Dagur 1 í tímaslotti 2. Er sending 53 er með ID: 546 frá Vendor: Bræðurnir Ormsson h. með kennitölu 420178-0349 
-Sendingin inniheldur 72 stykki af Becks með álagsvalue 0.12 sem gerir álagið = 9 
-Dagur 1 í tímaslotti 2. Er sending 55 er með ID: 548 frá Vendor:  með kennitölu 420178-0349 
-Sendingin inniheldur 81 stykki af Stella Artois með álagsvalue 0.12 sem gerir álagið = 10 
-Dagur 2 í tímaslotti 2. Er sending 45 er með ID: 534 frá Vendor: Glóbus hf. með kennitölu 570169-0339 
-Sendingin inniheldur 40 stykki af La Chablisienne Petit Chablis með álagsvalue 1.79 sem gerir álagið = 72 
-Dagur 2 í tímaslotti 2. Er sending 48 er með ID: 541 frá Vendor: Icemex ehf. með kennitölu 420178-0349 
-Sendingin inniheldur 20 stykki af Bowmore 12 ára með álagsvalue 4.62 sem gerir álagið = 92 
-Dagur 3 í tímaslotti 2. Er sending 4 er með ID: 493 frá Vendor: Sól-Víking hf. með kennitölu 470169-1419 
-Sendingin inniheldur 540 stykki af Víking Páskabjór með álagsvalue 0.12 sem gerir álagið = 65 
-Dagur 3 í tímaslotti 2. Er sending 12 er með ID: 501 frá Vendor: Glóbus hf. með kennitölu 570169-0339 
-Sendingin inniheldur 48 stykki af Carlo Rossi California White með álagsvalue 1.79 sem gerir álagið = 86 
-Dagur 4 í tímaslotti 2. Er sending 13 er með ID: 502 frá Vendor: Globus hf með kennitölu 570169-0339 
-Sendingin inniheldur 48 stykki af Carlo Rossi California Red með álagsvalue 2.21 sem gerir álagið = 106 
-Dagur 4 í tímaslotti 2. Er sending 15 er með ID: 504 frá Vendor:  með kennitölu 570169-0339 
-Sendingin inniheldur 8 stykki af Joseph Pellerin Cotes du Rhone Reserve með álagsvalue 2.21 sem gerir álagið = 18 
-Dagur 4 í tímaslotti 2. Er sending 26 er með ID: 515 frá Vendor:  með kennitölu 570169-0339 
-Sendingin inniheldur 2 stykki af Montes Late Harvest með álagsvalue 1.79 sem gerir álagið = 4 
-Dagur 4 í tímaslotti 2. Er sending 27 er með ID: 516 frá Vendor: Karl K. Karlsson hf með kennitölu 570169-0339 
-Sendingin inniheldur 3 stykki af Absolut Vanilia með álagsvalue 1.3 sem gerir álagið = 4 
-Dagur 4 í tímaslotti 2. Er sending 38 er með ID: 527 frá Vendor: Globus hf með kennitölu 570169-0339 
-Sendingin inniheldur 8 stykki af Marchese Antinori Chianti Classico Riserva með álagsvalue 2.21 sem gerir álagið = 18 
-Dagur 5 í tímaslotti 2. Er sending 11 er með ID: 500 frá Vendor: Globus hf með kennitölu 570169-0339 
-Sendingin inniheldur 64 stykki af Cuvee Bouchard Aine Blanc de Blancs með álagsvalue 1.79 sem gerir álagið = 115 
-Dagur 5 í tímaslotti 2. Er sending 34 er með ID: 523 frá Vendor:  með kennitölu 570169-0339 
-Sendingin inniheldur 20 stykki af Gerard Bertrand Sauvignon Blanc Reserve Speciale með álagsvalue 1.79 sem gerir álagið = 36 
-Dagur 1 í tímaslotti 3. Er sending 32 er með ID: 521 frá Vendor:  með kennitölu 570169-0339 
-Sendingin inniheldur 8 stykki af Gerard Bertrand Tautavel Grand Terroir með álagsvalue 2.21 sem gerir álagið = 18 
-Dagur 1 í tímaslotti 3. Er sending 43 er með ID: 532 frá Vendor: Globus hf. með kennitölu 570169-0339 
-Sendingin inniheldur 20 stykki af Two Oceans Sauvignon Blanc með álagsvalue 1.79 sem gerir álagið = 36 
-Dagur 2 í tímaslotti 3. Er sending 23 er með ID: 512 frá Vendor:  með kennitölu 410999-2859 
-Sendingin inniheldur 22 stykki af Polar Monkeys Silver Back Strong Ale með álagsvalue 1.35 sem gerir álagið = 30 
-Dagur 2 í tímaslotti 3. Er sending 59 er með ID: 552 frá Vendor:  með kennitölu 420178-0349 
-Sendingin inniheldur 2 stykki af Gammel Dansk Shot Chili & Lakrids með álagsvalue 0.8 sem gerir álagið = 2 
-Dagur 2 í tímaslotti 3. Er sending 60 er með ID: 553 frá Vendor:  með kennitölu 420178-0349 
-Sendingin inniheldur 4 stykki af Auchentoshan 12 ára með álagsvalue 4.62 sem gerir álagið = 18 
-Dagur 3 í tímaslotti 3. Er sending 22 er með ID: 511 frá Vendor:  með kennitölu 410999-2859 
-Sendingin inniheldur 32 stykki af Polar Monkeys White Collar Golden Ale með álagsvalue 1.35 sem gerir álagið = 43 
-Dagur 3 í tímaslotti 3. Er sending 28 er með ID: 517 frá Vendor:  með kennitölu 570169-0339 
-Sendingin inniheldur 2 stykki af De Kuyper Wild Strawberry með álagsvalue 4.21 sem gerir álagið = 8 
-Dagur 4 í tímaslotti 3. Er sending 21 er með ID: 510 frá Vendor:  með kennitölu 410999-2859 
-Sendingin inniheldur 88 stykki af Polar Monkeys Blue Collar Amber Lager með álagsvalue 0.12 sem gerir álagið = 11 
-Dagur 4 í tímaslotti 3. Er sending 29 er með ID: 518 frá Vendor:  með kennitölu 410999-2859 
-Sendingin inniheldur 12 stykki af Casas Patronales Chardonnay & Sauvignon Blanc með álagsvalue 1.79 sem gerir álagið = 21 
-Dagur 4 í tímaslotti 3. Er sending 35 er með ID: 524 frá Vendor:  með kennitölu 570169-0339 
-Sendingin inniheldur 12 stykki af Diamond Hill Shiraz Merlot með álagsvalue 2.21 sem gerir álagið = 27 
-Dagur 5 í tímaslotti 3. Er sending 20 er með ID: 509 frá Vendor:  með kennitölu 410999-2859 
-Sendingin inniheldur 39 stykki af Schiötz Golden IPA með álagsvalue 1.35 sem gerir álagið = 53 
-Dagur 1 í tímaslotti 4. Er sending 14 er með ID: 503 frá Vendor: Globus hf. með kennitölu 570169-0339 
-Sendingin inniheldur 2 stykki af Peter Lehmann Weighbridge Shiraz með álagsvalue 2.21 sem gerir álagið = 4 
-Dagur 1 í tímaslotti 4. Er sending 17 er með ID: 506 frá Vendor:  með kennitölu 570169-0339 
-Sendingin inniheldur 12 stykki af Dark Horse Cabernet Sauvignon með álagsvalue 2.21 sem gerir álagið = 27 
-Dagur 1 í tímaslotti 4. Er sending 30 er með ID: 519 frá Vendor:  með kennitölu 570169-0339 
-Sendingin inniheldur 3 stykki af Jacqueline Brut Blanc de Blancs með álagsvalue 2.01 sem gerir álagið = 6 
-Dagur 1 í tímaslotti 4. Er sending 31 er með ID: 520 frá Vendor:  með kennitölu 570169-0339 
-Sendingin inniheldur 2 stykki af Ledaig Single Malt 10 ára með álagsvalue 4.62 sem gerir álagið = 9 
-Dagur 1 í tímaslotti 4. Er sending 44 er með ID: 533 frá Vendor: Karl K. Karlsson hf. með kennitölu 570169-0339 
-Sendingin inniheldur 2 stykki af Vina Maipo Chardonnay með álagsvalue 1.79 sem gerir álagið = 4 
-Dagur 2 í tímaslotti 4. Er sending 19 er með ID: 508 frá Vendor: Globus hf með kennitölu 570169-0339 
-Sendingin inniheldur 2 stykki af Antinori Badia A Passignano Chianti Classico með álagsvalue 2.21 sem gerir álagið = 4 
-Dagur 2 í tímaslotti 4. Er sending 57 er með ID: 550 frá Vendor: Lind ehf. með kennitölu 420178-0349 
-Sendingin inniheldur 10 stykki af Jim Beam Kentucky Straight Bourbon Whiskey með álagsvalue 4.62 sem gerir álagið = 46 
-Dagur 3 í tímaslotti 4. Er sending 16 er með ID: 505 frá Vendor:  með kennitölu 570169-0339 
-Sendingin inniheldur 2 stykki af Carnivor Cabernet Sauvignon með álagsvalue 2.21 sem gerir álagið = 4 
-Dagur 3 í tímaslotti 4. Er sending 56 er með ID: 549 frá Vendor: Karl K. Karlsson hf með kennitölu 420178-0349 
-Sendingin inniheldur 198 stykki af Stella Artois með álagsvalue 0.12 sem gerir álagið = 24 
-Dagur 3 í tímaslotti 4. Er sending 58 er með ID: 551 frá Vendor: Vínó ehf með kennitölu 420178-0349 
-Sendingin inniheldur 10 stykki af Adobe Reserva Carmenere  með álagsvalue 2.21 sem gerir álagið = 22 
-Dagur 4 í tímaslotti 4. Er sending 5 er með ID: 494 frá Vendor:  með kennitölu 501117-0210 
-Sendingin inniheldur 4 stykki af Valdo Extra Dry með álagsvalue 2.01 sem gerir álagið = 8 
-Dagur 4 í tímaslotti 4. Er sending 7 er með ID: 496 frá Vendor:  með kennitölu 501117-0210 
-Sendingin inniheldur 10 stykki af Torres Coronas Tempranillo með álagsvalue 2.21 sem gerir álagið = 22 
-Dagur 4 í tímaslotti 4. Er sending 41 er með ID: 530 frá Vendor: Glóbus h.f. með kennitölu 570169-0339 
-Sendingin inniheldur 5 stykki af Camus VS Elegance með álagsvalue 7.62 sem gerir álagið = 38 
-Dagur 5 í tímaslotti 4. Er sending 40 er með ID: 529 frá Vendor: Glóbus h.f. með kennitölu 570169-0339 
-Sendingin inniheldur 21 stykki af Osborne Medium með álagsvalue 3.38 sem gerir álagið = 71 
+Dagur 1 í tímaslotti 1. Er sending 49 er með ID: 674 frá Vendor:  með kennitölu 410999-2859 
+Sendingin inniheldur 48 stykki af Don Simon Chardonnay Airen með álagsvalue 1.79 sem gerir álagið = 86 
+Dagur 1 í tímaslotti 1. Er sending 51 er með ID: 676 frá Vendor:  með kennitölu 601083-0789 
+Sendingin inniheldur 3 stykki af Meantime Chocolate með álagsvalue 1.35 sem gerir álagið = 4 
+Dagur 2 í tímaslotti 1. Er sending 8 er með ID: 631 frá Vendor: Austurbakki h.f. með kennitölu 550394-2359 
+Sendingin inniheldur 13 stykki af DAB Original  með álagsvalue 0.12 sem gerir álagið = 2 
+Dagur 2 í tímaslotti 1. Er sending 24 er með ID: 648 frá Vendor: Rolf Johansen & Comp með kennitölu 550394-2359 
+Sendingin inniheldur 54 stykki af Winston Balanced Blue Box með álagsvalue 1.0 sem gerir álagið = 54 
+Dagur 2 í tímaslotti 1. Er sending 25 er með ID: 649 frá Vendor:  með kennitölu 550394-2359 
+Sendingin inniheldur 24 stykki af Salem Menthol White Box með álagsvalue 1.0 sem gerir álagið = 24 
+Dagur 2 í tímaslotti 1. Er sending 28 er með ID: 652 frá Vendor: Rolf Johansen & Co ehf með kennitölu 550394-2359 
+Sendingin inniheldur 2 stykki af Bali Shag Halfzware 5x40g með álagsvalue 1.0 sem gerir álagið = 2 
+Dagur 2 í tímaslotti 1. Er sending 39 er með ID: 663 frá Vendor: Rolf Johansen & Comp með kennitölu 550394-2359 
+Sendingin inniheldur 18 stykki af Winston Classic Red 100s Box með álagsvalue 1.0 sem gerir álagið = 18 
+Dagur 3 í tímaslotti 1. Er sending 55 er með ID: 692 frá Vendor: Eðalvín ehf. með kennitölu 530303-2410 
+Sendingin inniheldur 30 stykki af Era Sangiovese með álagsvalue 2.21 sem gerir álagið = 66 
+Dagur 4 í tímaslotti 1. Er sending 12 er með ID: 635 frá Vendor: Rolf Johansen & Comp með kennitölu 550394-2359 
+Sendingin inniheldur 36 stykki af Pasqua Merlot delle Venezie með álagsvalue 2.21 sem gerir álagið = 80 
+Dagur 4 í tímaslotti 1. Er sending 26 er með ID: 650 frá Vendor: Rolf Johansen & Co e með kennitölu 550394-2359 
+Sendingin inniheldur 6 stykki af Winston Fine White (One) með álagsvalue 1.0 sem gerir álagið = 6 
+Dagur 5 í tímaslotti 1. Er sending 3 er með ID: 626 frá Vendor:  með kennitölu 550394-2359 
+Sendingin inniheldur 4 stykki af Tussock Jumper Merlot með álagsvalue 2.21 sem gerir álagið = 9 
+Dagur 5 í tímaslotti 1. Er sending 10 er með ID: 633 frá Vendor: Öl & vín ehf. með kennitölu 550394-2359 
+Sendingin inniheldur 72 stykki af Budweiser Budvar með álagsvalue 0.12 sem gerir álagið = 9 
+Dagur 5 í tímaslotti 1. Er sending 20 er með ID: 644 frá Vendor:  með kennitölu 470169-1419 
+Sendingin inniheldur 288 stykki af Víking Sterkr með álagsvalue 0.12 sem gerir álagið = 35 
+Dagur 1 í tímaslotti 2. Er sending 19 er með ID: 643 frá Vendor: Sól-Víking hf. með kennitölu 470169-1419 
+Sendingin inniheldur 1520 stykki af Víking Lager með álagsvalue 0.12 sem gerir álagið = 182 
+Dagur 2 í tímaslotti 2. Er sending 21 er með ID: 645 frá Vendor: Vífilfell hf með kennitölu 470169-1419 
+Sendingin inniheldur 1064 stykki af Víking Léttr með álagsvalue 0.12 sem gerir álagið = 128 
+Dagur 3 í tímaslotti 2. Er sending 22 er með ID: 646 frá Vendor:  með kennitölu 550394-2359 
+Sendingin inniheldur 1 stykki af Purity Pure UBU með álagsvalue 1.35 sem gerir álagið = 1 
+Dagur 3 í tímaslotti 2. Er sending 23 er með ID: 647 frá Vendor: Rolf Johansen & Comp með kennitölu 550394-2359 
+Sendingin inniheldur 54 stykki af Winston Classic Red Box með álagsvalue 1.0 sem gerir álagið = 54 
+Dagur 3 í tímaslotti 2. Er sending 42 er með ID: 667 frá Vendor:  með kennitölu 410999-2859 
+Sendingin inniheldur 720 stykki af Faxe Premium með álagsvalue 0.12 sem gerir álagið = 86 
+Dagur 4 í tímaslotti 2. Er sending 35 er með ID: 659 frá Vendor:  með kennitölu 550394-2359 
+Sendingin inniheldur 12 stykki af Salem Menthol Green Box með álagsvalue 1.0 sem gerir álagið = 12 
+Dagur 4 í tímaslotti 2. Er sending 41 er með ID: 666 frá Vendor: H.Ólafsson & Bernhöf með kennitölu 410999-2859 
+Sendingin inniheldur 720 stykki af Faxe Royal með álagsvalue 0.12 sem gerir álagið = 86 
+Dagur 1 í tímaslotti 3. Er sending 44 er með ID: 669 frá Vendor: HOB-vín ehf með kennitölu 410999-2859 
+Sendingin inniheldur 297 stykki af Slots Guld með álagsvalue 0.12 sem gerir álagið = 36 
+Dagur 2 í tímaslotti 3. Er sending 2 er með ID: 625 frá Vendor:  með kennitölu 550394-2359 
+Sendingin inniheldur 27 stykki af Budweiser Budvar  með álagsvalue 0.12 sem gerir álagið = 3 
+Dagur 2 í tímaslotti 3. Er sending 45 er með ID: 670 frá Vendor:  með kennitölu 410999-2859 
+Sendingin inniheldur 198 stykki af Royal Ökologisk Classic með álagsvalue 0.12 sem gerir álagið = 24 
+Dagur 3 í tímaslotti 3. Er sending 15 er með ID: 638 frá Vendor:  með kennitölu 550394-2359 
+Sendingin inniheldur 4 stykki af La Vieille Ferme rautt með álagsvalue 2.21 sem gerir álagið = 9 
+Dagur 3 í tímaslotti 3. Er sending 46 er með ID: 671 frá Vendor:  með kennitölu 410999-2859 
+Sendingin inniheldur 64 stykki af Platino Pink Moscato með álagsvalue 2.01 sem gerir álagið = 129 
+Dagur 4 í tímaslotti 3. Er sending 48 er með ID: 673 frá Vendor:  með kennitölu 410999-2859 
+Sendingin inniheldur 48 stykki af Don Simon Cabernet Sauvignon með álagsvalue 2.21 sem gerir álagið = 106 
+Dagur 5 í tímaslotti 3. Er sending 11 er með ID: 634 frá Vendor:  með kennitölu 550394-2359 
+Sendingin inniheldur 1 stykki af Pfaff Sylvaner með álagsvalue 1.79 sem gerir álagið = 2 
+Dagur 5 í tímaslotti 3. Er sending 54 er með ID: 691 frá Vendor: Pele ehf með kennitölu 530303-2410 
+Sendingin inniheldur 864 stykki af Saku Originaal með álagsvalue 0.12 sem gerir álagið = 104 
+Dagur 1 í tímaslotti 4. Er sending 6 er með ID: 629 frá Vendor:  með kennitölu 550394-2359 
+Sendingin inniheldur 2 stykki af Tussock Jumper Chenin Blanc með álagsvalue 1.79 sem gerir álagið = 4 
+Dagur 1 í tímaslotti 4. Er sending 58 er með ID: 695 frá Vendor: Eðalvín ehf. með kennitölu 530303-2410 
+Sendingin inniheldur 56 stykki af Santa Alvara Reserva Sauvignon Blanc með álagsvalue 1.79 sem gerir álagið = 100 
+Dagur 1 í tímaslotti 4. Er sending 59 er með ID: 696 frá Vendor:  með kennitölu 530303-2410 
+Sendingin inniheldur 15 stykki af Charles Ellner Brut með álagsvalue 2.01 sem gerir álagið = 30 
+Dagur 2 í tímaslotti 4. Er sending 30 er með ID: 654 frá Vendor:  með kennitölu 550394-2359 
+Sendingin inniheldur 2 stykki af Bali Shag Nature 5x35g með álagsvalue 1.0 sem gerir álagið = 2 
+Dagur 2 í tímaslotti 4. Er sending 56 er með ID: 693 frá Vendor: Vín tríó ehf með kennitölu 530303-2410 
+Sendingin inniheldur 30 stykki af Yellow Tail Cabernet Sauvignon með álagsvalue 2.21 sem gerir álagið = 66 
+Dagur 2 í tímaslotti 4. Er sending 57 er með ID: 694 frá Vendor: Vín tríó ehf með kennitölu 530303-2410 
+Sendingin inniheldur 30 stykki af Yellow Tail Shiraz með álagsvalue 2.21 sem gerir álagið = 66 
+Dagur 3 í tímaslotti 4. Er sending 18 er með ID: 642 frá Vendor: Sól-Víking hf. með kennitölu 470169-1419 
+Sendingin inniheldur 1216 stykki af Thule með álagsvalue 0.12 sem gerir álagið = 146 
+Dagur 4 í tímaslotti 4. Er sending 1 er með ID: 624 frá Vendor:  með kennitölu 550394-2359 
+Sendingin inniheldur 1 stykki af Pasqua Desire Lush & Zin Primitivo Puglia með álagsvalue 2.21 sem gerir álagið = 2 
+Dagur 5 í tímaslotti 4. Er sending 50 er með ID: 675 frá Vendor:  með kennitölu 410999-2859 
+Sendingin inniheldur 40 stykki af Don Simon Seleccion Tempranillo með álagsvalue 2.21 sem gerir álagið = 88 
+Dagur 1 í tímaslotti 5. Er sending 36 er með ID: 660 frá Vendor: Rolf Johansen & Comp með kennitölu 550394-2359 
+Sendingin inniheldur 7 stykki af Camel Non-Filter með álagsvalue 1.0 sem gerir álagið = 7 
+Dagur 2 í tímaslotti 5. Er sending 33 er með ID: 657 frá Vendor: Rolf Johansen & Co e með kennitölu 550394-2359 
+Sendingin inniheldur 7 stykki af Cafe Creme Blue 10x10s með álagsvalue 1.0 sem gerir álagið = 7 
+Dagur 4 í tímaslotti 5. Er sending 5 er með ID: 628 frá Vendor:  með kennitölu 550394-2359 
+Sendingin inniheldur 2 stykki af Tussock Jumper Pinot Grigio með álagsvalue 1.79 sem gerir álagið = 4 
+Dagur 4 í tímaslotti 5. Er sending 16 er með ID: 639 frá Vendor:  með kennitölu 550394-2359 
+Sendingin inniheldur 4 stykki af Altos R Crianza með álagsvalue 2.21 sem gerir álagið = 9 
+Dagur 4 í tímaslotti 5. Er sending 60 er með ID: 697 frá Vendor:  með kennitölu 530303-2410 
+Sendingin inniheldur 10 stykki af Gassier Coteaux dAix-en-Provence rósavín með álagsvalue 3.12 sem gerir álagið = 31 
+Dagur 5 í tímaslotti 5. Er sending 17 er með ID: 640 frá Vendor:  með kennitölu 550394-2359 
+Sendingin inniheldur 7 stykki af La Mora Maremma Toscana rautt með álagsvalue 2.21 sem gerir álagið = 15 
+Dagur 1 í tímaslotti 6. Er sending 43 er með ID: 668 frá Vendor: HOB-vín ehf. með kennitölu 410999-2859 
+Sendingin inniheldur 54 stykki af Faxe Red með álagsvalue 0.52 sem gerir álagið = 28 
+Dagur 1 í tímaslotti 6. Er sending 47 er með ID: 672 frá Vendor:  með kennitölu 410999-2859 
+Sendingin inniheldur 10 stykki af Solar de Carrion Tempranillo með álagsvalue 2.21 sem gerir álagið = 22 
+Dagur 2 í tímaslotti 6. Er sending 38 er með ID: 662 frá Vendor: Rolf Johansen & Comp með kennitölu 550394-2359 
+Sendingin inniheldur 7 stykki af Winston Classic Red Soft með álagsvalue 1.0 sem gerir álagið = 7 
+Dagur 2 í tímaslotti 6. Er sending 40 er með ID: 665 frá Vendor:  með kennitölu 410999-2859 
+Sendingin inniheldur 99 stykki af Thor Pilsner með álagsvalue 0.12 sem gerir álagið = 12 
+Dagur 3 í tímaslotti 6. Er sending 4 er með ID: 627 frá Vendor:  með kennitölu 550394-2359 
+Sendingin inniheldur 4 stykki af Tussock Jumper Shiraz-Grenache-Viognier með álagsvalue 2.21 sem gerir álagið = 9 
+Dagur 3 í tímaslotti 6. Er sending 9 er með ID: 632 frá Vendor: Vínland með kennitölu 550394-2359 
+Sendingin inniheldur 30 stykki af Erdinger Weissbier með álagsvalue 0.52 sem gerir álagið = 16 
+Dagur 3 í tímaslotti 6. Er sending 37 er með ID: 661 frá Vendor: Rolf Johansen & Comp með kennitölu 550394-2359 
+Sendingin inniheldur 18 stykki af Camel Subtle Flavour Box (Blue) með álagsvalue 1.0 sem gerir álagið = 18 
+Dagur 3 í tímaslotti 6. Er sending 53 er með ID: 690 frá Vendor:  með kennitölu 550595-2579 
+Sendingin inniheldur 2 stykki af Tommasi Prosecco Filodora með álagsvalue 2.01 sem gerir álagið = 4 
+Dagur 4 í tímaslotti 6. Er sending 52 er með ID: 689 frá Vendor:  með kennitölu 470169-1419 
+Sendingin inniheldur 1 stykki af Einstök White Ale með álagsvalue 0.52 sem gerir álagið = 1 
+Dagur 5 í tímaslotti 6. Er sending 13 er með ID: 636 frá Vendor: Rolf Johansen & Comp með kennitölu 550394-2359 
+Sendingin inniheldur 16 stykki af Pasqua Pinot Grigio með álagsvalue 1.79 sem gerir álagið = 29 
+Dagur 1 í tímaslotti 7. Er sending 27 er með ID: 651 frá Vendor: Rolf Johansen & Co e með kennitölu 550394-2359 
+Sendingin inniheldur 21 stykki af Salem Slims 100s með álagsvalue 1.0 sem gerir álagið = 21 
+Dagur 3 í tímaslotti 7. Er sending 7 er með ID: 630 frá Vendor:  með kennitölu 550394-2359 
+Sendingin inniheldur 1 stykki af Moulin de Reysson með álagsvalue 2.21 sem gerir álagið = 2 
+Dagur 3 í tímaslotti 7. Er sending 29 er með ID: 653 frá Vendor:  með kennitölu 550394-2359 
+Sendingin inniheldur 3 stykki af Bali Shag Rounded Virginia 5x40g með álagsvalue 1.0 sem gerir álagið = 3 
+Dagur 3 í tímaslotti 7. Er sending 34 er með ID: 658 frá Vendor:  með kennitölu 550394-2359 
+Sendingin inniheldur 18 stykki af Camel KSF Box með álagsvalue 1.0 sem gerir álagið = 18 
+Dagur 5 í tímaslotti 7. Er sending 31 er með ID: 655 frá Vendor: Rolf Johansen & Comp með kennitölu 550394-2359 
+Sendingin inniheldur 8 stykki af Bagatello 10x10s með álagsvalue 1.0 sem gerir álagið = 8 
+Dagur 5 í tímaslotti 7. Er sending 32 er með ID: 656 frá Vendor: Rolf Johansen & Co e með kennitölu 550394-2359 
+Sendingin inniheldur 7 stykki af Cafe Creme 10x10s með álagsvalue 1.0 sem gerir álagið = 7 
+Dagur 1 í tímaslotti 1. Er sending 14 er með ID: 637 frá Vendor: Ísdal ehf með kennitölu 550394-2359 
+Sendingin inniheldur 0 stykki af Carmen Chardonnay með álagsvalue 1.79 sem gerir álagið = 0 

@@ -121,7 +121,7 @@ for x in arr:
 #-------------------------------
 f= open("lausn_mannamal.txt","w+")
 lausn = {}
-for x in results[23:]:  #this is HARDCODED
+for x in results[43:]:  #this is HARDCODED
 	seperator = ''
 	if int(x[4]) == 1:  #lausn
 		seperator = ''
@@ -160,7 +160,7 @@ for i in lausn:
 #Determine the color
 Z = np.random.rand(4, 5)
 A = []
-for i in range(0,4):
+for i in range(0,8):
 	A.append([0.1, 0.2, 0.3, 0.4, 0.5])
 
 print('This is A')
@@ -177,14 +177,14 @@ plt.ylabel('Time')
 plt.xlabel('Date')
 
 plt.xticks(np.arange(5),['M', 'T', 'W', 'T', 'F', 'S', 'S'])
-plt.yticks(np.arange(5),['8:00','10:00','12:00', '14:00', '16:00', '14:00', 'S'])
+plt.yticks(np.arange(9),['8:00','9:00','10:00','11:00','12:00','13:00','14:00','15:00', '16:00'])
 
 #Print the solution for each slot
 for i in lausn:
 	#print the Target
 	mainstring = 'Target: {}'
 	#target[int(i)][0]
-	plt.text(float(int(i[1]))-0.5, float(int(i[0]))-0.2,mainstring.format(target[int(i)][0]), size=5,
+	plt.text(float(int(i[1]))-0.5, float(int(i[0]))-0.3,mainstring.format(target[int(i)][0]), size=5,
 			ha="center", va="bottom",
 			bbox=dict(boxstyle="square",ec=(0.1, 0.5, 0.5)))
 	
@@ -192,7 +192,7 @@ for i in lausn:
 for i in Lausn_for_print:
 		insertstring = 'Fjöldi sendinga: {} \n Alag: {} '
 		#alag[lausn[i][x][1]][0]
-		plt.text(float(int(i[1]))-0.5, float(int(i[0]))-0.5,insertstring.format(Lausn_for_print[i][1],Lausn_for_print[i][0]), size=6,
+		plt.text(float(int(i[1]))-0.5, float(int(i[0]))-0.8,insertstring.format(Lausn_for_print[i][1],Lausn_for_print[i][0]), size=5,
 	         ha="center", va="bottom",
 	         bbox=dict(boxstyle="square",ec=(0.1, 0.5, 0.9))
 	         )

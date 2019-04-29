@@ -44,13 +44,14 @@ print(count)
 f= open("demo_data_real.txt","w+")
 
 Days = 5
-Timeslots = 4
+Timeslots = 8
 Sendingar = 60
+windowsize = 0
 
 f.write("param S := {};\r\n".format(Sendingar))
 f.write("param T := {};\r\n".format(Timeslots))
 f.write("param D := {};\r\n".format(Days))
-f.write("param windowsize := {};\r\n".format(0))
+f.write("param windowsize := {};\r\n".format(windowsize))
 f.write("\r\n")
 
 #Create S numbers
@@ -76,9 +77,9 @@ f.write("param Ttarget := \r\n")
 
 for i in range(1,Days+1):
 	for x in range(1,Timeslots+1):
-		if x in (1,2):
+		if x in (1,2,3,4):
 			f.write("{} {} {}\r\n".format(x,i,150))
-		if x in (3,4):
+		if x in (5,6,7,8):
 			f.write("{} {} {}\r\n".format(x,i,50))
 f.write(";\r\n")
 f.write("\r\n")
