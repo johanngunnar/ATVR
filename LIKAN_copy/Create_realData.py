@@ -41,29 +41,46 @@ print(fjoldiSendinga)
 # Create data file
 #----------------------------------------------------------------------------
 
-f= open("demo_data_real.txt","w+")
-
+#DETERMINE VALUES
 Days = 5
 Timeslots = 8
 Sendingar = fjoldiSendinga
 windowsize = 0
 
+#START WRITING THE FILE
+f= open("demo_data_real.txt","w+")
 f.write("param S := {};\r\n".format(Sendingar))
 f.write("param T := {};\r\n".format(Timeslots))
 f.write("param D := {};\r\n".format(Days))
 f.write("param windowsize := {};\r\n".format(windowsize))
 f.write("\r\n")
 
-#Create S numbers
-'''
-f.write("set S :=\r\n")
-for i in range(0,Sendingar):
-	f.write("{}\r\n".format(arr[i][0]))
+
+#----------------------------------------------------------------------
+# VENDORAR
+#----------------------------------------------------------------------
+
+#Write the Olgerðin
+Olgerd_timeslot = 1
+f.write("param O := \r\n")
+for i in range(1,Timeslots+1):
+	if i == Olgerd_timeslot:
+		f.write("{} {}\r\n".format(i,1))
+	else:
+		f.write("{} {}\r\n".format(i,0))
 f.write(";\r\n")
 f.write("\r\n")
-'''
-print('timevalue', arr[1][4])
-print('Qty', arr[1][3])
+
+Cola_timeslot = 2
+f.write("param C := \r\n")
+for i in range(1,Timeslots+1):
+	if i == Cola_timeslot:
+		f.write("{} {}\r\n".format(i,1))
+	else:
+		f.write("{} {}\r\n".format(i,0))
+f.write(";\r\n")
+f.write("\r\n")
+
 
 #Write the ALAG & CREATE the sequence i
 f.write("param A := \r\n")
@@ -98,14 +115,23 @@ f.write(";\r\n")
 Ol_kennitolur = ['420369-7789']
 
 f.write("set Olgerdin := \r\n")
-
 for i in range(0,Sendingar):
 	for x in range(0,len(Ol_kennitolur)):
 		if arr[i][6] == Ol_kennitolur[x]:
+			print('---',Ol_kennitolur[x])
+			print('other',arr[i][6])
+			print(i)
 			f.write("{} \n".format(i))
-
-
 f.write(";\r\n")
+
+Cola_kennitolur = ['470169-1419']
+f.write("set Cola := \r\n")
+for i in range(0,Sendingar):
+	for x in range(0,len(Cola_kennitolur)):
+		if arr[i][6] == Cola_kennitolur[x]:
+			f.write("{} \n".format(i))
+f.write(";\r\n")
+
 
 
 f.write("end;\r\n")
