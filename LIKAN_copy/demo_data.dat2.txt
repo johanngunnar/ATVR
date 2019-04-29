@@ -36,14 +36,17 @@ param Ttarget :=
 ;
 
 set Bannlisti :=
-1 2 1
-1 2 2
-2 2	1
-2 2	2
+
 ;
 
 set Fixlisti :=
 
+;
+
+set Olgerdin :=
+1
+2
+3
 ;
 
 end;

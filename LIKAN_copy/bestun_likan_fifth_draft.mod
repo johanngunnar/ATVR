@@ -10,13 +10,13 @@ var x{s in 1..S, t in 1..T, d in 1..D} binary;
 var SuperAlag{t in 1..T, d in 1..D} >= 0;
 var TheMaxAlag >= 0;
 
-var Ö{t in 1..T} binary;
+var O{t in 1..T} binary;
 
 param Ttarget {t in 1..T, d in 1..D};
 set Bannlisti within {s in 1..S, t in 1..T, d in 1..D};
 set Fixlisti within {s in 1..S, t in 1..T, d in 1..D};
 
-set Ölgerd within {s in 1..S}
+set Olgerdin within {s in 1..S};
 
 
 minimize MaxAlag: 10*TheMaxAlag + sum{t in 1..T, d in 1..D} SuperAlag[t,d];
@@ -30,6 +30,6 @@ s.t. Fixed{(s,t,d) in Fixlisti}: x[s,t,d] = 1;
 
 s.t. UseAll{s in 1..S}: sum{t in 1..T, d in 1..D} x[s,t,d] = 1;
 
-s.t. sameÖ{s in Ölgerd, t in 1..T}: sum(d in 1..D) x[s,t,d] = Ö[t]
+s.t. sameO{s in Olgerdin, t in 1..T}: sum{d in 1..D} x[s,t,d] = O[t];
 
 end;
