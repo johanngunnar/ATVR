@@ -116,12 +116,21 @@ for x in arr:
 	select_data[count] = [x[0],x[1],x[2],x[3],x[4],x[5],x[6],x[7],x[8]]
 	count = count + 1
 
+fjoldiSendinga = count - 1;
+
+print('------',fjoldiSendinga)
+
+#----------------
+#fá annarsstaðar frá
+dagar = 5
+timeslott = 8
+
 
 #CREATE MANNAMAL
 #-------------------------------
 f= open("lausn_mannamal.txt","w+")
 lausn = {}
-for x in results[43:]:  #this is HARDCODED
+for x in results[(dagar*timeslott+3):(fjoldiSendinga*dagar*timeslott)+(dagar*timeslott+3)]:
 	seperator = ''
 	if int(x[4]) == 1:  #lausn
 		seperator = ''
@@ -160,7 +169,7 @@ for i in lausn:
 #Determine the color
 Z = np.random.rand(4, 5)
 A = []
-for i in range(0,8):
+for i in range(0,timeslott):
 	A.append([0.1, 0.2, 0.3, 0.4, 0.5])
 
 print('This is A')
@@ -176,8 +185,8 @@ plt.title('Stundatafla')
 plt.ylabel('Time')
 plt.xlabel('Date')
 
-plt.xticks(np.arange(5),['M', 'T', 'W', 'T', 'F', 'S', 'S'])
-plt.yticks(np.arange(9),['8:00','9:00','10:00','11:00','12:00','13:00','14:00','15:00', '16:00'])
+plt.xticks(np.arange(dagar),['M', 'T', 'W', 'T', 'F', 'S', 'S'])
+plt.yticks(np.arange(timeslott+1),['8:00','9:00','10:00','11:00','12:00','13:00','14:00','15:00', '16:00'])
 
 #Print the solution for each slot
 for i in lausn:

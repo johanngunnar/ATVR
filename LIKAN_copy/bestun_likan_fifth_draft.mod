@@ -2,8 +2,8 @@ param S >= 0 integer;
 param T >= 0 integer;
 param D >= 0 integer;
 param A {s in 1..S};
-
 param windowsize >= 0 integer;
+
 
 var x{s in 1..S, t in 1..T, d in 1..D} binary;
 

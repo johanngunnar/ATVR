@@ -29,13 +29,13 @@ cursor.execute(selectstring)
 arr = cursor.fetchall()
 
 print ('\nShow me the databases:\n')
-count = 0
+fjoldiSendinga = 0
 for x in arr:
-	print(x)
-	count = count + 1
+	print('-----------',x)
+	fjoldiSendinga = fjoldiSendinga + 1
     
 
-print(count)
+print(fjoldiSendinga)
 
 #----------------------------------------------------------------------------
 # Create data file
@@ -45,7 +45,7 @@ f= open("demo_data_real.txt","w+")
 
 Days = 5
 Timeslots = 8
-Sendingar = 60
+Sendingar = fjoldiSendinga
 windowsize = 0
 
 f.write("param S := {};\r\n".format(Sendingar))
@@ -65,7 +65,7 @@ f.write("\r\n")
 print('timevalue', arr[1][4])
 print('Qty', arr[1][3])
 
-#Write the ALAG
+#Write the ALAG & CREATE the sequence i
 f.write("param A := \r\n")
 for i in range(0,Sendingar):
 	f.write("{} {}\r\n".format(i+1,round(arr[i][4]*arr[i][3])))   #timevalue * Qty
@@ -78,9 +78,9 @@ f.write("param Ttarget := \r\n")
 for i in range(1,Days+1):
 	for x in range(1,Timeslots+1):
 		if x in (1,2,3,4):
-			f.write("{} {} {}\r\n".format(x,i,150))
+			f.write("{} {} {}\r\n".format(x,i,1000))
 		if x in (5,6,7,8):
-			f.write("{} {} {}\r\n".format(x,i,50))
+			f.write("{} {} {}\r\n".format(x,i,500))
 f.write(";\r\n")
 f.write("\r\n")
 
@@ -93,5 +93,19 @@ f.write(";\r\n")
 f.write("set Fixlisti := \r\n")
 
 f.write(";\r\n")
+
+#CREATE list of Ölgerðin kenntölur
+Ol_kennitolur = ['420369-7789']
+
+f.write("set Olgerdin := \r\n")
+
+for i in range(0,Sendingar):
+	for x in range(0,len(Ol_kennitolur)):
+		if arr[i][6] == Ol_kennitolur[x]:
+			f.write("{} \n".format(i))
+
+
+f.write(";\r\n")
+
 
 f.write("end;\r\n")
