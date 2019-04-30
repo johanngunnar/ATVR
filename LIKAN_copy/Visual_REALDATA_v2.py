@@ -164,16 +164,54 @@ for i in lausn:
 # -----------------------------------------------------------------
 #print
 # -----------------------------------------------------------------
-
+'''
 #Determine the color
 A = []
 for i in range(0,timeslott):
 	A.append([0.1, 0.2, 0.3, 0.4, 0.5])
+'''
 
+#Determine the color
+A = []
+'''
+for i in range(0,timeslott):
+	A.append([0.1, 0.2, 0.3, 0.4, 0.5])
+'''
+testTargets = list(target.values())
+testTargets2 = np.zeros((8, 5))
+counter = 0;
+for i in range(0,8):
+	for j in range(0,5): 
+		testTargets2[i][j] = int(testTargets[counter][0])
+		print("-----TEST TARGETS-----")
+		print(testTargets[6])
+counter = counter + 1;
+print(testTargets2)
+print("this is the target", testTargets[1], len(testTargets))
+testAlag = list(Lausn_for_print.values())
+print("this is the alags", testAlag[0][:1], len(testAlag))
+toA = []
+counter = 0;
+for timi in range(0,8):
+	for dagur in range(0,5):
+		counter = counter + 1
+		
+		if(testAlag[counter-1][:1] > testTargets2[timi][dagur]): #a bara eftir ad breyta i target < alag
+		
+			toA.append(0.3)
+		else:
+			toA.append(0.1)
+
+	A.append(toA)
+	print(A)
+	toA = []
+print("---------------------------------------------------------------------------------", len(target))
 
 # -----------------------------------------------------------------
 #PLOT
 # -----------------------------------------------------------------
+
+
 plt.subplots(1, 1)
 
 plt.pcolor(A, edgecolors='k', linewidths=3)    #Determine the color
