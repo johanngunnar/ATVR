@@ -27,6 +27,7 @@ cursor = conn.cursor()
 
 #------------------------------------------------
 #Load solution data and demo_data
+#------------------------------------------------
 results = []
 with open('solution.sol') as inputfile:
     for line in inputfile:
@@ -38,10 +39,10 @@ target = {}
 with open('demo_data_real.txt') as inputfile:
     for line in inputfile:
         data.append(line)
-#------------------------------------------------
 
 
 
+#-------------------------------------------------------------------------------------------
 #FIX FOR HARDCODE
 #------------------------------------------------
 #Find places to start and end for alag 
@@ -91,15 +92,12 @@ for i in data[target_start:target_end]:
 	key = i[0] + i[2]
 	target[int(key)] = [int(i[i.find(' ',2):].strip())]
 
-#------------------------------------------------
-#Done loading Data
-#------------------------------------------------
+#-------------------------------------------------------------------------------------------
 
 
-
-#-------------------------------
+#----------------------------------------------------------
 #Create select_data and lausn
-#-------------------------------
+#----------------------------------------------------------
 
 selectstring = Select_string()   #call to SQL data base
 cursor.execute(selectstring)
@@ -116,9 +114,9 @@ fjoldiSendinga = count - 1;
 dagar = 5
 timeslott = 8
 
-#---------------------------------
+#----------------------------------------------------------
 #CREATE MANNAMAL
-#---------------------------------
+#----------------------------------------------------------
 f= open("lausn_mannamal.txt","w+")
 lausn = {}
 for x in results[(dagar*timeslott+3):(fjoldiSendinga*dagar*timeslott)+(dagar*timeslott+3)]:
@@ -162,9 +160,9 @@ for i in lausn:
 	Lausn_for_print[i] = [alag_sum,counter]
 
 
-## -----------------------------------------------------------------
+# -----------------------------------------------------------------
 #print
-## -----------------------------------------------------------------
+# -----------------------------------------------------------------
 
 #Determine the color
 
@@ -196,12 +194,12 @@ for timi in range(0,8):
 	toA = []
 
 
-## -----------------------------------------------------------------
+# -----------------------------------------------------------------
 #PLOT
-## -----------------------------------------------------------------
+# -----------------------------------------------------------------
 plt.subplots(1, 1)
 cmap = matplotlib.colors.ListedColormap(['red','green'])
-plt.pcolor(A, edgecolors='k', linewidths=3, cmap=cmap)    #Determine the color
+plt.pcolor(A, edgecolors='k', linewidths=3, cmap=cmap)
 plt.title('Stundatafla')
 plt.ylabel('Time')
 plt.xlabel('Date')
