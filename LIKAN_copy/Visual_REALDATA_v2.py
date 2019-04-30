@@ -2,6 +2,7 @@ import datetime as dt
 import matplotlib.pyplot as plt
 import numpy as np
 import collections
+import matplotlib.colors
 
 import psycopg2
 from Select_function import Select_string
@@ -26,7 +27,6 @@ cursor = conn.cursor()
 
 #------------------------------------------------
 #Load solution data and demo_data
-#------------------------------------------------
 results = []
 with open('solution.sol') as inputfile:
     for line in inputfile:
@@ -38,7 +38,7 @@ target = {}
 with open('demo_data_real.txt') as inputfile:
     for line in inputfile:
         data.append(line)
-
+#------------------------------------------------
 
 
 
@@ -60,11 +60,13 @@ for line in data[alag_start:]:
 
 #------------------
 #Create alag
-#------------------ 
+#------------------   ALAG ER HUGSAÐ VITLAUST SKOÐA A MRG
 for i in data[alag_start:alag_end]:
 	i.strip()
 	key = i[0:i.find(' ')]
 	alag[int(key)] = [float(i[i.find(' '):])]
+
+print(alag)
 
 
 #------------------------------------------------
@@ -109,15 +111,14 @@ for x in arr:
 	select_data[count] = [x[0],x[1],x[2],x[3],x[4],x[5],x[6],x[7],x[8]]
 	count = count + 1
 
-
 # Determine 3 values   HARDCODE !!!!!!!!!!!!!!!!!!!
 fjoldiSendinga = count - 1;
 dagar = 5
 timeslott = 8
 
-#-------------------------------------------------------------
+#---------------------------------
 #CREATE MANNAMAL
-#-------------------------------------------------------------
+#---------------------------------
 f= open("lausn_mannamal.txt","w+")
 lausn = {}
 for x in results[(dagar*timeslott+3):(fjoldiSendinga*dagar*timeslott)+(dagar*timeslott+3)]:
@@ -146,9 +147,9 @@ for x in results[(dagar*timeslott+3):(fjoldiSendinga*dagar*timeslott)+(dagar*tim
 				f.write('Dagur {} í tímaslotti {}. Er sending {} er með ID: {} frá Vendor {} A: {} \n'.format(x[3],x[2],i,select_data[i][0],select_data[i][6],round(select_data[i][3]*select_data[i][4])))
 f.close()
 
-#---------------------------------
+#-------------------------------
 #Create Lausn_for_print dictonary
-#---------------------------------
+#-------------------------------
 Lausn_for_print = {}
 for i in lausn: 
 	#Create Lausn_for_print dictonary = slot [alag_sum, fjoldi_sendinga]
@@ -161,36 +162,25 @@ for i in lausn:
 	Lausn_for_print[i] = [alag_sum,counter]
 
 
-# -----------------------------------------------------------------
+## -----------------------------------------------------------------
 #print
-# -----------------------------------------------------------------
-'''
-#Determine the color
-A = []
-for i in range(0,timeslott):
-	A.append([0.1, 0.2, 0.3, 0.4, 0.5])
-'''
+## -----------------------------------------------------------------
 
 #Determine the color
-A = []
-'''
-for i in range(0,timeslott):
-	A.append([0.1, 0.2, 0.3, 0.4, 0.5])
-'''
+
 testTargets = list(target.values())
 testTargets2 = np.zeros((8, 5))
 counter = 0;
 for i in range(0,8):
 	for j in range(0,5): 
 		testTargets2[i][j] = int(testTargets[counter][0])
-		print("-----TEST TARGETS-----")
-		print(testTargets[6])
+		
 counter = counter + 1;
-print(testTargets2)
-print("this is the target", testTargets[1], len(testTargets))
 testAlag = list(Lausn_for_print.values())
-print("this is the alags", testAlag[0][:1], len(testAlag))
+
 toA = []
+A = []
+
 counter = 0;
 for timi in range(0,8):
 	for dagur in range(0,5):
@@ -198,23 +188,20 @@ for timi in range(0,8):
 		
 		if(testAlag[counter-1][:1] > testTargets2[timi][dagur]): #a bara eftir ad breyta i target < alag
 		
-			toA.append(0.3)
-		else:
 			toA.append(0.1)
+		else:
+			toA.append(0.2)
 
 	A.append(toA)
-	print(A)
 	toA = []
-print("---------------------------------------------------------------------------------", len(target))
 
-# -----------------------------------------------------------------
+
+## -----------------------------------------------------------------
 #PLOT
-# -----------------------------------------------------------------
-
-
+## -----------------------------------------------------------------
 plt.subplots(1, 1)
-
-plt.pcolor(A, edgecolors='k', linewidths=3)    #Determine the color
+cmap = matplotlib.colors.ListedColormap(['red','green'])
+plt.pcolor(A, edgecolors='k', linewidths=3, cmap=cmap)    #Determine the color
 plt.title('Stundatafla')
 plt.ylabel('Time')
 plt.xlabel('Date')
