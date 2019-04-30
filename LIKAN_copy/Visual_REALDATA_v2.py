@@ -26,6 +26,7 @@ cursor = conn.cursor()
 
 #------------------------------------------------
 #Load solution data and demo_data
+#------------------------------------------------
 results = []
 with open('solution.sol') as inputfile:
     for line in inputfile:
@@ -37,7 +38,7 @@ target = {}
 with open('demo_data_real.txt') as inputfile:
     for line in inputfile:
         data.append(line)
-#------------------------------------------------
+
 
 
 
@@ -59,13 +60,11 @@ for line in data[alag_start:]:
 
 #------------------
 #Create alag
-#------------------   ALAG ER HUGSAÐ VITLAUST SKOÐA A MRG
+#------------------ 
 for i in data[alag_start:alag_end]:
 	i.strip()
 	key = i[0:i.find(' ')]
 	alag[int(key)] = [float(i[i.find(' '):])]
-
-print(alag)
 
 
 #------------------------------------------------
@@ -110,16 +109,15 @@ for x in arr:
 	select_data[count] = [x[0],x[1],x[2],x[3],x[4],x[5],x[6],x[7],x[8]]
 	count = count + 1
 
-print(select_data[1])
 
 # Determine 3 values   HARDCODE !!!!!!!!!!!!!!!!!!!
 fjoldiSendinga = count - 1;
 dagar = 5
 timeslott = 8
 
-#---------------------------------
+#-------------------------------------------------------------
 #CREATE MANNAMAL
-#---------------------------------
+#-------------------------------------------------------------
 f= open("lausn_mannamal.txt","w+")
 lausn = {}
 for x in results[(dagar*timeslott+3):(fjoldiSendinga*dagar*timeslott)+(dagar*timeslott+3)]:
@@ -148,9 +146,9 @@ for x in results[(dagar*timeslott+3):(fjoldiSendinga*dagar*timeslott)+(dagar*tim
 				f.write('Dagur {} í tímaslotti {}. Er sending {} er með ID: {} frá Vendor {} A: {} \n'.format(x[3],x[2],i,select_data[i][0],select_data[i][6],round(select_data[i][3]*select_data[i][4])))
 f.close()
 
-#-------------------------------
+#---------------------------------
 #Create Lausn_for_print dictonary
-#-------------------------------
+#---------------------------------
 Lausn_for_print = {}
 for i in lausn: 
 	#Create Lausn_for_print dictonary = slot [alag_sum, fjoldi_sendinga]
@@ -163,9 +161,9 @@ for i in lausn:
 	Lausn_for_print[i] = [alag_sum,counter]
 
 
-## -----------------------------------------------------------------
+# -----------------------------------------------------------------
 #print
-## -----------------------------------------------------------------
+# -----------------------------------------------------------------
 
 #Determine the color
 A = []
@@ -173,9 +171,9 @@ for i in range(0,timeslott):
 	A.append([0.1, 0.2, 0.3, 0.4, 0.5])
 
 
-## -----------------------------------------------------------------
+# -----------------------------------------------------------------
 #PLOT
-## -----------------------------------------------------------------
+# -----------------------------------------------------------------
 plt.subplots(1, 1)
 
 plt.pcolor(A, edgecolors='k', linewidths=3)    #Determine the color

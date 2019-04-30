@@ -30,15 +30,10 @@ selectstring = Select_string()
 cursor.execute(selectstring)
 arr = cursor.fetchall()
 
-print ('\nShow me the databases:\n')
+
 fjoldiSendinga = 0
 for x in arr:
-	print('-----------',x)
 	fjoldiSendinga = fjoldiSendinga + 1
-
-print(arr)
-
-print(fjoldiSendinga)
 
 #----------------------------------------------------------------------------
 # Create data file
@@ -89,14 +84,14 @@ Write_vendor_data(6,vendor,Timeslots,f)
 
 
 #----------------------------------------------------------------------
+# ALAG & TARGET
+#----------------------------------------------------------------------
 
 
 #Write the ALAG & CREATE the sequence i
 f.write("param A := \r\n")
 for i in range(1,Sendingar+1):
 	f.write("{} {}\r\n".format(i,round(arr[i][4]*arr[i][3])))   #timevalue * Qty
-	print(i,arr[i])
-	print(round(arr[i][3]*arr[i][4]))
 f.write(";\r\n")
 f.write("\r\n")
 
@@ -116,7 +111,6 @@ f.write("\r\n")
 f.write("set Bannlisti := \r\n")
 
 f.write(";\r\n")
-
 
 f.write("set Fixlisti := \r\n")
 
@@ -157,6 +151,5 @@ Write_sendingar_data(arr,BA_kennitolur,vendorname,Sendingar,f)
 M_kennitolur = ['550595-2579']
 vendorname = 'Mekka'
 Write_sendingar_data(arr,M_kennitolur,vendorname,Sendingar,f)
-
 
 f.write("end;\r\n")
