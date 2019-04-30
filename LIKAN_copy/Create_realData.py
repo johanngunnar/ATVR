@@ -1,8 +1,8 @@
 import psycopg2
 
-from Select_function import Select_string
-from Write_Vendor_data import Write_vendor_data
-from Write_sendingarVendorar_data import Write_sendingar_data
+from Functions.Select_function import Select_string
+from Functions.Write_Vendor_data import Write_vendor_data
+from Functions.Write_sendingarVendorar_data import Write_sendingar_data
 
 #Connection to SQL
 host = 'localhost'

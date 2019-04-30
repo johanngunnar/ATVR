@@ -1,5 +1,10 @@
 import psycopg2
 def update_function_alagsstudull(data):
+
+	#------------------------------------------------------------------------------------------------------
+	#This file creates "Update_alagsstudull.sql" ,
+	#When you create that file go to your database and paste the data into the database
+	#------------------------------------------------------------------------------------------------------
 	'''
 	#Connection to SQL
 	host = 'localhost'

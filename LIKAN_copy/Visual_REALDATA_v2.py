@@ -5,7 +5,7 @@ import collections
 import matplotlib.colors
 
 import psycopg2
-from Select_function import Select_string
+from Functions.Select_function import Select_string
 
 #------------------------------------------------
 #Connection to SQL
