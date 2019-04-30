@@ -3,21 +3,7 @@
 CREATE TABLE Item_Category  (
 	name INTEGER PRIMARY KEY,
 	tegund VARCHAR(250),
-	Timevalue float
-);
-
-CREATE TABLE Sending (
-  id INTEGER PRIMARY KEY,
-  SourceNo VARCHAR(250),
-  ItemNo INTEGER,
-  RE_number VARCHAR(250),
-  Shelf VARCHAR(250),
-  Status INTEGER,
-  Counted_Quantity VARCHAR(250),
-  Ordered_Qty VARCHAR(250),
-  Date VARCHAR(250),
-
-  Foreign key(ItemNo) References item(id)
+	Timevalue FLOAT
 );
 
 CREATE TABLE item (
@@ -38,7 +24,21 @@ CREATE TABLE item (
   /*Foreign key(vendor) References  vendor(kennitala)*/
 );
 
-/*Grunntöflur breytast mikið */
+CREATE TABLE Sending (
+  id INTEGER PRIMARY KEY,
+  SourceNo VARCHAR(250),
+  ItemNo INTEGER,
+  RE_number VARCHAR(250),
+  Shelf VARCHAR(250),
+  Status INTEGER,
+  Counted_Quantity VARCHAR(250),
+  Ordered_Qty VARCHAR(250),
+  Date VARCHAR(250),
+
+  Foreign key(ItemNo) References item(id)
+);
+
+
 
 CREATE TABLE Innstreymi  (
   id INTEGER PRIMARY KEY,
@@ -84,3 +84,4 @@ CREATE TABLE Vinnsla  (
 
   Foreign key(ItemNo) References item(id)
 );
+

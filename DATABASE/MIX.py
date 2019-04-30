@@ -88,6 +88,98 @@ print(Voruspjald[3328]['Unit Price'].replace((Voruspjald[3328]['Unit Price'][(Vo
 #print(Item_Cat[5])
 
 
+#Create Item_Category-------------------------------------------------
+
+Item_cat_numbersDict = {}
+
+#Load into dictonary key=number , value= tegund
+
+for x in range(0,len(Item_Cat)):
+    Item_cat_numbersDict[int(float(Item_Cat[x]['\ufeffItem Category Code']))] = [Item_Cat[x]['Tegund'],Item_Cat[x]['Value']]
+
+#print key with value
+
+for i in sorted(Item_cat_numbersDict):
+    print(i, Item_cat_numbersDict[i])
+
+
+#print(Item_cat_numbersDict)
+
+#INSERT FUNCTIONS CALL ----
+#insert_function_basic(Item_cat_numbersDict)
+insert_function(Item_cat_numbersDict)
+
+
+#Creat Item (Vöruspjald)--------------------------------------------
+Item_Dict = {}
+for x in range(0,len(Voruspjald)):
+    if(Voruspjald[x]['Vendor No_'] == ''):
+        Voruspjald[x]['Vendor No_'] = 0
+    
+    if Voruspjald[x]['Item Category Code'] == '':
+        continue
+    Voruspjald[x]['Item Category Code'].strip("0")
+
+    Voruspjald[x]['Description'] = re.sub("[!@'#$]", '', Voruspjald[x]['Description'])
+
+
+    Voruspjald[x]['Unit Price'].replace((Voruspjald[x]['Unit Price'][(Voruspjald[x]['Unit Price'].find(',')):]),'')
+    Voruspjald[x]['Millilítrar'].replace((Voruspjald[x]['Millilítrar'][(Voruspjald[x]['Millilítrar'].find(',')):]),'')
+    
+    Item_Dict[int(float(Voruspjald[x]['\ufeffNo_']))] = [Voruspjald[x]['Unit Price'],Voruspjald[x]['Söluflokkur'],Voruspjald[x]['Item Category Code'],Voruspjald[x]['ABC-Item'],Voruspjald[x]['Áfengisgjald (tegund)'],Voruspjald[x]['Base Unit of Measure'],Voruspjald[x]['Millilítrar'],Voruspjald[x]['Vendor No_'],Voruspjald[x]['Heiti umboðsmanns'],Voruspjald[x]['Description']]
+
+for i in sorted(Item_Dict):
+    print(i, Item_Dict[i])
+
+insert_function_item(Item_Dict)
+
+
+#Create Sending --------------------------------------------------
+Sending_Dict = {}
+for x in range(1,len(Sending)):
+    if Sending[x]['Shelf No_'] == '':
+        Sending[x]['Shelf No_'] = ' '
+    Sending_Dict[x] = [Sending[x]['Source No_'],Sending[x]['Item No_'],Sending[x]['Whse_ Receipt No_'],(Sending[x]['Shelf No_']),Sending[x]['Status'],Sending[x]['Counted Quantity'],Sending[x]['Ordered Qty_'],Sending[x]['Posting Date']]
+
+for i in sorted(Sending_Dict):
+    print(i, Sending_Dict[i])
+
+insert_function_sending(Sending_Dict)
+
+
+#Create Innstreymi---------------------------------------------------
+Innstreymi_Dict = {}
+for x in range(0,len(Innstreymi)):
+    if Innstreymi[x]['Quantity'][0] == '0':
+        continue
+    Innstreymi[x]['No_'] = Innstreymi[x]['No_'].replace('_', '')
+
+    Innstreymi_Dict[x] = [Innstreymi[x]['No_'],Innstreymi[x]['Item No_'],Innstreymi[x]['Source No_'],(Innstreymi[x]['Qty_ per Unit of Measure']),(Innstreymi[x]['Quantity']),Innstreymi[x]['Qty_ (Base)'],Innstreymi[x]['Starting Date'],Innstreymi[x]['Whse_ Activity No_']]
+
+for i in sorted(Innstreymi_Dict):
+    print(i, Innstreymi_Dict[i])
+
+print(Innstreymi_Dict[1])
+print(Innstreymi_Dict[1][2])
+
+insert_function_innstreymi(Innstreymi_Dict)
+
+#Create Utstreymi---------------------------------------------------
+Utstreymi_Dict = {}
+for x in range(0,len(Utstreymi)):
+    if Utstreymi[x]['Quantity'][0] == '0' or Utstreymi[x]['Qty_ (Base)'][0] == '0' or Utstreymi[x]['Qty_ per Unit of Measure'][0] == '0' :
+        continue
+    else:
+        Utstreymi_Dict[x] = [Utstreymi[x]['Ship-to Name'],Utstreymi[x]['Item No_'],Utstreymi[x]['Qty_ per Unit of Measure'],Utstreymi[x]['Quantity'],Utstreymi[x]['Qty_ (Base)'],Utstreymi[x]['Millilítrar'],Utstreymi[x]['Fjöldi lítra']]
+
+for i in sorted(Utstreymi_Dict):
+    print(i, Utstreymi_Dict[i])
+
+print(Utstreymi_Dict[1])
+print(Utstreymi_Dict[1][2])
+
+insert_function_utstreymi(Utstreymi_Dict)
+
 
 #Create Vinnsla---------------------------------------------------
 Vinnsla_Dict = {}
@@ -114,102 +206,15 @@ print(Vinnsla_Dict[1][2])
 
 insert_function_vinnsla(Vinnsla_Dict)
 
-#Create Utstreymi---------------------------------------------------
-Utstreymi_Dict = {}
-for x in range(0,len(Utstreymi)):
-	if Utstreymi[x]['Quantity'][0] == '0' or Utstreymi[x]['Qty_ (Base)'][0] == '0' or Utstreymi[x]['Qty_ per Unit of Measure'][0] == '0' :
-		continue
-	else:
-		Utstreymi_Dict[x] = [Utstreymi[x]['Ship-to Name'],Utstreymi[x]['Item No_'],Utstreymi[x]['Qty_ per Unit of Measure'],Utstreymi[x]['Quantity'],Utstreymi[x]['Qty_ (Base)'],Utstreymi[x]['Millilítrar'],Utstreymi[x]['Fjöldi lítra']]
-
-for i in sorted(Utstreymi_Dict):
-	print(i, Utstreymi_Dict[i])
-
-print(Utstreymi_Dict[1])
-print(Utstreymi_Dict[1][2])
-
-insert_function_utstreymi(Utstreymi_Dict)
-
-#Create Innstreymi---------------------------------------------------
-Innstreymi_Dict = {}
-for x in range(0,len(Innstreymi)):
-	if Innstreymi[x]['Quantity'][0] == '0':
-		continue
-	Innstreymi[x]['No_'] = Innstreymi[x]['No_'].replace('_', '')
-
-	Innstreymi_Dict[x] = [Innstreymi[x]['No_'],Innstreymi[x]['Item No_'],Innstreymi[x]['Source No_'],(Innstreymi[x]['Qty_ per Unit of Measure']),(Innstreymi[x]['Quantity']),Innstreymi[x]['Qty_ (Base)'],Innstreymi[x]['Starting Date'],Innstreymi[x]['Whse_ Activity No_']]
-
-for i in sorted(Innstreymi_Dict):
-	print(i, Innstreymi_Dict[i])
-
-print(Innstreymi_Dict[1])
-print(Innstreymi_Dict[1][2])
-
-insert_function_innstreymi(Innstreymi_Dict)
 
 
-#Create Sending --------------------------------------------------
-Sending_Dict = {}
-for x in range(1,len(Sending)):
-	if Sending[x]['Shelf No_'] == '':
-		Sending[x]['Shelf No_'] = ' '
-	Sending_Dict[x] = [Sending[x]['Source No_'],Sending[x]['Item No_'],Sending[x]['Whse_ Receipt No_'],(Sending[x]['Shelf No_']),Sending[x]['Status'],Sending[x]['Counted Quantity'],Sending[x]['Ordered Qty_'],Sending[x]['Posting Date']]
-
-for i in sorted(Sending_Dict):
-	print(i, Sending_Dict[i])
-
-insert_function_sending(Sending_Dict)
 
 
-'''
-#Creat Item (Vöruspjald)--------------------------------------------
-Item_Dict = {}
-for x in range(0,len(Voruspjald)):
-	if(Voruspjald[x]['Vendor No_'] == ''):
-		Voruspjald[x]['Vendor No_'] = 0
-
-	if Voruspjald[x]['Item Category Code'] == '':
-		continue
-	Voruspjald[x]['Item Category Code'].strip("0")
-	#for i in range(0, len(Voruspjald[x]['Description'])):
-
-	#Voruspjald[x]['Description'].strip(" ' ")
-	Voruspjald[x]['Description'] = re.sub("[!@'#$]", '', Voruspjald[x]['Description'])
-	
-
-	Voruspjald[x]['Unit Price'].replace((Voruspjald[x]['Unit Price'][(Voruspjald[x]['Unit Price'].find(',')):]),'')
-	Voruspjald[x]['Millilítrar'].replace((Voruspjald[x]['Millilítrar'][(Voruspjald[x]['Millilítrar'].find(',')):]),'')
-
-	Item_Dict[int(float(Voruspjald[x]['\ufeffNo_']))] = [Voruspjald[x]['Unit Price'],Voruspjald[x]['Söluflokkur'],Voruspjald[x]['Item Category Code'],Voruspjald[x]['ABC-Item'],Voruspjald[x]['Áfengisgjald (tegund)'],Voruspjald[x]['Base Unit of Measure'],Voruspjald[x]['Millilítrar'],Voruspjald[x]['Vendor No_'],Voruspjald[x]['Heiti umboðsmanns'],Voruspjald[x]['Description']]
-
-for i in sorted(Item_Dict):
-	print(i, Item_Dict[i])
-
-insert_function_item(Item_Dict)
-'''
-
-'''
-#Create Item_Category-------------------------------------------------
-
-Item_cat_numbersDict = {}
-
-#Load into dictonary key=number , value= tegund
-
-for x in range(0,len(Item_Cat)):
-		Item_cat_numbersDict[int(float(Item_Cat[x]['\ufeffItem Category Code']))] = [Item_Cat[x]['Tegund'],Item_Cat[x]['Value']]
-
-#print key with value
-
-for i in sorted(Item_cat_numbersDict):
-	print(i, Item_cat_numbersDict[i])
 
 
-#print(Item_cat_numbersDict)
 
-#INSERT FUNCTIONS CALL ----
-#insert_function_basic(Item_cat_numbersDict)
-insert_function(Item_cat_numbersDict)
-'''
+
+
 
 '''
 #Create Vendor List--------------------------------------------------
