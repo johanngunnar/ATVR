@@ -1,13 +1,14 @@
 
 import psycopg2
 import math
-# Import the necessary packages and modules
 import matplotlib.pyplot as plt
 import numpy as np
 
 def Create_alag(tegund_nafn):
 
+	#----------------------------------------------------------------------------
 	#Connection to SQL
+	#----------------------------------------------------------------------------
 	host = 'localhost'
 	dbname = 'atvr2'
 	username = 'postgres'
@@ -25,7 +26,7 @@ def Create_alag(tegund_nafn):
 
 
 	#----------------------------------------------------------------------------
-	# Write the select Q
+	# Write the select Q & OPEN
 	#----------------------------------------------------------------------------
 
 	selectstring = " select s.SourceNo,c.tegund, vi.Document_ID1, vi.UserID, vi.Quantity, vi.Qty_perUnit, vi.picked, vi.Picked_Unit, vi.Date_Scanned,s.RE_number, s.Shelf, i.Vendor, i.Description, i.id from vinnsla vi, sending s, item i, Item_Category c where vi.itemno = i.id and s.ItemNo = i.id and s.RE_number = vi.Document_ID1 and c.name = i.Tegund and vi.Date_Scanned like ('%02/2018%') order by (vi.Date_Scanned, vi.Picked)"
@@ -36,11 +37,6 @@ def Create_alag(tegund_nafn):
 	selectstring2 = "select inn.sending, c.tegund, vi.Document_ID1, vi.UserID, vi.Quantity, vi.Qty_perUnit, vi.picked, vi.Picked_Unit, vi.Date_Scanned, i.Vendor, i.Description, i.id from vinnsla vi, Innstreymi inn, item i, Item_Category c where vi.itemno = i.id and inn.ItemNo = i.id and inn.put = vi.Document_ID1 and c.name = i.Tegund and vi.Date_Scanned like ('%02/2018%') order by (vi.Date_Scanned, vi.Picked)"
 	cursor.execute(selectstring2)
 	record = cursor.fetchall()
-
-	#1 Ölgerðin (edi) ,2 Coca-Cola (edi),3  Globus (edi), Vín tríó, 4 Brugghús Steðja, Dista , 5 Bakkus (edi), 6 Mekka (edi)
-	#slot_dict = {'420369-7789':0,'550595-2579':0,'580483-0709':1,'470169-1419':1,'700103-3660':2,'570169-0339':2,'410999-2859':3,'530303-2410':4,'550595-2579':5}
-
-	print ('\nShow me the databases:\n')
 
 	#----------------------------------------------------------------------------
 	# Dictornary lykill count, frá 2 select skipunum
@@ -75,23 +71,8 @@ def Create_alag(tegund_nafn):
 					Lagerbjor_dict[currcount] = [x[0],x[1],'Sending:',x[6],x[8],'Innstreymi:',i[6],i[8], 'Description:',i[11] ,i[10],x[12],'Álag i min :', alag_per_sendingu_min, 'Quantity of packs',x[4], 'Liters']
 					currcount = currcount + 1
 
-
-
-
-	print('line ------------------------------------------------------------------------')
-
-	#print(Lagerbjor_arr)
-	#print(Lagerbjor_record)
-
-	print('line ------------------------------------------------------------------------')
-
 	for i in Lagerbjor_dict:
-		#print(i)
 		print('{}, {}'.format(i, Lagerbjor_dict[i]))
-	print('line ------------------------------------------------------------------------')
-	#print(Lagerbjor_dict)
-	print(currcount)
-	print(counter)
 
 
 	#----------------------------------------------------------------------------
@@ -107,13 +88,18 @@ def Create_alag(tegund_nafn):
 		lagerbjor_packs_total = (lagerbjor_packs_total + Lagerbjor_dict[i][15])
 
 
-	print(lagerbjor_alag_total)
-	print(lagerbjor_count)
-	
-
+	#-----------------------
+	# Closing the select Q
+	#-----------------------
 	conn.commit()
-	cursor.close()
+	cursor.close(
+		)
 	conn.close()
+
+	#----------------------------------------------------------------------------
+	# Check to see what is happening in the RUN
+	#----------------------------------------------------------------------------
+
 	if lagerbjor_alag_total == 0:
 		return 1
 	else:
