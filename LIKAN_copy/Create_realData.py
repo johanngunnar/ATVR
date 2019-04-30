@@ -33,7 +33,8 @@ fjoldiSendinga = 0
 for x in arr:
 	print('-----------',x)
 	fjoldiSendinga = fjoldiSendinga + 1
-    
+
+print(arr)
 
 print(fjoldiSendinga)
 
@@ -44,7 +45,7 @@ print(fjoldiSendinga)
 #DETERMINE VALUES
 Days = 5
 Timeslots = 8
-Sendingar = fjoldiSendinga
+Sendingar = fjoldiSendinga -1
 windowsize = 0
 
 #START WRITING THE FILE
@@ -84,8 +85,10 @@ f.write("\r\n")
 
 #Write the ALAG & CREATE the sequence i
 f.write("param A := \r\n")
-for i in range(0,Sendingar):
-	f.write("{} {}\r\n".format(i+1,round(arr[i][4]*arr[i][3])))   #timevalue * Qty
+for i in range(1,Sendingar+1):
+	f.write("{} {}\r\n".format(i,round(arr[i][4]*arr[i][3])))   #timevalue * Qty
+	print(i,arr[i])
+	print(round(arr[i][3]*arr[i][4]))
 f.write(";\r\n")
 f.write("\r\n")
 
@@ -117,10 +120,11 @@ Ol_kennitolur = ['420369-7789']
 f.write("set Olgerdin := \r\n")
 for i in range(0,Sendingar):
 	for x in range(0,len(Ol_kennitolur)):
-		if arr[i][6] == Ol_kennitolur[x]:
+		if arr[i][6].strip() == Ol_kennitolur[x].strip():
 			print('---',Ol_kennitolur[x])
 			print('other',arr[i][6])
 			print(i)
+			print(i,arr[i][0],arr[i][1],arr[i][2],arr[i][3],arr[i][4],arr[i][5],arr[i][6],'WHAT:',arr[i][7],arr[i][8])
 			f.write("{} \n".format(i))
 f.write(";\r\n")
 

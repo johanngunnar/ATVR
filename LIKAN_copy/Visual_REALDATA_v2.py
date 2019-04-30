@@ -59,11 +59,13 @@ for line in data[alag_start:]:
 
 #------------------
 #Create alag
-#------------------
+#------------------   ALAG ER HUGSAÐ VITLAUST SKOÐA A MRG
 for i in data[alag_start:alag_end]:
 	i.strip()
 	key = i[0:i.find(' ')]
 	alag[int(key)] = [float(i[i.find(' '):])]
+
+print(alag)
 
 
 #------------------------------------------------
@@ -103,13 +105,14 @@ cursor.execute(selectstring)
 arr = cursor.fetchall()
 
 select_data = {}
-count = 1
+count = 0
 for x in arr:
 	select_data[count] = [x[0],x[1],x[2],x[3],x[4],x[5],x[6],x[7],x[8]]
 	count = count + 1
 
+print(select_data[1])
 
-# Determine 3 values 
+# Determine 3 values   HARDCODE !!!!!!!!!!!!!!!!!!!
 fjoldiSendinga = count - 1;
 dagar = 5
 timeslott = 8
@@ -136,6 +139,14 @@ for x in results[(dagar*timeslott+3):(fjoldiSendinga*dagar*timeslott)+(dagar*tim
 f.close()
 
 
+f= open("mannamal_basic.txt","w+")
+for x in results[(dagar*timeslott+3):(fjoldiSendinga*dagar*timeslott)+(dagar*timeslott+3)]:
+	seperator = ''
+	if int(x[4]) == 1:  #lausn
+		for i in select_data:
+			if int(x[1]) == i:
+				f.write('Dagur {} í tímaslotti {}. Er sending {} er með ID: {} frá Vendor {} A: {} \n'.format(x[3],x[2],i,select_data[i][0],select_data[i][6],round(select_data[i][3]*select_data[i][4])))
+f.close()
 
 #-------------------------------
 #Create Lausn_for_print dictonary
