@@ -1,6 +1,8 @@
 import psycopg2
 
 from Select_function import Select_string
+from Write_Vendor_data import Write_vendor_data
+from Write_sendingarVendorar_data import Write_sendingar_data
 
 #Connection to SQL
 host = 'localhost'
@@ -58,29 +60,35 @@ f.write("\r\n")
 
 
 #----------------------------------------------------------------------
-# VENDORAR
+# VENDORAR & TIMESLOTT
 #----------------------------------------------------------------------
 
-#Write the Olgerðin
-Olgerd_timeslot = 1
-f.write("param O := \r\n")
-for i in range(1,Timeslots+1):
-	if i == Olgerd_timeslot:
-		f.write("{} {}\r\n".format(i,1))
-	else:
-		f.write("{} {}\r\n".format(i,0))
-f.write(";\r\n")
-f.write("\r\n")
+vendor = 'O'
+Write_vendor_data(1,vendor,Timeslots,f)
 
-Cola_timeslot = 2
-f.write("param C := \r\n")
-for i in range(1,Timeslots+1):
-	if i == Cola_timeslot:
-		f.write("{} {}\r\n".format(i,1))
-	else:
-		f.write("{} {}\r\n".format(i,0))
-f.write(";\r\n")
-f.write("\r\n")
+vendor = 'C'
+Write_vendor_data(2,vendor,Timeslots,f)
+
+vendor = 'G'
+Write_vendor_data(3,vendor,Timeslots,f)
+
+vendor = 'V'
+Write_vendor_data(3,vendor,Timeslots,f)
+
+vendor = 'BR'
+Write_vendor_data(4,vendor,Timeslots,f)
+
+vendor = 'DI'
+Write_vendor_data(4,vendor,Timeslots,f)
+
+vendor = 'BA'
+Write_vendor_data(5,vendor,Timeslots,f)
+
+vendor = 'M'
+Write_vendor_data(6,vendor,Timeslots,f)
+
+
+#----------------------------------------------------------------------
 
 
 #Write the ALAG & CREATE the sequence i
@@ -114,28 +122,41 @@ f.write("set Fixlisti := \r\n")
 
 f.write(";\r\n")
 
-#CREATE list of Ölgerðin kenntölur
-Ol_kennitolur = ['420369-7789']
 
-f.write("set Olgerdin := \r\n")
-for i in range(0,Sendingar):
-	for x in range(0,len(Ol_kennitolur)):
-		if arr[i][6].strip() == Ol_kennitolur[x].strip():
-			print('---',Ol_kennitolur[x])
-			print('other',arr[i][6])
-			print(i)
-			print(i,arr[i][0],arr[i][1],arr[i][2],arr[i][3],arr[i][4],arr[i][5],arr[i][6],'WHAT:',arr[i][7],arr[i][8])
-			f.write("{} \n".format(i))
-f.write(";\r\n")
+#----------------------------------------------------------------------
+#CREATE OF SENDINGAR FOR EACH VENDOR
+#----------------------------------------------------------------------
+Ol_kennitolur = ['420369-7789']
+vendorname = 'Olgerdin'
+Write_sendingar_data(arr,Ol_kennitolur,vendorname,Sendingar,f)
 
 Cola_kennitolur = ['470169-1419']
-f.write("set Cola := \r\n")
-for i in range(0,Sendingar):
-	for x in range(0,len(Cola_kennitolur)):
-		if arr[i][6] == Cola_kennitolur[x]:
-			f.write("{} \n".format(i))
-f.write(";\r\n")
+vendorname = 'Cola'
+Write_sendingar_data(arr,Cola_kennitolur,vendorname,Sendingar,f)
 
+G_kennitolur = ['570169-0339']
+vendorname = 'Globus'
+Write_sendingar_data(arr,G_kennitolur,vendorname,Sendingar,f)
+
+V_kennitolur = ['700103-3660']
+vendorname = 'Vintrio'
+Write_sendingar_data(arr,V_kennitolur,vendorname,Sendingar,f)
+
+BR_kennitolur = ['541205-1520']
+vendorname = 'Brugghusstedja'
+Write_sendingar_data(arr,BR_kennitolur,vendorname,Sendingar,f)
+
+DI_kennitolur = ['410999-2859']
+vendorname = 'Dista'
+Write_sendingar_data(arr,DI_kennitolur,vendorname,Sendingar,f)
+
+BA_kennitolur = ['530303-2410']
+vendorname = 'Bakkus'
+Write_sendingar_data(arr,BA_kennitolur,vendorname,Sendingar,f)
+
+M_kennitolur = ['550595-2579']
+vendorname = 'Mekka'
+Write_sendingar_data(arr,M_kennitolur,vendorname,Sendingar,f)
 
 
 f.write("end;\r\n")
