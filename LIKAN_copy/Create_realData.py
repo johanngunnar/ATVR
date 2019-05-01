@@ -82,11 +82,16 @@ Write_vendor_data(5,vendor,Timeslots,f)
 vendor = 'M'
 Write_vendor_data(6,vendor,Timeslots,f)
 
+#EIMSKIP OG SAMSKIP
+vendor = 'EIM'
+Write_vendor_data(7,vendor,Timeslots,f)
+
+vendor = 'SAM'
+Write_vendor_data(8,vendor,Timeslots,f)
 
 #----------------------------------------------------------------------
 # ALAG & TARGET
 #----------------------------------------------------------------------
-
 
 #Write the ALAG & CREATE the sequence i
 f.write("param A := \r\n")
@@ -108,23 +113,16 @@ f.write(";\r\n")
 f.write("\r\n")
 
 
-
-f.write("set Fixlisti := \r\n")
-
-f.write(";\r\n")
-
-
 #----------------------------------------------------------------------
 #CREATE OF SENDINGAR FOR EACH VENDOR
 #----------------------------------------------------------------------
 
 all_sendingar = []
+rest_sendingar = []
 
 Ol_kennitolur = ['420369-7789']
 vendorname = 'Olgerdin'
 Write_sendingar_data(arr,Ol_kennitolur,vendorname,Sendingar,f,all_sendingar)
-
-print(all_sendingar)
 
 Cola_kennitolur = ['470169-1419']
 vendorname = 'Cola'
@@ -154,15 +152,27 @@ M_kennitolur = ['550595-2579']
 vendorname = 'Mekka'
 Write_sendingar_data(arr,M_kennitolur,vendorname,Sendingar,f,all_sendingar)
 
+#EIMSKIP OG SAMSKIP
+EIM_kennitolur = []
+vendorname = 'Eimskip'
+Write_sendingar_data(arr,EIM_kennitolur,vendorname,Sendingar,f,rest_sendingar)
+
+SAM_kennitolur = []
+vendorname = 'Samskip'
+Write_sendingar_data(arr,SAM_kennitolur,vendorname,Sendingar,f,rest_sendingar)
 
 print(all_sendingar)
+print(rest_sendingar)
+
 #----------------------------------------------------------------------
-#Bannlisti
+#Bannlisti & Fixlisti
 #----------------------------------------------------------------------
 f.write("set Bannlisti := \r\n")
 
 f.write(";\r\n")
 
+f.write("set Fixlisti := \r\n")
 
+f.write(";\r\n")
 
 f.write("end;\r\n")
