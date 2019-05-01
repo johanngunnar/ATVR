@@ -187,8 +187,10 @@ for timi in range(0,8):
 		if(testAlag[counter-1][:1] > testTargets2[timi][dagur]): #a bara eftir ad breyta i target < alag
 		
 			toA.append(0.1)
+		elif(abs(testAlag[counter-1][:1] - testTargets2[timi][dagur]) < 100):
+			toA.append(0.5)
 		else:
-			toA.append(0.2)
+			toA.append(0.3)
 
 	A.append(toA)
 	toA = []
@@ -198,7 +200,8 @@ for timi in range(0,8):
 #PLOT
 # -----------------------------------------------------------------
 plt.subplots(1, 1)
-cmap = matplotlib.colors.ListedColormap(['red','green'])
+plt.subplots(figsize=(20,8))
+cmap = matplotlib.colors.ListedColormap(['red','green','orange'])
 plt.pcolor(A, edgecolors='k', linewidths=3, cmap=cmap)
 plt.title('Stundatafla')
 plt.ylabel('Time')
@@ -210,14 +213,14 @@ plt.yticks(np.arange(timeslott+1),['8:00','9:00','10:00','11:00','12:00','13:00'
 #PRINT THE TARGET
 for i in lausn:
 	mainstring = 'Target: {}'
-	plt.text(float(int(i[1]))-0.5, float(int(i[0]))-0.3,mainstring.format(target[int(i)][0]), size=5,
+	plt.text(float(int(i[1]))-0.5, float(int(i[0]))-0.3,mainstring.format(target[int(i)][0]), size=8,
 			ha="center", va="bottom",
 			bbox=dict(boxstyle="square",ec=(0.1, 0.5, 0.5)))
 	
 #PRINT ALAG & SENDINGAR
 for i in Lausn_for_print:
 		insertstring = 'Fjöldi sendinga: {} \n Alag: {} '
-		plt.text(float(int(i[1]))-0.5, float(int(i[0]))-0.8,insertstring.format(Lausn_for_print[i][1],Lausn_for_print[i][0]), size=5,
+		plt.text(float(int(i[1]))-0.5, float(int(i[0]))-0.8,insertstring.format(Lausn_for_print[i][1],Lausn_for_print[i][0]), size=8,
 	         ha="center", va="bottom",
 	         bbox=dict(boxstyle="square",ec=(0.1, 0.5, 0.9))
 	         )
