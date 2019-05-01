@@ -5,7 +5,7 @@ import collections
 import matplotlib.colors
 
 import psycopg2
-from Select_function import Select_string
+from Functions.Select_function import Select_string
 
 #------------------------------------------------
 #Connection to SQL
@@ -27,6 +27,7 @@ cursor = conn.cursor()
 
 #------------------------------------------------
 #Load solution data and demo_data
+#------------------------------------------------
 results = []
 with open('solution.sol') as inputfile:
     for line in inputfile:
@@ -38,10 +39,10 @@ target = {}
 with open('demo_data_real.txt') as inputfile:
     for line in inputfile:
         data.append(line)
-#------------------------------------------------
 
 
 
+#-------------------------------------------------------------------------------------------
 #FIX FOR HARDCODE
 #------------------------------------------------
 #Find places to start and end for alag 
@@ -60,7 +61,7 @@ for line in data[alag_start:]:
 
 #------------------
 #Create alag
-#------------------   ALAG ER HUGSA– VITLAUST SKO–A A MRG
+#------------------   ALAG ER HUGSAÐ VITLAUST SKOÐA A MRG
 for i in data[alag_start:alag_end]:
 	i.strip()
 	key = i[0:i.find(' ')]
@@ -91,15 +92,12 @@ for i in data[target_start:target_end]:
 	key = i[0] + i[2]
 	target[int(key)] = [int(i[i.find(' ',2):].strip())]
 
-#------------------------------------------------
-#Done loading Data
-#------------------------------------------------
+#-------------------------------------------------------------------------------------------
 
 
-
-#-------------------------------
+#----------------------------------------------------------
 #Create select_data and lausn
-#-------------------------------
+#----------------------------------------------------------
 
 selectstring = Select_string()   #call to SQL data base
 cursor.execute(selectstring)
@@ -116,9 +114,9 @@ fjoldiSendinga = count - 1;
 dagar = 5
 timeslott = 8
 
-#---------------------------------
+#----------------------------------------------------------
 #CREATE MANNAMAL
-#---------------------------------
+#----------------------------------------------------------
 f= open("lausn_mannamal.txt","w+")
 lausn = {}
 for x in results[(dagar*timeslott+3):(fjoldiSendinga*dagar*timeslott)+(dagar*timeslott+3)]:
@@ -133,8 +131,8 @@ for x in results[(dagar*timeslott+3):(fjoldiSendinga*dagar*timeslott)+(dagar*tim
 		#meira ef lausn  -- Write the solution
 		for i in select_data:
 			if int(x[1]) == i:
-				f.write('Dagur {} Ì tÌmaslotti {}. Er sending {} er me ID: {} fr· Vendor: {} me kennitˆlu {} \n'.format(x[3],x[2],i,select_data[i][0],select_data[i][7],select_data[i][6]))
-				f.write('Sendingin inniheldur {} stykki af {} me ·lagsvalue {} sem gerir ·lagi = {} \n'.format(select_data[i][3],select_data[i][8],select_data[i][4],(round(select_data[i][3]*select_data[i][4]))))
+				f.write('Dagur {} í tímaslotti {}. Er sending {} er með ID: {} frá Vendor: {} með kennitölu {} \n'.format(x[3],x[2],i,select_data[i][0],select_data[i][7],select_data[i][6]))
+				f.write('Sendingin inniheldur {} stykki af {} með álagsvalue {} sem gerir álagið = {} \n'.format(select_data[i][3],select_data[i][8],select_data[i][4],(round(select_data[i][3]*select_data[i][4]))))
 f.close()
 
 
@@ -144,4 +142,85 @@ for x in results[(dagar*timeslott+3):(fjoldiSendinga*dagar*timeslott)+(dagar*tim
 	if int(x[4]) == 1:  #lausn
 		for i in select_data:
 			if int(x[1]) == i:
-				f.write('Dagur {} Ì tÌmaslotti {}. Er sending {} er me ID: {} fr· Vendor {} A: {} \n'.format(x[3],x[2],i,select_data[i][0],select_data[i][6],round(select_data[i][3]*select_data[i][4])))
+				f.write('Dagur {} í tímaslotti {}. Er sending {} er með ID: {} frá Vendor {} A: {} \n'.format(x[3],x[2],i,select_data[i][0],select_data[i][6],round(select_data[i][3]*select_data[i][4])))
+f.close()
+
+#-------------------------------
+#Create Lausn_for_print dictonary
+#-------------------------------
+Lausn_for_print = {}
+for i in lausn: 
+	#Create Lausn_for_print dictonary = slot [alag_sum, fjoldi_sendinga]
+	counter = 0;
+	alag_sum = 0;
+	for x in range(0,len(lausn[i])):
+		alag_sum = alag_sum + alag[float(lausn[i][x][1])][0]
+		counter = counter + 1
+
+	Lausn_for_print[i] = [alag_sum,counter]
+
+
+# -----------------------------------------------------------------
+#print
+# -----------------------------------------------------------------
+
+#Determine the color
+
+testTargets = list(target.values())
+testTargets2 = np.zeros((8, 5))
+counter = 0;
+for i in range(0,8):
+	for j in range(0,5): 
+		testTargets2[i][j] = int(testTargets[counter][0])
+		
+counter = counter + 1;
+testAlag = list(Lausn_for_print.values())
+
+toA = []
+A = []
+
+counter = 0;
+for timi in range(0,8):
+	for dagur in range(0,5):
+		counter = counter + 1
+		
+		if(testAlag[counter-1][:1] > testTargets2[timi][dagur]): #a bara eftir ad breyta i target < alag
+		
+			toA.append(0.1)
+		else:
+			toA.append(0.2)
+
+	A.append(toA)
+	toA = []
+
+
+# -----------------------------------------------------------------
+#PLOT
+# -----------------------------------------------------------------
+plt.subplots(1, 1)
+cmap = matplotlib.colors.ListedColormap(['red','green'])
+plt.pcolor(A, edgecolors='k', linewidths=3, cmap=cmap)
+plt.title('Stundatafla')
+plt.ylabel('Time')
+plt.xlabel('Date')
+
+plt.xticks(np.arange(dagar),['M', 'T', 'W', 'T', 'F', 'S', 'S'])
+plt.yticks(np.arange(timeslott+1),['8:00','9:00','10:00','11:00','12:00','13:00','14:00','15:00', '16:00'])
+
+#PRINT THE TARGET
+for i in lausn:
+	mainstring = 'Target: {}'
+	plt.text(float(int(i[1]))-0.5, float(int(i[0]))-0.3,mainstring.format(target[int(i)][0]), size=5,
+			ha="center", va="bottom",
+			bbox=dict(boxstyle="square",ec=(0.1, 0.5, 0.5)))
+	
+#PRINT ALAG & SENDINGAR
+for i in Lausn_for_print:
+		insertstring = 'Fjöldi sendinga: {} \n Alag: {} '
+		plt.text(float(int(i[1]))-0.5, float(int(i[0]))-0.8,insertstring.format(Lausn_for_print[i][1],Lausn_for_print[i][0]), size=5,
+	         ha="center", va="bottom",
+	         bbox=dict(boxstyle="square",ec=(0.1, 0.5, 0.9))
+	         )
+	
+plt.show()
+
