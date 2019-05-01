@@ -91,6 +91,28 @@ param M :=
 8 0
 ;
 
+param EIM := 
+1 0
+2 0
+3 0
+4 0
+5 0
+6 0
+7 1
+8 0
+;
+
+param SAM := 
+1 0
+2 0
+3 0
+4 0
+5 0
+6 0
+7 0
+8 1
+;
+
 param A := 
 1 3
 2 9
@@ -818,10 +840,6 @@ param Ttarget :=
 8 5 500
 ;
 
-set Bannlisti := 
-;
-set Fixlisti := 
-;
 set Olgerdin := 
 100 
 101 
@@ -1238,5 +1256,13 @@ set Mekka :=
 511 
 512 
 513 
+;
+set Eimskip := 
+;
+set Samskip := 
+;
+set Bannlisti := 
+;
+set Fixlisti := 
 ;
 end;
