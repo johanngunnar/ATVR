@@ -67,7 +67,6 @@ for i in data[alag_start:alag_end]:
 	key = i[0:i.find(' ')]
 	alag[int(key)] = [float(i[i.find(' '):])]
 
-print(alag)
 
 
 #------------------------------------------------
@@ -199,8 +198,7 @@ for timi in range(0,8):
 # -----------------------------------------------------------------
 #PLOT
 # -----------------------------------------------------------------
-plt.subplots(1, 1)
-plt.subplots(figsize=(20,8))
+plt.subplots(1, 1, figsize=(20,8))
 cmap = matplotlib.colors.ListedColormap(['red','green','orange'])
 plt.pcolor(A, edgecolors='k', linewidths=3, cmap=cmap)
 plt.title('Stundatafla')
@@ -226,4 +224,8 @@ for i in Lausn_for_print:
 	         )
 	
 plt.show()
+
+
+#print(x[3])
+print(select_data[0][2])
 
