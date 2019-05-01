@@ -13,6 +13,9 @@ param BR{t in 1..T} binary;
 param DI{t in 1..T} binary;
 param BA{t in 1..T} binary;
 param M{t in 1..T} binary;
+
+param EIM{t in 1..T} binary;
+param SAM{t in 1..T} binary;
 /*------------------------*/
 
 /* ------ Breytur --------*/
@@ -34,6 +37,8 @@ set Brugghusstedja within {s in 1..S};
 set Dista within {s in 1..S};
 set Bakkus within {s in 1..S};
 set Mekka within {s in 1..S};
+set Eimskip within {s in 1..S};
+set Samskip within {s in 1..S};
 /*------------------------*/
 
 
@@ -60,6 +65,9 @@ s.t. SetAllBR{s in Brugghusstedja, t in 1..T}: sum{d in 1..D} x[s,t,d] = BR[t];
 s.t. SetAllDI{s in Dista, t in 1..T}: sum{d in 1..D} x[s,t,d] = DI[t];
 s.t. SetAllBA{s in Bakkus, t in 1..T}: sum{d in 1..D} x[s,t,d] = BA[t];
 s.t. SetAllM{s in Mekka, t in 1..T}: sum{d in 1..D} x[s,t,d] = M[t];
+
+s.t. SetAllEIM{s in Eimskip, t in 1..T}: sum{d in 1..D} x[s,t,d] = EIM[t];
+s.t. SetAllSAM{s in Samskip, t in 1..T}: sum{d in 1..D} x[s,t,d] = SAM[t];
 /*------------------------*/
 
 end;
