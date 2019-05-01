@@ -168,11 +168,11 @@ for i in lausn:
 testTargets = list(target.values())
 testTargets2 = np.zeros((8, 5))
 counter = 0;
-for i in range(0,8):
-	for j in range(0,5): 
-		testTargets2[i][j] = int(testTargets[counter][0])
-		
-counter = counter + 1;
+for i in range(0,5):
+	for j in range(0,8): 
+		testTargets2[j][i] = int(testTargets[counter][0])
+		counter = counter + 1;
+testTagets2 = np.flipud(testTargets2)		
 testAlag = list(Lausn_for_print.values())
 
 toA = []
@@ -186,7 +186,7 @@ for timi in range(0,8):
 		if(testAlag[counter-1][:1] > testTargets2[timi][dagur]): #a bara eftir ad breyta i target < alag
 		
 			toA.append(0.1)
-		elif(abs(testAlag[counter-1][:1] - testTargets2[timi][dagur]) < 100):
+		elif(testTargets2[timi][dagur] - testAlag[counter-1][:1] < 100):
 			toA.append(0.5)
 		else:
 			toA.append(0.3)
@@ -201,7 +201,9 @@ for timi in range(0,8):
 plt.subplots(1, 1, figsize=(20,8))
 cmap = matplotlib.colors.ListedColormap(['red','green','orange'])
 plt.pcolor(A, edgecolors='k', linewidths=3, cmap=cmap)
-plt.title('Stundatafla')
+first_date = select_data[0][2]
+last_date = select_data[len(select_data)-1][2]
+plt.title('Stundatafla ' + first_date + ' - ' + last_date)
 plt.ylabel('Time')
 plt.xlabel('Date')
 
@@ -227,5 +229,10 @@ plt.show()
 
 
 #print(x[3])
+
 print(select_data[0][2])
+print(select_data[len(select_data)-1][2])
+
+print(testTargets2)
+print(testTargets)
 
