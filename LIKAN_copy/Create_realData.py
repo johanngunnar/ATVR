@@ -108,9 +108,6 @@ f.write(";\r\n")
 f.write("\r\n")
 
 
-f.write("set Bannlisti := \r\n")
-
-f.write(";\r\n")
 
 f.write("set Fixlisti := \r\n")
 
@@ -120,36 +117,52 @@ f.write(";\r\n")
 #----------------------------------------------------------------------
 #CREATE OF SENDINGAR FOR EACH VENDOR
 #----------------------------------------------------------------------
+
+all_sendingar = []
+
 Ol_kennitolur = ['420369-7789']
 vendorname = 'Olgerdin'
-Write_sendingar_data(arr,Ol_kennitolur,vendorname,Sendingar,f)
+Write_sendingar_data(arr,Ol_kennitolur,vendorname,Sendingar,f,all_sendingar)
+
+print(all_sendingar)
 
 Cola_kennitolur = ['470169-1419']
 vendorname = 'Cola'
-Write_sendingar_data(arr,Cola_kennitolur,vendorname,Sendingar,f)
+Write_sendingar_data(arr,Cola_kennitolur,vendorname,Sendingar,f,all_sendingar)
 
 G_kennitolur = ['570169-0339']
 vendorname = 'Globus'
-Write_sendingar_data(arr,G_kennitolur,vendorname,Sendingar,f)
+Write_sendingar_data(arr,G_kennitolur,vendorname,Sendingar,f,all_sendingar)
 
 V_kennitolur = ['700103-3660']
 vendorname = 'Vintrio'
-Write_sendingar_data(arr,V_kennitolur,vendorname,Sendingar,f)
+Write_sendingar_data(arr,V_kennitolur,vendorname,Sendingar,f,all_sendingar)
 
 BR_kennitolur = ['541205-1520']
 vendorname = 'Brugghusstedja'
-Write_sendingar_data(arr,BR_kennitolur,vendorname,Sendingar,f)
+Write_sendingar_data(arr,BR_kennitolur,vendorname,Sendingar,f,all_sendingar)
 
 DI_kennitolur = ['410999-2859']
 vendorname = 'Dista'
-Write_sendingar_data(arr,DI_kennitolur,vendorname,Sendingar,f)
+Write_sendingar_data(arr,DI_kennitolur,vendorname,Sendingar,f,all_sendingar)
 
 BA_kennitolur = ['530303-2410']
 vendorname = 'Bakkus'
-Write_sendingar_data(arr,BA_kennitolur,vendorname,Sendingar,f)
+Write_sendingar_data(arr,BA_kennitolur,vendorname,Sendingar,f,all_sendingar)
 
 M_kennitolur = ['550595-2579']
 vendorname = 'Mekka'
-Write_sendingar_data(arr,M_kennitolur,vendorname,Sendingar,f)
+Write_sendingar_data(arr,M_kennitolur,vendorname,Sendingar,f,all_sendingar)
+
+
+print(all_sendingar)
+#----------------------------------------------------------------------
+#Bannlisti
+#----------------------------------------------------------------------
+f.write("set Bannlisti := \r\n")
+
+f.write(";\r\n")
+
+
 
 f.write("end;\r\n")
