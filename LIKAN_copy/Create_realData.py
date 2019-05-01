@@ -153,17 +153,42 @@ vendorname = 'Mekka'
 Write_sendingar_data(arr,M_kennitolur,vendorname,Sendingar,f,all_sendingar)
 
 #EIMSKIP OG SAMSKIP
-EIM_kennitolur = []
-vendorname = 'Eimskip'
-Write_sendingar_data(arr,EIM_kennitolur,vendorname,Sendingar,f,rest_sendingar)
+EIM_kennitolur = ["601083-0789","470105-2240","490104-2160","450310-0500"
+,"491007-1680","511105-1290","601289-1489","470302-4290",
+"640485-0949","420178-0349","531212-0530","451205-0560",
+"470706-1040","451295-2929","530206-0330","620509-0190","470205-0400"]
 
-SAM_kennitolur = []
+vendorname = 'Eimskip'
+Write_sendingar_data(arr,EIM_kennitolur,vendorname,Sendingar,f,all_sendingar)
+
+'''
+SAM_kennitolur = ['550394-2359','460999-2519','541205-1520'
+,'441295-2519','500316-0470','500510-1290','501117-0210'
+,'660608-2060','670502-2010','00079925'
+,'601289','701294-7859','410169-436X','00178306','601083-0789','420895-2599'
+,'681215-1740','660509-0970','451115-1460','670955-0289','90078708','600896-2539',
+'410999-2859','580483-0709','470710-0390']
+'''
+SAM_kennitolur = ['550394-2359','470415-1260','660509-0970','470710-0390','670616-1690',
+'460999-2519','501117-0210','520914-2180','500316-0470','490211-0630','681215-1740','430913-0690'
+,'660169-1729','600112-1390','590515-3290','550609-1420','471289-2569','650387-1399','560113-0480','560793-2199',
+'550405-0400']
+
+for i in range(0,Sendingar):
+	print(i,arr[i])
+
 vendorname = 'Samskip'
-Write_sendingar_data(arr,SAM_kennitolur,vendorname,Sendingar,f,rest_sendingar)
+Write_sendingar_data(arr,SAM_kennitolur,vendorname,Sendingar,f,all_sendingar)
 
 print(all_sendingar)
-print(rest_sendingar)
 
+
+
+for i in range(1,Sendingar):
+	if i not in all_sendingar:
+		rest_sendingar.append(i)
+
+print(rest_sendingar)
 #----------------------------------------------------------------------
 #Bannlisti & Fixlisti
 #----------------------------------------------------------------------
