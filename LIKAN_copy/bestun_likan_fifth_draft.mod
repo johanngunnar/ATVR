@@ -24,16 +24,6 @@ var x{s in 1..S, t in 1..T, d in 1..D} binary;
 var SuperAlag{t in 1..T, d in 1..D} >= 0;
 var TheMaxAlag >= 0;
 
-
-var LB1{t in 1..T, d in 1..D} binary;
-var LB1{t in 1..T, d in 1..D} binary;
-var LB1{t in 1..T, d in 1..D} binary;
-var LB1{t in 1..T, d in 1..D} binary;
-var LB1{t in 1..T, d in 1..D} binary;
-var LB1{t in 1..T, d in 1..D} binary;
-
-
-
 param Ttarget {t in 1..T, d in 1..D};
 set Bannlisti within {s in 1..S, t in 1..T, d in 1..D};
 set Fixlisti within {s in 1..S, t in 1..T, d in 1..D};
@@ -54,7 +44,7 @@ set Samskip within {s in 1..S};
 
 
 /* ------ Markfall & Skorður --------*/
-minimize MaxAlag: TheMaxAlag + sum{t in 1..T, d in 1..D} 20*SuperAlag[t,d];
+minimize MaxAlag: 6*TheMaxAlag + sum{t in 1..T, d in 1..D} SuperAlag[t,d];
 
 s.t. Alagsmaeling{t in 1..(T-windowsize), d in 1..D}: sum{s in 1..S, k in t..(t+windowsize)} A[s]*x[s,k,d] <= (Ttarget[t,d] + SuperAlag[t,d]);
 
@@ -68,7 +58,7 @@ s.t. UseAll{s in 1..S}: sum{t in 1..T, d in 1..D} x[s,t,d] = 1;
 
 
 /* ------ Vendorar --------*/
-s.t. SetAllO{s in Olgerdin, t in 1..T,d in 1..D}: x[s,t,d] <= O[t];
+s.t. SetAllO{s in Olgerdin, t in 1..T,d in 1..D}: x[s,t,d] = O[t];
 
 s.t. SetAllC{s in Cola, t in 1..T}: sum{d in 1..D} x[s,t,d] = C[t];
 s.t. SetAllG{s in Globus, t in 1..T}: sum{d in 1..D} x[s,t,d] = G[t];
@@ -82,12 +72,5 @@ s.t. SetAllEIM{s in Eimskip, t in 1..T}: sum{d in 1..D} x[s,t,d] = EIM[t];
 s.t. SetAllSAM{s in Samskip, t in 1..T}: sum{d in 1..D} x[s,t,d] = SAM[t];
 /*------------------------*/
 
-s.t. Test1{d in 1..D}: sum{1..T} LB1[t,d] <= 1;
-s.t. Test2: sum{t in 1..T, d in 1..D} LB1[t,d] <= 4;
-s.t. Test3{s in Eimskip, t in 1..T, d in 1..D}: x[s,t,d] <= LB1[t,d];
-
-s.t. Test4{d in 1..D}: sum{1..T} LB2[t,d] <= 1;
-s.t. Test5: sum{t in 1..T, d in 1..D} LB2[t,d] <= 4;
-s.t. Test6{s in Samskip, t in 1..T, d in 1..D}: x[s,t,d] <= LB2[t,d];
 
 end;
