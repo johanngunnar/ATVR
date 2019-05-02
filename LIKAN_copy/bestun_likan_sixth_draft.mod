@@ -65,13 +65,13 @@ s.t. SetAllSAM{s in Samskip, t in 1..T,d in 1..D}: x[s,t,d] <= SAM[t];
 /*------------------------*/
 
 /* ------ GroupSendingar --------*/
-s.t. MaxOnePerDay1{d in 1..D}: sum{1..T} LB1[t,d] <= 1;
-s.t. MaxOnePerDay2{d in 1..D}: sum{1..T} LB2[t,d] <= 1;
-s.t. MaxOnePerDay3{d in 1..D}: sum{1..T} LB3[t,d] <= 1;
-s.t. MaxOnePerDay4{d in 1..D}: sum{1..T} LB4[t,d] <= 1;
-s.t. MaxOnePerDay5{d in 1..D}: sum{1..T} LB5[t,d] <= 1;
-s.t. MaxOnePerDay6{d in 1..D}: sum{1..T} LB6[t,d] <= 1;
-s.t. MaxOnePerDay7{d in 1..D}: sum{1..T} LB7[t,d] <= 1;
+s.t. MaxOnePerDay1{d in 1..D}: sum{t in 1..T} LB1[t,d] <= 1;
+s.t. MaxOnePerDay2{d in 1..D}: sum{t in 1..T} LB2[t,d] <= 1;
+s.t. MaxOnePerDay3{d in 1..D}: sum{t in 1..T} LB3[t,d] <= 1;
+s.t. MaxOnePerDay4{d in 1..D}: sum{t in 1..T} LB4[t,d] <= 1;
+s.t. MaxOnePerDay5{d in 1..D}: sum{t in 1..T} LB5[t,d] <= 1;
+s.t. MaxOnePerDay6{d in 1..D}: sum{t in 1..T} LB6[t,d] <= 1;
+s.t. MaxOnePerDay7{d in 1..D}: sum{t in 1..T} LB7[t,d] <= 1;
 
 s.t. MaxNrOfTimeSlots1: sum{t in 1..T, d in 1..D} LB1[t,d] <= 4;
 s.t. MaxNrOfTimeSlots2: sum{t in 1..T, d in 1..D} LB2[t,d] <= 4;
