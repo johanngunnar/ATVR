@@ -57,7 +57,7 @@ f.write("\r\n")
 #----------------------------------------------------------------------
 # VENDORAR & TIMESLOTT
 #----------------------------------------------------------------------
-
+'''
 vendor = 'O'
 Write_vendor_data(1,vendor,Timeslots,f)
 
@@ -88,7 +88,7 @@ Write_vendor_data(7,vendor,Timeslots,f)
 
 vendor = 'SAM'
 Write_vendor_data(8,vendor,Timeslots,f)
-
+'''
 #----------------------------------------------------------------------
 # ALAG & TARGET
 #----------------------------------------------------------------------
@@ -116,7 +116,7 @@ f.write("\r\n")
 #----------------------------------------------------------------------
 #CREATE OF SENDINGAR FOR EACH VENDOR
 #----------------------------------------------------------------------
-
+'''
 all_sendingar = []
 rest_sendingar = []
 
@@ -180,6 +180,7 @@ for i in range(1,Sendingar):
 		rest_sendingar.append(i)
 
 print(rest_sendingar)
+'''
 #----------------------------------------------------------------------
 #Bannlisti & Fixlisti
 #----------------------------------------------------------------------
@@ -188,7 +189,35 @@ f.write("set Bannlisti := \r\n")
 f.write(";\r\n")
 
 #s,t,d
+Start_day = int(arr[0][2][:2])
 f.write("set Fixlisti := \r\n")
+
+for i in range(1,Sendingar+1):
+	print(i,arr[i][2][:2])
+	day = int(arr[i][2][:2].strip())-Start_day+1
+	slot_vendor_data = []
+	if arr[i][6].strip() == '420369-7789':
+		slot = 1
+	elif arr[i][6].strip() == '470169-1419':
+		slot = 2
+	elif arr[i][6].strip() == '570169-0339':
+		slot = 3
+	elif arr[i][6].strip() == '700103-3660':
+		slot = 3
+	elif arr[i][6].strip() == '541205-1520':
+		slot = 4
+	elif arr[i][6].strip() == '410999-2859':
+		slot = 4
+	elif arr[i][6].strip() == '530303-2410':
+		slot = 5
+	elif arr[i][6].strip() == '550595-2579':
+		slot = 6
+	elif arr[i][6].strip() in ["601083-0789","470105-2240","490104-2160","450310-0500","491007-1680","511105-1290","601289-1489","470302-4290","640485-0949","420178-0349","531212-0530","451205-0560","470706-1040","451295-2929","530206-0330","620509-0190","470205-0400"]:
+		slot = 7
+	else:
+		slot = 8
+
+	f.write("{} {} {} \r\n".format(i,slot,day))
 
 f.write(";\r\n")
 
