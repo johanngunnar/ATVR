@@ -174,7 +174,7 @@ for i in range(0,5):
 		testTargets2[j][i] = int(testTargets[counter][0])
 		counter = counter + 1;
 
-testTargets2 = np.flipud(testTargets2)
+testTargets2 = np.transpose(testTargets2)
 
 testAlag = list(Lausn_for_print.values())
 
@@ -186,10 +186,10 @@ for timi in range(0,8):
 	for dagur in range(0,5):
 		counter = counter + 1
 		
-		if(testAlag[counter-1][:1] > testTargets2[timi][dagur]): #a bara eftir ad breyta i target < alag
+		if(testAlag[counter-1][:1] > testTargets2[dagur][timi]): #a bara eftir ad breyta i target < alag
 		
 			toA.append(0.1)
-		elif(abs(testAlag[counter-1][:1] - testTargets2[timi][dagur]) < 100):
+		elif(abs(testAlag[counter-1][:1] - testTargets2[dagur][timi]) < 100):
 			toA.append(0.5)
 		else:
 			toA.append(0.3)
@@ -201,8 +201,7 @@ for timi in range(0,8):
 # -----------------------------------------------------------------
 #PLOT
 # -----------------------------------------------------------------
-plt.subplots(1, 1)
-plt.subplots(figsize=(20,8))
+plt.subplots(1, 1, figsize=(20,8))
 cmap = matplotlib.colors.ListedColormap(['red','green','orange'])
 plt.pcolor(A, edgecolors='k', linewidths=3, cmap=cmap)
 plt.title('Stundatafla')
