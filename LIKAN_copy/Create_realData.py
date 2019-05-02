@@ -60,7 +60,7 @@ f.write("\r\n")
 
 vendor = 'O'
 Write_vendor_data(1,vendor,Timeslots,f)
-'''
+
 vendor = 'C'
 Write_vendor_data(2,vendor,Timeslots,f)
 
@@ -81,7 +81,7 @@ Write_vendor_data(5,vendor,Timeslots,f)
 
 vendor = 'M'
 Write_vendor_data(6,vendor,Timeslots,f)
-'''
+
 #EIMSKIP OG SAMSKIP
 vendor = 'EIM'
 Write_vendor_data(7,vendor,Timeslots,f)
