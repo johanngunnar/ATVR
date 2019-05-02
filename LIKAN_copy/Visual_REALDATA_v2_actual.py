@@ -128,12 +128,8 @@ for x in results[(dagar * timeslott + 3):(fjoldiSendinga * dagar * timeslott) + 
         # meira ef lausn  -- Write the solution
         for i in select_data:
             if int(x[1]) == i:
-                f.write(
-                    'Dagur {} Ì tÌmaslotti {}. Er sending {} er me ID: {} fr· Vendor: {} me kennitˆlu {} \n'.format(
-                        x[3], x[2], i, select_data[i][0], select_data[i][7], select_data[i][6]))
-                f.write('Sendingin inniheldur {} stykki af {} me ·lagsvalue {} sem gerir ·lagi = {} \n'.format(
-                    select_data[i][3], select_data[i][8], select_data[i][4],
-                    (round(select_data[i][3] * select_data[i][4]))))
+                f.write('Dagur {} í tímaslotti {}. Er sending {} er með ID: {} frá Vendor: {} með kennitölu {} \n'.format(x[3],x[2],i,select_data[i][0],select_data[i][7],select_data[i][6]))
+        f.write('Sendingin inniheldur {} stykki af {} með álagsvalue {} sem gerir álagið = {} \n'.format(select_data[i][3],select_data[i][8],select_data[i][4],(round(select_data[i][3]*select_data[i][4]))))
 f.close()
 
 f = open("mannamal_basic.txt", "w+")
@@ -142,19 +138,7 @@ for x in results[(dagar * timeslott + 3):(fjoldiSendinga * dagar * timeslott) + 
     if int(x[4]) == 1:  # lausn
         for i in select_data:
             if int(x[1]) == i:
-                f.write(
-                    'Dagur {} Ì tÌmaslotti {}. Er sending {} er me ID: {} fr· Vendor {} A: {} \n'.format(x[3], x[2], i,
-                                                                                                          select_data[
-                                                                                                              i][0],
-                                                                                                          select_data[
-                                                                                                              i][6],
-                                                                                                          round(
-                                                                                                              select_data[
-                                                                                                                  i][
-                                                                                                                  3] *
-                                                                                                              select_data[
-                                                                                                                  i][
-                                                                                                                  4])))
+                f.write('Dagur {} í tímaslotti {}. Er sending {} er með ID: {} frá Vendor {} A: {} \n'.format(x[3],x[2],i,select_data[i][0],select_data[i][6],round(select_data[i][3]*select_data[i][4])))
 f.close()
 
 # -------------------------------
@@ -208,53 +192,6 @@ print(testTargets2)
 print('Herna koma --------------------------------------------------------------------------------')
 print(Lausn_for_print)
 print('-------------------------------------------------------------------------------------------')
-#print(int(list(Lausn_for_print.keys())[0]))
-#print(list(Lausn_for_print.values())[0])
-
-'''
-counter = 1;
-for i in range(1,9):
-  for j in range(11,15):
-    if(int(list(Lausn_for_print.keys())[counter]) != int(list(Lausn_for_print.keys())[counter-1])+1):
-      print("HOLLA AT YOUR BOY FOUND A WEAK SPOT at: " + list(Lausn_for_print.keys())[0])
-
-    counter = counter + 1;
-  print(int(list(Lausn_for_print.keys())[counter-1]))
-
-print("-----------------------------------------------------------")
-#for i in range(0,31):
-  #print(int(list(Lausn_for_print.keys())[i]))
-
-'''
-
-#for i in range(1, len(Lausn_for_print)):
-# if(int(list(Lausn_for_print.keys())[i]) != int(list(Lausn_for_print.keys())[i-1])+1):
-#   print("HOLLA AT YOUR BOY")
-'''
-for i in range(1,9):
-  for i in range(1,6):
-    talan = str(i) + str(j)
-    if(talan) not in Lausn_for_print:
-      #Lausn_for_print[int(talan)] = []
-      #Lausn_for_print[int(talan)].append(0)
-      print('found one')
-      Lausn_for_print.update({talan: [0, 0]})
-print("HERECOMESTHEBOOOOOOOOOOOOOOOOOOOOOOOOOOOM semsagt leidretta fylki")
-print(Lausn_for_print)'''
-
-#------------
-
-#------------
-
-#print(lausn)
-
-  #for i in range(1,9):
-  #for x in range(1,6):
-    #talan = str(i) + (str(x))
-    #talan = int(talan)
-    #print(talan)
-
-
 
 
 toA = []
@@ -269,14 +206,12 @@ for timi in range(0,8):
   for dagur in range(0,5):
     counter = counter + 1
     print(counter)
-    if(10<5):
-      toA.append(0.9)
-    elif(testAlag[counter-1][:1] > testTargets2[timi][dagur]):
-      toA.append(0.1)
+    if(testAlag[counter-1][:1] > testTargets2[timi][dagur]): 
+      toA.append(0.1) 
     elif(abs(testAlag[counter-1][:1] - testTargets2[timi][dagur]) < 100):
-      toA.append(0.5)
-    else:
       toA.append(0.3)
+    else:
+      toA.append(0.2)
 
   A.append(toA)
   toA = []
@@ -293,6 +228,8 @@ print('------------------------------------------------', testAlag[1][:1])
 plt.subplots(1, 1, figsize=(9, 5))
 cmap = matplotlib.colors.ListedColormap(['red', 'green', 'orange'])
 plt.pcolor(A, edgecolors='k', linewidths=3, cmap=cmap)
+#first_date = 
+
 plt.title('Stundatafla')
 plt.ylabel('Time')
 plt.xlabel('Date')
@@ -313,8 +250,8 @@ for i in Lausn_for_print:
     plt.text(float(int(i[1])) - 0.5, float(int(i[0])) - 0.8,
              insertstring.format(Lausn_for_print[i][1], Lausn_for_print[i][0]), size=8,
              ha="center", va="bottom",
-             bbox=dict(boxstyle="square", ec=(0.1, 0.5, 0.9))
-             )
+             bbox=dict(boxstyle="square", ec=(0.1, 0.5, 0.9)))
 
 plt.show()
 
+print(testTargets2)
