@@ -5317,3 +5317,102 @@ Best objective 1.434670000000e+05, best bound 1.434670000000e+05, gap 0.0000%
 
 Wrote result file 'solution.sol'
 
+
+Gurobi 8.1.0 (mac64) logging started Thu May  2 14:27:40 2019
+
+Academic license - for non-commercial use only
+
+Gurobi Optimizer version 8.1.0 build v8.1.0rc1 (mac64)
+Copyright (c) 2018, Gurobi Optimization, LLC
+
+Read LP format model from file lp_output.lp
+Reading time = 0.07 seconds
+MaxAlag: 28003 rows, 27561 columns, 93720 nonzeros
+Optimize a model with 28003 rows, 27561 columns and 93720 nonzeros
+Variable types: 41 continuous, 27520 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+02]
+  Objective range  [1e+00, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+Presolve removed 15331 rows and 13460 columns
+Presolve time: 0.10s
+Presolved: 12672 rows, 14101 columns, 51920 nonzeros
+Variable types: 0 continuous, 14101 integer (14060 binary)
+Found heuristic solution: objective 534926.00000
+Found heuristic solution: objective 296714.00000
+
+Root relaxation: objective 7.472480e+04, 7925 iterations, 0.84 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 74724.8000    0  306 296714.000 74724.8000  74.8%     -    2s
+H    0     0                    133263.00000 74724.8000  43.9%     -    2s
+H    0     0                    127126.00000 74724.8000  41.2%     -    2s
+H    0     0                    127044.00000 74724.8000  41.2%     -    2s
+     0     0 74725.0000    0  382 127044.000 74725.0000  41.2%     -    3s
+     0     0 74725.0000    0  420 127044.000 74725.0000  41.2%     -    5s
+     0     0 74725.0000    0  286 127044.000 74725.0000  41.2%     -    5s
+H    0     0                    117677.00000 74725.0000  36.5%     -    5s
+H    0     0                    117326.00000 74725.0000  36.3%     -    8s
+     0     0 74725.0000    0  296 117326.000 74725.0000  36.3%     -    8s
+     0     0 74725.0000    0   88 117326.000 74725.0000  36.3%     -    9s
+H    0     0                    115012.00000 74725.0000  35.0%     -    9s
+     0     0 74725.0000    0   92 115012.000 74725.0000  35.0%     -    9s
+     0     0 74725.0000    0   91 115012.000 74725.0000  35.0%     -    9s
+     0     0 74725.0000    0   96 115012.000 74725.0000  35.0%     -    9s
+     0     0 74725.0000    0   99 115012.000 74725.0000  35.0%     -    9s
+     0     0 74725.0000    0   99 115012.000 74725.0000  35.0%     -    9s
+     0     0 74725.0000    0   89 115012.000 74725.0000  35.0%     -   10s
+     0     0 74725.0000    0   94 115012.000 74725.0000  35.0%     -   10s
+     0     0 74725.0000    0   90 115012.000 74725.0000  35.0%     -   10s
+     0     0 74725.0000    0   90 115012.000 74725.0000  35.0%     -   10s
+H    0     0                    113471.00000 74725.0000  34.1%     -   11s
+H    0     0                    113356.00000 74725.0000  34.1%     -   12s
+     0     2 74725.0000    0   90 113356.000 74725.0000  34.1%     -   12s
+    13    14 74725.0000    7  616 113356.000 74725.0000  34.1%  1366   15s
+    26    25 74725.0000   12  344 113356.000 74725.0000  34.1%  2254   26s
+H   27    25                    113345.00000 74725.0000  34.1%  2170   26s
+    31    27 79185.0000   13  486 113345.000 74725.0000  34.1%  2256   31s
+    72    62     cutoff   29      113345.000 74725.0000  34.1%  1658   35s
+   107    84 74725.0000   14  622 113345.000 74725.0000  34.1%  1517   41s
+   148   120     cutoff   33      113345.000 74725.0000  34.1%  1585   48s
+   214   141     cutoff   55      113345.000 74725.0000  34.1%  1461   55s
+   280   173 103788.000   90  414 113345.000 74725.0000  34.1%  1192   60s
+   335   199 74725.0000   21  237 113345.000 74725.0000  34.1%  1156   66s
+   387   232 74725.0000   17  706 113345.000 74725.0000  34.1%  1235   80s
+   399   230 74725.0000   18  703 113345.000 74725.0000  34.1%  1250   86s
+
+Gurobi 8.1.0 (mac64) logging started Thu May  2 14:32:17 2019
+
+Academic license - for non-commercial use only
+
+Gurobi Optimizer version 8.1.0 build v8.1.0rc1 (mac64)
+Copyright (c) 2018, Gurobi Optimization, LLC
+
+Read LP format model from file lp_output.lp
+Reading time = 0.05 seconds
+MaxAlag: 1442 rows, 27281 columns, 54761 nonzeros
+Optimize a model with 1442 rows, 27281 columns and 54761 nonzeros
+Variable types: 41 continuous, 27240 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+02]
+  Objective range  [1e+00, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+Found heuristic solution: objective 32015.000000
+Presolve removed 1442 rows and 27281 columns
+Presolve time: 0.01s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 32015 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.201500000000e+04, best bound 3.201500000000e+04, gap 0.0000%
+
+Wrote result file 'solution.sol'
+
