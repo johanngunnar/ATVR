@@ -169,11 +169,13 @@ for i in lausn:
 testTargets = list(target.values())
 testTargets2 = np.zeros((8, 5))
 counter = 0;
-for i in range(0,8):
-	for j in range(0,5): 
-		testTargets2[i][j] = int(testTargets[counter][0])
-		
-counter = counter + 1;
+for i in range(0,5):
+	for j in range(0,8): 
+		testTargets2[j][i] = int(testTargets[counter][0])
+		counter = counter + 1;
+
+testTargets2 = np.flipud(testTargets2)
+
 testAlag = list(Lausn_for_print.values())
 
 toA = []
