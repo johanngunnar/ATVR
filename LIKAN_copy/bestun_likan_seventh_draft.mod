@@ -62,6 +62,7 @@ s.t. UseAll{s in 1..S}: sum{t in 1..T, d in 1..D} x[s,t,d] = 1;
 /*---------------------------------*/
 
 
+
 /* ------ Vendorar --------*/
 s.t. SetAllO{s in Olgerdin, t in 1..T,d in 1..D}: x[s,t,d] <= O[t];
 s.t. SetAllEIM{s in Eimskip, t in 1..T,d in 1..D}: x[s,t,d] <= EIM[t];
