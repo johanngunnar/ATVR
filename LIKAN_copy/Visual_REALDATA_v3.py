@@ -94,7 +94,7 @@ for i in data[target_start:target_end]:
 # Create select_data and lausn
 # ----------------------------------------------------------
 
-selectstring = Select_string()  # call to SQL data base
+selectstring = Select_string(1)  # call to SQL data base
 cursor.execute(selectstring)
 arr = cursor.fetchall()
 
@@ -104,6 +104,7 @@ for x in arr:
     select_data[count] = [x[0], x[1], x[2], x[3], x[4], x[5], x[6], x[7], x[8]]
     count = count + 1
 
+print(select_data)
 # Determine 3 values   HARDCODE !!!!!!!!!!!!!!!!!!!
 fjoldiSendinga = count - 1;
 dagar = 5
