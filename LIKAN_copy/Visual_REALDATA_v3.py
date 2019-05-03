@@ -65,8 +65,6 @@ for i in data[alag_start:alag_end]:
     key = i[0:i.find(' ')]
     alag[int(key)] = [float(i[i.find(' '):])]
 
-print(alag)
-
 # ------------------------------------------------
 # Find places to start and end for target
 # ------------------------------------------------
@@ -170,9 +168,6 @@ for i in range(1,9):
       newLFP[talan] = [0, 0]
     else:
       newLFP[talan] = Lausn_for_print.get(talan)
-print(talan)
-print('HERE COMES THE BOOM: -------------------------')
-print(newLFP)
 
 
 testTargets = list(target.values())
@@ -184,28 +179,14 @@ for i in range(0, 8):
     counter = counter + 1
 
 testAlag = list(newLFP.values())
-#testTargets2 = np.flipud(testTargets2)
-print(testTargets2)
-
-
-
-print('Herna koma --------------------------------------------------------------------------------')
-print(Lausn_for_print)
-print('-------------------------------------------------------------------------------------------')
-
 
 toA = []
 A = []
-'''
-counter = 0;
-for i in range(0, 8):
-    A.append([0.1, 0.2, 0.3, 0.4, 0.5])
-'''
+
 counter = 0;
 for timi in range(0,8):
   for dagur in range(0,5):
     counter = counter + 1
-    print(counter)
     if(testAlag[counter-1][:1] > testTargets2[timi][dagur]): 
       toA.append(0.1) 
     elif(abs(testAlag[counter-1][:1] - testTargets2[timi][dagur]) < 100):
@@ -217,20 +198,15 @@ for timi in range(0,8):
   toA = []
 
 
-
-print('------------------------------------------------', testAlag[1][:1])
-
-
-
 # -----------------------------------------------------------------
 # PLOT
 # -----------------------------------------------------------------
-plt.subplots(1, 1, figsize=(9, 5))
+plt.subplots(1, 1, figsize=(12, 6))
 cmap = matplotlib.colors.ListedColormap(['red', 'green', 'orange'])
 plt.pcolor(A, edgecolors='k', linewidths=3, cmap=cmap)
-#first_date = 
-
-plt.title('Stundatafla')
+first_date = select_data[0][2]
+last_date = select_data[len(select_data)-1][2]
+plt.title('Stundatafla ' + first_date + ' - ' + last_date)
 plt.ylabel('Time')
 plt.xlabel('Date')
 
@@ -246,7 +222,7 @@ for i in lausn:
 
 # PRINT ALAG & SENDINGAR
 for i in Lausn_for_print:
-    insertstring = 'Fjˆldi sendinga: {} \n Alag: {} '
+    insertstring = 'Fjöldi sendinga: {} \n Alag: {} '
     plt.text(float(int(i[1])) - 0.5, float(int(i[0])) - 0.8,
              insertstring.format(Lausn_for_print[i][1], Lausn_for_print[i][0]), size=8,
              ha="center", va="bottom",
@@ -254,4 +230,3 @@ for i in Lausn_for_print:
 
 plt.show()
 
-print(testTargets2)
