@@ -14,6 +14,7 @@ param SAM{t in 1..T} binary;
 var x{s in 1..S, t in 1..T, d in 1..D} binary;
 var SuperAlag{t in 1..T, d in 1..D} >= 0;
 var TheMaxAlag >= 0;
+var MaxDagsAlag >= 0;
 
 
 var LB1{t in 1..T, d in 1..D} binary;
@@ -46,11 +47,13 @@ set Samskip within {s in 1..S};
 
 
 /* ------ Markfall & Skorður --------*/
-minimize MaxAlag: 6*TheMaxAlag + sum{t in 1..T, d in 1..D} SuperAlag[t,d];
+minimize MaxAlag: 60*TheMaxAlag + 20*sum{t in 1..T, d in 1..D} SuperAlag[t,d] + 30*MaxDagsAlag + sum{t in 1..T, d in 1..D}( LB1[t,d]+ LB2[t,d]+ LB3[t,d]+ LB4[t,d]+ LB5[t,d]+ LB6[t,d]+ LB7[t,d]);
 
 s.t. Alagsmaeling{t in 1..(T-windowsize), d in 1..D}: sum{s in 1..S, k in t..(t+windowsize)} A[s]*x[s,k,d] <= (Ttarget[t,d] + SuperAlag[t,d]);
 
 s.t. MaxAlagMaeling{t in 1..T, d in 1..D}: TheMaxAlag >= SuperAlag[t,d];
+s.t. MaxDagsAlagMaeling{d in 1..D}: sum{s in 1..S, t in 1..T} A[s]*x[s,t,d] <= MaxDagsAlag;
+
 
 s.t. Bannad{(s,t,d) in Bannlisti}: x[s,t,d] = 0;
 s.t. Fixed{(s,t,d) in Fixlisti}: x[s,t,d] = 1;
