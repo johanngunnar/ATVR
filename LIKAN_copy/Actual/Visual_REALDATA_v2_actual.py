@@ -114,7 +114,7 @@ timeslott = 8
 # ----------------------------------------------------------
 f = open("lausn_mannamal.txt", "w+")
 lausn = {}
-for x in results[(dagar * timeslott * 8 + 4):(fjoldiSendinga * dagar * timeslott) + (dagar * timeslott * 8 + 4)]:
+for x in results[(dagar * timeslott + 3):(fjoldiSendinga * dagar * timeslott) + (dagar * timeslott + 3)]:
     seperator = ''
     if int(x[4]) == 1:  # lausn
         seperator = ''
@@ -131,7 +131,7 @@ for x in results[(dagar * timeslott * 8 + 4):(fjoldiSendinga * dagar * timeslott
 f.close()
 
 f = open("mannamal_basic.txt", "w+")
-for x in results[(dagar * timeslott * 8 + 4):(fjoldiSendinga * dagar * timeslott) + (dagar * timeslott * 8 + 4)]:
+for x in results[(dagar * timeslott + 3):(fjoldiSendinga * dagar * timeslott) + (dagar * timeslott + 3)]:
     seperator = ''
     if int(x[4]) == 1:  # lausn
         for i in select_data:
@@ -153,45 +153,9 @@ for i in lausn:
 
     Lausn_for_print[i] = [alag_sum, counter]
 
-
-#-------------------------------
-#Create Lausn_for_vendor dictonary
-#-------------------------------
-Lausn_for_vendor = {}
-for i in lausn: 
-    #Create Lausn_for_vendor dictonary = slot [alag_sum, fjoldi_sendinga]
-    counter = 0;
-    alag_sum = 0;
-    #Lausn i[1],i[2],i[3] = sending, timeslott, dagur
-
-    #NAFNID
-    for x in range(0,len(lausn[i])):
-
-        for y in select_data:
-            
-            if int(y) == int(lausn[i][x][1]):
-                if i not in Lausn_for_vendor:
-                    Lausn_for_vendor[i] = set()
-                    Lausn_for_vendor[i].add(select_data[y][6])
-                else:
-                    Lausn_for_vendor[i].add(select_data[y][6])
-
 # -----------------------------------------------------------------
 # print
 # -----------------------------------------------------------------
-
-Vendorar_n_k = {'420369-7789':'Ölgerðin','470169-1419':'Cola','570169-0339':'Globus','700103-3660':'Vintrio','541205-1520':'Brugghusstedja',
-'410999-2859':'Dista', '530303-2410':'Bakkus' ,'550595-2579':'Mekka',
-"601083-0789":'Eimskip',"470105-2240":'Eimskip',"490104-2160":'Eimskip',"450310-0500":'Eimskip',
-"491007-1680":'Eimskip',"511105-1290":'Eimskip',"601289-1489":'Eimskip',"470302-4290":'Eimskip',
-"640485-0949":'Eimskip',"420178-0349":'Eimskip',"531212-0530":'Eimskip',"451205-0560":'Eimskip',
-"470706-1040":'Eimskip',"451295-2929":'Eimskip',"530206-0330":'Eimskip',"620509-0190":'Eimskip',"470205-0400":'Eimskip',
-'550394-2359':'Samskip','470415-1260':'Samskip','660509-0970':'Samskip','470710-0390':'Samskip','670616-1690':'Samskip',
-'460999-2519':'Samskip','501117-0210':'Samskip','520914-2180':'Samskip','500316-0470':'Samskip','490211-0630':'Samskip',
-'681215-1740':'Samskip','430913-0690':'Samskip','660169-1729':'Samskip','600112-1390':'Samskip','590515-3290':'Samskip',
-'550609-1420':'Samskip','471289-2569':'Samskip','650387-1399':'Samskip','560113-0480':'Samskip','560793-2199':'Samskip',
-'550405-0400':'Samskip','571214-0240':'Samskip','451115-1460':'Samskip','510515-1020':'Samskip','440417-0510':'Samskip'}
-
 
 # Determine the color
 
@@ -252,26 +216,15 @@ plt.yticks(np.arange(timeslott + 1), ['8:00', '9:00', '10:00', '11:00', '12:00',
 # PRINT THE TARGET
 for i in lausn:
     mainstring = 'Target: {}'
-    plt.text(float(int(i[1])) - 0.5, float(int(i[0])) - 0.3, mainstring.format(target[int(i)][0]), size=5,
+    plt.text(float(int(i[1])) - 0.5, float(int(i[0])) - 0.3, mainstring.format(target[int(i)][0]), size=8,
              ha="center", va="bottom",
              bbox=dict(boxstyle="square", ec=(0.1, 0.5, 0.5)))
 
 # PRINT ALAG & SENDINGAR
 for i in Lausn_for_print:
-    insertstring = 'Fjöldi sendinga: {} \n Alag: {} \n Vendor: {}'
-
-
-    current_set = set()
-    for x in Vendorar_n_k:
-        if x in Lausn_for_vendor[i]:
-            current_set.add(Vendorar_n_k[x])
-
-    string_print = ''
-    for x in current_set:
-        string_print = string_print + x + '\n'
-
-    plt.text(float(int(i[1])) - 0.5, float(int(i[0])) - 0.9,
-             insertstring.format(Lausn_for_print[i][1], Lausn_for_print[i][0],string_print[:-1]), size=5,
+    insertstring = 'Fjöldi sendinga: {} \n Alag: {} '
+    plt.text(float(int(i[1])) - 0.5, float(int(i[0])) - 0.8,
+             insertstring.format(Lausn_for_print[i][1], Lausn_for_print[i][0]), size=8,
              ha="center", va="bottom",
              bbox=dict(boxstyle="square", ec=(0.1, 0.5, 0.9)))
 
