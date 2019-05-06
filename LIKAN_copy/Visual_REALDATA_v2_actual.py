@@ -116,7 +116,7 @@ timeslott = 8
 # ----------------------------------------------------------
 f = open("lausn_mannamal.txt", "w+")
 lausn = {}
-for x in results[(dagar * timeslott + 3):(fjoldiSendinga * dagar * timeslott) + (dagar * timeslott + 3)]:
+for x in results[(dagar * timeslott * 8 + 4):(fjoldiSendinga * dagar * timeslott) + (dagar * timeslott * 8 + 4)]:
     seperator = ''
     if int(x[4]) == 1:  # lausn
         seperator = ''
@@ -133,7 +133,7 @@ for x in results[(dagar * timeslott + 3):(fjoldiSendinga * dagar * timeslott) + 
 f.close()
 
 f = open("mannamal_basic.txt", "w+")
-for x in results[(dagar * timeslott + 3):(fjoldiSendinga * dagar * timeslott) + (dagar * timeslott + 3)]:
+for x in results[(dagar * timeslott * 8 + 4):(fjoldiSendinga * dagar * timeslott) + (dagar * timeslott * 8 + 4)]:
     seperator = ''
     if int(x[4]) == 1:  # lausn
         for i in select_data:
