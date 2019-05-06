@@ -87,7 +87,7 @@ print(Voruspjald[3328]['Unit Price'].replace((Voruspjald[3328]['Unit Price'][(Vo
 
 #print(Item_Cat[5])
 
-
+'''
 #Create Item_Category-------------------------------------------------
 
 Item_cat_numbersDict = {}
@@ -163,6 +163,7 @@ print(Innstreymi_Dict[1])
 print(Innstreymi_Dict[1][2])
 
 insert_function_innstreymi(Innstreymi_Dict)
+'''
 
 #Create Utstreymi---------------------------------------------------
 Utstreymi_Dict = {}
@@ -170,7 +171,7 @@ for x in range(0,len(Utstreymi)):
     if Utstreymi[x]['Quantity'][0] == '0' or Utstreymi[x]['Qty_ (Base)'][0] == '0' or Utstreymi[x]['Qty_ per Unit of Measure'][0] == '0' :
         continue
     else:
-        Utstreymi_Dict[x] = [Utstreymi[x]['Ship-to Name'],Utstreymi[x]['Item No_'],Utstreymi[x]['Qty_ per Unit of Measure'],Utstreymi[x]['Quantity'],Utstreymi[x]['Qty_ (Base)'],Utstreymi[x]['Millilítrar'],Utstreymi[x]['Fjöldi lítra']]
+        Utstreymi_Dict[x] = [Utstreymi[x]['Ship-to Code'],Utstreymi[x]['Ship-to Name'],Utstreymi[x]['Item No_'],Utstreymi[x]['Qty_ per Unit of Measure'],Utstreymi[x]['Quantity'],Utstreymi[x]['Qty_ (Base)'],Utstreymi[x]['Millilítrar'],Utstreymi[x]['Fjöldi lítra'],Utstreymi[x]['Posting Date']]
 
 for i in sorted(Utstreymi_Dict):
     print(i, Utstreymi_Dict[i])
@@ -180,7 +181,7 @@ print(Utstreymi_Dict[1][2])
 
 insert_function_utstreymi(Utstreymi_Dict)
 
-
+'''
 #Create Vinnsla---------------------------------------------------
 Vinnsla_Dict = {}
 for x in range(0,len(Vinnsla)):
@@ -205,7 +206,7 @@ print(Vinnsla_Dict[1])
 print(Vinnsla_Dict[1][2])
 
 insert_function_vinnsla(Vinnsla_Dict)
-
+'''
 
 
 

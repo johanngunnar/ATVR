@@ -57,6 +57,7 @@ CREATE TABLE Innstreymi  (
 
 CREATE TABLE Utstreymi  (
   id INTEGER PRIMARY KEY,
+  Ship_Code VARCHAR(250),
   Destination VARCHAR(250),
   ItemNo INTEGER,
   /*Desctription VARCHAR(250),*/
@@ -65,6 +66,7 @@ CREATE TABLE Utstreymi  (
   Total_Qty INTEGER,
   MillL_PUnit VARCHAR(250),
   Liter VARCHAR(250),
+  Date  VARCHAR(250),
 
   Foreign key(ItemNo) References item(id)
 );
