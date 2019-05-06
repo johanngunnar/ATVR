@@ -191,13 +191,13 @@ for i in range(1,5):
 	f.write(";\r\n")
 
 	#s,t,d
+	#print(arr)
 	Start_day = int(arr[0][2][:2])
 	f.write("set Fixlisti := \r\n")
-	print("the start day is: ", Start_day, "Heheh what up in the butt?")
 
 	for i in range(1,Sendingar+1):
 		#print("I am failing at the indexes: ", i,arr[i][2][:2], "and", )
-		print(i,arr[i][2][:2])
+		#print(i,arr[i][2][:2])
 		day = int(arr[i][2][:2].strip())-Start_day+1
 		slot_vendor_data = []
 		if arr[i][6].strip() == '420369-7789':
@@ -227,3 +227,4 @@ for i in range(1,5):
 
 	f.write("end;\r\n")
 
+	print(selectstring)

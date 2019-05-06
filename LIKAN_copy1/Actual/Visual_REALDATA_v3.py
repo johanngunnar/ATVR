@@ -30,7 +30,7 @@ cursor = conn.cursor()
 # ------------------------------------------------
 fig = plt.figure()
 
-for n in range(1,4):
+for n in range(1,5):
     results = []
     solution = "solution" + str(n) + ".sol"
     with open(solution) as inputfile:
@@ -244,7 +244,7 @@ for n in range(1,4):
     # PLOT
     # -----------------------------------------------------------------
     
-    ax = fig.add_subplot(1, 3, n)
+    ax = fig.add_subplot(4, 1, n)
     cmap = matplotlib.colors.ListedColormap(['red', 'green', 'orange'])
     plt.pcolor(A, edgecolors='k', linewidths=3, cmap=cmap)
     first_date = select_data[0][2]

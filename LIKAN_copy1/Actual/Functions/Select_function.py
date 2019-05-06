@@ -39,8 +39,12 @@ def Select_string(vikunumer):
 	select_data = sorted(select_data, key=operator.itemgetter(2))
 
 	for i in range(0,len(select_data)):
-		if len(str(select_data[i][1])) == 1:
+		if len(str(select_data[i][1])) == 1 and len(str(select_data[i][0])) == 2:
 			select_data[i] = '{}/0{}/{}'.format(select_data[i][0],select_data[i][1],select_data[i][2])
+		elif len(str(select_data[i][1])) == 2 and len(str(select_data[i][0])) == 1:
+			select_data[i] = '0{}/{}/{}'.format(select_data[i][0],select_data[i][1],select_data[i][2])
+		elif len(str(select_data[i][1])) == 1 and len(str(select_data[i][0])) == 1:
+			select_data[i] = '0{}/0{}/{}'.format(select_data[i][0],select_data[i][1],select_data[i][2])
 		else:
 			select_data[i] = '{}/{}/{}'.format(select_data[i][0],select_data[i][1],select_data[i][2])
 

@@ -32,17 +32,25 @@ def Select_string(vikunumer):
 	count = 0
 	for i in arr:
 		select_data.append([int(i[0][0:2]),int(i[0][3:5]),int(i[0][6:])])
-		count = count +1 
+		count = count +1
+		
 
 	select_data = sorted(select_data, key=operator.itemgetter(0))
 	select_data = sorted(select_data, key=operator.itemgetter(1))
 	select_data = sorted(select_data, key=operator.itemgetter(2))
+	select_data = sorted(select_data, key=operator.itemgetter(3))
+	select_data = sorted(select_data, key=operator.itemgetter(4))
+	
+
+
 
 	for i in range(0,len(select_data)):
-		if len(str(select_data[i][1])) == 1:
-			select_data[i] = '{}/0{}/{}'.format(select_data[i][0],select_data[i][1],select_data[i][2])
-		else:
-			select_data[i] = '{}/{}/{}'.format(select_data[i][0],select_data[i][1],select_data[i][2])
+		if len(str(select_data[i][0])) == 1:
+			select_data[i] = ''0'{}/{}/{}'.format(select_data[i][0],select_data[i][1],select_data[i][2])
+		else
+			select_data[i] = '{}/{}/{}'.format(select_data[i][0],select_data[i][1],select_data[i][2]) 
+
+
 
 	# ------------------------------------------------
 	# Create the perfect String
@@ -59,4 +67,6 @@ def Select_string(vikunumer):
 
 	selectstring = "select s.id,s.SourceNo, s.date, vi.Quantity, c.Timevalue, c.tegund,i.Vendor,i.Vendor_name,i.description from sending s, Item_Category c,item i,vinnsla vi where c.name = i.Tegund and s.ItemNo = i.id and vi.itemno = i.id and s.RE_number = vi.Document_ID1 and s.date in({}) order by s.id".format(strengurinn_minn)
 
-	return selectstring
+	print(select_data)
+
+	return selectstring 
