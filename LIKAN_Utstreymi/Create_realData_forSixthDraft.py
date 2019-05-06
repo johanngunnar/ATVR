@@ -26,13 +26,23 @@ cursor = conn.cursor()
 #----------------------------------------------------------------------------
 
 selectstring = Select_string(1)
-
 cursor.execute(selectstring)
 arr = cursor.fetchall()
 
 
+#SELECT fyrir utstreymi
+selectstring_uts = "Select u.Ship_Code,u.Destination, sum(u.Quantity*c.Timevalue*1.5), u.date, count(u.Total_Qty) from Utstreymi u, Item_Category c, Item i where u.ItemNo = i.id and i.tegund = c.name and u.date in('12/02/2018','13/02/2018','14/02/2018','15/02/2018','16/02/2018') group by u.Ship_Code , u.date, u.Destination order by u.Ship_Code "
+cursor.execute(selectstring_uts)
+arr_uts = cursor.fetchall()
+
+
 fjoldiSendinga = 0
+fjoldiSendinga_innstreymi = 0
 for x in arr:
+	fjoldiSendinga = fjoldiSendinga + 1
+	fjoldiSendinga_innstreymi = fjoldiSendinga_innstreymi + 1
+
+for x in arr_uts:
 	fjoldiSendinga = fjoldiSendinga + 1
 
 #----------------------------------------------------------------------------
@@ -60,28 +70,8 @@ f.write("\r\n")
 
 vendor = 'O'
 Write_vendor_data(1,vendor,Timeslots,f)
-'''
-vendor = 'C'
-Write_vendor_data(2,vendor,Timeslots,f)
 
-vendor = 'G'
-Write_vendor_data(3,vendor,Timeslots,f)
 
-vendor = 'V'
-Write_vendor_data(3,vendor,Timeslots,f)
-
-vendor = 'BR'
-Write_vendor_data(4,vendor,Timeslots,f)
-
-vendor = 'DI'
-Write_vendor_data(4,vendor,Timeslots,f)
-
-vendor = 'BA'
-Write_vendor_data(5,vendor,Timeslots,f)
-
-vendor = 'M'
-Write_vendor_data(6,vendor,Timeslots,f)
-'''
 #EIMSKIP OG SAMSKIP
 vendor = 'EIM'
 Write_vendor_data(7,vendor,Timeslots,f)
@@ -95,8 +85,13 @@ Write_vendor_data(8,vendor,Timeslots,f)
 
 #Write the ALAG & CREATE the sequence i
 f.write("param A := \r\n")
-for i in range(1,Sendingar+1):
+for i in range(1,fjoldiSendinga_innstreymi):
 	f.write("{} {}\r\n".format(i,round(arr[i][4]*arr[i][3])))   #timevalue * Qty
+
+counter = 0
+for i in range(fjoldiSendinga_innstreymi,Sendingar+1):
+	f.write("{} {}\r\n".format(i,round(arr_uts[counter][2])))
+	counter = counter + 1
 f.write(";\r\n")
 f.write("\r\n")
 
@@ -122,35 +117,35 @@ rest_sendingar = []
 
 Ol_kennitolur = ['420369-7789']
 vendorname = 'Olgerdin'
-Write_sendingar_data(arr,Ol_kennitolur,vendorname,Sendingar,f,all_sendingar)
+Write_sendingar_data(arr,Ol_kennitolur,vendorname,fjoldiSendinga_innstreymi-1,f,all_sendingar)
 
 Cola_kennitolur = ['470169-1419']
 vendorname = 'Cola'
-Write_sendingar_data(arr,Cola_kennitolur,vendorname,Sendingar,f,all_sendingar)
+Write_sendingar_data(arr,Cola_kennitolur,vendorname,fjoldiSendinga_innstreymi-1,f,all_sendingar)
 
 G_kennitolur = ['570169-0339']
 vendorname = 'Globus'
-Write_sendingar_data(arr,G_kennitolur,vendorname,Sendingar,f,all_sendingar)
+Write_sendingar_data(arr,G_kennitolur,vendorname,fjoldiSendinga_innstreymi-1,f,all_sendingar)
 
 V_kennitolur = ['700103-3660']
 vendorname = 'Vintrio'
-Write_sendingar_data(arr,V_kennitolur,vendorname,Sendingar,f,all_sendingar)
+Write_sendingar_data(arr,V_kennitolur,vendorname,fjoldiSendinga_innstreymi-1,f,all_sendingar)
 
 BR_kennitolur = ['541205-1520']
 vendorname = 'Brugghusstedja'
-Write_sendingar_data(arr,BR_kennitolur,vendorname,Sendingar,f,all_sendingar)
+Write_sendingar_data(arr,BR_kennitolur,vendorname,fjoldiSendinga_innstreymi-1,f,all_sendingar)
 
 DI_kennitolur = ['410999-2859']
 vendorname = 'Dista'
-Write_sendingar_data(arr,DI_kennitolur,vendorname,Sendingar,f,all_sendingar)
+Write_sendingar_data(arr,DI_kennitolur,vendorname,fjoldiSendinga_innstreymi-1,f,all_sendingar)
 
 BA_kennitolur = ['530303-2410']
 vendorname = 'Bakkus'
-Write_sendingar_data(arr,BA_kennitolur,vendorname,Sendingar,f,all_sendingar)
+Write_sendingar_data(arr,BA_kennitolur,vendorname,fjoldiSendinga_innstreymi-1,f,all_sendingar)
 
 M_kennitolur = ['550595-2579']
 vendorname = 'Mekka'
-Write_sendingar_data(arr,M_kennitolur,vendorname,Sendingar,f,all_sendingar)
+Write_sendingar_data(arr,M_kennitolur,vendorname,fjoldiSendinga_innstreymi-1,f,all_sendingar)
 
 #EIMSKIP OG SAMSKIP
 EIM_kennitolur = ["601083-0789","470105-2240","490104-2160","450310-0500"
@@ -159,7 +154,7 @@ EIM_kennitolur = ["601083-0789","470105-2240","490104-2160","450310-0500"
 "470706-1040","451295-2929","530206-0330","620509-0190","470205-0400"]
 
 vendorname = 'Eimskip'
-Write_sendingar_data(arr,EIM_kennitolur,vendorname,Sendingar,f,all_sendingar)
+Write_sendingar_data(arr,EIM_kennitolur,vendorname,fjoldiSendinga_innstreymi-1,f,all_sendingar)
 
 
 #Ekki endilega réttar kennitölur...
@@ -169,7 +164,7 @@ SAM_kennitolur = ['550394-2359','470415-1260','660509-0970','470710-0390','67061
 '550405-0400','571214-0240','451115-1460','510515-1020','440417-0510']
 
 vendorname = 'Samskip'
-Write_sendingar_data(arr,SAM_kennitolur,vendorname,Sendingar,f,all_sendingar)
+Write_sendingar_data(arr,SAM_kennitolur,vendorname,fjoldiSendinga_innstreymi-1,f,all_sendingar)
 
 
 #test
@@ -185,7 +180,16 @@ print(rest_sendingar)
 #----------------------------------------------------------------------
 f.write("set Bannlisti := \r\n")
 
+for i  in range(fjoldiSendinga_innstreymi,Sendingar):
+	for x in range(1,Days+1):
+		for y in range(1,Timeslots-3):
+			f.write("{} {} {}\r\n".format(i,y,x))
+
 f.write(";\r\n")
+print()
+
+
+#10 8 1
 
 #s,t,d
 f.write("set Fixlisti := \r\n")

@@ -29,12 +29,12 @@ def Create_alag(tegund_nafn):
 	# Write the select Q & OPEN
 	#----------------------------------------------------------------------------
 
-	selectstring = " select s.SourceNo,c.tegund, vi.Document_ID1, vi.UserID, vi.Quantity, vi.Qty_perUnit, vi.picked, vi.Picked_Unit, vi.Date_Scanned,s.RE_number, s.Shelf, i.Vendor, i.Description, i.id from vinnsla vi, sending s, item i, Item_Category c where vi.itemno = i.id and s.ItemNo = i.id and s.RE_number = vi.Document_ID1 and c.name = i.Tegund and vi.Date_Scanned like ('%02/2018%') order by (vi.Date_Scanned, vi.Picked)"
+	selectstring = " select s.SourceNo,c.tegund, vi.Document_ID1, vi.UserID, vi.Quantity, vi.Qty_perUnit, vi.picked, vi.Picked_Unit, vi.Date_Scanned,s.RE_number, s.Shelf, i.Vendor, i.Description, i.id from vinnsla vi, sending s, item i, Item_Category c where vi.itemno = i.id and s.ItemNo = i.id and s.RE_number = vi.Document_ID1 and c.name = i.Tegund and vi.Date_Scanned like ('%03/2018%') order by (vi.Date_Scanned, vi.Picked)"
 
 	cursor.execute(selectstring)
 	arr = cursor.fetchall()
 
-	selectstring2 = "select inn.sending, c.tegund, vi.Document_ID1, vi.UserID, vi.Quantity, vi.Qty_perUnit, vi.picked, vi.Picked_Unit, vi.Date_Scanned, i.Vendor, i.Description, i.id from vinnsla vi, Innstreymi inn, item i, Item_Category c where vi.itemno = i.id and inn.ItemNo = i.id and inn.put = vi.Document_ID1 and c.name = i.Tegund and vi.Date_Scanned like ('%02/2018%') order by (vi.Date_Scanned, vi.Picked)"
+	selectstring2 = "select inn.sending, c.tegund, vi.Document_ID1, vi.UserID, vi.Quantity, vi.Qty_perUnit, vi.picked, vi.Picked_Unit, vi.Date_Scanned, i.Vendor, i.Description, i.id from vinnsla vi, Innstreymi inn, item i, Item_Category c where vi.itemno = i.id and inn.ItemNo = i.id and inn.put = vi.Document_ID1 and c.name = i.Tegund and vi.Date_Scanned like ('%03/2018%') order by (vi.Date_Scanned, vi.Picked)"
 	cursor.execute(selectstring2)
 	record = cursor.fetchall()
 
