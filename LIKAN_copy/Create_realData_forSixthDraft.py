@@ -25,7 +25,7 @@ cursor = conn.cursor()
 # Write the select Q
 #----------------------------------------------------------------------------
 
-selectstring = Select_string()
+selectstring = Select_string(1)
 
 cursor.execute(selectstring)
 arr = cursor.fetchall()
