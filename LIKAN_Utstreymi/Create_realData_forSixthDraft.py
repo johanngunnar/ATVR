@@ -31,7 +31,7 @@ arr = cursor.fetchall()
 
 
 #SELECT fyrir utstreymi
-selectstring_uts = "Select u.Ship_Code,u.Destination, sum(u.Quantity*c.Timevalue*1.5), u.date, count(u.Total_Qty) from Utstreymi u, Item_Category c, Item i where u.ItemNo = i.id and i.tegund = c.name and u.date in('12/02/2018','13/02/2018','14/02/2018','15/02/2018','16/02/2018') group by u.Ship_Code , u.date, u.Destination order by u.Ship_Code "
+selectstring_uts = "Select u.Ship_Code,u.Destination, sum(u.Quantity*c.Timevalue), u.date, count(u.Total_Qty) from Utstreymi u, Item_Category c, Item i where u.ItemNo = i.id and i.tegund = c.name and u.date in('12/02/2018','13/02/2018','14/02/2018','15/02/2018','16/02/2018') group by u.Ship_Code , u.date, u.Destination order by u.Ship_Code "
 cursor.execute(selectstring_uts)
 arr_uts = cursor.fetchall()
 
@@ -51,7 +51,7 @@ for x in arr_uts:
 
 #DETERMINE VALUES
 Days = 5
-Timeslots = 12
+Timeslots = 8
 Sendingar = fjoldiSendinga -1
 windowsize = 0
 
@@ -101,9 +101,11 @@ f.write("param Ttarget := \r\n")
 for i in range(1,Days+1):
 	for x in range(1,Timeslots+1):
 		if x in (1,2,3,4):
-			f.write("{} {} {}\r\n".format(x,i,1000))
-		if x in (5,6,7,8):
-			f.write("{} {} {}\r\n".format(x,i,500))
+			f.write("{} {} {}\r\n".format(x,i,2000))
+		if x in (5,6):
+			f.write("{} {} {}\r\n".format(x,i,2000))
+		if x in (7,8):
+			f.write("{} {} {}\r\n".format(x,i,1500))
 		if x in (9,10,11,12):
 			f.write("{} {} {}\r\n".format(x,i,2000))
 f.write(";\r\n")
@@ -184,19 +186,13 @@ f.write("set Bannlisti := \r\n")
 
 for i  in range(fjoldiSendinga_innstreymi,Sendingar):
 	for x in range(1,Days+1):
-		for y in range(1,9):
+		for y in range(1,4):
 			f.write("{} {} {}\r\n".format(i,y,x))
 
-for i in range(1,fjoldiSendinga_innstreymi):
-	for x in range(1,Days+1):
-		for y in range(9,Timeslots+1):
-			f.write("{} {} {}\r\n".format(i,y,x))
 
 f.write(";\r\n")
 print()
 
-
-#10 8 1
 
 #s,t,d
 f.write("set Fixlisti := \r\n")

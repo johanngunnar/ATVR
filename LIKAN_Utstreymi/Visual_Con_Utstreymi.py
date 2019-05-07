@@ -10,7 +10,7 @@ from Functions.Select_function import Select_string
 # HARDCODE
 # ------------------------------------------------
 dagar = 5
-timeslott = 12
+timeslott = 8
 vikunumer = 1
 
 # ------------------------------------------------
@@ -92,9 +92,6 @@ for line in data[target_start:]:
 for i in data[target_start:target_end]:
 	strengur = []
 	strengur.append(i.split())
-	print(strengur)
-	print(strengur[0])
-
 
 	target[int(strengur[0][0]+strengur[0][1])] = [int(strengur[0][2])]
 	'''
@@ -106,7 +103,6 @@ for i in data[target_start:target_end]:
     print(i[0],'--',i[1],'---',i[2],'--',i[4:7])
     target[int(key)] = [int(i[i.find(' ', 3):].strip())]
 	'''
-print(target)
 # -------------------------------------------------------------------------------------------
 
 selectstring = Select_string(vikunumer)  # call to SQL data base
@@ -134,9 +130,7 @@ for x in arr_uts:
     count_ut = count_ut + 1
 
 fjoldiSendinga = count_ut
-print(select_data_inn)
-print('--\n\n')
-#print(select_data_uts)
+
 
 # ----------------------------------------------------------
 # CREATE LAUSN
@@ -182,11 +176,20 @@ for x in lausn:
 		Best_Dict[int(lausn[x][i][1])] = [int(lausn[x][i][2]),int(lausn[x][i][3]),Inn_ut,round(alag),destination,shipcode,date,kennitala,vendor]
 
 print('-----\n')
-#Best_Dict = sorted(Best_Dict)
-print(sorted(Best_Dict))
 Best_Dict = collections.OrderedDict(sorted(Best_Dict.items()))
 
-print(Best_Dict[2])
+# ----------------------------------------------------------
+# CREATE MANNAMAL
+# ----------------------------------------------------------
+f = open("mannamal_basic.txt", "w+")
+for x in results[(dagar * timeslott * 8 + 4):(fjoldiSendinga * dagar * timeslott) + (dagar * timeslott * 8 + 4)]:
+    seperator = ''
+    if int(x[4]) == 1:  # lausn
+        for i in Best_Dict:
+            if int(x[1]) == i:
+                f.write('Dagur {} í tímaslotti {}. Er sending {}  frá Vendor/Dest {},{} A: {} \n'.format(x[3],x[2],i,Best_Dict[i][7],Best_Dict[i][4],Best_Dict[i][3]))
+f.close()
+
 
 # -------------------------------
 # Create Lausn_for_print dictonary
@@ -209,19 +212,20 @@ for i in range(1,timeslott+1):
 #Create Lausn_for_vendor dictonary
 #-------------------------------
 Lausn_for_vendor = {}
+Lausn_for_destination = {}
 
 for i in range(1,timeslott+1):
 	for x in range(1, dagar+1):
 
 		number =  str(i) + str(x)
 		Lausn_for_vendor[number] = set()
+		Lausn_for_destination[number] = set()
 		for y in Best_Dict:
 			if Best_Dict[y][0] == i and Best_Dict[y][1] == x:
 				if Best_Dict[y][2] == 'Inn':
 					Lausn_for_vendor[number].add(Best_Dict[y][7])
 				elif Best_Dict[y][2] == 'Ut':
-
-					Lausn_for_vendor[number].add(Best_Dict[y][4].split()[0])
+					Lausn_for_destination[number].add(Best_Dict[y][5].split()[0])
 
 
 
@@ -303,17 +307,16 @@ plt.yticks(np.arange(timeslott + 1), ['8:00', '9:00', '10:00', '11:00', '12:00',
 
 # PRINT ALAG & SENDINGAR
 for i in Lausn_for_print:
-	insertstring = 'Fjöldi sendinga: {} \n Alag: {} V/D: {} '
+	insertstring = 'Fjöldi sendinga: {} \n Alag: {} V/D: {} {} '
 
 	# NUMBERSTING TO SEE NUMBER OF LETTERS IN SLOTTS
 	numberstring = []
 	numberstring = i.split()
-	vendor_destination = set()
 
 	string_print = '\n'
 	counter = 0
-	for x in Lausn_for_vendor[i]:
-	    if counter in(1,3,5,7,9,10):
+	for x in Lausn_for_destination[i]:
+	    if counter in(0,1,2,4,5,6,8,9,10,11,13,14,15,16,18,19,20,22,23,24,26,27,28):
 	    	string_print = string_print + x + ','
 	    else:
 	    	string_print = string_print + x + '\n'
@@ -329,21 +332,19 @@ for i in Lausn_for_print:
 
 
 
-	if len(numberstring[0]) == 3:
-		plt.text(float(int(i[2])) - 0.5, float(int(i[0:2])) - 0.9,
-		insertstring.format(Lausn_for_print[i][1], Lausn_for_print[i][0],string_print[:-1]), size=4,
-		ha="center", va="bottom",
-		bbox=dict(boxstyle="square", ec=(0.1, 0.5, 0.9)))
-	else:
-		if int(i[0]) < 9:
-			insertstring = insertstring.format(Lausn_for_print[i][1], Lausn_for_print[i][0],current_set)
-		else:
-			insertstring = insertstring.format(Lausn_for_print[i][1], Lausn_for_print[i][0],string_print[:-1])
+	# LAGA ÞARF EKKI ALLAR ÞESSAR IF SETNINGAR
+	insertstring = insertstring.format(Lausn_for_print[i][1], Lausn_for_print[i][0],current_set,string_print[:-1])
+	plt.text(float(int(i[1])) - 0.5, float(int(i[0])) - 0.9,
+	insertstring, size=4,
+	ha="center", va="bottom",
+	bbox=dict(boxstyle="square", ec=(0.1, 0.5, 0.9)))
 
-		plt.text(float(int(i[1])) - 0.5, float(int(i[0])) - 0.9,
-		insertstring, size=4,
-		ha="center", va="bottom",
-		bbox=dict(boxstyle="square", ec=(0.1, 0.5, 0.9)))
+	# PRINT THE TARGET
+	for i in lausn:
+		mainstring = 'Target: {}'
+		plt.text(float(int(i[1])) - 0.5, float(int(i[0])) - 0.3, mainstring.format(target[int(i)][0]), size=4,
+		         ha="center", va="bottom",
+		         bbox=dict(boxstyle="square", ec=(0.1, 0.5, 0.5)))
 
 plt.show()
 
