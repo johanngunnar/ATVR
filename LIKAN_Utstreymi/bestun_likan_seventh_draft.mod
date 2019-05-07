@@ -47,7 +47,7 @@ set Samskip within {s in 1..S};
 
 
 /* ------ Markfall & Skorður --------*/
-minimize MaxAlag: 600*TheMaxAlag + sum{t in 1..T, d in 1..D} 500*SuperAlag[t,d] + 200*MaxDagsAlag + sum{t in 1..T, d in 1..D}( LB1[t,d]+ LB2[t,d]+ LB3[t,d]+ LB4[t,d]+ LB5[t,d]+ LB6[t,d]+ LB7[t,d]);
+minimize MaxAlag: 600*TheMaxAlag + sum{t in 1..T, d in 1..D} 800*SuperAlag[t,d] + 200*MaxDagsAlag + sum{t in 1..T, d in 1..D}( LB1[t,d]+ LB2[t,d]+ LB3[t,d]+ LB4[t,d]+ LB5[t,d]+ LB6[t,d]+ LB7[t,d]);
 
 s.t. Alagsmaeling{t in 1..(T-windowsize), d in 1..D}: sum{s in 1..S, k in t..(t+windowsize)} A[s]*x[s,k,d] <= (Ttarget[t,d] + SuperAlag[t,d]);
 
@@ -70,21 +70,21 @@ s.t. SetAllSAM{s in Samskip, t in 1..T,d in 1..D}: x[s,t,d] <= SAM[t];
 /*------------------------*/
 
 /* ------ GroupSendingar --------*/
-s.t. MaxOnePerDay1{d in 1..D}: sum{t in 1..T} LB1[t,d] <= 1;
-s.t. MaxOnePerDay2{d in 1..D}: sum{t in 1..T} LB2[t,d] <= 1;
-s.t. MaxOnePerDay3{d in 1..D}: sum{t in 1..T} LB3[t,d] <= 1;
-s.t. MaxOnePerDay4{d in 1..D}: sum{t in 1..T} LB4[t,d] <= 1;
-s.t. MaxOnePerDay5{d in 1..D}: sum{t in 1..T} LB5[t,d] <= 1;
-s.t. MaxOnePerDay6{d in 1..D}: sum{t in 1..T} LB6[t,d] <= 1;
-s.t. MaxOnePerDay7{d in 1..D}: sum{t in 1..T} LB7[t,d] <= 1;
+s.t. MaxOnePerDay1{d in 1..D}: sum{t in 1..T} LB1[t,d] <= 2;
+s.t. MaxOnePerDay2{d in 1..D}: sum{t in 1..T} LB2[t,d] <= 2;
+s.t. MaxOnePerDay3{d in 1..D}: sum{t in 1..T} LB3[t,d] <= 2;
+s.t. MaxOnePerDay4{d in 1..D}: sum{t in 1..T} LB4[t,d] <= 2;
+s.t. MaxOnePerDay5{d in 1..D}: sum{t in 1..T} LB5[t,d] <= 2;
+s.t. MaxOnePerDay6{d in 1..D}: sum{t in 1..T} LB6[t,d] <= 2;
+s.t. MaxOnePerDay7{d in 1..D}: sum{t in 1..T} LB7[t,d] <= 2;
 
-s.t. MaxNrOfTimeSlots1: sum{t in 1..T, d in 1..D} LB1[t,d] <= 4;
-s.t. MaxNrOfTimeSlots2: sum{t in 1..T, d in 1..D} LB2[t,d] <= 4;
-s.t. MaxNrOfTimeSlots3: sum{t in 1..T, d in 1..D} LB3[t,d] <= 4;
-s.t. MaxNrOfTimeSlots4: sum{t in 1..T, d in 1..D} LB4[t,d] <= 4;
-s.t. MaxNrOfTimeSlots5: sum{t in 1..T, d in 1..D} LB5[t,d] <= 4;
-s.t. MaxNrOfTimeSlots6: sum{t in 1..T, d in 1..D} LB6[t,d] <= 4;
-s.t. MaxNrOfTimeSlots7: sum{t in 1..T, d in 1..D} LB7[t,d] <= 5;
+s.t. MaxNrOfTimeSlots1: sum{t in 1..T, d in 1..D} LB1[t,d] <= 10;
+s.t. MaxNrOfTimeSlots2: sum{t in 1..T, d in 1..D} LB2[t,d] <= 10;
+s.t. MaxNrOfTimeSlots3: sum{t in 1..T, d in 1..D} LB3[t,d] <= 10;
+s.t. MaxNrOfTimeSlots4: sum{t in 1..T, d in 1..D} LB4[t,d] <= 10;
+s.t. MaxNrOfTimeSlots5: sum{t in 1..T, d in 1..D} LB5[t,d] <= 10;
+s.t. MaxNrOfTimeSlots6: sum{t in 1..T, d in 1..D} LB6[t,d] <= 10;
+s.t. MaxNrOfTimeSlots7: sum{t in 1..T, d in 1..D} LB7[t,d] <= 10;
 
 s.t. GroupSendingar1{s in Cola, t in 1..T, d in 1..D}: x[s,t,d] <= LB1[t,d];
 s.t. GroupSendingar2{s in Globus, t in 1..T, d in 1..D}: x[s,t,d] <= LB2[t,d];

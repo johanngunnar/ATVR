@@ -37,22 +37,21 @@ arr_uts = cursor.fetchall()
 
 
 fjoldiSendinga = 0
-fjoldiSendinga_innstreymi = 0
 for x in arr:
 	fjoldiSendinga = fjoldiSendinga + 1
-	fjoldiSendinga_innstreymi = fjoldiSendinga_innstreymi + 1
 
+fjoldiSendinga_innstreymi = fjoldiSendinga
 for x in arr_uts:
 	fjoldiSendinga = fjoldiSendinga + 1
 
 #----------------------------------------------------------------------------
-# Create data file
+# Create data file CHANGE
 #----------------------------------------------------------------------------
 
 #DETERMINE VALUES
 Days = 5
 Timeslots = 8
-Sendingar = fjoldiSendinga -1
+Sendingar = fjoldiSendinga # - 1
 windowsize = 0
 
 #START WRITING THE FILE
@@ -82,32 +81,57 @@ Write_vendor_data(8,vendor,Timeslots,f)
 #----------------------------------------------------------------------
 # ALAG & TARGET
 #----------------------------------------------------------------------
+#Write the ALAG & CREATE the sequence i
+counter = 0
+total_alag = 0
+f.write("param A := \r\n")
+for i in arr:
+	counter = counter + 1
+	print(counter)
+	print(i)
+	f.write("{} {}\r\n".format(counter,round(i[4]*i[3])))   #timevalue * Qty
+	total_alag = total_alag + round(i[4]*i[3])
+for i in arr_uts:
+	counter = counter + 1
+	print(counter)
+	print(i)
+	f.write("{} {}\r\n".format(counter,round(i[2])))
+	total_alag = total_alag + round(i[2])
 
+f.write(";\r\n")
+f.write("\r\n")
+'''
 #Write the ALAG & CREATE the sequence i
 f.write("param A := \r\n")
 for i in range(1,fjoldiSendinga_innstreymi):
+	print(i)
+	print(arr[i])
 	f.write("{} {}\r\n".format(i,round(arr[i][4]*arr[i][3])))   #timevalue * Qty
 
+print("PRINTING UTS")
 counter = 0
-for i in range(fjoldiSendinga_innstreymi,Sendingar+1):
+for i in range(fjoldiSendinga_innstreymi,Sendingar):
+	print(i)
+	print(arr_uts[counter])
 	f.write("{} {}\r\n".format(i,round(arr_uts[counter][2])))
 	counter = counter + 1
 f.write(";\r\n")
 f.write("\r\n")
+'''
+
 
 #Write the TARGET
 f.write("param Ttarget := \r\n")
-
+testTarget = round(total_alag/8/5)+300
 for i in range(1,Days+1):
 	for x in range(1,Timeslots+1):
 		if x in (1,2,3,4):
-			f.write("{} {} {}\r\n".format(x,i,2000))
+			f.write("{} {} {}\r\n".format(x,i,testTarget))
 		if x in (5,6):
-			f.write("{} {} {}\r\n".format(x,i,2000))
+			f.write("{} {} {}\r\n".format(x,i,testTarget))
 		if x in (7,8):
-			f.write("{} {} {}\r\n".format(x,i,1500))
-		if x in (9,10,11,12):
-			f.write("{} {} {}\r\n".format(x,i,2000))
+			f.write("{} {} {}\r\n".format(x,i,testTarget))
+
 f.write(";\r\n")
 f.write("\r\n")
 
@@ -184,14 +208,14 @@ print(rest_sendingar)
 #----------------------------------------------------------------------
 f.write("set Bannlisti := \r\n")
 
-for i  in range(fjoldiSendinga_innstreymi,Sendingar):
+for i in range(fjoldiSendinga_innstreymi + 1,Sendingar + 1):
 	for x in range(1,Days+1):
 		for y in range(1,4):
 			f.write("{} {} {}\r\n".format(i,y,x))
 
 
 f.write(";\r\n")
-print()
+
 
 
 #s,t,d
@@ -200,3 +224,5 @@ f.write("set Fixlisti := \r\n")
 f.write(";\r\n")
 
 f.write("end;\r\n")
+
+print(total_alag)

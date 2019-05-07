@@ -63,6 +63,7 @@ for line in data[alag_start:]:
         break
     alag_end = alag_end + 1
 
+alag_end = alag_end
 # ------------------
 # Create alag
 # ------------------   ALAG ER HUGSA– VITLAUST SKO–A A MRG
@@ -123,11 +124,13 @@ for x in arr:
     count_inn = count_inn + 1
 
 select_data_uts = {}
-
+print(count_inn)
 count_ut = count_inn
 for x in arr_uts:
     select_data_uts[count_ut] = [x[0], x[1], x[2], x[3], x[4]]
     count_ut = count_ut + 1
+
+print(count_ut)
 
 fjoldiSendinga = count_ut
 
@@ -156,24 +159,24 @@ Best_Dict = {}
 
 for x in lausn:
 	for i in range(0,len(lausn[x])):
-
-		if int(lausn[x][i][1]) >= count_inn:
+		index = int(lausn[x][i][1]) - 1
+		if index >= count_inn:
 			Inn_ut = 'Ut'
-			alag = select_data_uts[int(lausn[x][i][1])][2]
-			destination = select_data_uts[int(lausn[x][i][1])][1]
-			shipcode = select_data_uts[int(lausn[x][i][1])][0]
-			date = select_data_uts[int(lausn[x][i][1])][4]
+			alag = select_data_uts[index][2]
+			destination = select_data_uts[index][1]
+			shipcode = select_data_uts[index][0]
+			date = select_data_uts[index][4]
 			kennitala = ''
 			vendor = ''
 		else:
 			Inn_ut = 'Inn'
-			alag = select_data_inn[int(lausn[x][i][1])][3]*select_data_inn[int(lausn[x][i][1])][4]
+			alag = select_data_inn[index][3]*select_data_inn[index][4]
 			destination = ''
 			shipcode = ''
 			date = ''
-			kennitala = select_data_inn[int(lausn[x][i][1])][6]
-			vendor = select_data_inn[int(lausn[x][i][1])][7]
-		Best_Dict[int(lausn[x][i][1])] = [int(lausn[x][i][2]),int(lausn[x][i][3]),Inn_ut,round(alag),destination,shipcode,date,kennitala,vendor]
+			kennitala = select_data_inn[index][6]
+			vendor = select_data_inn[index][7]
+		Best_Dict[index] = [int(lausn[x][i][2]),int(lausn[x][i][3]),Inn_ut,round(alag),destination,shipcode,date,kennitala,vendor]
 
 print('-----\n')
 Best_Dict = collections.OrderedDict(sorted(Best_Dict.items()))
