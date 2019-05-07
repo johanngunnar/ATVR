@@ -303,13 +303,14 @@ plt.yticks(np.arange(timeslott + 1), ['8:00', '9:00', '10:00', '11:00', '12:00',
 
 # PRINT ALAG & SENDINGAR
 for i in Lausn_for_print:
-	insertstring = 'Fjöldi sendinga: {} \n Alag: {} V/D: {}'
+	insertstring = 'Fjöldi sendinga: {} \n Alag: {} V/D: {} '
+
+	# NUMBERSTING TO SEE NUMBER OF LETTERS IN SLOTTS
 	numberstring = []
 	numberstring = i.split()
 	vendor_destination = set()
 
 	string_print = '\n'
-	#Lausn_for_vendor[i].split()
 	counter = 0
 	for x in Lausn_for_vendor[i]:
 	    if counter in(1,3,5,7,9,10):
@@ -318,51 +319,32 @@ for i in Lausn_for_print:
 	    	string_print = string_print + x + '\n'
 	    counter = counter + 1
 
+	#LINK VENDORS TO KENNITALA
+	current_set = set()	
+	if len(numberstring[0]) != 3:
+		if int(i[0]) < 9:
+			for x in Vendorar_n_k:
+				if x in Lausn_for_vendor[i]:
+					current_set.add(Vendorar_n_k[x])
+
+
 
 	if len(numberstring[0]) == 3:
 		plt.text(float(int(i[2])) - 0.5, float(int(i[0:2])) - 0.9,
-		insertstring.format(Lausn_for_print[i][1], Lausn_for_print[i][0],string_print), size=3,
+		insertstring.format(Lausn_for_print[i][1], Lausn_for_print[i][0],string_print[:-1]), size=4,
 		ha="center", va="bottom",
 		bbox=dict(boxstyle="square", ec=(0.1, 0.5, 0.9)))
 	else:
+		if int(i[0]) < 9:
+			insertstring = insertstring.format(Lausn_for_print[i][1], Lausn_for_print[i][0],current_set)
+		else:
+			insertstring = insertstring.format(Lausn_for_print[i][1], Lausn_for_print[i][0],string_print[:-1])
+
 		plt.text(float(int(i[1])) - 0.5, float(int(i[0])) - 0.9,
-		insertstring.format(Lausn_for_print[i][1], Lausn_for_print[i][0],string_print), size=3,
+		insertstring, size=4,
 		ha="center", va="bottom",
 		bbox=dict(boxstyle="square", ec=(0.1, 0.5, 0.9)))
 
-
-'''
-	#VENDOR
-	
-    for x in Vendorar_n_k:
-        if x in Lausn_for_vendor[i]:
-            current_set.add(Vendorar_n_k[x])
-	
-    #Destination
-    
-    string_print = 
-    Lausn_for_vendor[i].split()
-    for x in current_set:
-        string_print = string_print + x + '\n'
-''' 
-
 plt.show()
-
-print(i)
-print(len(Lausn_for_vendor[i]))
-print(Lausn_for_vendor[i])
-
-
-string_print = ''
-#Lausn_for_vendor[i].split()
-for x in Lausn_for_vendor[i]:
-    string_print = string_print + x + '\n'
-
-print('---')
-print(string_print)
-
-print(Lausn_for_print)
-print(Lausn_for_vendor)
-
 
 
