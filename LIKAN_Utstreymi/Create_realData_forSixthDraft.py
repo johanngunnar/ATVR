@@ -51,7 +51,7 @@ for x in arr_uts:
 
 #DETERMINE VALUES
 Days = 5
-Timeslots = 8
+Timeslots = 12
 Sendingar = fjoldiSendinga -1
 windowsize = 0
 
@@ -104,6 +104,8 @@ for i in range(1,Days+1):
 			f.write("{} {} {}\r\n".format(x,i,1000))
 		if x in (5,6,7,8):
 			f.write("{} {} {}\r\n".format(x,i,500))
+		if x in (9,10,11,12):
+			f.write("{} {} {}\r\n".format(x,i,2000))
 f.write(";\r\n")
 f.write("\r\n")
 
@@ -182,7 +184,12 @@ f.write("set Bannlisti := \r\n")
 
 for i  in range(fjoldiSendinga_innstreymi,Sendingar):
 	for x in range(1,Days+1):
-		for y in range(1,Timeslots-3):
+		for y in range(1,9):
+			f.write("{} {} {}\r\n".format(i,y,x))
+
+for i in range(1,fjoldiSendinga_innstreymi):
+	for x in range(1,Days+1):
+		for y in range(9,Timeslots+1):
 			f.write("{} {} {}\r\n".format(i,y,x))
 
 f.write(";\r\n")

@@ -6,6 +6,12 @@ import matplotlib.colors
 
 import psycopg2
 from Functions.Select_function import Select_string
+# ------------------------------------------------
+# HARDCODE
+# ------------------------------------------------
+dagar = 5
+timeslott = 12
+vikunumer = 1
 
 # ------------------------------------------------
 # Connection to SQL
@@ -84,36 +90,57 @@ for line in data[target_start:]:
 # Create target
 # -------------------
 for i in data[target_start:target_end]:
-    key = i[0] + i[2]
-    target[int(key)] = [int(i[i.find(' ', 2):].strip())]
+	strengur = []
+	strengur.append(i.split())
+	print(strengur)
+	print(strengur[0])
 
+
+	target[int(strengur[0][0]+strengur[0][1])] = [int(strengur[0][2])]
+	'''
+	if len(strengur) == 6:
+		key = i[0] + i[2]
+		target[int(key)] = [int(i[i.find(' ', 3):].strip())]
+	else:
+    key = i[0] + i[2]
+    print(i[0],'--',i[1],'---',i[2],'--',i[4:7])
+    target[int(key)] = [int(i[i.find(' ', 3):].strip())]
+	'''
+print(target)
 # -------------------------------------------------------------------------------------------
 
-
-# ----------------------------------------------------------
-# Create select_data and lausn
-# ----------------------------------------------------------
-
-selectstring = Select_string(1)  # call to SQL data base
+selectstring = Select_string(vikunumer)  # call to SQL data base
 cursor.execute(selectstring)
 arr = cursor.fetchall()
 
-select_data = {}
-count = 0
+#SELECT fyrir utstreymi
+selectstring_uts = "Select u.Ship_Code,u.Destination, sum(u.Quantity*c.Timevalue*1.5), u.date, count(u.Total_Qty) from Utstreymi u, Item_Category c, Item i where u.ItemNo = i.id and i.tegund = c.name and u.date in('12/02/2018','13/02/2018','14/02/2018','15/02/2018','16/02/2018') group by u.Ship_Code , u.date, u.Destination order by u.Ship_Code "
+cursor.execute(selectstring_uts)
+arr_uts = cursor.fetchall()
+
+
+
+select_data_inn = {}
+count_inn = 0
 for x in arr:
-    select_data[count] = [x[0], x[1], x[2], x[3], x[4], x[5], x[6], x[7], x[8]]
-    count = count + 1
+    select_data_inn[count_inn] = [x[0], x[1], x[2], x[3], x[4], x[5], x[6], x[7], x[8]]
+    count_inn = count_inn + 1
 
-print(select_data)
-# Determine 3 values   HARDCODE !!!!!!!!!!!!!!!!!!!
-fjoldiSendinga = count - 1;
-dagar = 5
-timeslott = 8
+select_data_uts = {}
+
+count_ut = count_inn
+for x in arr_uts:
+    select_data_uts[count_ut] = [x[0], x[1], x[2], x[3], x[4]]
+    count_ut = count_ut + 1
+
+fjoldiSendinga = count_ut
+print(select_data_inn)
+print('--\n\n')
+#print(select_data_uts)
 
 # ----------------------------------------------------------
-# CREATE MANNAMAL
+# CREATE LAUSN
 # ----------------------------------------------------------
-f = open("lausn_mannamal.txt", "w+")
 lausn = {}
 for x in results[(dagar * timeslott * 8 + 4):(fjoldiSendinga * dagar * timeslott) + (dagar * timeslott * 8 + 4)]:
     seperator = ''
@@ -124,64 +151,82 @@ for x in results[(dagar * timeslott * 8 + 4):(fjoldiSendinga * dagar * timeslott
             lausn[key] = []
         lausn[key].append(x)
 
-        # meira ef lausn  -- Write the solution
-        for i in select_data:
-            if int(x[1]) == i:
-                f.write('Dagur {} í tímaslotti {}. Er sending {} er með ID: {} frá Vendor: {} með kennitölu {} \n'.format(x[3],x[2],i,select_data[i][0],select_data[i][7],select_data[i][6]))
-        f.write('Sendingin inniheldur {} stykki af {} með álagsvalue {} sem gerir álagið = {} \n'.format(select_data[i][3],select_data[i][8],select_data[i][4],(round(select_data[i][3]*select_data[i][4]))))
-f.close()
 
-f = open("mannamal_basic.txt", "w+")
-for x in results[(dagar * timeslott * 8 + 4):(fjoldiSendinga * dagar * timeslott) + (dagar * timeslott * 8 + 4)]:
-    seperator = ''
-    if int(x[4]) == 1:  # lausn
-        for i in select_data:
-            if int(x[1]) == i:
-                f.write('Dagur {} í tímaslotti {}. Er sending {} er með ID: {} frá Vendor {} A: {} \n'.format(x[3],x[2],i,select_data[i][0],select_data[i][6],round(select_data[i][3]*select_data[i][4])))
-f.close()
+# ----------------------------------------------------------
+# CREATE THE BEST DICTIONRY IN THE WORLD
+# ----------------------------------------------------------
+#ID = sending
+#[slott, dagur, innstreymi/utstreymi, alag, destination, shipcode, date, kennitala, description]
+Best_Dict = {}
+
+
+for x in lausn:
+	for i in range(0,len(lausn[x])):
+
+		if int(lausn[x][i][1]) >= count_inn:
+			Inn_ut = 'Ut'
+			alag = select_data_uts[int(lausn[x][i][1])][2]
+			destination = select_data_uts[int(lausn[x][i][1])][1]
+			shipcode = select_data_uts[int(lausn[x][i][1])][0]
+			date = select_data_uts[int(lausn[x][i][1])][4]
+			kennitala = ''
+			vendor = ''
+		else:
+			Inn_ut = 'Inn'
+			alag = select_data_inn[int(lausn[x][i][1])][3]*select_data_inn[int(lausn[x][i][1])][4]
+			destination = ''
+			shipcode = ''
+			date = ''
+			kennitala = select_data_inn[int(lausn[x][i][1])][6]
+			vendor = select_data_inn[int(lausn[x][i][1])][7]
+		Best_Dict[int(lausn[x][i][1])] = [int(lausn[x][i][2]),int(lausn[x][i][3]),Inn_ut,round(alag),destination,shipcode,date,kennitala,vendor]
+
+print('-----\n')
+#Best_Dict = sorted(Best_Dict)
+print(sorted(Best_Dict))
+Best_Dict = collections.OrderedDict(sorted(Best_Dict.items()))
+
+print(Best_Dict[2])
 
 # -------------------------------
 # Create Lausn_for_print dictonary
 # -------------------------------
 Lausn_for_print = {}
-for i in lausn:
-    # Create Lausn_for_print dictonary = slot [alag_sum, fjoldi_sendinga]
-    counter = 0;
-    alag_sum = 0;
-    for x in range(0, len(lausn[i])):
-        alag_sum = alag_sum + alag[float(lausn[i][x][1])][0]
-        counter = counter + 1
 
-    Lausn_for_print[i] = [alag_sum, counter]
+for i in range(1,timeslott+1):
+	for x in range(1, dagar+1):
+		counter = 0;
+		alag_sum = 0;
+		for y in Best_Dict:
 
+			if Best_Dict[y][0] == i and Best_Dict[y][1] == x:
+				alag_sum = alag_sum + Best_Dict[y][3]
+				counter = counter + 1
+		number =  str(i) + str(x)
+		Lausn_for_print[(number)] = [alag_sum, counter]
 
 #-------------------------------
 #Create Lausn_for_vendor dictonary
 #-------------------------------
 Lausn_for_vendor = {}
-for i in lausn: 
-    #Create Lausn_for_vendor dictonary = slot [alag_sum, fjoldi_sendinga]
-    counter = 0;
-    alag_sum = 0;
-    #Lausn i[1],i[2],i[3] = sending, timeslott, dagur
 
-    #NAFNID
-    for x in range(0,len(lausn[i])):
+for i in range(1,timeslott+1):
+	for x in range(1, dagar+1):
 
-        for y in select_data:
-            
-            if int(y) == int(lausn[i][x][1]):
-                if i not in Lausn_for_vendor:
-                    Lausn_for_vendor[i] = set()
-                    Lausn_for_vendor[i].add(select_data[y][6])
-                else:
-                    Lausn_for_vendor[i].add(select_data[y][6])
+		number =  str(i) + str(x)
+		Lausn_for_vendor[number] = set()
+		for y in Best_Dict:
+			if Best_Dict[y][0] == i and Best_Dict[y][1] == x:
+				if Best_Dict[y][2] == 'Inn':
+					Lausn_for_vendor[number].add(Best_Dict[y][7])
+				elif Best_Dict[y][2] == 'Ut':
 
-print(Lausn_for_vendor)
+					Lausn_for_vendor[number].add(Best_Dict[y][4].split()[0])
 
-# -----------------------------------------------------------------
-# print
-# -----------------------------------------------------------------
+
+
+
+#---
 
 Vendorar_n_k = {'420369-7789':'Ölgerðin','470169-1419':'Cola','570169-0339':'Globus','700103-3660':'Vintrio','541205-1520':'Brugghusstedja',
 '410999-2859':'Dista', '530303-2410':'Bakkus' ,'550595-2579':'Mekka',
@@ -196,10 +241,13 @@ Vendorar_n_k = {'420369-7789':'Ölgerðin','470169-1419':'Cola','570169-0339':'G
 '550405-0400':'Samskip','571214-0240':'Samskip','451115-1460':'Samskip','510515-1020':'Samskip','440417-0510':'Samskip'}
 
 
+# -----------------------------------------------------------------
 # Determine the color
+# -----------------------------------------------------------------
+
 
 newLFP = {}
-for i in range(1,9):
+for i in range(1,timeslott+1):
   for j in range(1,6):
     talan = str(i) + str(j);
 
@@ -210,9 +258,9 @@ for i in range(1,9):
 
 
 testTargets = list(target.values())
-testTargets2 = np.zeros((8, 5))
+testTargets2 = np.zeros((timeslott, 5))
 counter = 0;
-for i in range(0, 8):
+for i in range(0, timeslott):
     for j in range(0, 5):
         testTargets2[i][j] = int(testTargets[counter][0])
     counter = counter + 1
@@ -223,7 +271,7 @@ toA = []
 A = []
 
 counter = 0;
-for timi in range(0,8):
+for timi in range(0,timeslott):
   for dagur in range(0,5):
     counter = counter + 1
     if(testAlag[counter-1][:1] > testTargets2[timi][dagur]): 
@@ -243,40 +291,78 @@ for timi in range(0,8):
 plt.subplots(1, 1, figsize=(12, 6))
 cmap = matplotlib.colors.ListedColormap(['red', 'green', 'orange'])
 plt.pcolor(A, edgecolors='k', linewidths=3, cmap=cmap)
-first_date = select_data[0][2]
-last_date = select_data[len(select_data)-1][2]
-plt.title('Stundatafla ' + first_date + ' - ' + last_date)
+#first_date = select_data[0][2]
+#last_date = select_data[len(select_data)-1][2]
+#plt.title('Stundatafla ' + first_date + ' - ' + last_date)
 plt.ylabel('Time')
 plt.xlabel('Date')
 
 plt.xticks(np.arange(dagar), ['M', 'T', 'W', 'T', 'F', 'S', 'S'])
-plt.yticks(np.arange(timeslott + 1), ['8:00', '9:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00'])
+plt.yticks(np.arange(timeslott + 1), ['8:00', '9:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00','17:00','18:00','19:00','20:00'])
 
-# PRINT THE TARGET
-for i in lausn:
-    mainstring = 'Target: {}'
-    plt.text(float(int(i[1])) - 0.5, float(int(i[0])) - 0.3, mainstring.format(target[int(i)][0]), size=5,
-             ha="center", va="bottom",
-             bbox=dict(boxstyle="square", ec=(0.1, 0.5, 0.5)))
 
 # PRINT ALAG & SENDINGAR
 for i in Lausn_for_print:
-    insertstring = 'Fjöldi sendinga: {} \n Alag: {} \n Vendor: {}'
+	insertstring = 'Fjöldi sendinga: {} \n Alag: {} V/D: {}'
+	numberstring = []
+	numberstring = i.split()
+	vendor_destination = set()
+
+	string_print = '\n'
+	#Lausn_for_vendor[i].split()
+	counter = 0
+	for x in Lausn_for_vendor[i]:
+	    if counter in(1,3,5,7,9,10):
+	    	string_print = string_print + x + ','
+	    else:
+	    	string_print = string_print + x + '\n'
+	    counter = counter + 1
 
 
-    current_set = set()
+	if len(numberstring[0]) == 3:
+		plt.text(float(int(i[2])) - 0.5, float(int(i[0:2])) - 0.9,
+		insertstring.format(Lausn_for_print[i][1], Lausn_for_print[i][0],string_print), size=3,
+		ha="center", va="bottom",
+		bbox=dict(boxstyle="square", ec=(0.1, 0.5, 0.9)))
+	else:
+		plt.text(float(int(i[1])) - 0.5, float(int(i[0])) - 0.9,
+		insertstring.format(Lausn_for_print[i][1], Lausn_for_print[i][0],string_print), size=3,
+		ha="center", va="bottom",
+		bbox=dict(boxstyle="square", ec=(0.1, 0.5, 0.9)))
+
+
+'''
+	#VENDOR
+	
     for x in Vendorar_n_k:
         if x in Lausn_for_vendor[i]:
             current_set.add(Vendorar_n_k[x])
-
-    string_print = ''
+	
+    #Destination
+    
+    string_print = 
+    Lausn_for_vendor[i].split()
     for x in current_set:
         string_print = string_print + x + '\n'
-
-    plt.text(float(int(i[1])) - 0.5, float(int(i[0])) - 0.9,
-             insertstring.format(Lausn_for_print[i][1], Lausn_for_print[i][0],string_print[:-1]), size=5,
-             ha="center", va="bottom",
-             bbox=dict(boxstyle="square", ec=(0.1, 0.5, 0.9)))
+''' 
 
 plt.show()
+
+print(i)
+print(len(Lausn_for_vendor[i]))
+print(Lausn_for_vendor[i])
+
+
+string_print = ''
+#Lausn_for_vendor[i].split()
+for x in Lausn_for_vendor[i]:
+    string_print = string_print + x + '\n'
+
+print('---')
+print(string_print)
+
+print(Lausn_for_print)
+print(Lausn_for_vendor)
+
+
 
