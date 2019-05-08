@@ -47,7 +47,7 @@ set Samskip within {s in 1..S};
 
 
 /* ------ Markfall & Skorður --------*/
-minimize MaxAlag: 600*TheMaxAlag + sum{t in 1..T, d in 1..D} 800*SuperAlag[t,d] + 200*MaxDagsAlag + sum{t in 1..T, d in 1..D}( LB1[t,d]+ LB2[t,d]+ LB3[t,d]+ LB4[t,d]+ LB5[t,d]+ LB6[t,d]+ LB7[t,d]);
+minimize MaxAlag: TheMaxAlag + sum{t in 1..T, d in 1..D} 800*SuperAlag[t,d] + MaxDagsAlag + sum{t in 1..T, d in 1..D}( LB1[t,d]+ LB2[t,d]+ LB3[t,d]+ LB4[t,d]+ LB5[t,d]+ LB6[t,d]+ LB7[t,d]);
 
 s.t. Alagsmaeling{t in 1..(T-windowsize), d in 1..D}: sum{s in 1..S, k in t..(t+windowsize)} A[s]*x[s,k,d] <= (Ttarget[t,d] + SuperAlag[t,d]);
 
@@ -94,5 +94,6 @@ s.t. GroupSendingar5{s in Dista, t in 1..T, d in 1..D}: x[s,t,d] <= LB5[t,d];
 s.t. GroupSendingar6{s in Bakkus, t in 1..T, d in 1..D}: x[s,t,d] <= LB6[t,d];
 s.t. GroupSendingar7{s in Mekka, t in 1..T, d in 1..D}: x[s,t,d] <= LB7[t,d];
 /*--------------------------------*/
+s.t. Addition1: x[132,3,5] = 1;
 
 end;
