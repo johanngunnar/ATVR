@@ -29,14 +29,14 @@ cursor = conn.cursor()
 # Load solution data and demo_data
 # ------------------------------------------------
 results = []
-with open('solution1.sol') as inputfile:
+with open('solution.sol') as inputfile:
     for line in inputfile:
         results.append(line.strip().replace(')', ' ').replace('(', ' ').replace(',', ' ').split())
 
 data = []
 alag = {}
 target = {}
-with open('demo_data_real1.txt') as inputfile:
+with open('demo_data_real.txt') as inputfile:
     for line in inputfile:
         data.append(line)
 
