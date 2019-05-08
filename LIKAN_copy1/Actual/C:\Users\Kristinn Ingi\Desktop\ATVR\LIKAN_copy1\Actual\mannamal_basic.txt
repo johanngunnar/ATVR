@@ -112,8 +112,8 @@ Dagur 2 Ì tÌmaslotti 2. Er sending 187 er me ID: 3359 fr· Vendor 470169-14
 Dagur 2 Ì tÌmaslotti 2. Er sending 188 er me ID: 3360 fr· Vendor 470169-1419 A: 36 
 Dagur 2 Ì tÌmaslotti 2. Er sending 189 er me ID: 3361 fr· Vendor 470169-1419 A: 52 
 Dagur 2 Ì tÌmaslotti 2. Er sending 190 er me ID: 3362 fr· Vendor 470169-1419 A: 25 
-Dagur 2 Ì tÌmaslotti 2. Er sending 313 er me ID: 3504 fr· Vendor 470169-1419 A: 19 
 Dagur 3 Ì tÌmaslotti 2. Er sending 312 er me ID: 3503 fr· Vendor 470169-1419 A: 22 
+Dagur 3 Ì tÌmaslotti 2. Er sending 313 er me ID: 3504 fr· Vendor 470169-1419 A: 19 
 Dagur 3 Ì tÌmaslotti 2. Er sending 314 er me ID: 3505 fr· Vendor 470169-1419 A: 26 
 Dagur 4 Ì tÌmaslotti 2. Er sending 438 er me ID: 3639 fr· Vendor 470169-1419 A: 474 
 Dagur 4 Ì tÌmaslotti 2. Er sending 439 er me ID: 3640 fr· Vendor 470169-1419 A: 112 

@@ -25,7 +25,8 @@ cursor = conn.cursor()
 #----------------------------------------------------------------------------
 # Write the select Q
 #----------------------------------------------------------------------------
-for i in range(1,53):
+for i in range(1,5):
+	day_count = 1
 
 	selectstring = Select_string(i)
 
@@ -196,10 +197,26 @@ for i in range(1,53):
 	Start_day = int(arr[0][2][:2])
 	f.write("set Fixlisti := \r\n")
 
+	haesta_tala = arr[0][2][:2]
+	heasta_man = arr[0][2][3:5]
+
 	for i in range(1,Sendingar+1):
 		#print("I am failing at the indexes: ", i,arr[i][2][:2], "and", )
 		#print(i,arr[i][2][:2])
-		day = int(arr[i][2][:2].strip())-Start_day+1
+		#day = int(arr[i][2][:2].strip())-Start_day+1
+		if int(haesta_tala.strip()) < int(arr[i][2][:2].strip()) and int(heasta_man.strip()) == int(arr[i][2][3:5].strip()):
+			haesta_tala = arr[i][2][:2]
+			heasta_man = arr[i][2][3:5]
+			day_count = day_count + 1
+		elif int(heasta_man.strip()) < int(arr[i][2][3:5].strip()):
+			haesta_tala = arr[i][2][:2]
+			heasta_man = arr[i][2][3:5]
+			day_count = day_count + 1
+		print(arr[i-1][0:3])
+		print(arr[i][0:3])
+		print(day_count)
+		print(haesta_tala)
+		print(heasta_man)
 		slot_vendor_data = []
 		if arr[i][6].strip() == '420369-7789':
 			slot = 1
@@ -222,7 +239,7 @@ for i in range(1,53):
 		else:
 			slot = 8
 
-		f.write("{} {} {} \r\n".format(i,slot,day))
+		f.write("{} {} {} \r\n".format(i,slot,day_count))
 
 	f.write(";\r\n")
 
@@ -256,8 +273,14 @@ for i in range(1,53):
 	dags2 = (set(dags))
 
 	dags3 = sorted(dags2, key=lambda x: datetime.strptime(x, "%d/%m/%Y").strftime("%Y-%m-%d"))
-	print(dags3)
 
-	print(arr)
+
+	print(dags3)	
+print(selectstring)
+
+
+
+
+
 
 
