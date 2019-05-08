@@ -105,7 +105,8 @@ for i in data[target_start:target_end]:
     target[int(key)] = [int(i[i.find(' ', 3):].strip())]
 	'''
 # -------------------------------------------------------------------------------------------
-
+#Feeds arr information about INNSTREYMI
+#[id, SourceNo, date, Quantity, Timevalue, tegund, Vendor, Vendor_name, description]
 selectstring = Select_string(vikunumer)  # call to SQL data base
 cursor.execute(selectstring)
 arr = cursor.fetchall()
@@ -124,13 +125,14 @@ for x in arr:
     count_inn = count_inn + 1
 
 select_data_uts = {}
-print(count_inn)
+print("Number of INNSTREYMI: " + str(count_inn))
 count_ut = count_inn
 for x in arr_uts:
     select_data_uts[count_ut] = [x[0], x[1], x[2], x[3], x[4]]
     count_ut = count_ut + 1
 
-print(count_ut)
+print("Number of UTSTREYMI: " + str(count_ut - count_inn))
+print("Number of TOTALSHIPMENTS: " + str(count_ut))
 
 fjoldiSendinga = count_ut
 
@@ -138,17 +140,18 @@ fjoldiSendinga = count_ut
 # ----------------------------------------------------------
 # CREATE LAUSN
 # ----------------------------------------------------------
+#FIX TO NOT BE HARDCODED
 lausn = {}
+seperator = ''
 for x in results[(dagar * timeslott * 8 + 4):(fjoldiSendinga * dagar * timeslott) + (dagar * timeslott * 8 + 4)]:
-    seperator = ''
+    #print(x)
     if int(x[4]) == 1:  # lausn
-        seperator = ''
         key = seperator.join(x[2:4])
+        print(key)
         if key not in lausn:
             lausn[key] = []
         lausn[key].append(x)
-
-
+#print(lausn)
 # ----------------------------------------------------------
 # CREATE THE BEST DICTIONRY IN THE WORLD
 # ----------------------------------------------------------
@@ -158,8 +161,11 @@ Best_Dict = {}
 
 
 for x in lausn:
+	#print(lausn[x])
 	for i in range(0,len(lausn[x])):
-		index = int(lausn[x][i][1]) - 1
+		print(lausn[x][i])
+		print(int(lausn[x][i][1]))
+		index = int(lausn[x][i][1])
 		if index >= count_inn:
 			Inn_ut = 'Ut'
 			alag = select_data_uts[index][2]
