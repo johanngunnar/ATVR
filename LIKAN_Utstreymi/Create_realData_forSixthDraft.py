@@ -3,6 +3,7 @@ import psycopg2
 from Functions.Select_function import Select_string
 from Functions.Write_Vendor_data import Write_vendor_data
 from Functions.Write_sendingarVendorar_data import Write_sendingar_data
+from Functions.Select_function_out import Select_string_OUT
 
 #Connection to SQL
 host = 'localhost'
@@ -33,7 +34,7 @@ arr = cursor.fetchall()
 #SELECT fyrir utstreymi
 arr_uts = []
 
-selectstring_uts = "Select u.Ship_Code,u.Destination, sum(u.Quantity*c.Timevalue), u.date, count(u.Total_Qty) from Utstreymi u, Item_Category c, Item i where u.ItemNo = i.id and i.tegund = c.name and u.date in('12/02/2018','13/02/2018','14/02/2018','15/02/2018','16/02/2018') group by u.Ship_Code , u.date, u.Destination order by u.Ship_Code "
+selectstring_uts = Select_string_OUT()
 cursor.execute(selectstring_uts)
 arr_uts = cursor.fetchall()
 
