@@ -112,7 +112,7 @@ cursor.execute(selectstring)
 arr = cursor.fetchall()
 
 #SELECT fyrir utstreymi
-selectstring_uts = "Select u.Ship_Code,u.Destination, sum(u.Quantity*c.Timevalue*1.5), u.date, count(u.Total_Qty) from Utstreymi u, Item_Category c, Item i where u.ItemNo = i.id and i.tegund = c.name and u.date in('12/02/2018','13/02/2018','14/02/2018','15/02/2018','16/02/2018') group by u.Ship_Code , u.date, u.Destination order by u.Ship_Code "
+selectstring_uts = "Select u.Ship_Code,u.Destination, sum(u.Quantity*c.Timevalue), u.date, count(u.Total_Qty) from Utstreymi u, Item_Category c, Item i where u.ItemNo = i.id and i.tegund = c.name and u.date in('12/02/2018','13/02/2018','14/02/2018','15/02/2018','16/02/2018') group by u.Ship_Code , u.date, u.Destination order by u.Ship_Code "
 cursor.execute(selectstring_uts)
 arr_uts = cursor.fetchall()
 
@@ -141,13 +141,29 @@ fjoldiSendinga = count_ut -1
 # CREATE LAUSN
 # ----------------------------------------------------------
 #FIX TO NOT BE HARDCODED
+counter = 0
+first = 1
+last = 1
+lastsolutionline = (fjoldiSendinga * dagar * timeslott) + (dagar * timeslott * 8 + 4)
+for x in results:
+	if x[0] == 'x' and first:
+		startsolutionline = counter
+		first = 0
+
+	if x[0] != 'x' and last and first == 0:
+		lastsolutionline = counter
+		last = 0
+	counter = counter + 1
+
+# ----------------------------------------------------------
+# CREATE LAUSN
+# ----------------------------------------------------------
 lausn = {}
 seperator = ''
-for x in results[(dagar * timeslott * 8 + 4):(fjoldiSendinga * dagar * timeslott) + (dagar * timeslott * 8 + 4)]:
+for x in results[startsolutionline:lastsolutionline]:
     #print(x)
     if int(x[4]) == 1:  # lausn
         key = seperator.join(x[2:4])
-        print(key)
         if key not in lausn:
             lausn[key] = []
         lausn[key].append(x)
@@ -159,20 +175,18 @@ for x in results[(dagar * timeslott * 8 + 4):(fjoldiSendinga * dagar * timeslott
 #[slott, dagur, innstreymi/utstreymi, alag, destination, shipcode, date, kennitala, description]
 Best_Dict = {}
 
-
 for x in lausn:
-	#print(lausn[x])
+	#print(x,lausn[x])
+	print('---\n')
 	for i in range(0,len(lausn[x])):
-		print(lausn[x][i])
-		print(int(lausn[x][i][1]))
+		print(x,lausn[x][i],lausn[x][i][1])
 		index = int(lausn[x][i][1])
 		if index >= count_inn:
-			print(select_data_uts[int(lausn[x][i][1])])
 			Inn_ut = 'Ut'
 			alag = select_data_uts[index][2]
 			destination = select_data_uts[index][1]
 			shipcode = select_data_uts[index][0]
-			date = select_data_uts[index][4]
+			date = select_data_uts[index][3]
 			kennitala = ''
 			vendor = ''
 		else:
@@ -184,41 +198,42 @@ for x in lausn:
 			kennitala = select_data_inn[index][6]
 			vendor = select_data_inn[index][7]
 		Best_Dict[index] = [int(lausn[x][i][2]),int(lausn[x][i][3]),Inn_ut,round(alag),destination,shipcode,date,kennitala,vendor]
+		print(Best_Dict[index])
 
-print('-----\n')
-Best_Dict = collections.OrderedDict(sorted(Best_Dict.items()))
+#print(Best_Dict)
+#print(select_data_inn)
+#print(select_data_uts)
+
+
 
 # ----------------------------------------------------------
-# CREATE MANNAMAL
+# MANNAMAL
 # ----------------------------------------------------------
 f = open("mannamal_basic.txt", "w+")
-for x in results[(dagar * timeslott * 8 + 4):(fjoldiSendinga * dagar * timeslott) + (dagar * timeslott * 8 + 4)]:
-    seperator = ''
-    if int(x[4]) == 1:  # lausn
-        for i in Best_Dict:
-            if int(x[1]) == i:
-                f.write('Dagur {} í tímaslotti {}. Er sending {}  frá Vendor/Dest {},{} A: {} \n'.format(x[3],x[2],i,Best_Dict[i][7],Best_Dict[i][4],Best_Dict[i][3]))
-                print('X',x[3],x[2])
-                print(i,Best_Dict[i])
-                print(x)
+for x in results[startsolutionline:lastsolutionline]:
+	if x[4] == '1':
+		print(x,x[0])
+		print(x[1],Best_Dict[int(x[1])])
+		f.write('Dagur {} í tímaslotti {}. Er sending {}  frá Vendor/Dest {},{} A: {} \n'.format(Best_Dict[int(x[1])][1],Best_Dict[int(x[1])][0],x[1],Best_Dict[int(x[1])][5],Best_Dict[int(x[1])][7],Best_Dict[int(x[1])][3]))
+
 f.close()
 
-
-# -------------------------------
+# ----------------------------------------------------------
 # Create Lausn_for_print dictonary
-# -------------------------------
+# ----------------------------------------------------------
+
 Lausn_for_print = {}
 
-for i in range(1,timeslott+1):
-	for x in range(1, dagar+1):
-		counter = 0;
-		alag_sum = 0;
+for i in range(1,dagar+1):
+	for x in range(1,timeslott+1):
+		alag_sum = 0
+		counter = 0
 		for y in Best_Dict:
 
-			if Best_Dict[y][0] == i and Best_Dict[y][1] == x:
+			if Best_Dict[y][0] == x and Best_Dict[y][1] == i:
 				alag_sum = alag_sum + Best_Dict[y][3]
 				counter = counter + 1
-		number =  str(i) + str(x)
+		number =  str(x) + str(i)
 		Lausn_for_print[(number)] = [alag_sum, counter]
 
 #-------------------------------
@@ -261,8 +276,6 @@ Vendorar_n_k = {'420369-7789':'Ölgerðin','470169-1419':'Cola','570169-0339':'G
 # -----------------------------------------------------------------
 # Determine the color
 # -----------------------------------------------------------------
-
-
 newLFP = {}
 for i in range(1,timeslott+1):
   for j in range(1,6):
@@ -301,10 +314,16 @@ for timi in range(0,timeslott):
   A.append(toA)
   toA = []
 
-
 # -----------------------------------------------------------------
 # PLOT
 # -----------------------------------------------------------------
+'''
+A = []
+
+for i in range(0,timeslott):
+	A.append([0.2,0.2,0.2,0.2,0.2])
+'''
+
 plt.subplots(1, 1, figsize=(12, 6))
 cmap = matplotlib.colors.ListedColormap(['red', 'green', 'orange'])
 plt.pcolor(A, edgecolors='k', linewidths=3, cmap=cmap)
@@ -320,7 +339,7 @@ plt.yticks(np.arange(timeslott + 1), ['8:00', '9:00', '10:00', '11:00', '12:00',
 
 # PRINT ALAG & SENDINGAR
 for i in Lausn_for_print:
-	insertstring = 'Fjöldi sendinga: {} \n Alag: {} V/D: {} {} '
+	insertstring = 'Fjöldi sendinga: {} \n Alag: {} V/D: {},{}'
 
 	# NUMBERSTING TO SEE NUMBER OF LETTERS IN SLOTTS
 	numberstring = []
@@ -344,7 +363,6 @@ for i in Lausn_for_print:
 					current_set.add(Vendorar_n_k[x])
 
 
-
 	# LAGA ÞARF EKKI ALLAR ÞESSAR IF SETNINGAR
 	insertstring = insertstring.format(Lausn_for_print[i][1], Lausn_for_print[i][0],current_set,string_print[:-1])
 	plt.text(float(int(i[1])) - 0.5, float(int(i[0])) - 0.9,
@@ -359,6 +377,12 @@ for i in Lausn_for_print:
 		         ha="center", va="bottom",
 		         bbox=dict(boxstyle="square", ec=(0.1, 0.5, 0.5)))
 
+
 plt.show()
+
+
+
+
+
 
 

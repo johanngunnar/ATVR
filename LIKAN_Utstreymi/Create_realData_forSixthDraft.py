@@ -31,9 +31,13 @@ arr = cursor.fetchall()
 
 
 #SELECT fyrir utstreymi
+arr_uts = []
+
 selectstring_uts = "Select u.Ship_Code,u.Destination, sum(u.Quantity*c.Timevalue), u.date, count(u.Total_Qty) from Utstreymi u, Item_Category c, Item i where u.ItemNo = i.id and i.tegund = c.name and u.date in('12/02/2018','13/02/2018','14/02/2018','15/02/2018','16/02/2018') group by u.Ship_Code , u.date, u.Destination order by u.Ship_Code "
 cursor.execute(selectstring_uts)
 arr_uts = cursor.fetchall()
+
+
 
 
 fjoldiSendinga = 0
@@ -43,6 +47,7 @@ for x in arr:
 fjoldiSendinga_innstreymi = fjoldiSendinga
 for x in arr_uts:
 	fjoldiSendinga = fjoldiSendinga + 1
+
 
 #----------------------------------------------------------------------------
 # Create data file CHANGE
@@ -122,7 +127,7 @@ f.write("\r\n")
 
 #Write the TARGET
 f.write("param Ttarget := \r\n")
-testTarget = round(total_alag/8/5)+300
+testTarget = round(total_alag/8/5)
 for i in range(1,Days+1):
 	for x in range(1,Timeslots+1):
 		if x in (1,2,3,4):
@@ -196,16 +201,17 @@ Write_sendingar_data(arr,SAM_kennitolur,vendorname,fjoldiSendinga_innstreymi-1,f
 
 
 #test
-print(all_sendingar)
+#print(all_sendingar)
 
 for i in range(1,Sendingar):
 	if i not in all_sendingar:
 		rest_sendingar.append(i)
 
-print(rest_sendingar)
+#print(rest_sendingar)
 #----------------------------------------------------------------------
 #Bannlisti & Fixlisti
 #----------------------------------------------------------------------
+
 f.write("set Bannlisti := \r\n")
 
 for i in range(fjoldiSendinga_innstreymi + 1,Sendingar + 1):
@@ -219,10 +225,14 @@ f.write(";\r\n")
 
 
 #s,t,d
+
 f.write("set Fixlisti := \r\n")
 
 f.write(";\r\n")
 
+
 f.write("end;\r\n")
 
 print(total_alag)
+print('-----\n\n')
+print(arr_uts)
