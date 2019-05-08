@@ -1,5 +1,6 @@
 import psycopg2
 
+from datetime import datetime
 from Functions.Select_function import Select_string
 from Functions.Write_Vendor_data import Write_vendor_data
 from Functions.Write_sendingarVendorar_data import Write_sendingar_data
@@ -24,7 +25,7 @@ cursor = conn.cursor()
 #----------------------------------------------------------------------------
 # Write the select Q
 #----------------------------------------------------------------------------
-for i in range(1,5):
+for i in range(1,53):
 
 	selectstring = Select_string(i)
 
@@ -226,5 +227,37 @@ for i in range(1,5):
 	f.write(";\r\n")
 
 	f.write("end;\r\n")
+	
+	counter = 0
+	newArr = [2]
+	dags = []
+	arr = list(dict.fromkeys(arr))
+	for i in range(1, len(arr)):
 
-	print(selectstring)
+		'''
+		#print('Printing each date only the first number: ', int(arr[counter][2][0:2]))
+
+		if(arr[counter][2][3:4] == '02'):
+			if((int(arr[counter+1][2][0:2]) !> int(arr[coun))
+
+		elif(arr[counter][2][3:4] == '04' or arr[counter][2][3:4] == '06' or arr[counter][2][3:4] == '09' or arr[counter][2][3:4] == '11'):
+
+		else
+
+
+		if(int(arr[counter+1][2][0:2]) !> int(arr[counter][2][0:2])+1):
+			newArr.append(arr[counter][2][0:2])
+
+		'''
+
+		dags.append(arr[counter][2])
+		counter = counter + 1
+
+	dags2 = (set(dags))
+
+	dags3 = sorted(dags2, key=lambda x: datetime.strptime(x, "%d/%m/%Y").strftime("%Y-%m-%d"))
+	print(dags3)
+
+	print(arr)
+
+
