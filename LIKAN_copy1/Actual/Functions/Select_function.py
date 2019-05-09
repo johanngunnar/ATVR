@@ -28,6 +28,134 @@ def Select_string(vikunumer):
 	cursor.execute(selectstring)
 	arr = cursor.fetchall()
 
+	#if(vikunumer == 1):
+	arr.append(['17/02/2018'])
+	arr.append(['18/02/2018'])
+	#if(vikunumer == 2):
+	arr.append(['24/02/2018'])
+	arr.append(['25/02/2018'])
+	#if(vikunumer == 3):
+	arr.append(['04/03/2018'])	
+	#if(vikunumer == 4):
+	arr.append(['10/03/2018'])
+	
+	arr.append(['17/03/2018'])
+	arr.append(['18/03/2018'])
+
+	arr.append(['24/03/2018'])
+	arr.append(['25/03/2018'])
+
+	arr.append(['30/03/2018'])
+	arr.append(['31/03/2018'])
+	arr.append(['01/04/2018'])
+
+	arr.append(['07/04/2018'])
+	arr.append(['08/04/2018'])
+
+	arr.append(['14/04/2018'])
+	arr.append(['15/04/2018'])
+
+	arr.append(['21/04/2018'])
+	arr.append(['22/04/2018'])
+
+	arr.append(['28/04/2018'])
+	arr.append(['29/04/2018'])
+	
+	arr.append(['05/05/2018'])
+	
+	arr.append(['12/05/2018'])
+
+	arr.append(['19/05/2018'])
+	arr.append(['20/05/2018'])
+
+	arr.append(['26/05/2018'])
+	arr.append(['27/05/2018'])
+
+	arr.append(['02/06/2018'])
+	arr.append(['03/06/2018'])
+	'''
+		arr.append(['16/06/2018'])
+		arr.append(['17/06/2018'])
+	if(vikunumer == 19):
+		arr.append(['23/06/2018'])
+		arr.append(['24/06/2018'])
+	if(vikunumer == 20):
+		arr.append(['30/06/2018'])
+		arr.append(['01/07/2018'])
+	if(vikunumer == 21):
+		arr.append(['08/07/2018'])
+	if(vikunumer == 22):
+		arr.append(['14/07/2018'])
+	if(vikunumer == 23):
+		arr.append(['21/07/2018'])
+		arr.append(['22/07/2018'])
+	if(vikunumer == 25):
+		arr.append(['04/08/2018'])
+		arr.append(['05/08/2018'])
+	if(vikunumer == 26):
+		arr.append(['11/08/2018'])
+		arr.append(['12/08/2018'])
+	if(vikunumer == 27):
+		arr.append(['18/08/2018'])
+		arr.append(['19/08/2018'])
+	if(vikunumer == 28):
+		arr.append(['25/08/2018'])
+		arr.append(['26/08/2018'])
+	if(vikunumer == 29):
+		arr.append(['01/09/2018'])
+		arr.append(['02/09/2018'])
+	if(vikunumer == 30):
+		arr.append(['08/09/2018'])
+	if(vikunumer == 31):
+		arr.append(['15/09/2018'])
+		arr.append(['16/09/2018'])
+	if (vikunumer == 32):
+		arr.append(['22/09/2018'])
+		arr.append(['23/09/2018'])
+	if(vikunumer == 33):
+		arr.append(['29/09/2018'])
+		arr.append(['30/09/2018'])
+	if(vikunumer == 34):
+		arr.append(['07/10/2018'])
+	if(vikunumer == 35):
+		arr.append(['13/10/2018'])
+		arr.append(['14/10/2018'])
+	if(vikunumer == 36):
+		arr.append(['20/10/2018'])
+		arr.append(['21/10/2018'])
+	if(vikunumer == 37):
+		arr.append(['27/10/2018'])
+	if(vikunumer == 38):
+		arr.append(['03/11/2018'])
+		arr.append(['04/11/2018'])
+	if(vikunumer == 39):
+		arr.append(['17/11/2018'])
+		arr.append(['18/11/2018'])
+	if(vikunumer == 40):
+		arr.append(['24/11/2018'])
+		arr.append(['25/11/2018'])
+	if(vikunumer == 41):
+		arr.append(['02/12/2018'])
+	if(vikunumer == 42):
+		arr.append(['08/12/2018'])
+		arr.append(['09/12/2018'])
+	if(vikunumer == 43):
+		arr.append(['16/12/2018'])
+	if(vikunumer == 44):
+		arr.append(['23/12/2018'])
+	if(vikunumer == 45):
+		arr.append(['25/12/2018'])
+		arr.append(['29/12/2018'])
+		arr.append(['30/12/2018'])
+	if(vikunumer == 46):
+		arr.append(['05/01/2019'])
+		arr.append(['06/01/2019'])
+	if(vikunumer == 47):
+		arr.append(['12/01/2019'])
+		arr.append(['13/01/2019'])
+	if(vikunumer == 49):
+		arr.append(['19/01/2019'])
+	'''
 	select_data = []
 	count = 0
 	for i in arr:
@@ -53,11 +181,14 @@ def Select_string(vikunumer):
 	# ------------------------------------------------
 
 	strengurinn_minn = ''
-	for i in range(3 +((vikunumer-1)*5),3+5*vikunumer):
-		if i == 3+((vikunumer-1)*5):
-			strengurinn_minn = "'"+select_data[i]+"'"
+	nedrimork = 3 +((vikunumer-1)*5)+(vikunumer-1)*2
+	efrimork = 3+5*vikunumer+(vikunumer-1)*2
+	for j in range(nedrimork,efrimork):
+		if j == nedrimork:
+			strengurinn_minn = "'"+select_data[j]+"'"
 		else:
-			strengurinn_minn = strengurinn_minn + ','+ "'"+select_data[i]+"'"
+			strengurinn_minn = strengurinn_minn + ','+ "'"+select_data[j]+"'"
+
 
 	#'12/02/2018','13/02/2018','14/02/2018','15/02/2018','16/02/2018'
 

@@ -30,6 +30,7 @@ arr = cursor.fetchall()
 select_data = []
 count = 0
 for i in arr:
+	print(i)
 	select_data.append([int(i[0][0:2]),int(i[0][3:5]),int(i[0][6:])])
 	count = count +1 
 
