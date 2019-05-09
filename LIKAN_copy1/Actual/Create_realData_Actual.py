@@ -212,11 +212,11 @@ for i in range(1,5):
 			haesta_tala = arr[i][2][:2]
 			heasta_man = arr[i][2][3:5]
 			day_count = day_count + 1
-		print(arr[i-1][0:3])
-		print(arr[i][0:3])
-		print(day_count)
-		print(haesta_tala)
-		print(heasta_man)
+		#print(arr[i-1][0:3])
+		#print(arr[i][0:3])
+		#print(day_count)
+		#print(haesta_tala)
+		#print(heasta_man)
 		slot_vendor_data = []
 		if arr[i][6].strip() == '420369-7789':
 			slot = 1
@@ -269,14 +269,16 @@ for i in range(1,5):
 
 		dags.append(arr[counter][2])
 		counter = counter + 1
+		print(arr)		
+
 
 	dags2 = (set(dags))
 
 	dags3 = sorted(dags2, key=lambda x: datetime.strptime(x, "%d/%m/%Y").strftime("%Y-%m-%d"))
 
 
-	print(dags3)	
-print(selectstring)
+		
+
 
 
 

@@ -61,6 +61,7 @@ def Select_string(vikunumer):
 
 	#'12/02/2018','13/02/2018','14/02/2018','15/02/2018','16/02/2018'
 
+
 	selectstring = "select s.id,s.SourceNo, s.date, vi.Quantity, c.Timevalue, c.tegund,i.Vendor,i.Vendor_name,i.description from sending s, Item_Category c,item i,vinnsla vi where c.name = i.Tegund and s.ItemNo = i.id and vi.itemno = i.id and s.RE_number = vi.Document_ID1 and s.date in({}) order by s.id".format(strengurinn_minn)
 
 	return selectstring
