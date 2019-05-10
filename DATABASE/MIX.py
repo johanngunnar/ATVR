@@ -108,8 +108,8 @@ for i in sorted(Item_cat_numbersDict):
 #INSERT FUNCTIONS CALL ----
 #insert_function_basic(Item_cat_numbersDict)
 insert_function(Item_cat_numbersDict)
-
-
+'''
+'''
 #Creat Item (Vöruspjald)--------------------------------------------
 Item_Dict = {}
 for x in range(0,len(Voruspjald)):
@@ -133,7 +133,7 @@ for i in sorted(Item_Dict):
 
 insert_function_item(Item_Dict)
 
-
+'''
 #Create Sending --------------------------------------------------
 Sending_Dict = {}
 for x in range(1,len(Sending)):
@@ -163,7 +163,7 @@ print(Innstreymi_Dict[1])
 print(Innstreymi_Dict[1][2])
 
 insert_function_innstreymi(Innstreymi_Dict)
-'''
+
 
 #Create Utstreymi---------------------------------------------------
 Utstreymi_Dict = {}
@@ -180,7 +180,7 @@ print(Utstreymi_Dict[1])
 print(Utstreymi_Dict[1][2])
 
 insert_function_utstreymi(Utstreymi_Dict)
-
+'''
 '''
 #Create Vinnsla---------------------------------------------------
 Vinnsla_Dict = {}
@@ -206,7 +206,7 @@ print(Vinnsla_Dict[1])
 print(Vinnsla_Dict[1][2])
 
 insert_function_vinnsla(Vinnsla_Dict)
-'''
+
 
 
 
