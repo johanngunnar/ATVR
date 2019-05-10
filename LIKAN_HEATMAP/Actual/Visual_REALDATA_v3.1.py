@@ -30,12 +30,14 @@ cursor = conn.cursor()
 # ------------------------------------------------
 fig = plt.figure()
 
-for n in range(1,20):
+for n in range(1,52):
     results = []
     solution = "solution" + str(n) + ".sol"
     with open(solution) as inputfile:
         for line in inputfile:
             results.append(line.strip().replace(')', ' ').replace('(', ' ').replace(',', ' ').split())
+
+    print(results)
 
     data = []
     alag = {}
@@ -118,7 +120,7 @@ for n in range(1,20):
     # ----------------------------------------------------------
     # CREATE MANNAMAL
     # ----------------------------------------------------------
-    f = open("C:\\Users\\Kristinn Ingi\\Desktop\\ATVR\\LIKAN_copy1\\Actual\\lausn_mannamal.txt", "w+")
+    f = open("lausn_mannamal.txt", "w+")
     lausn = {}
     for x in results[(dagar * timeslott * 8 + 4):(fjoldiSendinga * dagar * timeslott) + (dagar * timeslott * 8 + 4)]:
         seperator = ''
@@ -136,7 +138,7 @@ for n in range(1,20):
             f.write('Sendingin inniheldur {} stykki af {} me ·lagsvalue {} sem gerir ·lagi = {} \n'.format(select_data[i][3],select_data[i][8],select_data[i][4],(round(select_data[i][3]*select_data[i][4]))))
     f.close()
 
-    f = open("C:\\Users\\Kristinn Ingi\\Desktop\\ATVR\\LIKAN_copy1\\Actual\\mannamal_basic.txt", "w+")
+    f = open("mannamal_basic.txt", "w+")
     for x in results[(dagar * timeslott * 8 + 4):(fjoldiSendinga * dagar * timeslott) + (dagar * timeslott * 8 + 4)]:
         seperator = ''
         if int(x[4]) == 1:  # lausn
