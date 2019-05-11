@@ -14,10 +14,12 @@ CREATE TABLE item (
   ABS VARCHAR(250),
   Agengisgjald INTEGER,
   UnitOfMeasure VARCHAR(250),
-  MilliL VARCHAR(250),
-	Vendor VARCHAR(250),
-	Description VARCHAR(250),
-	Vendor_name VARCHAR(250),
+  MilliL float,
+  Vendor VARCHAR(250),
+  Vendor_name VARCHAR(250),
+  Description VARCHAR(250),
+  Timevalue float,
+  Timevalue_LITER float,
 
   Foreign key(Tegund) References  Item_Category(name)
   /*Foreign key(Soluflokkur) References  Soluflokkur(name),*/
