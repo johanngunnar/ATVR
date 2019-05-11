@@ -57,18 +57,36 @@ f.write("\r\n")
 #----------------------------------------------------------------------
 # VENDORAR & TIMESLOTT
 #----------------------------------------------------------------------
-
 vendor = 'O'
 Write_vendor_data(1,vendor,Timeslots,f)
 
-'''
+vendor = 'C'
+Write_vendor_data(2,vendor,Timeslots,f)
+
+vendor = 'G'
+Write_vendor_data(3,vendor,Timeslots,f)
+
+vendor = 'V'
+Write_vendor_data(3,vendor,Timeslots,f)
+
+vendor = 'BR'
+Write_vendor_data(4,vendor,Timeslots,f)
+
+vendor = 'DI'
+Write_vendor_data(4,vendor,Timeslots,f)
+
+vendor = 'BA'
+Write_vendor_data(5,vendor,Timeslots,f)
+
+vendor = 'M'
+Write_vendor_data(6,vendor,Timeslots,f)
+
 #EIMSKIP OG SAMSKIP
 vendor = 'EIM'
 Write_vendor_data(7,vendor,Timeslots,f)
 
 vendor = 'SAM'
 Write_vendor_data(8,vendor,Timeslots,f)
-'''
 
 #----------------------------------------------------------------------
 # ALAG & TARGET
@@ -161,24 +179,11 @@ vendorname = 'Samskip'
 Write_sendingar_data(arr,SAM_kennitolur,vendorname,fjoldiSendinga-1,f,all_sendingar)
 
 
-#test
-#fjoldiSendinga(all_sendingar)
-
-for i in range(1,Sendingar):
-	if i not in all_sendingar:
-		rest_sendingar.append(i)
-
-#fjoldiSendinga(rest_sendingar)
 #----------------------------------------------------------------------
 #Bannlisti & Fixlisti
 #----------------------------------------------------------------------
 
 f.write("set Bannlisti := \r\n")
-
-for i in range(fjoldiSendinga + 1,Sendingar + 1):
-	for x in range(1,Days+1):
-		for y in range(1,4):
-			f.write("{} {} {}\r\n".format(i,y,x))
 
 
 f.write(";\r\n")

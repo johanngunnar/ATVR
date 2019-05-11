@@ -12130,3 +12130,82 @@ Best objective 1.978519000000e+06, best bound 1.315867000000e+06, gap 33.4923%
 
 Wrote result file 'solution51.sol'
 
+
+Gurobi 8.1.0 (mac64) logging started Sat May 11 14:29:20 2019
+
+Academic license - for non-commercial use only
+Set parameter TimeLimit to value 120
+
+Gurobi Optimizer version 8.1.0 build v8.1.0rc1 (mac64)
+Copyright (c) 2018, Gurobi Optimization, LLC
+
+Read LP format model from file lp_output.lp
+Reading time = 0.09 seconds
+MaxAlag: 28008 rows, 27562 columns, 120445 nonzeros
+Optimize a model with 28008 rows, 27562 columns and 120445 nonzeros
+Variable types: 42 continuous, 27520 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+02]
+  Objective range  [1e+00, 6e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+Presolve removed 15332 rows and 13460 columns
+Presolve time: 0.12s
+Presolved: 12676 rows, 14102 columns, 65585 nonzeros
+Variable types: 0 continuous, 14102 integer (14060 binary)
+Found heuristic solution: objective 1.524911e+07
+
+Root relaxation: objective 2.901907e+06, 22204 iterations, 1.94 seconds
+Total elapsed time = 5.20s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2901907.00    0 1630 1.5249e+07 2901907.00  81.0%     -    5s
+H    0     0                    8160907.0000 2901907.00  64.4%     -    5s
+H    0     0                    4770117.0000 2901907.00  39.2%     -    6s
+     0     0 2902207.00    0 1787 4770117.00 2902207.00  39.2%     -    7s
+H    0     0                    4202419.0000 2902207.00  30.9%     -   11s
+     0     0 2902207.00    0 1850 4202419.00 2902207.00  30.9%     -   13s
+     0     0 2902207.58    0 2395 4202419.00 2902207.58  30.9%     -   21s
+     0     0 2902207.58    0 2392 4202419.00 2902207.58  30.9%     -   21s
+     0     0 2902209.53    0 2009 4202419.00 2902209.53  30.9%     -   25s
+     0     0 2902209.53    0 1985 4202419.00 2902209.53  30.9%     -   26s
+H    0     0                    3743820.0000 2902209.53  22.5%     -   29s
+H    0     0                    3338623.0000 2902209.53  13.1%     -   38s
+     0     2 2902209.53    0 1944 3338623.00 2902209.53  13.1%     -   39s
+     3     4 infeasible    2      3338623.00 2902209.53  13.1%   459   40s
+   182   181 2902209.54   86 2169 3338623.00 2902209.54  13.1%  44.2   45s
+H  239   221                    3317823.0000 2902209.54  12.5%  34.4   47s
+H  256   241                    3317822.0000 2902209.54  12.5%  32.4   47s
+   297   296 2904009.54  134 2165 3317822.00 2902209.54  12.5%  28.6   53s
+H  300   296                    3306821.0000 2902209.54  12.2%  28.4   53s
+   355   355 2904009.54  161 2165 3306821.00 2902209.54  12.2%  24.5   58s
+H  380   355                    3306621.0000 2902209.54  12.2%  23.0   58s
+   405   403 2905209.54  187 2172 3306621.00 2902209.54  12.2%  21.9   64s
+H  407   403                    3306620.0000 2902209.54  12.2%  21.8   64s
+   411   410 2905209.54  189 2168 3306620.00 2902209.54  12.2%  21.6   67s
+   523   522 2905209.54  245 2172 3306620.00 2902209.54  12.2%  17.6   75s
+H  579   580                    3306220.0000 2902209.54  12.2%  36.0   81s
+   614   612 2905210.09  266 2223 3306220.00 2902209.54  12.2%  50.5   96s
+   642   643 2905210.78  277 1968 3306220.00 2902209.54  12.2%  89.3  100s
+   645   642 2905210.41  278 2171 3306220.00 2902209.54  12.2%   111  106s
+   681   681 2905211.19  295 1826 3306220.00 2902209.54  12.2%   151  110s
+H  695   694                    3226823.0000 2902209.54  10.1%   201  118s
+   703   700 2905213.18  326 1814 3226823.00 2902209.54  10.1%   227  120s
+
+Cutting planes:
+  Gomory: 41
+  MIR: 1
+  StrongCG: 1
+
+Explored 706 nodes (249699 simplex iterations) in 120.01 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 10: 3.22682e+06 3.30622e+06 3.30662e+06 ... 4.20242e+06
+
+Time limit reached
+Best objective 3.226823000000e+06, best bound 2.902210000000e+06, gap 10.0598%
+
+Wrote result file 'solution.sol'
+
