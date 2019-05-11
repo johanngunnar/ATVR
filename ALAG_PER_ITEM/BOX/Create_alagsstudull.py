@@ -20,8 +20,9 @@ f1.close()
 #--------------------------------------------------
 
 Item_cat_numbersDict = {}
-#len(Item_Cat)-13
-for x in range(0,len(Item_Cat)-13):
+lengd = len(Item_Cat)-13
+#lengd = 150
+for x in range(0,150):
 		Item_cat_numbersDict[int(Item_Cat[x]['\ufeffNo_'])] = []
 
 #--------------------------------------------------
@@ -30,8 +31,7 @@ for x in range(0,len(Item_Cat)-13):
 
 for i in Item_cat_numbersDict:
 	check = round(Create_alag(i),2)
-	if check != 0:
-		Item_cat_numbersDict[i].append(check)
+	Item_cat_numbersDict[i].append(check)
 	print(i)
 
 

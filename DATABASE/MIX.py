@@ -125,6 +125,7 @@ for x in range(0,len(Voruspjald)):
 
     Voruspjald[x]['Unit Price'].replace((Voruspjald[x]['Unit Price'][(Voruspjald[x]['Unit Price'].find(',')):]),'')
     Voruspjald[x]['Millilítrar'].replace((Voruspjald[x]['Millilítrar'][(Voruspjald[x]['Millilítrar'].find(',')):]),'')
+    Voruspjald[x]['Millilítrar'] = Voruspjald[x]['Millilítrar'].replace(',','.')
     
     Item_Dict[int(float(Voruspjald[x]['\ufeffNo_']))] = [Voruspjald[x]['Unit Price'],Voruspjald[x]['Söluflokkur'],Voruspjald[x]['Item Category Code'],Voruspjald[x]['ABC-Item'],Voruspjald[x]['Áfengisgjald (tegund)'],Voruspjald[x]['Base Unit of Measure'],Voruspjald[x]['Millilítrar'],Voruspjald[x]['Vendor No_'],Voruspjald[x]['Heiti umboðsmanns'],Voruspjald[x]['Description']]
 
@@ -180,8 +181,7 @@ print(Utstreymi_Dict[1])
 print(Utstreymi_Dict[1][2])
 
 insert_function_utstreymi(Utstreymi_Dict)
-'''
-'''
+
 #Create Vinnsla---------------------------------------------------
 Vinnsla_Dict = {}
 for x in range(0,len(Vinnsla)):
@@ -211,50 +211,4 @@ insert_function_vinnsla(Vinnsla_Dict)
 
 
 
-
-
-
-
-
-
-'''
-#Create Vendor List--------------------------------------------------
-#Create set of kennitala
-Vendor_K = set()
-for i in range(0, len(Voruspjald)) :
-	Vendor_K.add(Voruspjald[i]['Vendor No_'])
-
-#print(Vendor_K)
-
-
-#Create dictonary and put kennitala as Key
-Vendor_Dict = {}
-for x in Vendor_K:
-		Vendor_Dict[x] = ''
-
-#Match names with kennitala and put it into dict
-match = 0
-for x in Vendor_Dict:
-	for i in range(0, len(Voruspjald)) :
-		if Voruspjald[i]['Vendor No_'] == x:
-			if Vendor_Dict[x] == '':
-				Vendor_Dict[x] = Voruspjald[i]['Heiti umboðsmanns']
-				match = match +1
-			else:
-				break
-		else:
-			continue 
-
-
-for d in Vendor_Dict:
-	print(d, Vendor_Dict[d])
-
-counter = 0
-for d in Vendor_Dict:
-	if Vendor_Dict[d] == '':
-		counter = counter +1 
-
-print(counter)
-print(match)
-'''
 

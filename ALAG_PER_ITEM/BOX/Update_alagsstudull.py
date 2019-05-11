@@ -5,7 +5,7 @@ def update_function_alagsstudull(data):
 	#This file creates "Update_alagsstudull.sql" ,
 	#When you create that file go to your database and paste the data into the database
 	#------------------------------------------------------------------------------------------------------
-	'''
+	
 	#Connection to SQL
 	host = 'localhost'
 	dbname = 'atvr2'
@@ -35,11 +35,11 @@ def update_function_alagsstudull(data):
 
 	cursor.close()
 	conn.close()
+	
 	'''
-
 	#THE BASIC METHOD -----------------------------------------
 	update_string = "update Item SET timevalue = {} where id = {} \n"
-
+	
 	#Create the file
 	f = open('Update_alagsstudull.sql', 'w')
 	for d in data:
@@ -47,5 +47,6 @@ def update_function_alagsstudull(data):
 	    f.write(update_string.format(data[d][0],d))
 
 	f.close()
+	'''
 	
 	
