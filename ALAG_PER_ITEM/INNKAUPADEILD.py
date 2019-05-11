@@ -22,8 +22,8 @@ cursor = conn.cursor()
 #----------------------------------------------------------------------------
 # Write the select Q & OPEN
 #----------------------------------------------------------------------------
-
-selectstring = "Select inn.ItemNo,i.Tegund,i.Description, inn.Qty_perUnit, inn.Quantity, inn.Total_Qty, inn.Date, i.MilliL, i.Timevalue,round(i.Timevalue*inn.Quantity) Alag,i.Timevalue_Liter  from Innstreymi inn, Item i where inn.ItemNo = i.id and inn.Date in('16/02/2018')"
+date = '16/02/2018'
+selectstring = "Select inn.ItemNo,i.Tegund,i.Description, inn.Qty_perUnit, inn.Quantity, inn.Total_Qty, inn.Date, i.MilliL, i.Timevalue,(i.Timevalue*inn.Quantity) Alag,i.Timevalue_Liter ,(i.Timevalue_Liter*i.MilliL*inn.Total_Qty)/1000 ALAG_liter from Innstreymi inn, Item i where inn.ItemNo = i.id and inn.Date in('{}')".format(date)
 cursor.execute(selectstring)
 arr = cursor.fetchall()
 
@@ -31,12 +31,14 @@ conn.commit()
 cursor.close()
 conn.close()
 
-#inn.ItemNo,i.Tegund,i.Description, inn.Qty_perUnit, inn.Quantity, inn.Total_Qty, inn.Date, i.MilliL, i.Timevalue,round(i.Timevalue*inn.Quantity) Alag ,.Timevalue_Liter
+#selectstring = "Select inn.ItemNo,i.Tegund,i.Description, inn.Qty_perUnit, inn.Quantity, inn.Total_Qty, inn.Date, i.MilliL, i.Timevalue,(i.Timevalue*inn.Quantity) Alag,i.Timevalue_Liter ,(i.Timevalue_Liter*i.MilliL) ALAG_liter
 counter = 0
 Litrar = 0
 LitraAlag = 0
+LitraAlag_test = 0
 Kassar = 0
 KassaAlag = 0
+sendingar = []
 for i in arr:
 	
 	KassaAlag = KassaAlag + i[9]
@@ -45,10 +47,13 @@ for i in arr:
 	curr_litrar = ((i[5]*i[7])/1000)
 	Litrar = Litrar + curr_litrar
 	LitraAlag = LitraAlag + curr_litrar*i[10]
+	LitraAlag_test = LitraAlag_test + i[11]
 	counter = counter +1
+	sendingar.append(i)
+	print(i)
 
-print('Sending fyrir {} -----------'.format(arr[2][6]))
-print('Fjöldi sendingar: {} Litrar: {} LitraALag: {} Kassar: {}  KassaAlag:  {}'.format(counter,round(Litrar),round(LitraAlag),Kassar,round(KassaAlag)))
+print('Sending fyrir {} -----------'.format(date))
+print('Fjöldi sendingar: {} Litrar: {} LitraALag: {} / {} Kassar: {}  KassaAlag:  {}'.format(counter,round(Litrar),round(LitraAlag_test),round(LitraAlag),Kassar,round(KassaAlag)))
 
 
 
