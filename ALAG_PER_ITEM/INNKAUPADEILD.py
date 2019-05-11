@@ -31,6 +31,17 @@ conn.commit()
 cursor.close()
 conn.close()
 
-
+#inn.ItemNo,i.Tegund,i.Description, inn.Qty_perUnit, inn.Quantity, inn.Total_Qty, inn.Date, i.MilliL, i.Timevalue,round(i.Timevalue*inn.Quantity) Alag 
+counter = 0
+Litrar = 0
+Kassar = 0
+Alag = 0
 for i in arr:
-	print(i)
+	
+	Alag = Alag + i[9]
+	Kassar = Kassar + i[4]
+	Litrar = Litrar + (i[5]*float(i[7].replace(',','.')))/1000
+	counter = counter +1
+
+print('Sending fyrir {} -----------'.format(arr[2][6]))
+print('Fjöldi sendingar: {} Litrar: {}  Kassar: {}  Alag:  {}'.format(counter,round(Litrar),Kassar,round(Alag)))

@@ -29,7 +29,7 @@ def Create_alag(item_nafn):
 	# Write the select Q & OPEN
 	#----------------------------------------------------------------------------
 
-	selectstring = " select s.SourceNo,c.tegund, vi.Document_ID1, vi.UserID, vi.Quantity, vi.Qty_perUnit, vi.picked, vi.Picked_Unit, vi.Date_Scanned,s.RE_number, s.Shelf, i.Vendor, i.Description, i.id from vinnsla vi, sending s, item i, Item_Category c where vi.itemno = i.id and i.id = {} and s.ItemNo = i.id and s.RE_number = vi.Document_ID1 and c.name = i.Tegund and vi.Date_Scanned like ('%2018') order by (vi.Date_Scanned, vi.Picked)".format(item_nafn)
+	selectstring = " select s.SourceNo,c.tegund, vi.Document_ID1, vi.UserID, vi.Quantity, vi.Qty_perUnit, vi.picked, vi.Picked_Unit, vi.Date_Scanned,s.RE_number, s.Shelf, i.Vendor, i.Description, i.id,i.MilliL from vinnsla vi, sending s, item i, Item_Category c where vi.itemno = i.id and i.id = {} and s.ItemNo = i.id and s.RE_number = vi.Document_ID1 and c.name = i.Tegund and vi.Date_Scanned like ('%2018') order by (vi.Date_Scanned, vi.Picked)".format(item_nafn)
 
 	cursor.execute(selectstring)
 	arr = cursor.fetchall()
@@ -67,7 +67,7 @@ def Create_alag(item_nafn):
 						
 						alag_per_sendingu_min = (upp_i_hillu - inn_i_kerfi)
 						if alag_per_sendingu_min < 300 and alag_per_sendingu_min > 0:
-							Lagerbjor_dict[currcount] = [x[0],x[1],'Sending:',x[6],x[8],'Innstreymi:',i[6],i[8], 'Description:',i[11] ,i[10],x[12],'Álag i min :', alag_per_sendingu_min, 'Quantity of packs',x[4], 'Liters:']
+							Lagerbjor_dict[currcount] = [x[0],x[1],'Sending:',x[6],x[8],'Innstreymi:',i[6],i[8], 'Description:',i[11] ,i[10],x[12],'Álag i min :', alag_per_sendingu_min, 'Quantity of packs',x[4], 'Liters:', x[14], 'QTY_per_unit', x[5]]
 							#print(Lagerbjor_dict[currcount])
 							currcount = currcount + 1
 	#print('Currcount ',currcount)
@@ -82,37 +82,42 @@ def Create_alag(item_nafn):
 	lagerbjor_alag_total = 0
 	lagerbjor_count = 0
 	lagerbjor_packs_total = 0
+	lagerbjor_Liter_total = 0
 	for i in range(0,len(Lagerbjor_dict)):
 		lagerbjor_alag_total = (lagerbjor_alag_total + Lagerbjor_dict[i][13])
 		lagerbjor_count = lagerbjor_count + 1
 		lagerbjor_packs_total = (lagerbjor_packs_total + Lagerbjor_dict[i][15])
+		lagerbjor_Liter_total = lagerbjor_Liter_total + (Lagerbjor_dict[i][17]/1000)*Lagerbjor_dict[i][15]*Lagerbjor_dict[i][19]
 
 
 	#-----------------------
 	# Closing the select Q
 	#-----------------------
 	conn.commit()
-	cursor.close(
-		)
+	cursor.close()
 	conn.close()
-
+	'''
+	print('kassar: ' ,lagerbjor_packs_total)
+	print('Litrar: ',lagerbjor_Liter_total)
+	'''
 	#----------------------------------------------------------------------------
 	# Check to see what is happening in the RUN
 	#----------------------------------------------------------------------------
 
-	if lagerbjor_alag_total == 0:
+	if lagerbjor_alag_total == 0 or lagerbjor_Liter_total == 0:
 		#print(1) 
 		return 0
 	else:
 		medal_alag_a_kassa = lagerbjor_alag_total/lagerbjor_packs_total
+		medal_alag_a_liter = lagerbjor_alag_total/lagerbjor_Liter_total
+		return medal_alag_a_liter
 		'''
 		print('Svo álagið er: {:.2f} per hreyfingu af itemNO : {} '.format(lagerbjor_alag_total/lagerbjor_count,item_nafn))
 		print('Heildarfjöldi pakka: {} .. Meðfjöldi kassa á Put RE línu: {:.2f} .. Meðal álag á kassa: {:.4f} '.format(lagerbjor_packs_total,(lagerbjor_packs_total/lagerbjor_count),medal_alag_a_kassa))
 
 		print('TOTAL ALAG: {} TOTAL PACKS : {}'.format(lagerbjor_alag_total,lagerbjor_packs_total))
 		'''
-		print(medal_alag_a_kassa)
-		return medal_alag_a_kassa
+		
 		
 
 
