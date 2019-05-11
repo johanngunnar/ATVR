@@ -1,666 +1,668 @@
-Dagur 1 í tímaslotti 1. Er sending 101  frá Vendor/Dest ,420369-7789 A: 50 
-Dagur 1 í tímaslotti 1. Er sending 103  frá Vendor/Dest ,420369-7789 A: 73 
-Dagur 1 í tímaslotti 1. Er sending 107  frá Vendor/Dest ,420369-7789 A: 37 
-Dagur 1 í tímaslotti 1. Er sending 108  frá Vendor/Dest ,420369-7789 A: 15 
-Dagur 1 í tímaslotti 1. Er sending 110  frá Vendor/Dest ,420369-7789 A: 177 
-Dagur 1 í tímaslotti 1. Er sending 111  frá Vendor/Dest ,420369-7789 A: 442 
-Dagur 1 í tímaslotti 1. Er sending 269  frá Vendor/Dest ,420369-7789 A: 133 
-Dagur 1 í tímaslotti 1. Er sending 279  frá Vendor/Dest ,420369-7789 A: 61 
-Dagur 1 í tímaslotti 1. Er sending 381  frá Vendor/Dest ,420369-7789 A: 2 
-Dagur 1 í tímaslotti 1. Er sending 391  frá Vendor/Dest ,420369-7789 A: 11 
-Dagur 1 í tímaslotti 1. Er sending 392  frá Vendor/Dest ,420369-7789 A: 300 
-Dagur 1 í tímaslotti 1. Er sending 591  frá Vendor/Dest ,420369-7789 A: 75 
-Dagur 1 í tímaslotti 1. Er sending 595  frá Vendor/Dest ,420369-7789 A: 109 
-Dagur 1 í tímaslotti 1. Er sending 673  frá Vendor/Dest ,420369-7789 A: 4 
-Dagur 1 í tímaslotti 1. Er sending 679  frá Vendor/Dest ,420369-7789 A: 79 
-Dagur 1 í tímaslotti 1. Er sending 681  frá Vendor/Dest ,420369-7789 A: 2 
-Dagur 2 í tímaslotti 1. Er sending 112  frá Vendor/Dest ,420369-7789 A: 403 
-Dagur 2 í tímaslotti 1. Er sending 129  frá Vendor/Dest ,420369-7789 A: 4 
-Dagur 2 í tímaslotti 1. Er sending 271  frá Vendor/Dest ,420369-7789 A: 107 
-Dagur 2 í tímaslotti 1. Er sending 274  frá Vendor/Dest ,420369-7789 A: 36 
-Dagur 2 í tímaslotti 1. Er sending 276  frá Vendor/Dest ,420369-7789 A: 73 
-Dagur 2 í tímaslotti 1. Er sending 280  frá Vendor/Dest ,420369-7789 A: 134 
-Dagur 2 í tímaslotti 1. Er sending 382  frá Vendor/Dest ,420369-7789 A: 17 
-Dagur 2 í tímaslotti 1. Er sending 389  frá Vendor/Dest ,420369-7789 A: 48 
-Dagur 2 í tímaslotti 1. Er sending 390  frá Vendor/Dest ,420369-7789 A: 61 
-Dagur 2 í tímaslotti 1. Er sending 393  frá Vendor/Dest ,420369-7789 A: 150 
-Dagur 2 í tímaslotti 1. Er sending 592  frá Vendor/Dest ,420369-7789 A: 55 
-Dagur 2 í tímaslotti 1. Er sending 596  frá Vendor/Dest ,420369-7789 A: 11 
-Dagur 2 í tímaslotti 1. Er sending 602  frá Vendor/Dest ,420369-7789 A: 44 
-Dagur 2 í tímaslotti 1. Er sending 604  frá Vendor/Dest ,420369-7789 A: 44 
-Dagur 2 í tímaslotti 1. Er sending 653  frá Vendor/Dest ,420369-7789 A: 50 
-Dagur 2 í tímaslotti 1. Er sending 660  frá Vendor/Dest ,420369-7789 A: 5 
-Dagur 2 í tímaslotti 1. Er sending 661  frá Vendor/Dest ,420369-7789 A: 18 
-Dagur 2 í tímaslotti 1. Er sending 662  frá Vendor/Dest ,420369-7789 A: 14 
-Dagur 2 í tímaslotti 1. Er sending 666  frá Vendor/Dest ,420369-7789 A: 9 
-Dagur 2 í tímaslotti 1. Er sending 667  frá Vendor/Dest ,420369-7789 A: 94 
-Dagur 2 í tímaslotti 1. Er sending 668  frá Vendor/Dest ,420369-7789 A: 52 
-Dagur 2 í tímaslotti 1. Er sending 669  frá Vendor/Dest ,420369-7789 A: 114 
-Dagur 2 í tímaslotti 1. Er sending 674  frá Vendor/Dest ,420369-7789 A: 27 
-Dagur 3 í tímaslotti 1. Er sending 104  frá Vendor/Dest ,420369-7789 A: 36 
-Dagur 3 í tímaslotti 1. Er sending 113  frá Vendor/Dest ,420369-7789 A: 248 
-Dagur 3 í tímaslotti 1. Er sending 264  frá Vendor/Dest ,420369-7789 A: 150 
-Dagur 3 í tímaslotti 1. Er sending 266  frá Vendor/Dest ,420369-7789 A: 212 
-Dagur 3 í tímaslotti 1. Er sending 268  frá Vendor/Dest ,420369-7789 A: 168 
-Dagur 3 í tímaslotti 1. Er sending 270  frá Vendor/Dest ,420369-7789 A: 106 
-Dagur 3 í tímaslotti 1. Er sending 277  frá Vendor/Dest ,420369-7789 A: 5 
-Dagur 3 í tímaslotti 1. Er sending 362  frá Vendor/Dest ,420369-7789 A: 1 
-Dagur 3 í tímaslotti 1. Er sending 380  frá Vendor/Dest ,420369-7789 A: 40 
-Dagur 3 í tímaslotti 1. Er sending 383  frá Vendor/Dest ,420369-7789 A: 17 
-Dagur 3 í tímaslotti 1. Er sending 387  frá Vendor/Dest ,420369-7789 A: 50 
-Dagur 3 í tímaslotti 1. Er sending 394  frá Vendor/Dest ,420369-7789 A: 61 
-Dagur 3 í tímaslotti 1. Er sending 588  frá Vendor/Dest ,420369-7789 A: 143 
-Dagur 3 í tímaslotti 1. Er sending 589  frá Vendor/Dest ,420369-7789 A: 101 
-Dagur 3 í tímaslotti 1. Er sending 593  frá Vendor/Dest ,420369-7789 A: 73 
-Dagur 3 í tímaslotti 1. Er sending 603  frá Vendor/Dest ,420369-7789 A: 18 
-Dagur 3 í tímaslotti 1. Er sending 641  frá Vendor/Dest ,420369-7789 A: 79 
-Dagur 3 í tímaslotti 1. Er sending 657  frá Vendor/Dest ,420369-7789 A: 11 
-Dagur 3 í tímaslotti 1. Er sending 658  frá Vendor/Dest ,420369-7789 A: 6 
-Dagur 3 í tímaslotti 1. Er sending 671  frá Vendor/Dest ,420369-7789 A: 18 
-Dagur 3 í tímaslotti 1. Er sending 672  frá Vendor/Dest ,420369-7789 A: 5 
-Dagur 3 í tímaslotti 1. Er sending 678  frá Vendor/Dest ,420369-7789 A: 22 
-Dagur 4 í tímaslotti 1. Er sending 102  frá Vendor/Dest ,420369-7789 A: 91 
-Dagur 4 í tímaslotti 1. Er sending 105  frá Vendor/Dest ,420369-7789 A: 55 
-Dagur 4 í tímaslotti 1. Er sending 106  frá Vendor/Dest ,420369-7789 A: 55 
-Dagur 4 í tímaslotti 1. Er sending 265  frá Vendor/Dest ,420369-7789 A: 128 
-Dagur 4 í tímaslotti 1. Er sending 272  frá Vendor/Dest ,420369-7789 A: 50 
-Dagur 4 í tímaslotti 1. Er sending 275  frá Vendor/Dest ,420369-7789 A: 55 
-Dagur 4 í tímaslotti 1. Er sending 377  frá Vendor/Dest ,420369-7789 A: 4 
-Dagur 4 í tímaslotti 1. Er sending 378  frá Vendor/Dest ,420369-7789 A: 117 
-Dagur 4 í tímaslotti 1. Er sending 379  frá Vendor/Dest ,420369-7789 A: 61 
-Dagur 4 í tímaslotti 1. Er sending 388  frá Vendor/Dest ,420369-7789 A: 38 
-Dagur 4 í tímaslotti 1. Er sending 395  frá Vendor/Dest ,420369-7789 A: 192 
-Dagur 4 í tímaslotti 1. Er sending 587  frá Vendor/Dest ,420369-7789 A: 7 
-Dagur 4 í tímaslotti 1. Er sending 597  frá Vendor/Dest ,420369-7789 A: 61 
-Dagur 4 í tímaslotti 1. Er sending 599  frá Vendor/Dest ,420369-7789 A: 325 
-Dagur 4 í tímaslotti 1. Er sending 645  frá Vendor/Dest ,420369-7789 A: 14 
-Dagur 4 í tímaslotti 1. Er sending 655  frá Vendor/Dest ,420369-7789 A: 50 
-Dagur 4 í tímaslotti 1. Er sending 656  frá Vendor/Dest ,420369-7789 A: 55 
-Dagur 4 í tímaslotti 1. Er sending 659  frá Vendor/Dest ,420369-7789 A: 25 
-Dagur 4 í tímaslotti 1. Er sending 663  frá Vendor/Dest ,420369-7789 A: 14 
-Dagur 4 í tímaslotti 1. Er sending 664  frá Vendor/Dest ,420369-7789 A: 4 
-Dagur 4 í tímaslotti 1. Er sending 676  frá Vendor/Dest ,420369-7789 A: 91 
-Dagur 4 í tímaslotti 1. Er sending 677  frá Vendor/Dest ,420369-7789 A: 52 
-Dagur 4 í tímaslotti 1. Er sending 682  frá Vendor/Dest ,420369-7789 A: 26 
-Dagur 5 í tímaslotti 1. Er sending 109  frá Vendor/Dest ,420369-7789 A: 21 
-Dagur 5 í tímaslotti 1. Er sending 262  frá Vendor/Dest ,420369-7789 A: 182 
-Dagur 5 í tímaslotti 1. Er sending 263  frá Vendor/Dest ,420369-7789 A: 182 
-Dagur 5 í tímaslotti 1. Er sending 267  frá Vendor/Dest ,420369-7789 A: 106 
-Dagur 5 í tímaslotti 1. Er sending 273  frá Vendor/Dest ,420369-7789 A: 55 
-Dagur 5 í tímaslotti 1. Er sending 278  frá Vendor/Dest ,420369-7789 A: 97 
-Dagur 5 í tímaslotti 1. Er sending 384  frá Vendor/Dest ,420369-7789 A: 24 
-Dagur 5 í tímaslotti 1. Er sending 586  frá Vendor/Dest ,420369-7789 A: 7 
-Dagur 5 í tímaslotti 1. Er sending 590  frá Vendor/Dest ,420369-7789 A: 42 
-Dagur 5 í tímaslotti 1. Er sending 594  frá Vendor/Dest ,420369-7789 A: 55 
-Dagur 5 í tímaslotti 1. Er sending 598  frá Vendor/Dest ,420369-7789 A: 134 
-Dagur 5 í tímaslotti 1. Er sending 601  frá Vendor/Dest ,420369-7789 A: 131 
-Dagur 5 í tímaslotti 1. Er sending 640  frá Vendor/Dest ,420369-7789 A: 104 
-Dagur 5 í tímaslotti 1. Er sending 654  frá Vendor/Dest ,420369-7789 A: 73 
-Dagur 5 í tímaslotti 1. Er sending 665  frá Vendor/Dest ,420369-7789 A: 46 
-Dagur 5 í tímaslotti 1. Er sending 670  frá Vendor/Dest ,420369-7789 A: 51 
-Dagur 5 í tímaslotti 1. Er sending 675  frá Vendor/Dest ,420369-7789 A: 244 
-Dagur 5 í tímaslotti 1. Er sending 680  frá Vendor/Dest ,420369-7789 A: 16 
-Dagur 1 í tímaslotti 2. Er sending 116  frá Vendor/Dest ,470169-1419 A: 24 
-Dagur 1 í tímaslotti 2. Er sending 117  frá Vendor/Dest ,470169-1419 A: 23 
-Dagur 1 í tímaslotti 2. Er sending 123  frá Vendor/Dest ,470169-1419 A: 26 
-Dagur 1 í tímaslotti 2. Er sending 124  frá Vendor/Dest ,470169-1419 A: 9 
-Dagur 1 í tímaslotti 2. Er sending 126  frá Vendor/Dest ,470169-1419 A: 4 
-Dagur 1 í tímaslotti 2. Er sending 127  frá Vendor/Dest ,470169-1419 A: 34 
-Dagur 1 í tímaslotti 2. Er sending 405  frá Vendor/Dest ,470169-1419 A: 31 
-Dagur 1 í tímaslotti 2. Er sending 406  frá Vendor/Dest ,470169-1419 A: 9 
-Dagur 1 í tímaslotti 2. Er sending 411  frá Vendor/Dest ,470169-1419 A: 18 
-Dagur 1 í tímaslotti 2. Er sending 605  frá Vendor/Dest ,470169-1419 A: 33 
-Dagur 1 í tímaslotti 2. Er sending 646  frá Vendor/Dest ,470169-1419 A: 35 
-Dagur 2 í tímaslotti 2. Er sending 18  frá Vendor/Dest ,470169-1419 A: 146 
-Dagur 2 í tímaslotti 2. Er sending 52  frá Vendor/Dest ,470169-1419 A: 1 
-Dagur 2 í tímaslotti 2. Er sending 114  frá Vendor/Dest ,470169-1419 A: 63 
-Dagur 2 í tímaslotti 2. Er sending 115  frá Vendor/Dest ,470169-1419 A: 219 
-Dagur 2 í tímaslotti 2. Er sending 282  frá Vendor/Dest ,470169-1419 A: 13 
-Dagur 2 í tímaslotti 2. Er sending 285  frá Vendor/Dest ,470169-1419 A: 84 
-Dagur 2 í tímaslotti 2. Er sending 286  frá Vendor/Dest ,470169-1419 A: 3 
-Dagur 2 í tímaslotti 2. Er sending 400  frá Vendor/Dest ,470169-1419 A: 73 
-Dagur 2 í tímaslotti 2. Er sending 606  frá Vendor/Dest ,470169-1419 A: 146 
-Dagur 3 í tímaslotti 2. Er sending 21  frá Vendor/Dest ,470169-1419 A: 128 
-Dagur 3 í tímaslotti 2. Er sending 119  frá Vendor/Dest ,470169-1419 A: 46 
-Dagur 3 í tímaslotti 2. Er sending 122  frá Vendor/Dest ,470169-1419 A: 130 
-Dagur 3 í tímaslotti 2. Er sending 128  frá Vendor/Dest ,470169-1419 A: 69 
-Dagur 3 í tímaslotti 2. Er sending 281  frá Vendor/Dest ,470169-1419 A: 2 
-Dagur 3 í tímaslotti 2. Er sending 288  frá Vendor/Dest ,470169-1419 A: 364 
-Dagur 3 í tímaslotti 2. Er sending 404  frá Vendor/Dest ,470169-1419 A: 4 
-Dagur 4 í tímaslotti 2. Er sending 20  frá Vendor/Dest ,470169-1419 A: 35 
-Dagur 4 í tímaslotti 2. Er sending 118  frá Vendor/Dest ,470169-1419 A: 9 
-Dagur 4 í tímaslotti 2. Er sending 121  frá Vendor/Dest ,470169-1419 A: 22 
-Dagur 4 í tímaslotti 2. Er sending 125  frá Vendor/Dest ,470169-1419 A: 20 
-Dagur 4 í tímaslotti 2. Er sending 283  frá Vendor/Dest ,470169-1419 A: 6 
-Dagur 4 í tímaslotti 2. Er sending 287  frá Vendor/Dest ,470169-1419 A: 36 
-Dagur 4 í tímaslotti 2. Er sending 398  frá Vendor/Dest ,470169-1419 A: 17 
-Dagur 4 í tímaslotti 2. Er sending 401  frá Vendor/Dest ,470169-1419 A: 18 
-Dagur 4 í tímaslotti 2. Er sending 403  frá Vendor/Dest ,470169-1419 A: 13 
-Dagur 4 í tímaslotti 2. Er sending 408  frá Vendor/Dest ,470169-1419 A: 55 
-Dagur 4 í tímaslotti 2. Er sending 409  frá Vendor/Dest ,470169-1419 A: 26 
-Dagur 5 í tímaslotti 2. Er sending 19  frá Vendor/Dest ,470169-1419 A: 182 
-Dagur 5 í tímaslotti 2. Er sending 120  frá Vendor/Dest ,470169-1419 A: 68 
-Dagur 5 í tímaslotti 2. Er sending 284  frá Vendor/Dest ,470169-1419 A: 73 
-Dagur 5 í tímaslotti 2. Er sending 399  frá Vendor/Dest ,470169-1419 A: 5 
-Dagur 5 í tímaslotti 2. Er sending 402  frá Vendor/Dest ,470169-1419 A: 23 
-Dagur 5 í tímaslotti 2. Er sending 407  frá Vendor/Dest ,470169-1419 A: 310 
-Dagur 5 í tímaslotti 2. Er sending 410  frá Vendor/Dest ,470169-1419 A: 36 
-Dagur 5 í tímaslotti 2. Er sending 607  frá Vendor/Dest ,470169-1419 A: 51 
-Dagur 1 í tímaslotti 3. Er sending 66  frá Vendor/Dest ,700103-3660 A: 17 
-Dagur 1 í tímaslotti 3. Er sending 89  frá Vendor/Dest ,700103-3660 A: 11 
-Dagur 1 í tímaslotti 3. Er sending 342  frá Vendor/Dest ,700103-3660 A: 4 
-Dagur 1 í tímaslotti 3. Er sending 344  frá Vendor/Dest ,700103-3660 A: 150 
-Dagur 1 í tímaslotti 3. Er sending 364  frá Vendor/Dest ,570169-0339 A: 1 
-Dagur 1 í tímaslotti 3. Er sending 368  frá Vendor/Dest ,570169-0339 A: 1 
-Dagur 1 í tímaslotti 3. Er sending 418  frá Vendor/Dest ,570169-0339 A: 7 
-Dagur 1 í tímaslotti 3. Er sending 420  frá Vendor/Dest ,570169-0339 A: 64 
-Dagur 1 í tímaslotti 3. Er sending 423  frá Vendor/Dest ,570169-0339 A: 133 
-Dagur 1 í tímaslotti 3. Er sending 424  frá Vendor/Dest ,570169-0339 A: 106 
-Dagur 1 í tímaslotti 3. Er sending 428  frá Vendor/Dest ,570169-0339 A: 107 
-Dagur 1 í tímaslotti 3. Er sending 432  frá Vendor/Dest ,570169-0339 A: 137 
-Dagur 1 í tímaslotti 3. Er sending 434  frá Vendor/Dest ,570169-0339 A: 5 
-Dagur 1 í tímaslotti 3. Er sending 440  frá Vendor/Dest ,570169-0339 A: 4 
-Dagur 1 í tímaslotti 3. Er sending 448  frá Vendor/Dest ,570169-0339 A: 22 
-Dagur 1 í tímaslotti 3. Er sending 453  frá Vendor/Dest ,570169-0339 A: 13 
-Dagur 1 í tímaslotti 3. Er sending 456  frá Vendor/Dest ,570169-0339 A: 25 
-Dagur 1 í tímaslotti 3. Er sending 457  frá Vendor/Dest ,570169-0339 A: 2 
-Dagur 1 í tímaslotti 3. Er sending 460  frá Vendor/Dest ,570169-0339 A: 44 
-Dagur 1 í tímaslotti 3. Er sending 462  frá Vendor/Dest ,570169-0339 A: 13 
-Dagur 2 í tímaslotti 3. Er sending 69  frá Vendor/Dest ,700103-3660 A: 4 
-Dagur 2 í tímaslotti 3. Er sending 70  frá Vendor/Dest ,700103-3660 A: 1 
-Dagur 2 í tímaslotti 3. Er sending 71  frá Vendor/Dest ,700103-3660 A: 12 
-Dagur 2 í tímaslotti 3. Er sending 88  frá Vendor/Dest ,700103-3660 A: 20 
-Dagur 2 í tímaslotti 3. Er sending 345  frá Vendor/Dest ,700103-3660 A: 371 
-Dagur 2 í tímaslotti 3. Er sending 366  frá Vendor/Dest ,570169-0339 A: 5 
-Dagur 2 í tímaslotti 3. Er sending 415  frá Vendor/Dest ,570169-0339 A: 11 
-Dagur 2 í tímaslotti 3. Er sending 416  frá Vendor/Dest ,570169-0339 A: 4 
-Dagur 2 í tímaslotti 3. Er sending 425  frá Vendor/Dest ,570169-0339 A: 106 
-Dagur 2 í tímaslotti 3. Er sending 430  frá Vendor/Dest ,570169-0339 A: 11 
-Dagur 2 í tímaslotti 3. Er sending 436  frá Vendor/Dest ,570169-0339 A: 44 
-Dagur 2 í tímaslotti 3. Er sending 441  frá Vendor/Dest ,570169-0339 A: 133 
-Dagur 2 í tímaslotti 3. Er sending 444  frá Vendor/Dest ,570169-0339 A: 106 
-Dagur 2 í tímaslotti 3. Er sending 455  frá Vendor/Dest ,570169-0339 A: 17 
-Dagur 2 í tímaslotti 3. Er sending 463  frá Vendor/Dest ,570169-0339 A: 22 
-Dagur 3 í tímaslotti 3. Er sending 87  frá Vendor/Dest ,700103-3660 A: 18 
-Dagur 3 í tímaslotti 3. Er sending 346  frá Vendor/Dest ,700103-3660 A: 4 
-Dagur 3 í tímaslotti 3. Er sending 367  frá Vendor/Dest ,570169-0339 A: 5 
-Dagur 3 í tímaslotti 3. Er sending 413  frá Vendor/Dest ,570169-0339 A: 23 
-Dagur 3 í tímaslotti 3. Er sending 426  frá Vendor/Dest ,570169-0339 A: 88 
-Dagur 3 í tímaslotti 3. Er sending 427  frá Vendor/Dest ,570169-0339 A: 150 
-Dagur 3 í tímaslotti 3. Er sending 445  frá Vendor/Dest ,570169-0339 A: 221 
-Dagur 3 í tímaslotti 3. Er sending 446  frá Vendor/Dest ,570169-0339 A: 358 
-Dagur 4 í tímaslotti 3. Er sending 68  frá Vendor/Dest ,700103-3660 A: 12 
-Dagur 4 í tímaslotti 3. Er sending 72  frá Vendor/Dest ,700103-3660 A: 2 
-Dagur 4 í tímaslotti 3. Er sending 82  frá Vendor/Dest ,700103-3660 A: 39 
-Dagur 4 í tímaslotti 3. Er sending 85  frá Vendor/Dest ,700103-3660 A: 11 
-Dagur 4 í tímaslotti 3. Er sending 350  frá Vendor/Dest ,700103-3660 A: 7 
-Dagur 4 í tímaslotti 3. Er sending 354  frá Vendor/Dest ,700103-3660 A: 16 
-Dagur 4 í tímaslotti 3. Er sending 365  frá Vendor/Dest ,570169-0339 A: 1 
-Dagur 4 í tímaslotti 3. Er sending 414  frá Vendor/Dest ,570169-0339 A: 8 
-Dagur 4 í tímaslotti 3. Er sending 417  frá Vendor/Dest ,570169-0339 A: 9 
-Dagur 4 í tímaslotti 3. Er sending 421  frá Vendor/Dest ,570169-0339 A: 52 
-Dagur 4 í tímaslotti 3. Er sending 422  frá Vendor/Dest ,570169-0339 A: 106 
-Dagur 4 í tímaslotti 3. Er sending 431  frá Vendor/Dest ,570169-0339 A: 36 
-Dagur 4 í tímaslotti 3. Er sending 433  frá Vendor/Dest ,570169-0339 A: 83 
-Dagur 4 í tímaslotti 3. Er sending 435  frá Vendor/Dest ,570169-0339 A: 88 
-Dagur 4 í tímaslotti 3. Er sending 443  frá Vendor/Dest ,570169-0339 A: 98 
-Dagur 4 í tímaslotti 3. Er sending 450  frá Vendor/Dest ,570169-0339 A: 7 
-Dagur 4 í tímaslotti 3. Er sending 451  frá Vendor/Dest ,570169-0339 A: 31 
-Dagur 4 í tímaslotti 3. Er sending 452  frá Vendor/Dest ,570169-0339 A: 18 
-Dagur 4 í tímaslotti 3. Er sending 454  frá Vendor/Dest ,570169-0339 A: 4 
-Dagur 4 í tímaslotti 3. Er sending 458  frá Vendor/Dest ,570169-0339 A: 9 
-Dagur 4 í tímaslotti 3. Er sending 459  frá Vendor/Dest ,570169-0339 A: 18 
-Dagur 4 í tímaslotti 3. Er sending 461  frá Vendor/Dest ,570169-0339 A: 152 
-Dagur 4 í tímaslotti 3. Er sending 465  frá Vendor/Dest ,570169-0339 A: 55 
-Dagur 4 í tímaslotti 3. Er sending 466  frá Vendor/Dest ,570169-0339 A: 4 
-Dagur 5 í tímaslotti 3. Er sending 67  frá Vendor/Dest ,700103-3660 A: 43 
-Dagur 5 í tímaslotti 3. Er sending 81  frá Vendor/Dest ,700103-3660 A: 39 
-Dagur 5 í tímaslotti 3. Er sending 83  frá Vendor/Dest ,700103-3660 A: 27 
-Dagur 5 í tímaslotti 3. Er sending 84  frá Vendor/Dest ,700103-3660 A: 22 
-Dagur 5 í tímaslotti 3. Er sending 86  frá Vendor/Dest ,700103-3660 A: 80 
-Dagur 5 í tímaslotti 3. Er sending 341  frá Vendor/Dest ,700103-3660 A: 16 
-Dagur 5 í tímaslotti 3. Er sending 343  frá Vendor/Dest ,700103-3660 A: 4 
-Dagur 5 í tímaslotti 3. Er sending 349  frá Vendor/Dest ,700103-3660 A: 12 
-Dagur 5 í tímaslotti 3. Er sending 359  frá Vendor/Dest ,570169-0339 A: 3 
-Dagur 5 í tímaslotti 3. Er sending 360  frá Vendor/Dest ,570169-0339 A: 3 
-Dagur 5 í tímaslotti 3. Er sending 363  frá Vendor/Dest ,570169-0339 A: 1 
-Dagur 5 í tímaslotti 3. Er sending 369  frá Vendor/Dest ,570169-0339 A: 1 
-Dagur 5 í tímaslotti 3. Er sending 429  frá Vendor/Dest ,570169-0339 A: 88 
-Dagur 5 í tímaslotti 3. Er sending 437  frá Vendor/Dest ,570169-0339 A: 118 
-Dagur 5 í tímaslotti 3. Er sending 438  frá Vendor/Dest ,570169-0339 A: 67 
-Dagur 5 í tímaslotti 3. Er sending 439  frá Vendor/Dest ,570169-0339 A: 36 
-Dagur 5 í tímaslotti 3. Er sending 442  frá Vendor/Dest ,570169-0339 A: 122 
-Dagur 5 í tímaslotti 3. Er sending 447  frá Vendor/Dest ,570169-0339 A: 86 
-Dagur 5 í tímaslotti 3. Er sending 449  frá Vendor/Dest ,570169-0339 A: 88 
-Dagur 5 í tímaslotti 3. Er sending 464  frá Vendor/Dest ,570169-0339 A: 11 
-Dagur 1 í tímaslotti 4. Er sending 43  frá Vendor/Dest ,410999-2859 A: 28 
-Dagur 1 í tímaslotti 4. Er sending 44  frá Vendor/Dest ,410999-2859 A: 36 
-Dagur 1 í tímaslotti 4. Er sending 47  frá Vendor/Dest ,410999-2859 A: 22 
-Dagur 1 í tímaslotti 4. Er sending 397  frá Vendor/Dest ,541205-1520 A: 13 
-Dagur 1 í tímaslotti 4. Er sending 644  frá Vendor/Dest ,410999-2859 A: 5 
-Dagur 2 í tímaslotti 4. Er sending 45  frá Vendor/Dest ,410999-2859 A: 24 
-Dagur 2 í tímaslotti 4. Er sending 46  frá Vendor/Dest ,410999-2859 A: 129 
-Dagur 2 í tímaslotti 4. Er sending 50  frá Vendor/Dest ,410999-2859 A: 88 
-Dagur 2 í tímaslotti 4. Er sending 302  frá Vendor/Dest ,410999-2859 A: 36 
-Dagur 2 í tímaslotti 4. Er sending 308  frá Vendor/Dest ,410999-2859 A: 14 
-Dagur 2 í tímaslotti 4. Er sending 309  frá Vendor/Dest ,410999-2859 A: 7 
-Dagur 2 í tímaslotti 4. Er sending 310  frá Vendor/Dest ,410999-2859 A: 46 
-Dagur 2 í tímaslotti 4. Er sending 312  frá Vendor/Dest ,410999-2859 A: 129 
-Dagur 2 í tímaslotti 4. Er sending 315  frá Vendor/Dest ,410999-2859 A: 107 
-Dagur 2 í tímaslotti 4. Er sending 642  frá Vendor/Dest ,410999-2859 A: 104 
-Dagur 3 í tímaslotti 4. Er sending 41  frá Vendor/Dest ,410999-2859 A: 86 
-Dagur 3 í tímaslotti 4. Er sending 48  frá Vendor/Dest ,410999-2859 A: 106 
-Dagur 3 í tímaslotti 4. Er sending 313  frá Vendor/Dest ,410999-2859 A: 107 
-Dagur 3 í tímaslotti 4. Er sending 317  frá Vendor/Dest ,410999-2859 A: 80 
-Dagur 3 í tímaslotti 4. Er sending 412  frá Vendor/Dest ,541205-1520 A: 365 
-Dagur 4 í tímaslotti 4. Er sending 40  frá Vendor/Dest ,410999-2859 A: 12 
-Dagur 4 í tímaslotti 4. Er sending 300  frá Vendor/Dest ,410999-2859 A: 52 
-Dagur 4 í tímaslotti 4. Er sending 304  frá Vendor/Dest ,410999-2859 A: 36 
-Dagur 4 í tímaslotti 4. Er sending 306  frá Vendor/Dest ,410999-2859 A: 9 
-Dagur 4 í tímaslotti 4. Er sending 316  frá Vendor/Dest ,410999-2859 A: 11 
-Dagur 4 í tímaslotti 4. Er sending 396  frá Vendor/Dest ,541205-1520 A: 45 
-Dagur 4 í tímaslotti 4. Er sending 643  frá Vendor/Dest ,410999-2859 A: 5 
-Dagur 5 í tímaslotti 4. Er sending 42  frá Vendor/Dest ,410999-2859 A: 86 
-Dagur 5 í tímaslotti 4. Er sending 49  frá Vendor/Dest ,410999-2859 A: 86 
-Dagur 5 í tímaslotti 4. Er sending 301  frá Vendor/Dest ,410999-2859 A: 9 
-Dagur 5 í tímaslotti 4. Er sending 303  frá Vendor/Dest ,410999-2859 A: 48 
-Dagur 5 í tímaslotti 4. Er sending 305  frá Vendor/Dest ,410999-2859 A: 36 
-Dagur 5 í tímaslotti 4. Er sending 307  frá Vendor/Dest ,410999-2859 A: 11 
-Dagur 5 í tímaslotti 4. Er sending 311  frá Vendor/Dest ,410999-2859 A: 13 
-Dagur 5 í tímaslotti 4. Er sending 314  frá Vendor/Dest ,410999-2859 A: 129 
-Dagur 5 í tímaslotti 4. Er sending 318  frá Vendor/Dest ,410999-2859 A: 41 
-Dagur 5 í tímaslotti 4. Er sending 632  frá Vendor/Dest ,541205-1520 A: 140 
-Dagur 1 í tímaslotti 5. Er sending 59  frá Vendor/Dest ,530303-2410 A: 30 
-Dagur 1 í tímaslotti 5. Er sending 63  frá Vendor/Dest ,530303-2410 A: 33 
-Dagur 1 í tímaslotti 5. Er sending 73  frá Vendor/Dest ,530303-2410 A: 36 
-Dagur 1 í tímaslotti 5. Er sending 75  frá Vendor/Dest ,530303-2410 A: 22 
-Dagur 1 í tímaslotti 5. Er sending 331  frá Vendor/Dest ,530303-2410 A: 4 
-Dagur 1 í tímaslotti 5. Er sending 332  frá Vendor/Dest ,530303-2410 A: 4 
-Dagur 2 í tímaslotti 5. Er sending 58  frá Vendor/Dest ,530303-2410 A: 100 
-Dagur 2 í tímaslotti 5. Er sending 60  frá Vendor/Dest ,530303-2410 A: 31 
-Dagur 2 í tímaslotti 5. Er sending 61  frá Vendor/Dest ,530303-2410 A: 90 
-Dagur 2 í tímaslotti 5. Er sending 62  frá Vendor/Dest ,530303-2410 A: 33 
-Dagur 2 í tímaslotti 5. Er sending 64  frá Vendor/Dest ,530303-2410 A: 7 
-Dagur 2 í tímaslotti 5. Er sending 78  frá Vendor/Dest ,530303-2410 A: 106 
-Dagur 2 í tímaslotti 5. Er sending 324  frá Vendor/Dest ,530303-2410 A: 119 
-Dagur 2 í tímaslotti 5. Er sending 328  frá Vendor/Dest ,530303-2410 A: 179 
-Dagur 2 í tímaslotti 5. Er sending 335  frá Vendor/Dest ,530303-2410 A: 27 
-Dagur 3 í tímaslotti 5. Er sending 54  frá Vendor/Dest ,530303-2410 A: 104 
-Dagur 3 í tímaslotti 5. Er sending 56  frá Vendor/Dest ,530303-2410 A: 66 
-Dagur 3 í tímaslotti 5. Er sending 57  frá Vendor/Dest ,530303-2410 A: 66 
-Dagur 3 í tímaslotti 5. Er sending 65  frá Vendor/Dest ,530303-2410 A: 9 
-Dagur 3 í tímaslotti 5. Er sending 74  frá Vendor/Dest ,530303-2410 A: 44 
-Dagur 3 í tímaslotti 5. Er sending 325  frá Vendor/Dest ,530303-2410 A: 215 
-Dagur 3 í tímaslotti 5. Er sending 327  frá Vendor/Dest ,530303-2410 A: 102 
-Dagur 3 í tímaslotti 5. Er sending 334  frá Vendor/Dest ,530303-2410 A: 11 
-Dagur 3 í tímaslotti 5. Er sending 347  frá Vendor/Dest ,530303-2410 A: 44 
-Dagur 4 í tímaslotti 5. Er sending 319  frá Vendor/Dest ,530303-2410 A: 44 
-Dagur 4 í tímaslotti 5. Er sending 320  frá Vendor/Dest ,530303-2410 A: 53 
-Dagur 4 í tímaslotti 5. Er sending 330  frá Vendor/Dest ,530303-2410 A: 11 
-Dagur 4 í tímaslotti 5. Er sending 333  frá Vendor/Dest ,530303-2410 A: 5 
-Dagur 4 í tímaslotti 5. Er sending 337  frá Vendor/Dest ,530303-2410 A: 18 
-Dagur 4 í tímaslotti 5. Er sending 338  frá Vendor/Dest ,530303-2410 A: 8 
-Dagur 5 í tímaslotti 5. Er sending 55  frá Vendor/Dest ,530303-2410 A: 66 
-Dagur 5 í tímaslotti 5. Er sending 76  frá Vendor/Dest ,530303-2410 A: 51 
-Dagur 5 í tímaslotti 5. Er sending 321  frá Vendor/Dest ,530303-2410 A: 44 
-Dagur 5 í tímaslotti 5. Er sending 322  frá Vendor/Dest ,530303-2410 A: 66 
-Dagur 5 í tímaslotti 5. Er sending 323  frá Vendor/Dest ,530303-2410 A: 179 
-Dagur 5 í tímaslotti 5. Er sending 326  frá Vendor/Dest ,530303-2410 A: 36 
-Dagur 5 í tímaslotti 5. Er sending 329  frá Vendor/Dest ,530303-2410 A: 22 
-Dagur 5 í tímaslotti 5. Er sending 336  frá Vendor/Dest ,530303-2410 A: 133 
-Dagur 1 í tímaslotti 6. Er sending 53  frá Vendor/Dest ,550595-2579 A: 4 
-Dagur 1 í tímaslotti 6. Er sending 132  frá Vendor/Dest ,550595-2579 A: 53 
-Dagur 1 í tímaslotti 6. Er sending 135  frá Vendor/Dest ,550595-2579 A: 6 
-Dagur 1 í tímaslotti 6. Er sending 136  frá Vendor/Dest ,550595-2579 A: 14 
-Dagur 1 í tímaslotti 6. Er sending 138  frá Vendor/Dest ,550595-2579 A: 52 
-Dagur 1 í tímaslotti 6. Er sending 140  frá Vendor/Dest ,550595-2579 A: 80 
-Dagur 1 í tímaslotti 6. Er sending 141  frá Vendor/Dest ,550595-2579 A: 222 
-Dagur 1 í tímaslotti 6. Er sending 146  frá Vendor/Dest ,550595-2579 A: 38 
-Dagur 1 í tímaslotti 6. Er sending 155  frá Vendor/Dest ,550595-2579 A: 55 
-Dagur 1 í tímaslotti 6. Er sending 156  frá Vendor/Dest ,550595-2579 A: 18 
-Dagur 1 í tímaslotti 6. Er sending 162  frá Vendor/Dest ,550595-2579 A: 86 
-Dagur 1 í tímaslotti 6. Er sending 166  frá Vendor/Dest ,550595-2579 A: 42 
-Dagur 1 í tímaslotti 6. Er sending 168  frá Vendor/Dest ,550595-2579 A: 23 
-Dagur 1 í tímaslotti 6. Er sending 169  frá Vendor/Dest ,550595-2579 A: 8 
-Dagur 1 í tímaslotti 6. Er sending 473  frá Vendor/Dest ,550595-2579 A: 150 
-Dagur 1 í tímaslotti 6. Er sending 475  frá Vendor/Dest ,550595-2579 A: 106 
-Dagur 1 í tímaslotti 6. Er sending 486  frá Vendor/Dest ,550595-2579 A: 15 
-Dagur 1 í tímaslotti 6. Er sending 488  frá Vendor/Dest ,550595-2579 A: 24 
-Dagur 1 í tímaslotti 6. Er sending 492  frá Vendor/Dest ,550595-2579 A: 18 
-Dagur 1 í tímaslotti 6. Er sending 495  frá Vendor/Dest ,550595-2579 A: 6 
-Dagur 1 í tímaslotti 6. Er sending 502  frá Vendor/Dest ,550595-2579 A: 9 
-Dagur 1 í tímaslotti 6. Er sending 503  frá Vendor/Dest ,550595-2579 A: 18 
-Dagur 1 í tímaslotti 6. Er sending 505  frá Vendor/Dest ,550595-2579 A: 53 
-Dagur 1 í tímaslotti 6. Er sending 512  frá Vendor/Dest ,550595-2579 A: 44 
-Dagur 1 í tímaslotti 6. Er sending 513  frá Vendor/Dest ,550595-2579 A: 43 
-Dagur 2 í tímaslotti 6. Er sending 131  frá Vendor/Dest ,550595-2579 A: 7 
-Dagur 2 í tímaslotti 6. Er sending 134  frá Vendor/Dest ,550595-2579 A: 6 
-Dagur 2 í tímaslotti 6. Er sending 143  frá Vendor/Dest ,550595-2579 A: 75 
-Dagur 2 í tímaslotti 6. Er sending 152  frá Vendor/Dest ,550595-2579 A: 10 
-Dagur 2 í tímaslotti 6. Er sending 153  frá Vendor/Dest ,550595-2579 A: 45 
-Dagur 2 í tímaslotti 6. Er sending 164  frá Vendor/Dest ,550595-2579 A: 17 
-Dagur 2 í tímaslotti 6. Er sending 165  frá Vendor/Dest ,550595-2579 A: 11 
-Dagur 2 í tímaslotti 6. Er sending 171  frá Vendor/Dest ,550595-2579 A: 55 
-Dagur 2 í tímaslotti 6. Er sending 471  frá Vendor/Dest ,550595-2579 A: 110 
-Dagur 2 í tímaslotti 6. Er sending 476  frá Vendor/Dest ,550595-2579 A: 110 
-Dagur 2 í tímaslotti 6. Er sending 477  frá Vendor/Dest ,550595-2579 A: 222 
-Dagur 2 í tímaslotti 6. Er sending 491  frá Vendor/Dest ,550595-2579 A: 100 
-Dagur 2 í tímaslotti 6. Er sending 494  frá Vendor/Dest ,550595-2579 A: 6 
-Dagur 2 í tímaslotti 6. Er sending 496  frá Vendor/Dest ,550595-2579 A: 6 
-Dagur 2 í tímaslotti 6. Er sending 499  frá Vendor/Dest ,550595-2579 A: 53 
-Dagur 2 í tímaslotti 6. Er sending 500  frá Vendor/Dest ,550595-2579 A: 53 
-Dagur 2 í tímaslotti 6. Er sending 501  frá Vendor/Dest ,550595-2579 A: 133 
-Dagur 2 í tímaslotti 6. Er sending 507  frá Vendor/Dest ,550595-2579 A: 110 
-Dagur 2 í tímaslotti 6. Er sending 509  frá Vendor/Dest ,550595-2579 A: 28 
-Dagur 2 í tímaslotti 6. Er sending 510  frá Vendor/Dest ,550595-2579 A: 30 
-Dagur 3 í tímaslotti 6. Er sending 133  frá Vendor/Dest ,550595-2579 A: 53 
-Dagur 3 í tímaslotti 6. Er sending 142  frá Vendor/Dest ,550595-2579 A: 215 
-Dagur 3 í tímaslotti 6. Er sending 144  frá Vendor/Dest ,550595-2579 A: 133 
-Dagur 3 í tímaslotti 6. Er sending 148  frá Vendor/Dest ,550595-2579 A: 56 
-Dagur 3 í tímaslotti 6. Er sending 160  frá Vendor/Dest ,550595-2579 A: 22 
-Dagur 3 í tímaslotti 6. Er sending 470  frá Vendor/Dest ,550595-2579 A: 90 
-Dagur 3 í tímaslotti 6. Er sending 474  frá Vendor/Dest ,550595-2579 A: 110 
-Dagur 3 í tímaslotti 6. Er sending 480  frá Vendor/Dest ,550595-2579 A: 179 
-Dagur 3 í tímaslotti 6. Er sending 481  frá Vendor/Dest ,550595-2579 A: 110 
-Dagur 3 í tímaslotti 6. Er sending 483  frá Vendor/Dest ,550595-2579 A: 64 
-Dagur 3 í tímaslotti 6. Er sending 485  frá Vendor/Dest ,550595-2579 A: 4 
-Dagur 3 í tímaslotti 6. Er sending 490  frá Vendor/Dest ,550595-2579 A: 40 
-Dagur 3 í tímaslotti 6. Er sending 514  frá Vendor/Dest ,550595-2579 A: 107 
-Dagur 4 í tímaslotti 6. Er sending 139  frá Vendor/Dest ,550595-2579 A: 249 
-Dagur 4 í tímaslotti 6. Er sending 145  frá Vendor/Dest ,550595-2579 A: 106 
-Dagur 4 í tímaslotti 6. Er sending 154  frá Vendor/Dest ,550595-2579 A: 21 
-Dagur 4 í tímaslotti 6. Er sending 158  frá Vendor/Dest ,550595-2579 A: 9 
-Dagur 4 í tímaslotti 6. Er sending 161  frá Vendor/Dest ,550595-2579 A: 7 
-Dagur 4 í tímaslotti 6. Er sending 163  frá Vendor/Dest ,550595-2579 A: 55 
-Dagur 4 í tímaslotti 6. Er sending 170  frá Vendor/Dest ,550595-2579 A: 17 
-Dagur 4 í tímaslotti 6. Er sending 468  frá Vendor/Dest ,550595-2579 A: 94 
-Dagur 4 í tímaslotti 6. Er sending 478  frá Vendor/Dest ,550595-2579 A: 133 
-Dagur 4 í tímaslotti 6. Er sending 484  frá Vendor/Dest ,550595-2579 A: 265 
-Dagur 4 í tímaslotti 6. Er sending 493  frá Vendor/Dest ,550595-2579 A: 25 
-Dagur 4 í tímaslotti 6. Er sending 497  frá Vendor/Dest ,550595-2579 A: 7 
-Dagur 4 í tímaslotti 6. Er sending 498  frá Vendor/Dest ,550595-2579 A: 9 
-Dagur 4 í tímaslotti 6. Er sending 504  frá Vendor/Dest ,550595-2579 A: 29 
-Dagur 4 í tímaslotti 6. Er sending 506  frá Vendor/Dest ,550595-2579 A: 79 
-Dagur 4 í tímaslotti 6. Er sending 508  frá Vendor/Dest ,550595-2579 A: 55 
-Dagur 4 í tímaslotti 6. Er sending 511  frá Vendor/Dest ,550595-2579 A: 27 
-Dagur 5 í tímaslotti 6. Er sending 137  frá Vendor/Dest ,550595-2579 A: 231 
-Dagur 5 í tímaslotti 6. Er sending 150  frá Vendor/Dest ,550595-2579 A: 8 
-Dagur 5 í tímaslotti 6. Er sending 151  frá Vendor/Dest ,550595-2579 A: 18 
-Dagur 5 í tímaslotti 6. Er sending 157  frá Vendor/Dest ,550595-2579 A: 86 
-Dagur 5 í tímaslotti 6. Er sending 159  frá Vendor/Dest ,550595-2579 A: 40 
-Dagur 5 í tímaslotti 6. Er sending 167  frá Vendor/Dest ,550595-2579 A: 32 
-Dagur 5 í tímaslotti 6. Er sending 469  frá Vendor/Dest ,550595-2579 A: 42 
-Dagur 5 í tímaslotti 6. Er sending 472  frá Vendor/Dest ,550595-2579 A: 265 
-Dagur 5 í tímaslotti 6. Er sending 479  frá Vendor/Dest ,550595-2579 A: 86 
-Dagur 5 í tímaslotti 6. Er sending 482  frá Vendor/Dest ,550595-2579 A: 212 
-Dagur 5 í tímaslotti 6. Er sending 487  frá Vendor/Dest ,550595-2579 A: 160 
-Dagur 5 í tímaslotti 6. Er sending 489  frá Vendor/Dest ,550595-2579 A: 7 
-Dagur 1 í tímaslotti 7. Er sending 51  frá Vendor/Dest ,601083-0789 A: 4 
-Dagur 1 í tímaslotti 7. Er sending 518  frá Vendor/Dest ,491007-1680 A: 22 
-Dagur 1 í tímaslotti 7. Er sending 520  frá Vendor/Dest ,491007-1680 A: 7 
-Dagur 1 í tímaslotti 7. Er sending 541  frá Vendor/Dest ,601083-0789 A: 9 
-Dagur 1 í tímaslotti 7. Er sending 560  frá Vendor/Dest ,601083-0789 A: 2 
-Dagur 1 í tímaslotti 7. Er sending 562  frá Vendor/Dest ,601083-0789 A: 7 
-Dagur 1 í tímaslotti 7. Er sending 578  frá Vendor/Dest ,601083-0789 A: 8 
-Dagur 1 í tímaslotti 7. Er sending 579  frá Vendor/Dest ,601083-0789 A: 14 
-Dagur 1 í tímaslotti 7. Er sending 580  frá Vendor/Dest ,601083-0789 A: 14 
-Dagur 1 í tímaslotti 7. Er sending 584  frá Vendor/Dest ,601083-0789 A: 3 
-Dagur 1 í tímaslotti 7. Er sending 649  frá Vendor/Dest ,601083-0789 A: 1 
-Dagur 2 í tímaslotti 7. Er sending 357  frá Vendor/Dest ,420178-0349 A: 110 
-Dagur 2 í tímaslotti 7. Er sending 515  frá Vendor/Dest ,491007-1680 A: 4 
-Dagur 2 í tímaslotti 7. Er sending 519  frá Vendor/Dest ,491007-1680 A: 44 
-Dagur 2 í tímaslotti 7. Er sending 522  frá Vendor/Dest ,491007-1680 A: 9 
-Dagur 2 í tímaslotti 7. Er sending 523  frá Vendor/Dest ,491007-1680 A: 4 
-Dagur 2 í tímaslotti 7. Er sending 525  frá Vendor/Dest ,420178-0349 A: 71 
-Dagur 2 í tímaslotti 7. Er sending 550  frá Vendor/Dest ,420178-0349 A: 2 
-Dagur 2 í tímaslotti 7. Er sending 552  frá Vendor/Dest ,420178-0349 A: 5 
-Dagur 2 í tímaslotti 7. Er sending 566  frá Vendor/Dest ,420178-0349 A: 55 
-Dagur 2 í tímaslotti 7. Er sending 570  frá Vendor/Dest ,420178-0349 A: 44 
-Dagur 2 í tímaslotti 7. Er sending 574  frá Vendor/Dest ,601083-0789 A: 1 
-Dagur 2 í tímaslotti 7. Er sending 575  frá Vendor/Dest ,601083-0789 A: 14 
-Dagur 2 í tímaslotti 7. Er sending 577  frá Vendor/Dest ,601083-0789 A: 11 
-Dagur 2 í tímaslotti 7. Er sending 648  frá Vendor/Dest ,601083-0789 A: 16 
-Dagur 3 í tímaslotti 7. Er sending 80  frá Vendor/Dest ,420178-0349 A: 54 
-Dagur 3 í tímaslotti 7. Er sending 348  frá Vendor/Dest ,420178-0349 A: 221 
-Dagur 3 í tímaslotti 7. Er sending 517  frá Vendor/Dest ,491007-1680 A: 2 
-Dagur 3 í tímaslotti 7. Er sending 524  frá Vendor/Dest ,491007-1680 A: 7 
-Dagur 3 í tímaslotti 7. Er sending 543  frá Vendor/Dest ,601083-0789 A: 23 
-Dagur 3 í tímaslotti 7. Er sending 546  frá Vendor/Dest ,601083-0789 A: 9 
-Dagur 3 í tímaslotti 7. Er sending 549  frá Vendor/Dest ,601083-0789 A: 30 
-Dagur 3 í tímaslotti 7. Er sending 551  frá Vendor/Dest ,420178-0349 A: 9 
-Dagur 3 í tímaslotti 7. Er sending 565  frá Vendor/Dest ,420178-0349 A: 46 
-Dagur 3 í tímaslotti 7. Er sending 568  frá Vendor/Dest ,420178-0349 A: 33 
-Dagur 3 í tímaslotti 7. Er sending 573  frá Vendor/Dest ,420178-0349 A: 25 
-Dagur 4 í tímaslotti 7. Er sending 521  frá Vendor/Dest ,491007-1680 A: 9 
-Dagur 4 í tímaslotti 7. Er sending 526  frá Vendor/Dest ,420178-0349 A: 29 
-Dagur 4 í tímaslotti 7. Er sending 528  frá Vendor/Dest ,420178-0349 A: 5 
-Dagur 4 í tímaslotti 7. Er sending 529  frá Vendor/Dest ,420178-0349 A: 7 
-Dagur 4 í tímaslotti 7. Er sending 544  frá Vendor/Dest ,601083-0789 A: 7 
-Dagur 4 í tímaslotti 7. Er sending 547  frá Vendor/Dest ,601083-0789 A: 4 
-Dagur 4 í tímaslotti 7. Er sending 553  frá Vendor/Dest ,420178-0349 A: 9 
-Dagur 4 í tímaslotti 7. Er sending 556  frá Vendor/Dest ,491007-1680 A: 4 
-Dagur 4 í tímaslotti 7. Er sending 558  frá Vendor/Dest ,601083-0789 A: 3 
-Dagur 4 í tímaslotti 7. Er sending 559  frá Vendor/Dest ,601083-0789 A: 8 
-Dagur 4 í tímaslotti 7. Er sending 561  frá Vendor/Dest ,601083-0789 A: 9 
-Dagur 4 í tímaslotti 7. Er sending 563  frá Vendor/Dest ,420178-0349 A: 5 
-Dagur 4 í tímaslotti 7. Er sending 572  frá Vendor/Dest ,420178-0349 A: 25 
-Dagur 4 í tímaslotti 7. Er sending 600  frá Vendor/Dest ,601083-0789 A: 3 
-Dagur 5 í tímaslotti 7. Er sending 79  frá Vendor/Dest ,420178-0349 A: 84 
-Dagur 5 í tímaslotti 7. Er sending 351  frá Vendor/Dest ,420178-0349 A: 2 
-Dagur 5 í tímaslotti 7. Er sending 516  frá Vendor/Dest ,491007-1680 A: 22 
-Dagur 5 í tímaslotti 7. Er sending 527  frá Vendor/Dest ,420178-0349 A: 24 
-Dagur 5 í tímaslotti 7. Er sending 530  frá Vendor/Dest ,420178-0349 A: 3 
-Dagur 5 í tímaslotti 7. Er sending 531  frá Vendor/Dest ,420178-0349 A: 26 
-Dagur 5 í tímaslotti 7. Er sending 542  frá Vendor/Dest ,601083-0789 A: 30 
-Dagur 5 í tímaslotti 7. Er sending 545  frá Vendor/Dest ,601083-0789 A: 7 
-Dagur 5 í tímaslotti 7. Er sending 548  frá Vendor/Dest ,601083-0789 A: 3 
-Dagur 5 í tímaslotti 7. Er sending 557  frá Vendor/Dest ,491007-1680 A: 7 
-Dagur 5 í tímaslotti 7. Er sending 567  frá Vendor/Dest ,420178-0349 A: 44 
-Dagur 5 í tímaslotti 7. Er sending 569  frá Vendor/Dest ,420178-0349 A: 133 
-Dagur 5 í tímaslotti 7. Er sending 571  frá Vendor/Dest ,420178-0349 A: 11 
-Dagur 5 í tímaslotti 7. Er sending 576  frá Vendor/Dest ,601083-0789 A: 6 
-Dagur 1 í tímaslotti 8. Er sending 1  frá Vendor/Dest ,550394-2359 A: 2 
-Dagur 1 í tímaslotti 8. Er sending 3  frá Vendor/Dest ,550394-2359 A: 9 
-Dagur 1 í tímaslotti 8. Er sending 7  frá Vendor/Dest ,550394-2359 A: 2 
-Dagur 1 í tímaslotti 8. Er sending 10  frá Vendor/Dest ,550394-2359 A: 9 
-Dagur 1 í tímaslotti 8. Er sending 12  frá Vendor/Dest ,550394-2359 A: 80 
-Dagur 1 í tímaslotti 8. Er sending 33  frá Vendor/Dest ,550394-2359 A: 1 
-Dagur 1 í tímaslotti 8. Er sending 37  frá Vendor/Dest ,550394-2359 A: 2 
-Dagur 1 í tímaslotti 8. Er sending 97  frá Vendor/Dest ,670616-1690 A: 108 
-Dagur 1 í tímaslotti 8. Er sending 175  frá Vendor/Dest ,571214-0240 A: 36 
-Dagur 1 í tímaslotti 8. Er sending 183  frá Vendor/Dest ,490211-0630 A: 55 
-Dagur 1 í tímaslotti 8. Er sending 185  frá Vendor/Dest ,681215-1740 A: 9 
-Dagur 1 í tímaslotti 8. Er sending 226  frá Vendor/Dest ,470710-0390 A: 2 
-Dagur 1 í tímaslotti 8. Er sending 254  frá Vendor/Dest ,470710-0390 A: 18 
-Dagur 1 í tímaslotti 8. Er sending 292  frá Vendor/Dest ,501117-0210 A: 13 
-Dagur 1 í tímaslotti 8. Er sending 296  frá Vendor/Dest ,501117-0210 A: 107 
-Dagur 1 í tímaslotti 8. Er sending 299  frá Vendor/Dest ,501117-0210 A: 4 
-Dagur 1 í tímaslotti 8. Er sending 535  frá Vendor/Dest ,550405-0400 A: 11 
-Dagur 1 í tímaslotti 8. Er sending 537  frá Vendor/Dest ,520914-2180 A: 14 
-Dagur 1 í tímaslotti 8. Er sending 610  frá Vendor/Dest ,550394-2359 A: 9 
-Dagur 1 í tímaslotti 8. Er sending 622  frá Vendor/Dest ,550394-2359 A: 24 
-Dagur 1 í tímaslotti 8. Er sending 628  frá Vendor/Dest ,550394-2359 A: 72 
-Dagur 1 í tímaslotti 8. Er sending 651  frá Vendor/Dest ,501117-0210 A: 158 
-Dagur 2 í tímaslotti 8. Er sending 2  frá Vendor/Dest ,550394-2359 A: 3 
-Dagur 2 í tímaslotti 8. Er sending 4  frá Vendor/Dest ,550394-2359 A: 9 
-Dagur 2 í tímaslotti 8. Er sending 11  frá Vendor/Dest ,550394-2359 A: 2 
-Dagur 2 í tímaslotti 8. Er sending 26  frá Vendor/Dest ,550394-2359 A: 1 
-Dagur 2 í tímaslotti 8. Er sending 32  frá Vendor/Dest ,550394-2359 A: 1 
-Dagur 2 í tímaslotti 8. Er sending 36  frá Vendor/Dest ,550394-2359 A: 1 
-Dagur 2 í tímaslotti 8. Er sending 94  frá Vendor/Dest ,430913-0690 A: 9 
-Dagur 2 í tímaslotti 8. Er sending 173  frá Vendor/Dest ,470415-1260 A: 1 
-Dagur 2 í tímaslotti 8. Er sending 177  frá Vendor/Dest ,470415-1260 A: 4 
-Dagur 2 í tímaslotti 8. Er sending 180  frá Vendor/Dest ,451115-1460 A: 13 
-Dagur 2 í tímaslotti 8. Er sending 181  frá Vendor/Dest ,470415-1260 A: 11 
-Dagur 2 í tímaslotti 8. Er sending 184  frá Vendor/Dest ,490211-0630 A: 5 
-Dagur 2 í tímaslotti 8. Er sending 192  frá Vendor/Dest ,550394-2359 A: 7 
-Dagur 2 í tímaslotti 8. Er sending 195  frá Vendor/Dest ,550394-2359 A: 9 
-Dagur 2 í tímaslotti 8. Er sending 196  frá Vendor/Dest ,550394-2359 A: 13 
-Dagur 2 í tímaslotti 8. Er sending 216  frá Vendor/Dest ,470710-0390 A: 9 
-Dagur 2 í tímaslotti 8. Er sending 220  frá Vendor/Dest ,470710-0390 A: 9 
-Dagur 2 í tímaslotti 8. Er sending 221  frá Vendor/Dest ,470710-0390 A: 12 
-Dagur 2 í tímaslotti 8. Er sending 228  frá Vendor/Dest ,470710-0390 A: 1 
-Dagur 2 í tímaslotti 8. Er sending 238  frá Vendor/Dest ,470710-0390 A: 13 
-Dagur 2 í tímaslotti 8. Er sending 249  frá Vendor/Dest ,470710-0390 A: 13 
-Dagur 2 í tímaslotti 8. Er sending 253  frá Vendor/Dest ,470710-0390 A: 31 
-Dagur 2 í tímaslotti 8. Er sending 260  frá Vendor/Dest ,460999-2519 A: 4 
-Dagur 2 í tímaslotti 8. Er sending 289  frá Vendor/Dest ,501117-0210 A: 4 
-Dagur 2 í tímaslotti 8. Er sending 290  frá Vendor/Dest ,501117-0210 A: 9 
-Dagur 2 í tímaslotti 8. Er sending 356  frá Vendor/Dest ,560793-2199 A: 9 
-Dagur 2 í tímaslotti 8. Er sending 373  frá Vendor/Dest ,660169-1729 A: 3 
-Dagur 2 í tímaslotti 8. Er sending 374  frá Vendor/Dest ,660169-1729 A: 3 
-Dagur 2 í tímaslotti 8. Er sending 538  frá Vendor/Dest ,520914-2180 A: 7 
-Dagur 2 í tímaslotti 8. Er sending 581  frá Vendor/Dest ,670616-1690 A: 12 
-Dagur 2 í tímaslotti 8. Er sending 583  frá Vendor/Dest ,670616-1690 A: 12 
-Dagur 2 í tímaslotti 8. Er sending 617  frá Vendor/Dest ,550394-2359 A: 1 
-Dagur 2 í tímaslotti 8. Er sending 621  frá Vendor/Dest ,550394-2359 A: 7 
-Dagur 2 í tímaslotti 8. Er sending 630  frá Vendor/Dest ,550394-2359 A: 22 
-Dagur 2 í tímaslotti 8. Er sending 633  frá Vendor/Dest ,550394-2359 A: 18 
-Dagur 2 í tímaslotti 8. Er sending 639  frá Vendor/Dest ,590515-3290 A: 12 
-Dagur 2 í tímaslotti 8. Er sending 652  frá Vendor/Dest ,660509-0970 A: 4 
-Dagur 3 í tímaslotti 8. Er sending 5  frá Vendor/Dest ,550394-2359 A: 4 
-Dagur 3 í tímaslotti 8. Er sending 6  frá Vendor/Dest ,550394-2359 A: 4 
-Dagur 3 í tímaslotti 8. Er sending 8  frá Vendor/Dest ,550394-2359 A: 2 
-Dagur 3 í tímaslotti 8. Er sending 9  frá Vendor/Dest ,550394-2359 A: 16 
-Dagur 3 í tímaslotti 8. Er sending 23  frá Vendor/Dest ,550394-2359 A: 5 
-Dagur 3 í tímaslotti 8. Er sending 25  frá Vendor/Dest ,550394-2359 A: 2 
-Dagur 3 í tímaslotti 8. Er sending 27  frá Vendor/Dest ,550394-2359 A: 2 
-Dagur 3 í tímaslotti 8. Er sending 31  frá Vendor/Dest ,550394-2359 A: 1 
-Dagur 3 í tímaslotti 8. Er sending 38  frá Vendor/Dest ,550394-2359 A: 1 
-Dagur 3 í tímaslotti 8. Er sending 90  frá Vendor/Dest ,500316-0470 A: 3 
-Dagur 3 í tímaslotti 8. Er sending 91  frá Vendor/Dest ,430913-0690 A: 5 
-Dagur 3 í tímaslotti 8. Er sending 92  frá Vendor/Dest ,430913-0690 A: 2 
-Dagur 3 í tímaslotti 8. Er sending 100  frá Vendor/Dest ,670616-1690 A: 3 
-Dagur 3 í tímaslotti 8. Er sending 174  frá Vendor/Dest ,470415-1260 A: 1 
-Dagur 3 í tímaslotti 8. Er sending 176  frá Vendor/Dest ,451115-1460 A: 5 
-Dagur 3 í tímaslotti 8. Er sending 178  frá Vendor/Dest ,451115-1460 A: 23 
-Dagur 3 í tímaslotti 8. Er sending 187  frá Vendor/Dest ,681215-1740 A: 22 
-Dagur 3 í tímaslotti 8. Er sending 191  frá Vendor/Dest ,470415-1260 A: 22 
-Dagur 3 í tímaslotti 8. Er sending 200  frá Vendor/Dest ,660509-0970 A: 4 
-Dagur 3 í tímaslotti 8. Er sending 201  frá Vendor/Dest ,660509-0970 A: 4 
-Dagur 3 í tímaslotti 8. Er sending 202  frá Vendor/Dest ,660509-0970 A: 8 
-Dagur 3 í tímaslotti 8. Er sending 207  frá Vendor/Dest ,660509-0970 A: 1 
-Dagur 3 í tímaslotti 8. Er sending 210  frá Vendor/Dest ,470710-0390 A: 3 
-Dagur 3 í tímaslotti 8. Er sending 211  frá Vendor/Dest ,470710-0390 A: 44 
-Dagur 3 í tímaslotti 8. Er sending 217  frá Vendor/Dest ,470710-0390 A: 9 
-Dagur 3 í tímaslotti 8. Er sending 218  frá Vendor/Dest ,470710-0390 A: 12 
-Dagur 3 í tímaslotti 8. Er sending 223  frá Vendor/Dest ,470710-0390 A: 13 
-Dagur 3 í tímaslotti 8. Er sending 225  frá Vendor/Dest ,470710-0390 A: 7 
-Dagur 3 í tímaslotti 8. Er sending 227  frá Vendor/Dest ,470710-0390 A: 2 
-Dagur 3 í tímaslotti 8. Er sending 231  frá Vendor/Dest ,460999-2519 A: 9 
-Dagur 3 í tímaslotti 8. Er sending 234  frá Vendor/Dest ,460999-2519 A: 2 
-Dagur 3 í tímaslotti 8. Er sending 235  frá Vendor/Dest ,460999-2519 A: 27 
-Dagur 3 í tímaslotti 8. Er sending 246  frá Vendor/Dest ,470710-0390 A: 42 
-Dagur 3 í tímaslotti 8. Er sending 248  frá Vendor/Dest ,681215-1740 A: 4 
-Dagur 3 í tímaslotti 8. Er sending 252  frá Vendor/Dest ,470710-0390 A: 13 
-Dagur 3 í tímaslotti 8. Er sending 258  frá Vendor/Dest ,470710-0390 A: 2 
-Dagur 3 í tímaslotti 8. Er sending 293  frá Vendor/Dest ,501117-0210 A: 9 
-Dagur 3 í tímaslotti 8. Er sending 294  frá Vendor/Dest ,501117-0210 A: 36 
-Dagur 3 í tímaslotti 8. Er sending 298  frá Vendor/Dest ,501117-0210 A: 39 
-Dagur 3 í tímaslotti 8. Er sending 355  frá Vendor/Dest ,560793-2199 A: 4 
-Dagur 3 í tímaslotti 8. Er sending 358  frá Vendor/Dest ,500316-0470 A: 6 
-Dagur 3 í tímaslotti 8. Er sending 370  frá Vendor/Dest ,660169-1729 A: 1 
-Dagur 3 í tímaslotti 8. Er sending 375  frá Vendor/Dest ,660169-1729 A: 1 
-Dagur 3 í tímaslotti 8. Er sending 376  frá Vendor/Dest ,660169-1729 A: 1 
-Dagur 3 í tímaslotti 8. Er sending 467  frá Vendor/Dest ,471289-2569 A: 36 
-Dagur 3 í tímaslotti 8. Er sending 534  frá Vendor/Dest ,550405-0400 A: 21 
-Dagur 3 í tímaslotti 8. Er sending 555  frá Vendor/Dest ,600112-1390 A: 7 
-Dagur 3 í tímaslotti 8. Er sending 564  frá Vendor/Dest ,650387-1399 A: 2 
-Dagur 3 í tímaslotti 8. Er sending 611  frá Vendor/Dest ,550394-2359 A: 13 
-Dagur 3 í tímaslotti 8. Er sending 613  frá Vendor/Dest ,550394-2359 A: 35 
-Dagur 3 í tímaslotti 8. Er sending 615  frá Vendor/Dest ,550394-2359 A: 1 
-Dagur 3 í tímaslotti 8. Er sending 620  frá Vendor/Dest ,550394-2359 A: 16 
-Dagur 3 í tímaslotti 8. Er sending 623  frá Vendor/Dest ,550394-2359 A: 18 
-Dagur 3 í tímaslotti 8. Er sending 634  frá Vendor/Dest ,550394-2359 A: 2 
-Dagur 3 í tímaslotti 8. Er sending 635  frá Vendor/Dest ,550394-2359 A: 2 
-Dagur 3 í tímaslotti 8. Er sending 638  frá Vendor/Dest ,550394-2359 A: 5 
-Dagur 4 í tímaslotti 8. Er sending 13  frá Vendor/Dest ,550394-2359 A: 29 
-Dagur 4 í tímaslotti 8. Er sending 15  frá Vendor/Dest ,550394-2359 A: 9 
-Dagur 4 í tímaslotti 8. Er sending 22  frá Vendor/Dest ,550394-2359 A: 1 
-Dagur 4 í tímaslotti 8. Er sending 24  frá Vendor/Dest ,550394-2359 A: 5 
-Dagur 4 í tímaslotti 8. Er sending 35  frá Vendor/Dest ,550394-2359 A: 1 
-Dagur 4 í tímaslotti 8. Er sending 96  frá Vendor/Dest ,670616-1690 A: 27 
-Dagur 4 í tímaslotti 8. Er sending 98  frá Vendor/Dest ,670616-1690 A: 46 
-Dagur 4 í tímaslotti 8. Er sending 99  frá Vendor/Dest ,670616-1690 A: 1 
-Dagur 4 í tímaslotti 8. Er sending 149  frá Vendor/Dest ,501117-0210 A: 21 
-Dagur 4 í tímaslotti 8. Er sending 189  frá Vendor/Dest ,681215-1740 A: 13 
-Dagur 4 í tímaslotti 8. Er sending 197  frá Vendor/Dest ,550394-2359 A: 7 
-Dagur 4 í tímaslotti 8. Er sending 198  frá Vendor/Dest ,660509-0970 A: 8 
-Dagur 4 í tímaslotti 8. Er sending 199  frá Vendor/Dest ,660509-0970 A: 4 
-Dagur 4 í tímaslotti 8. Er sending 203  frá Vendor/Dest ,660509-0970 A: 5 
-Dagur 4 í tímaslotti 8. Er sending 205  frá Vendor/Dest ,660509-0970 A: 1 
-Dagur 4 í tímaslotti 8. Er sending 206  frá Vendor/Dest ,470415-1260 A: 27 
-Dagur 4 í tímaslotti 8. Er sending 215  frá Vendor/Dest ,470710-0390 A: 9 
-Dagur 4 í tímaslotti 8. Er sending 229  frá Vendor/Dest ,460999-2519 A: 4 
-Dagur 4 í tímaslotti 8. Er sending 232  frá Vendor/Dest ,460999-2519 A: 2 
-Dagur 4 í tímaslotti 8. Er sending 233  frá Vendor/Dest ,460999-2519 A: 18 
-Dagur 4 í tímaslotti 8. Er sending 237  frá Vendor/Dest ,470710-0390 A: 5 
-Dagur 4 í tímaslotti 8. Er sending 240  frá Vendor/Dest ,470710-0390 A: 9 
-Dagur 4 í tímaslotti 8. Er sending 241  frá Vendor/Dest ,470710-0390 A: 9 
-Dagur 4 í tímaslotti 8. Er sending 247  frá Vendor/Dest ,550394-2359 A: 14 
-Dagur 4 í tímaslotti 8. Er sending 250  frá Vendor/Dest ,470710-0390 A: 22 
-Dagur 4 í tímaslotti 8. Er sending 251  frá Vendor/Dest ,470710-0390 A: 9 
-Dagur 4 í tímaslotti 8. Er sending 255  frá Vendor/Dest ,470710-0390 A: 11 
-Dagur 4 í tímaslotti 8. Er sending 256  frá Vendor/Dest ,470710-0390 A: 13 
-Dagur 4 í tímaslotti 8. Er sending 259  frá Vendor/Dest ,660509-0970 A: 4 
-Dagur 4 í tímaslotti 8. Er sending 532  frá Vendor/Dest ,550405-0400 A: 8 
-Dagur 4 í tímaslotti 8. Er sending 533  frá Vendor/Dest ,550405-0400 A: 45 
-Dagur 4 í tímaslotti 8. Er sending 539  frá Vendor/Dest ,520914-2180 A: 2 
-Dagur 4 í tímaslotti 8. Er sending 540  frá Vendor/Dest ,520914-2180 A: 2 
-Dagur 4 í tímaslotti 8. Er sending 554  frá Vendor/Dest ,600112-1390 A: 4 
-Dagur 4 í tímaslotti 8. Er sending 608  frá Vendor/Dest ,550394-2359 A: 129 
-Dagur 4 í tímaslotti 8. Er sending 612  frá Vendor/Dest ,550394-2359 A: 7 
-Dagur 4 í tímaslotti 8. Er sending 618  frá Vendor/Dest ,550394-2359 A: 5 
-Dagur 4 í tímaslotti 8. Er sending 619  frá Vendor/Dest ,550394-2359 A: 23 
-Dagur 4 í tímaslotti 8. Er sending 624  frá Vendor/Dest ,550394-2359 A: 9 
-Dagur 4 í tímaslotti 8. Er sending 625  frá Vendor/Dest ,550394-2359 A: 36 
-Dagur 4 í tímaslotti 8. Er sending 626  frá Vendor/Dest ,550394-2359 A: 11 
-Dagur 4 í tímaslotti 8. Er sending 636  frá Vendor/Dest ,550394-2359 A: 4 
-Dagur 4 í tímaslotti 8. Er sending 650  frá Vendor/Dest ,501117-0210 A: 60 
-Dagur 5 í tímaslotti 8. Er sending 16  frá Vendor/Dest ,550394-2359 A: 9 
-Dagur 5 í tímaslotti 8. Er sending 17  frá Vendor/Dest ,550394-2359 A: 15 
-Dagur 5 í tímaslotti 8. Er sending 34  frá Vendor/Dest ,550394-2359 A: 2 
-Dagur 5 í tímaslotti 8. Er sending 39  frá Vendor/Dest ,550394-2359 A: 2 
-Dagur 5 í tímaslotti 8. Er sending 93  frá Vendor/Dest ,430913-0690 A: 22 
-Dagur 5 í tímaslotti 8. Er sending 95  frá Vendor/Dest ,670616-1690 A: 40 
-Dagur 5 í tímaslotti 8. Er sending 130  frá Vendor/Dest ,590515-3290 A: 37 
-Dagur 5 í tímaslotti 8. Er sending 147  frá Vendor/Dest ,560113-0480 A: 1 
-Dagur 5 í tímaslotti 8. Er sending 172  frá Vendor/Dest ,660509-0970 A: 65 
-Dagur 5 í tímaslotti 8. Er sending 182  frá Vendor/Dest ,470415-1260 A: 33 
-Dagur 5 í tímaslotti 8. Er sending 186  frá Vendor/Dest ,681215-1740 A: 18 
-Dagur 5 í tímaslotti 8. Er sending 188  frá Vendor/Dest ,681215-1740 A: 10 
-Dagur 5 í tímaslotti 8. Er sending 190  frá Vendor/Dest ,470415-1260 A: 27 
-Dagur 5 í tímaslotti 8. Er sending 193  frá Vendor/Dest ,550394-2359 A: 7 
-Dagur 5 í tímaslotti 8. Er sending 194  frá Vendor/Dest ,550394-2359 A: 9 
-Dagur 5 í tímaslotti 8. Er sending 204  frá Vendor/Dest ,660509-0970 A: 12 
-Dagur 5 í tímaslotti 8. Er sending 209  frá Vendor/Dest ,660509-0970 A: 1 
-Dagur 5 í tímaslotti 8. Er sending 212  frá Vendor/Dest ,470710-0390 A: 7 
-Dagur 5 í tímaslotti 8. Er sending 213  frá Vendor/Dest ,470710-0390 A: 7 
-Dagur 5 í tímaslotti 8. Er sending 214  frá Vendor/Dest ,470710-0390 A: 13 
-Dagur 5 í tímaslotti 8. Er sending 219  frá Vendor/Dest ,470710-0390 A: 18 
-Dagur 5 í tímaslotti 8. Er sending 222  frá Vendor/Dest ,470710-0390 A: 2 
-Dagur 5 í tímaslotti 8. Er sending 224  frá Vendor/Dest ,470710-0390 A: 13 
-Dagur 5 í tímaslotti 8. Er sending 230  frá Vendor/Dest ,460999-2519 A: 4 
-Dagur 5 í tímaslotti 8. Er sending 236  frá Vendor/Dest ,460999-2519 A: 4 
-Dagur 5 í tímaslotti 8. Er sending 239  frá Vendor/Dest ,470710-0390 A: 11 
-Dagur 5 í tímaslotti 8. Er sending 242  frá Vendor/Dest ,470710-0390 A: 7 
-Dagur 5 í tímaslotti 8. Er sending 243  frá Vendor/Dest ,470710-0390 A: 15 
-Dagur 5 í tímaslotti 8. Er sending 245  frá Vendor/Dest ,470710-0390 A: 60 
-Dagur 5 í tímaslotti 8. Er sending 257  frá Vendor/Dest ,470710-0390 A: 13 
-Dagur 5 í tímaslotti 8. Er sending 291  frá Vendor/Dest ,501117-0210 A: 4 
-Dagur 5 í tímaslotti 8. Er sending 295  frá Vendor/Dest ,501117-0210 A: 46 
-Dagur 5 í tímaslotti 8. Er sending 297  frá Vendor/Dest ,501117-0210 A: 15 
-Dagur 5 í tímaslotti 8. Er sending 339  frá Vendor/Dest ,550609-1420 A: 2 
-Dagur 5 í tímaslotti 8. Er sending 340  frá Vendor/Dest ,550609-1420 A: 15 
-Dagur 5 í tímaslotti 8. Er sending 353  frá Vendor/Dest ,660509-0970 A: 13 
-Dagur 5 í tímaslotti 8. Er sending 371  frá Vendor/Dest ,660169-1729 A: 1 
-Dagur 5 í tímaslotti 8. Er sending 372  frá Vendor/Dest ,660169-1729 A: 1 
-Dagur 5 í tímaslotti 8. Er sending 536  frá Vendor/Dest ,550405-0400 A: 11 
-Dagur 5 í tímaslotti 8. Er sending 582  frá Vendor/Dest ,670616-1690 A: 3 
-Dagur 5 í tímaslotti 8. Er sending 609  frá Vendor/Dest ,550394-2359 A: 13 
-Dagur 5 í tímaslotti 8. Er sending 616  frá Vendor/Dest ,550394-2359 A: 4 
-Dagur 5 í tímaslotti 8. Er sending 627  frá Vendor/Dest ,550394-2359 A: 55 
-Dagur 5 í tímaslotti 8. Er sending 629  frá Vendor/Dest ,550394-2359 A: 18 
-Dagur 5 í tímaslotti 8. Er sending 631  frá Vendor/Dest ,440417-0510 A: 44 
-Dagur 5 í tímaslotti 8. Er sending 637  frá Vendor/Dest ,550394-2359 A: 4 
-Dagur 5 í tímaslotti 8. Er sending 647  frá Vendor/Dest ,681215-1740 A: 11 
+Dagur 1 í tímaslotti 1. Er sending 101 er með ID: 749 frá Vendor 420369-7789 A: 91 
+Dagur 1 í tímaslotti 1. Er sending 103 er með ID: 751 frá Vendor 420369-7789 A: 36 
+Dagur 1 í tímaslotti 1. Er sending 110 er með ID: 758 frá Vendor 420369-7789 A: 442 
+Dagur 1 í tímaslotti 1. Er sending 268 er með ID: 935 frá Vendor 420369-7789 A: 133 
+Dagur 1 í tímaslotti 1. Er sending 269 er með ID: 936 frá Vendor 420369-7789 A: 106 
+Dagur 1 í tímaslotti 1. Er sending 270 er með ID: 937 frá Vendor 420369-7789 A: 107 
+Dagur 1 í tímaslotti 1. Er sending 362 er með ID: 1032 frá Vendor 570169-0339 A: 12 
+Dagur 1 í tímaslotti 1. Er sending 381 er með ID: 1064 frá Vendor 420369-7789 A: 17 
+Dagur 1 í tímaslotti 1. Er sending 392 er með ID: 1075 frá Vendor 420369-7789 A: 150 
+Dagur 1 í tímaslotti 1. Er sending 394 er með ID: 1077 frá Vendor 420369-7789 A: 192 
+Dagur 1 í tímaslotti 1. Er sending 593 er með ID: 1293 frá Vendor 420369-7789 A: 55 
+Dagur 1 í tímaslotti 1. Er sending 595 er með ID: 1295 frá Vendor 420369-7789 A: 11 
+Dagur 1 í tímaslotti 1. Er sending 601 er með ID: 1301 frá Vendor 420369-7789 A: 44 
+Dagur 1 í tímaslotti 1. Er sending 665 er með ID: 1379 frá Vendor 420369-7789 A: 9 
+Dagur 1 í tímaslotti 1. Er sending 666 er með ID: 1380 frá Vendor 420369-7789 A: 94 
+Dagur 1 í tímaslotti 1. Er sending 668 er með ID: 1382 frá Vendor 420369-7789 A: 114 
+Dagur 1 í tímaslotti 1. Er sending 679 er með ID: 1402 frá Vendor 420369-7789 A: 16 
+Dagur 2 í tímaslotti 1. Er sending 112 er með ID: 760 frá Vendor 420369-7789 A: 248 
+Dagur 2 í tímaslotti 1. Er sending 129 er með ID: 783 frá Vendor 590515-3290 A: 37 
+Dagur 2 í tímaslotti 1. Er sending 262 er með ID: 928 frá Vendor 420369-7789 A: 182 
+Dagur 2 í tímaslotti 1. Er sending 271 er með ID: 938 frá Vendor 420369-7789 A: 50 
+Dagur 2 í tímaslotti 1. Er sending 273 er með ID: 940 frá Vendor 420369-7789 A: 36 
+Dagur 2 í tímaslotti 1. Er sending 274 er með ID: 941 frá Vendor 420369-7789 A: 55 
+Dagur 2 í tímaslotti 1. Er sending 276 er með ID: 943 frá Vendor 420369-7789 A: 5 
+Dagur 2 í tímaslotti 1. Er sending 280 er með ID: 947 frá Vendor 470169-1419 A: 2 
+Dagur 2 í tímaslotti 1. Er sending 382 er með ID: 1065 frá Vendor 420369-7789 A: 17 
+Dagur 2 í tímaslotti 1. Er sending 389 er með ID: 1072 frá Vendor 420369-7789 A: 61 
+Dagur 2 í tímaslotti 1. Er sending 390 er með ID: 1073 frá Vendor 420369-7789 A: 11 
+Dagur 2 í tímaslotti 1. Er sending 587 er með ID: 1287 frá Vendor 420369-7789 A: 143 
+Dagur 2 í tímaslotti 1. Er sending 596 er með ID: 1296 frá Vendor 420369-7789 A: 61 
+Dagur 2 í tímaslotti 1. Er sending 602 er með ID: 1302 frá Vendor 420369-7789 A: 18 
+Dagur 2 í tímaslotti 1. Er sending 604 er með ID: 1304 frá Vendor 470169-1419 A: 33 
+Dagur 2 í tímaslotti 1. Er sending 653 er með ID: 1367 frá Vendor 420369-7789 A: 73 
+Dagur 2 í tímaslotti 1. Er sending 657 er með ID: 1371 frá Vendor 420369-7789 A: 6 
+Dagur 2 í tímaslotti 1. Er sending 661 er með ID: 1375 frá Vendor 420369-7789 A: 14 
+Dagur 2 í tímaslotti 1. Er sending 662 er með ID: 1376 frá Vendor 420369-7789 A: 14 
+Dagur 2 í tímaslotti 1. Er sending 667 er með ID: 1381 frá Vendor 420369-7789 A: 52 
+Dagur 2 í tímaslotti 1. Er sending 669 er með ID: 1383 frá Vendor 420369-7789 A: 51 
+Dagur 2 í tímaslotti 1. Er sending 674 er með ID: 1397 frá Vendor 420369-7789 A: 244 
+Dagur 2 í tímaslotti 1. Er sending 680 er með ID: 1403 frá Vendor 420369-7789 A: 2 
+Dagur 3 í tímaslotti 1. Er sending 104 er með ID: 752 frá Vendor 420369-7789 A: 55 
+Dagur 3 í tímaslotti 1. Er sending 107 er með ID: 755 frá Vendor 420369-7789 A: 15 
+Dagur 3 í tímaslotti 1. Er sending 108 er með ID: 756 frá Vendor 420369-7789 A: 21 
+Dagur 3 í tímaslotti 1. Er sending 113 er með ID: 766 frá Vendor 470169-1419 A: 63 
+Dagur 3 í tímaslotti 1. Er sending 264 er með ID: 930 frá Vendor 420369-7789 A: 128 
+Dagur 3 í tímaslotti 1. Er sending 266 er með ID: 933 frá Vendor 420369-7789 A: 106 
+Dagur 3 í tímaslotti 1. Er sending 277 er með ID: 944 frá Vendor 420369-7789 A: 97 
+Dagur 3 í tímaslotti 1. Er sending 279 er með ID: 946 frá Vendor 420369-7789 A: 134 
+Dagur 3 í tímaslotti 1. Er sending 383 er með ID: 1066 frá Vendor 420369-7789 A: 24 
+Dagur 3 í tímaslotti 1. Er sending 395 er með ID: 1078 frá Vendor 541205-1520 A: 45 
+Dagur 3 í tímaslotti 1. Er sending 588 er með ID: 1288 frá Vendor 420369-7789 A: 101 
+Dagur 3 í tímaslotti 1. Er sending 589 er með ID: 1289 frá Vendor 420369-7789 A: 42 
+Dagur 3 í tímaslotti 1. Er sending 641 er með ID: 1344 frá Vendor 410999-2859 A: 104 
+Dagur 3 í tímaslotti 1. Er sending 658 er með ID: 1372 frá Vendor 420369-7789 A: 25 
+Dagur 3 í tímaslotti 1. Er sending 675 er með ID: 1398 frá Vendor 420369-7789 A: 91 
+Dagur 3 í tímaslotti 1. Er sending 678 er með ID: 1401 frá Vendor 420369-7789 A: 79 
+Dagur 3 í tímaslotti 1. Er sending 681 er með ID: 1404 frá Vendor 420369-7789 A: 26 
+Dagur 4 í tímaslotti 1. Er sending 102 er með ID: 750 frá Vendor 420369-7789 A: 73 
+Dagur 4 í tímaslotti 1. Er sending 105 er með ID: 753 frá Vendor 420369-7789 A: 55 
+Dagur 4 í tímaslotti 1. Er sending 106 er með ID: 754 frá Vendor 420369-7789 A: 37 
+Dagur 4 í tímaslotti 1. Er sending 265 er með ID: 932 frá Vendor 420369-7789 A: 212 
+Dagur 4 í tímaslotti 1. Er sending 272 er með ID: 939 frá Vendor 420369-7789 A: 55 
+Dagur 4 í tímaslotti 1. Er sending 275 er með ID: 942 frá Vendor 420369-7789 A: 73 
+Dagur 4 í tímaslotti 1. Er sending 378 er með ID: 1061 frá Vendor 420369-7789 A: 61 
+Dagur 4 í tímaslotti 1. Er sending 379 er með ID: 1062 frá Vendor 420369-7789 A: 40 
+Dagur 4 í tímaslotti 1. Er sending 388 er með ID: 1071 frá Vendor 420369-7789 A: 48 
+Dagur 4 í tímaslotti 1. Er sending 591 er með ID: 1291 frá Vendor 420369-7789 A: 55 
+Dagur 4 í tímaslotti 1. Er sending 597 er með ID: 1297 frá Vendor 420369-7789 A: 134 
+Dagur 4 í tímaslotti 1. Er sending 598 er með ID: 1298 frá Vendor 420369-7789 A: 325 
+Dagur 4 í tímaslotti 1. Er sending 599 er með ID: 1299 frá Vendor 601083-0789 A: 3 
+Dagur 4 í tímaslotti 1. Er sending 655 er með ID: 1369 frá Vendor 420369-7789 A: 55 
+Dagur 4 í tímaslotti 1. Er sending 656 er með ID: 1370 frá Vendor 420369-7789 A: 11 
+Dagur 4 í tímaslotti 1. Er sending 659 er með ID: 1373 frá Vendor 420369-7789 A: 5 
+Dagur 4 í tímaslotti 1. Er sending 664 er með ID: 1378 frá Vendor 420369-7789 A: 46 
+Dagur 4 í tímaslotti 1. Er sending 671 er með ID: 1385 frá Vendor 420369-7789 A: 5 
+Dagur 4 í tímaslotti 1. Er sending 673 er með ID: 1387 frá Vendor 420369-7789 A: 27 
+Dagur 4 í tímaslotti 1. Er sending 676 er með ID: 1399 frá Vendor 420369-7789 A: 52 
+Dagur 4 í tímaslotti 1. Er sending 677 er með ID: 1400 frá Vendor 420369-7789 A: 22 
+Dagur 5 í tímaslotti 1. Er sending 109 er með ID: 757 frá Vendor 420369-7789 A: 177 
+Dagur 5 í tímaslotti 1. Er sending 111 er með ID: 759 frá Vendor 420369-7789 A: 403 
+Dagur 5 í tímaslotti 1. Er sending 263 er með ID: 929 frá Vendor 420369-7789 A: 150 
+Dagur 5 í tímaslotti 1. Er sending 267 er með ID: 934 frá Vendor 420369-7789 A: 168 
+Dagur 5 í tímaslotti 1. Er sending 278 er með ID: 945 frá Vendor 420369-7789 A: 61 
+Dagur 5 í tímaslotti 1. Er sending 377 er með ID: 1060 frá Vendor 420369-7789 A: 117 
+Dagur 5 í tímaslotti 1. Er sending 380 er með ID: 1063 frá Vendor 420369-7789 A: 2 
+Dagur 5 í tímaslotti 1. Er sending 384 er með ID: 1067 frá Vendor 420369-7789 A: 0 
+Dagur 5 í tímaslotti 1. Er sending 387 er með ID: 1070 frá Vendor 420369-7789 A: 38 
+Dagur 5 í tímaslotti 1. Er sending 391 er með ID: 1074 frá Vendor 420369-7789 A: 300 
+Dagur 5 í tímaslotti 1. Er sending 393 er með ID: 1076 frá Vendor 420369-7789 A: 61 
+Dagur 5 í tímaslotti 1. Er sending 586 er með ID: 1285 frá Vendor 420369-7789 A: 7 
+Dagur 5 í tímaslotti 1. Er sending 590 er með ID: 1290 frá Vendor 420369-7789 A: 75 
+Dagur 5 í tímaslotti 1. Er sending 592 er með ID: 1292 frá Vendor 420369-7789 A: 73 
+Dagur 5 í tímaslotti 1. Er sending 594 er með ID: 1294 frá Vendor 420369-7789 A: 109 
+Dagur 5 í tímaslotti 1. Er sending 603 er með ID: 1303 frá Vendor 420369-7789 A: 44 
+Dagur 5 í tímaslotti 1. Er sending 640 er með ID: 1343 frá Vendor 420369-7789 A: 79 
+Dagur 5 í tímaslotti 1. Er sending 645 er með ID: 1349 frá Vendor 470169-1419 A: 35 
+Dagur 5 í tímaslotti 1. Er sending 654 er með ID: 1368 frá Vendor 420369-7789 A: 50 
+Dagur 5 í tímaslotti 1. Er sending 660 er með ID: 1374 frá Vendor 420369-7789 A: 18 
+Dagur 5 í tímaslotti 1. Er sending 663 er með ID: 1377 frá Vendor 420369-7789 A: 4 
+Dagur 5 í tímaslotti 1. Er sending 670 er með ID: 1384 frá Vendor 420369-7789 A: 18 
+Dagur 5 í tímaslotti 1. Er sending 672 er með ID: 1386 frá Vendor 420369-7789 A: 4 
+Dagur 1 í tímaslotti 2. Er sending 116 er með ID: 770 frá Vendor 470169-1419 A: 23 
+Dagur 1 í tímaslotti 2. Er sending 117 er með ID: 771 frá Vendor 470169-1419 A: 9 
+Dagur 1 í tímaslotti 2. Er sending 123 er með ID: 777 frá Vendor 470169-1419 A: 9 
+Dagur 1 í tímaslotti 2. Er sending 124 er með ID: 778 frá Vendor 470169-1419 A: 20 
+Dagur 1 í tímaslotti 2. Er sending 126 er með ID: 780 frá Vendor 470169-1419 A: 34 
+Dagur 1 í tímaslotti 2. Er sending 281 er með ID: 948 frá Vendor 470169-1419 A: 13 
+Dagur 1 í tímaslotti 2. Er sending 402 er með ID: 1085 frá Vendor 470169-1419 A: 13 
+Dagur 1 í tímaslotti 2. Er sending 405 er með ID: 1088 frá Vendor 470169-1419 A: 9 
+Dagur 1 í tímaslotti 2. Er sending 406 er með ID: 1089 frá Vendor 470169-1419 A: 310 
+Dagur 1 í tímaslotti 2. Er sending 411 er með ID: 1094 frá Vendor 541205-1520 A: 365 
+Dagur 1 í tímaslotti 2. Er sending 646 er með ID: 1350 frá Vendor 681215-1740 A: 11 
+Dagur 2 í tímaslotti 2. Er sending 18 er með ID: 643 frá Vendor 470169-1419 A: 182 
+Dagur 2 í tímaslotti 2. Er sending 52 er með ID: 690 frá Vendor 550595-2579 A: 4 
+Dagur 2 í tímaslotti 2. Er sending 115 er með ID: 769 frá Vendor 470169-1419 A: 24 
+Dagur 2 í tímaslotti 2. Er sending 119 er með ID: 773 frá Vendor 470169-1419 A: 68 
+Dagur 2 í tímaslotti 2. Er sending 285 er með ID: 952 frá Vendor 470169-1419 A: 3 
+Dagur 2 í tímaslotti 2. Er sending 286 er með ID: 953 frá Vendor 470169-1419 A: 36 
+Dagur 2 í tímaslotti 2. Er sending 400 er með ID: 1083 frá Vendor 470169-1419 A: 18 
+Dagur 2 í tímaslotti 2. Er sending 605 er með ID: 1305 frá Vendor 470169-1419 A: 146 
+Dagur 2 í tímaslotti 2. Er sending 606 er með ID: 1306 frá Vendor 470169-1419 A: 51 
+Dagur 3 í tímaslotti 2. Er sending 21 er með ID: 646 frá Vendor 550394-2359 A: 1 
+Dagur 3 í tímaslotti 2. Er sending 114 er með ID: 767 frá Vendor 470169-1419 A: 219 
+Dagur 3 í tímaslotti 2. Er sending 122 er með ID: 776 frá Vendor 470169-1419 A: 26 
+Dagur 3 í tímaslotti 2. Er sending 128 er með ID: 782 frá Vendor 420369-7789 A: 4 
+Dagur 3 í tímaslotti 2. Er sending 288 er með ID: 955 frá Vendor 501117-0210 A: 4 
+Dagur 3 í tímaslotti 2. Er sending 404 er með ID: 1087 frá Vendor 470169-1419 A: 31 
+Dagur 4 í tímaslotti 2. Er sending 20 er með ID: 645 frá Vendor 470169-1419 A: 128 
+Dagur 4 í tímaslotti 2. Er sending 118 er með ID: 772 frá Vendor 470169-1419 A: 46 
+Dagur 4 í tímaslotti 2. Er sending 121 er með ID: 775 frá Vendor 470169-1419 A: 130 
+Dagur 4 í tímaslotti 2. Er sending 125 er með ID: 779 frá Vendor 470169-1419 A: 4 
+Dagur 4 í tímaslotti 2. Er sending 282 er með ID: 949 frá Vendor 470169-1419 A: 6 
+Dagur 4 í tímaslotti 2. Er sending 283 er með ID: 950 frá Vendor 470169-1419 A: 73 
+Dagur 4 í tímaslotti 2. Er sending 287 er með ID: 954 frá Vendor 470169-1419 A: 364 
+Dagur 4 í tímaslotti 2. Er sending 398 er með ID: 1081 frá Vendor 470169-1419 A: 5 
+Dagur 4 í tímaslotti 2. Er sending 401 er með ID: 1084 frá Vendor 470169-1419 A: 23 
+Dagur 4 í tímaslotti 2. Er sending 403 er með ID: 1086 frá Vendor 470169-1419 A: 4 
+Dagur 4 í tímaslotti 2. Er sending 408 er með ID: 1091 frá Vendor 470169-1419 A: 26 
+Dagur 4 í tímaslotti 2. Er sending 409 er með ID: 1092 frá Vendor 470169-1419 A: 36 
+Dagur 5 í tímaslotti 2. Er sending 19 er með ID: 644 frá Vendor 470169-1419 A: 35 
+Dagur 5 í tímaslotti 2. Er sending 120 er með ID: 774 frá Vendor 470169-1419 A: 22 
+Dagur 5 í tímaslotti 2. Er sending 127 er með ID: 781 frá Vendor 470169-1419 A: 69 
+Dagur 5 í tímaslotti 2. Er sending 284 er með ID: 951 frá Vendor 470169-1419 A: 84 
+Dagur 5 í tímaslotti 2. Er sending 399 er með ID: 1082 frá Vendor 470169-1419 A: 73 
+Dagur 5 í tímaslotti 2. Er sending 407 er með ID: 1090 frá Vendor 470169-1419 A: 55 
+Dagur 5 í tímaslotti 2. Er sending 410 er með ID: 1093 frá Vendor 470169-1419 A: 18 
+Dagur 5 í tímaslotti 2. Er sending 607 er með ID: 1307 frá Vendor 550394-2359 A: 129 
+Dagur 1 í tímaslotti 3. Er sending 66 er með ID: 707 frá Vendor 700103-3660 A: 43 
+Dagur 1 í tímaslotti 3. Er sending 87 er með ID: 727 frá Vendor 700103-3660 A: 20 
+Dagur 1 í tímaslotti 3. Er sending 343 er með ID: 1013 frá Vendor 700103-3660 A: 150 
+Dagur 1 í tímaslotti 3. Er sending 345 er með ID: 1015 frá Vendor 700103-3660 A: 4 
+Dagur 1 í tímaslotti 3. Er sending 423 er með ID: 1106 frá Vendor 570169-0339 A: 106 
+Dagur 1 í tímaslotti 3. Er sending 424 er með ID: 1107 frá Vendor 570169-0339 A: 106 
+Dagur 1 í tímaslotti 3. Er sending 428 er með ID: 1111 frá Vendor 570169-0339 A: 88 
+Dagur 1 í tímaslotti 3. Er sending 432 er með ID: 1115 frá Vendor 570169-0339 A: 83 
+Dagur 2 í tímaslotti 3. Er sending 68 er með ID: 709 frá Vendor 700103-3660 A: 4 
+Dagur 2 í tímaslotti 3. Er sending 69 er með ID: 710 frá Vendor 700103-3660 A: 1 
+Dagur 2 í tímaslotti 3. Er sending 70 er með ID: 711 frá Vendor 700103-3660 A: 12 
+Dagur 2 í tímaslotti 3. Er sending 72 er með ID: 713 frá Vendor 530303-2410 A: 36 
+Dagur 2 í tímaslotti 3. Er sending 346 er með ID: 1016 frá Vendor 530303-2410 A: 44 
+Dagur 2 í tímaslotti 3. Er sending 350 er með ID: 1020 frá Vendor 420178-0349 A: 2 
+Dagur 2 í tímaslotti 3. Er sending 359 er með ID: 1030 frá Vendor 570169-0339 A: 3 
+Dagur 2 í tímaslotti 3. Er sending 364 er með ID: 1034 frá Vendor 570169-0339 A: 12 
+Dagur 2 í tímaslotti 3. Er sending 365 er með ID: 1035 frá Vendor 570169-0339 A: 48 
+Dagur 2 í tímaslotti 3. Er sending 368 er með ID: 1038 frá Vendor 570169-0339 A: 6 
+Dagur 2 í tímaslotti 3. Er sending 369 er með ID: 1039 frá Vendor 660169-1729 A: 12 
+Dagur 2 í tímaslotti 3. Er sending 413 er með ID: 1096 frá Vendor 570169-0339 A: 8 
+Dagur 2 í tímaslotti 3. Er sending 415 er með ID: 1098 frá Vendor 570169-0339 A: 4 
+Dagur 2 í tímaslotti 3. Er sending 417 er með ID: 1100 frá Vendor 570169-0339 A: 7 
+Dagur 2 í tímaslotti 3. Er sending 418 er með ID: 1101 frá Vendor 570169-0339 A: 0 
+Dagur 2 í tímaslotti 3. Er sending 425 er með ID: 1108 frá Vendor 570169-0339 A: 88 
+Dagur 2 í tímaslotti 3. Er sending 434 er með ID: 1117 frá Vendor 570169-0339 A: 88 
+Dagur 2 í tímaslotti 3. Er sending 439 er með ID: 1122 frá Vendor 570169-0339 A: 4 
+Dagur 2 í tímaslotti 3. Er sending 440 er með ID: 1123 frá Vendor 570169-0339 A: 133 
+Dagur 2 í tímaslotti 3. Er sending 441 er með ID: 1124 frá Vendor 570169-0339 A: 122 
+Dagur 2 í tímaslotti 3. Er sending 444 er með ID: 1127 frá Vendor 570169-0339 A: 221 
+Dagur 2 í tímaslotti 3. Er sending 445 er með ID: 1128 frá Vendor 570169-0339 A: 358 
+Dagur 2 í tímaslotti 3. Er sending 448 er með ID: 1131 frá Vendor 570169-0339 A: 88 
+Dagur 2 í tímaslotti 3. Er sending 450 er með ID: 1133 frá Vendor 570169-0339 A: 31 
+Dagur 2 í tímaslotti 3. Er sending 452 er með ID: 1135 frá Vendor 570169-0339 A: 13 
+Dagur 2 í tímaslotti 3. Er sending 454 er með ID: 1137 frá Vendor 570169-0339 A: 17 
+Dagur 2 í tímaslotti 3. Er sending 455 er með ID: 1138 frá Vendor 570169-0339 A: 25 
+Dagur 2 í tímaslotti 3. Er sending 456 er með ID: 1139 frá Vendor 570169-0339 A: 2 
+Dagur 2 í tímaslotti 3. Er sending 457 er með ID: 1141 frá Vendor 570169-0339 A: 9 
+Dagur 2 í tímaslotti 3. Er sending 458 er með ID: 1142 frá Vendor 570169-0339 A: 18 
+Dagur 2 í tímaslotti 3. Er sending 465 er með ID: 1149 frá Vendor 570169-0339 A: 4 
+Dagur 2 í tímaslotti 3. Er sending 466 er með ID: 1150 frá Vendor 471289-2569 A: 36 
+Dagur 3 í tímaslotti 3. Er sending 71 er með ID: 712 frá Vendor 700103-3660 A: 2 
+Dagur 3 í tímaslotti 3. Er sending 83 er með ID: 723 frá Vendor 700103-3660 A: 22 
+Dagur 3 í tímaslotti 3. Er sending 84 er með ID: 724 frá Vendor 700103-3660 A: 11 
+Dagur 3 í tímaslotti 3. Er sending 85 er með ID: 725 frá Vendor 700103-3660 A: 80 
+Dagur 3 í tímaslotti 3. Er sending 88 er með ID: 728 frá Vendor 700103-3660 A: 11 
+Dagur 3 í tímaslotti 3. Er sending 89 er með ID: 729 frá Vendor 500316-0470 A: 3 
+Dagur 3 í tímaslotti 3. Er sending 341 er með ID: 1011 frá Vendor 700103-3660 A: 4 
+Dagur 3 í tímaslotti 3. Er sending 342 er með ID: 1012 frá Vendor 700103-3660 A: 4 
+Dagur 3 í tímaslotti 3. Er sending 349 er með ID: 1019 frá Vendor 700103-3660 A: 7 
+Dagur 3 í tímaslotti 3. Er sending 354 er með ID: 1024 frá Vendor 560793-2199 A: 4 
+Dagur 3 í tímaslotti 3. Er sending 360 er með ID: 1031 frá Vendor 420369-7789 A: 0 
+Dagur 3 í tímaslotti 3. Er sending 420 er með ID: 1103 frá Vendor 570169-0339 A: 52 
+Dagur 3 í tímaslotti 3. Er sending 426 er með ID: 1109 frá Vendor 570169-0339 A: 150 
+Dagur 3 í tímaslotti 3. Er sending 427 er með ID: 1110 frá Vendor 570169-0339 A: 107 
+Dagur 3 í tímaslotti 3. Er sending 430 er með ID: 1113 frá Vendor 570169-0339 A: 36 
+Dagur 3 í tímaslotti 3. Er sending 446 er með ID: 1129 frá Vendor 570169-0339 A: 86 
+Dagur 3 í tímaslotti 3. Er sending 451 er með ID: 1134 frá Vendor 570169-0339 A: 18 
+Dagur 3 í tímaslotti 3. Er sending 453 er með ID: 1136 frá Vendor 570169-0339 A: 4 
+Dagur 3 í tímaslotti 3. Er sending 462 er með ID: 1146 frá Vendor 570169-0339 A: 22 
+Dagur 3 í tímaslotti 3. Er sending 464 er með ID: 1148 frá Vendor 570169-0339 A: 55 
+Dagur 4 í tímaslotti 3. Er sending 67 er með ID: 708 frá Vendor 700103-3660 A: 12 
+Dagur 4 í tímaslotti 3. Er sending 81 er með ID: 721 frá Vendor 700103-3660 A: 39 
+Dagur 4 í tímaslotti 3. Er sending 344 er með ID: 1014 frá Vendor 700103-3660 A: 371 
+Dagur 4 í tímaslotti 3. Er sending 363 er með ID: 1033 frá Vendor 570169-0339 A: 12 
+Dagur 4 í tímaslotti 3. Er sending 414 er með ID: 1097 frá Vendor 570169-0339 A: 11 
+Dagur 4 í tímaslotti 3. Er sending 416 er með ID: 1099 frá Vendor 570169-0339 A: 9 
+Dagur 4 í tímaslotti 3. Er sending 421 er með ID: 1104 frá Vendor 570169-0339 A: 106 
+Dagur 4 í tímaslotti 3. Er sending 422 er með ID: 1105 frá Vendor 570169-0339 A: 133 
+Dagur 4 í tímaslotti 3. Er sending 431 er með ID: 1114 frá Vendor 570169-0339 A: 137 
+Dagur 4 í tímaslotti 3. Er sending 433 er með ID: 1116 frá Vendor 570169-0339 A: 5 
+Dagur 4 í tímaslotti 3. Er sending 435 er með ID: 1118 frá Vendor 570169-0339 A: 44 
+Dagur 4 í tímaslotti 3. Er sending 443 er með ID: 1126 frá Vendor 570169-0339 A: 106 
+Dagur 4 í tímaslotti 3. Er sending 461 er með ID: 1145 frá Vendor 570169-0339 A: 13 
+Dagur 4 í tímaslotti 3. Er sending 463 er með ID: 1147 frá Vendor 570169-0339 A: 11 
+Dagur 5 í tímaslotti 3. Er sending 82 er með ID: 722 frá Vendor 700103-3660 A: 27 
+Dagur 5 í tímaslotti 3. Er sending 86 er með ID: 726 frá Vendor 700103-3660 A: 18 
+Dagur 5 í tímaslotti 3. Er sending 366 er með ID: 1036 frá Vendor 570169-0339 A: 48 
+Dagur 5 í tímaslotti 3. Er sending 367 er með ID: 1037 frá Vendor 570169-0339 A: 6 
+Dagur 5 í tímaslotti 3. Er sending 429 er með ID: 1112 frá Vendor 570169-0339 A: 11 
+Dagur 5 í tímaslotti 3. Er sending 436 er með ID: 1119 frá Vendor 570169-0339 A: 118 
+Dagur 5 í tímaslotti 3. Er sending 437 er með ID: 1120 frá Vendor 570169-0339 A: 67 
+Dagur 5 í tímaslotti 3. Er sending 438 er með ID: 1121 frá Vendor 570169-0339 A: 36 
+Dagur 5 í tímaslotti 3. Er sending 442 er með ID: 1125 frá Vendor 570169-0339 A: 98 
+Dagur 5 í tímaslotti 3. Er sending 447 er með ID: 1130 frá Vendor 570169-0339 A: 22 
+Dagur 5 í tímaslotti 3. Er sending 449 er með ID: 1132 frá Vendor 570169-0339 A: 7 
+Dagur 5 í tímaslotti 3. Er sending 459 er með ID: 1143 frá Vendor 570169-0339 A: 44 
+Dagur 5 í tímaslotti 3. Er sending 460 er með ID: 1144 frá Vendor 570169-0339 A: 152 
+Dagur 1 í tímaslotti 4. Er sending 43 er með ID: 669 frá Vendor 410999-2859 A: 36 
+Dagur 1 í tímaslotti 4. Er sending 44 er með ID: 670 frá Vendor 410999-2859 A: 24 
+Dagur 1 í tímaslotti 4. Er sending 47 er með ID: 673 frá Vendor 410999-2859 A: 106 
+Dagur 1 í tímaslotti 4. Er sending 397 er með ID: 1080 frá Vendor 470169-1419 A: 17 
+Dagur 1 í tímaslotti 4. Er sending 644 er með ID: 1347 frá Vendor 420369-7789 A: 14 
+Dagur 2 í tímaslotti 4. Er sending 45 er með ID: 671 frá Vendor 410999-2859 A: 129 
+Dagur 2 í tímaslotti 4. Er sending 46 er með ID: 672 frá Vendor 410999-2859 A: 22 
+Dagur 2 í tímaslotti 4. Er sending 50 er með ID: 676 frá Vendor 601083-0789 A: 4 
+Dagur 2 í tímaslotti 4. Er sending 302 er með ID: 970 frá Vendor 410999-2859 A: 48 
+Dagur 2 í tímaslotti 4. Er sending 308 er með ID: 976 frá Vendor 410999-2859 A: 7 
+Dagur 2 í tímaslotti 4. Er sending 309 er með ID: 977 frá Vendor 410999-2859 A: 46 
+Dagur 2 í tímaslotti 4. Er sending 310 er með ID: 978 frá Vendor 410999-2859 A: 13 
+Dagur 2 í tímaslotti 4. Er sending 312 er með ID: 980 frá Vendor 410999-2859 A: 107 
+Dagur 2 í tímaslotti 4. Er sending 315 er með ID: 983 frá Vendor 410999-2859 A: 11 
+Dagur 2 í tímaslotti 4. Er sending 642 er með ID: 1345 frá Vendor 410999-2859 A: 5 
+Dagur 3 í tímaslotti 4. Er sending 41 er með ID: 667 frá Vendor 410999-2859 A: 86 
+Dagur 3 í tímaslotti 4. Er sending 48 er með ID: 674 frá Vendor 410999-2859 A: 86 
+Dagur 3 í tímaslotti 4. Er sending 307 er með ID: 975 frá Vendor 410999-2859 A: 14 
+Dagur 3 í tímaslotti 4. Er sending 313 er með ID: 981 frá Vendor 410999-2859 A: 129 
+Dagur 3 í tímaslotti 4. Er sending 317 er með ID: 985 frá Vendor 410999-2859 A: 41 
+Dagur 3 í tímaslotti 4. Er sending 412 er með ID: 1095 frá Vendor 570169-0339 A: 23 
+Dagur 4 í tímaslotti 4. Er sending 40 er með ID: 666 frá Vendor 410999-2859 A: 86 
+Dagur 4 í tímaslotti 4. Er sending 300 er með ID: 968 frá Vendor 410999-2859 A: 9 
+Dagur 4 í tímaslotti 4. Er sending 304 er með ID: 972 frá Vendor 410999-2859 A: 36 
+Dagur 4 í tímaslotti 4. Er sending 306 er með ID: 974 frá Vendor 410999-2859 A: 11 
+Dagur 4 í tímaslotti 4. Er sending 316 er með ID: 984 frá Vendor 410999-2859 A: 80 
+Dagur 4 í tímaslotti 4. Er sending 396 er með ID: 1079 frá Vendor 541205-1520 A: 13 
+Dagur 4 í tímaslotti 4. Er sending 643 er með ID: 1346 frá Vendor 410999-2859 A: 5 
+Dagur 5 í tímaslotti 4. Er sending 42 er með ID: 668 frá Vendor 410999-2859 A: 28 
+Dagur 5 í tímaslotti 4. Er sending 49 er með ID: 675 frá Vendor 410999-2859 A: 88 
+Dagur 5 í tímaslotti 4. Er sending 301 er með ID: 969 frá Vendor 410999-2859 A: 36 
+Dagur 5 í tímaslotti 4. Er sending 303 er með ID: 971 frá Vendor 410999-2859 A: 36 
+Dagur 5 í tímaslotti 4. Er sending 305 er með ID: 973 frá Vendor 410999-2859 A: 9 
+Dagur 5 í tímaslotti 4. Er sending 311 er með ID: 979 frá Vendor 410999-2859 A: 129 
+Dagur 5 í tímaslotti 4. Er sending 314 er með ID: 982 frá Vendor 410999-2859 A: 107 
+Dagur 5 í tímaslotti 4. Er sending 318 er með ID: 986 frá Vendor 530303-2410 A: 44 
+Dagur 5 í tímaslotti 4. Er sending 632 er með ID: 1332 frá Vendor 550394-2359 A: 18 
+Dagur 1 í tímaslotti 5. Er sending 59 er með ID: 697 frá Vendor 530303-2410 A: 31 
+Dagur 1 í tímaslotti 5. Er sending 63 er með ID: 701 frá Vendor 530303-2410 A: 7 
+Dagur 1 í tímaslotti 5. Er sending 73 er með ID: 714 frá Vendor 530303-2410 A: 44 
+Dagur 1 í tímaslotti 5. Er sending 75 er með ID: 716 frá Vendor 530303-2410 A: 51 
+Dagur 1 í tímaslotti 5. Er sending 331 er með ID: 999 frá Vendor 530303-2410 A: 4 
+Dagur 1 í tímaslotti 5. Er sending 332 er með ID: 1001 frá Vendor 530303-2410 A: 5 
+Dagur 2 í tímaslotti 5. Er sending 58 er með ID: 696 frá Vendor 530303-2410 A: 30 
+Dagur 2 í tímaslotti 5. Er sending 60 er með ID: 698 frá Vendor 530303-2410 A: 90 
+Dagur 2 í tímaslotti 5. Er sending 61 er með ID: 699 frá Vendor 530303-2410 A: 33 
+Dagur 2 í tímaslotti 5. Er sending 62 er með ID: 700 frá Vendor 530303-2410 A: 33 
+Dagur 2 í tímaslotti 5. Er sending 64 er með ID: 702 frá Vendor 530303-2410 A: 9 
+Dagur 2 í tímaslotti 5. Er sending 78 er með ID: 718 frá Vendor 420178-0349 A: 84 
+Dagur 2 í tímaslotti 5. Er sending 324 er með ID: 992 frá Vendor 530303-2410 A: 215 
+Dagur 2 í tímaslotti 5. Er sending 328 er með ID: 996 frá Vendor 530303-2410 A: 22 
+Dagur 2 í tímaslotti 5. Er sending 335 er með ID: 1004 frá Vendor 530303-2410 A: 133 
+Dagur 3 í tímaslotti 5. Er sending 54 er með ID: 692 frá Vendor 530303-2410 A: 66 
+Dagur 3 í tímaslotti 5. Er sending 56 er með ID: 694 frá Vendor 530303-2410 A: 66 
+Dagur 3 í tímaslotti 5. Er sending 57 er með ID: 695 frá Vendor 530303-2410 A: 100 
+Dagur 3 í tímaslotti 5. Er sending 65 er með ID: 706 frá Vendor 700103-3660 A: 17 
+Dagur 3 í tímaslotti 5. Er sending 74 er með ID: 715 frá Vendor 530303-2410 A: 22 
+Dagur 3 í tímaslotti 5. Er sending 325 er með ID: 993 frá Vendor 530303-2410 A: 36 
+Dagur 3 í tímaslotti 5. Er sending 327 er með ID: 995 frá Vendor 530303-2410 A: 179 
+Dagur 3 í tímaslotti 5. Er sending 334 er með ID: 1003 frá Vendor 530303-2410 A: 27 
+Dagur 3 í tímaslotti 5. Er sending 347 er með ID: 1017 frá Vendor 420178-0349 A: 221 
+Dagur 4 í tímaslotti 5. Er sending 319 er með ID: 987 frá Vendor 530303-2410 A: 53 
+Dagur 4 í tímaslotti 5. Er sending 320 er með ID: 988 frá Vendor 530303-2410 A: 44 
+Dagur 4 í tímaslotti 5. Er sending 330 er með ID: 998 frá Vendor 530303-2410 A: 4 
+Dagur 4 í tímaslotti 5. Er sending 333 er með ID: 1002 frá Vendor 530303-2410 A: 11 
+Dagur 4 í tímaslotti 5. Er sending 337 er með ID: 1006 frá Vendor 530303-2410 A: 8 
+Dagur 4 í tímaslotti 5. Er sending 338 er með ID: 1007 frá Vendor 550609-1420 A: 2 
+Dagur 5 í tímaslotti 5. Er sending 55 er með ID: 693 frá Vendor 530303-2410 A: 66 
+Dagur 5 í tímaslotti 5. Er sending 76 er með ID: 717 frá Vendor 530303-2410 A: 0 
+Dagur 5 í tímaslotti 5. Er sending 321 er með ID: 989 frá Vendor 530303-2410 A: 66 
+Dagur 5 í tímaslotti 5. Er sending 322 er með ID: 990 frá Vendor 530303-2410 A: 179 
+Dagur 5 í tímaslotti 5. Er sending 323 er með ID: 991 frá Vendor 530303-2410 A: 119 
+Dagur 5 í tímaslotti 5. Er sending 326 er með ID: 994 frá Vendor 530303-2410 A: 102 
+Dagur 5 í tímaslotti 5. Er sending 329 er með ID: 997 frá Vendor 530303-2410 A: 11 
+Dagur 5 í tímaslotti 5. Er sending 336 er með ID: 1005 frá Vendor 530303-2410 A: 18 
+Dagur 1 í tímaslotti 6. Er sending 53 er með ID: 691 frá Vendor 530303-2410 A: 104 
+Dagur 1 í tímaslotti 6. Er sending 133 er með ID: 794 frá Vendor 550595-2579 A: 6 
+Dagur 1 í tímaslotti 6. Er sending 136 er með ID: 797 frá Vendor 550595-2579 A: 231 
+Dagur 1 í tímaslotti 6. Er sending 142 er með ID: 803 frá Vendor 550595-2579 A: 75 
+Dagur 1 í tímaslotti 6. Er sending 144 er með ID: 805 frá Vendor 550595-2579 A: 106 
+Dagur 1 í tímaslotti 6. Er sending 472 er með ID: 1156 frá Vendor 550595-2579 A: 150 
+Dagur 1 í tímaslotti 6. Er sending 474 er með ID: 1158 frá Vendor 550595-2579 A: 106 
+Dagur 1 í tímaslotti 6. Er sending 484 er með ID: 1168 frá Vendor 550595-2579 A: 4 
+Dagur 1 í tímaslotti 6. Er sending 491 er með ID: 1175 frá Vendor 550595-2579 A: 18 
+Dagur 1 í tímaslotti 6. Er sending 511 er með ID: 1195 frá Vendor 550595-2579 A: 44 
+Dagur 2 í tímaslotti 6. Er sending 131 er með ID: 792 frá Vendor 550595-2579 A: 53 
+Dagur 2 í tímaslotti 6. Er sending 138 er með ID: 799 frá Vendor 550595-2579 A: 249 
+Dagur 2 í tímaslotti 6. Er sending 139 er með ID: 800 frá Vendor 550595-2579 A: 80 
+Dagur 2 í tímaslotti 6. Er sending 143 er með ID: 804 frá Vendor 550595-2579 A: 133 
+Dagur 2 í tímaslotti 6. Er sending 155 er með ID: 816 frá Vendor 550595-2579 A: 18 
+Dagur 2 í tímaslotti 6. Er sending 158 er með ID: 819 frá Vendor 550595-2579 A: 40 
+Dagur 2 í tímaslotti 6. Er sending 161 er með ID: 822 frá Vendor 550595-2579 A: 86 
+Dagur 2 í tímaslotti 6. Er sending 162 er með ID: 823 frá Vendor 550595-2579 A: 55 
+Dagur 2 í tímaslotti 6. Er sending 168 er með ID: 829 frá Vendor 550595-2579 A: 8 
+Dagur 2 í tímaslotti 6. Er sending 170 er með ID: 831 frá Vendor 550595-2579 A: 55 
+Dagur 2 í tímaslotti 6. Er sending 477 er með ID: 1161 frá Vendor 550595-2579 A: 133 
+Dagur 2 í tímaslotti 6. Er sending 478 er með ID: 1162 frá Vendor 550595-2579 A: 86 
+Dagur 2 í tímaslotti 6. Er sending 485 er með ID: 1169 frá Vendor 550595-2579 A: 15 
+Dagur 2 í tímaslotti 6. Er sending 489 er með ID: 1173 frá Vendor 550595-2579 A: 40 
+Dagur 2 í tímaslotti 6. Er sending 496 er með ID: 1180 frá Vendor 550595-2579 A: 7 
+Dagur 2 í tímaslotti 6. Er sending 499 er með ID: 1183 frá Vendor 550595-2579 A: 53 
+Dagur 2 í tímaslotti 6. Er sending 503 er með ID: 1187 frá Vendor 550595-2579 A: 29 
+Dagur 2 í tímaslotti 6. Er sending 504 er með ID: 1188 frá Vendor 550595-2579 A: 53 
+Dagur 2 í tímaslotti 6. Er sending 509 er með ID: 1193 frá Vendor 550595-2579 A: 30 
+Dagur 2 í tímaslotti 6. Er sending 514 er með ID: 1199 frá Vendor 491007-1680 A: 4 
+Dagur 3 í tímaslotti 6. Er sending 134 er með ID: 795 frá Vendor 550595-2579 A: 6 
+Dagur 3 í tímaslotti 6. Er sending 135 er með ID: 796 frá Vendor 550595-2579 A: 14 
+Dagur 3 í tímaslotti 6. Er sending 146 er með ID: 807 frá Vendor 560113-0480 A: 1 
+Dagur 3 í tímaslotti 6. Er sending 150 er með ID: 811 frá Vendor 550595-2579 A: 18 
+Dagur 3 í tímaslotti 6. Er sending 151 er með ID: 812 frá Vendor 550595-2579 A: 10 
+Dagur 3 í tímaslotti 6. Er sending 160 er með ID: 821 frá Vendor 550595-2579 A: 7 
+Dagur 3 í tímaslotti 6. Er sending 166 er með ID: 827 frá Vendor 550595-2579 A: 32 
+Dagur 3 í tímaslotti 6. Er sending 167 er með ID: 828 frá Vendor 550595-2579 A: 23 
+Dagur 3 í tímaslotti 6. Er sending 169 er með ID: 830 frá Vendor 550595-2579 A: 17 
+Dagur 3 í tímaslotti 6. Er sending 171 er með ID: 832 frá Vendor 660509-0970 A: 65 
+Dagur 3 í tímaslotti 6. Er sending 468 er með ID: 1152 frá Vendor 550595-2579 A: 42 
+Dagur 3 í tímaslotti 6. Er sending 469 er með ID: 1153 frá Vendor 550595-2579 A: 90 
+Dagur 3 í tímaslotti 6. Er sending 470 er með ID: 1154 frá Vendor 550595-2579 A: 110 
+Dagur 3 í tímaslotti 6. Er sending 473 er með ID: 1157 frá Vendor 550595-2579 A: 110 
+Dagur 3 í tímaslotti 6. Er sending 482 er með ID: 1166 frá Vendor 550595-2579 A: 64 
+Dagur 3 í tímaslotti 6. Er sending 487 er með ID: 1171 frá Vendor 550595-2579 A: 24 
+Dagur 3 í tímaslotti 6. Er sending 497 er með ID: 1181 frá Vendor 550595-2579 A: 9 
+Dagur 3 í tímaslotti 6. Er sending 500 er með ID: 1184 frá Vendor 550595-2579 A: 133 
+Dagur 3 í tímaslotti 6. Er sending 508 er með ID: 1192 frá Vendor 550595-2579 A: 28 
+Dagur 3 í tímaslotti 6. Er sending 512 er með ID: 1197 frá Vendor 550595-2579 A: 43 
+Dagur 3 í tímaslotti 6. Er sending 513 er með ID: 1198 frá Vendor 550595-2579 A: 107 
+Dagur 4 í tímaslotti 6. Er sending 141 er með ID: 802 frá Vendor 550595-2579 A: 215 
+Dagur 4 í tímaslotti 6. Er sending 145 er með ID: 806 frá Vendor 550595-2579 A: 38 
+Dagur 4 í tímaslotti 6. Er sending 153 er með ID: 814 frá Vendor 550595-2579 A: 21 
+Dagur 4 í tímaslotti 6. Er sending 154 er með ID: 815 frá Vendor 550595-2579 A: 55 
+Dagur 4 í tímaslotti 6. Er sending 157 er með ID: 818 frá Vendor 550595-2579 A: 9 
+Dagur 4 í tímaslotti 6. Er sending 163 er með ID: 824 frá Vendor 550595-2579 A: 17 
+Dagur 4 í tímaslotti 6. Er sending 165 er með ID: 826 frá Vendor 550595-2579 A: 42 
+Dagur 4 í tímaslotti 6. Er sending 475 er með ID: 1159 frá Vendor 550595-2579 A: 110 
+Dagur 4 í tímaslotti 6. Er sending 480 er með ID: 1164 frá Vendor 550595-2579 A: 110 
+Dagur 4 í tímaslotti 6. Er sending 481 er með ID: 1165 frá Vendor 550595-2579 A: 212 
+Dagur 4 í tímaslotti 6. Er sending 483 er með ID: 1167 frá Vendor 550595-2579 A: 265 
+Dagur 4 í tímaslotti 6. Er sending 488 er með ID: 1172 frá Vendor 550595-2579 A: 7 
+Dagur 4 í tímaslotti 6. Er sending 493 er með ID: 1177 frá Vendor 550595-2579 A: 6 
+Dagur 4 í tímaslotti 6. Er sending 505 er með ID: 1189 frá Vendor 550595-2579 A: 79 
+Dagur 4 í tímaslotti 6. Er sending 506 er með ID: 1190 frá Vendor 550595-2579 A: 110 
+Dagur 5 í tímaslotti 6. Er sending 132 er með ID: 793 frá Vendor 550595-2579 A: 53 
+Dagur 5 í tímaslotti 6. Er sending 137 er með ID: 798 frá Vendor 550595-2579 A: 52 
+Dagur 5 í tímaslotti 6. Er sending 140 er með ID: 801 frá Vendor 550595-2579 A: 222 
+Dagur 5 í tímaslotti 6. Er sending 148 er með ID: 809 frá Vendor 501117-0210 A: 21 
+Dagur 5 í tímaslotti 6. Er sending 152 er með ID: 813 frá Vendor 550595-2579 A: 45 
+Dagur 5 í tímaslotti 6. Er sending 156 er með ID: 817 frá Vendor 550595-2579 A: 86 
+Dagur 5 í tímaslotti 6. Er sending 159 er með ID: 820 frá Vendor 550595-2579 A: 22 
+Dagur 5 í tímaslotti 6. Er sending 164 er með ID: 825 frá Vendor 550595-2579 A: 11 
+Dagur 5 í tímaslotti 6. Er sending 471 er með ID: 1155 frá Vendor 550595-2579 A: 265 
+Dagur 5 í tímaslotti 6. Er sending 476 er með ID: 1160 frá Vendor 550595-2579 A: 222 
+Dagur 5 í tímaslotti 6. Er sending 479 er með ID: 1163 frá Vendor 550595-2579 A: 179 
+Dagur 5 í tímaslotti 6. Er sending 486 er með ID: 1170 frá Vendor 550595-2579 A: 160 
+Dagur 5 í tímaslotti 6. Er sending 490 er með ID: 1174 frá Vendor 550595-2579 A: 100 
+Dagur 5 í tímaslotti 6. Er sending 492 er með ID: 1176 frá Vendor 550595-2579 A: 25 
+Dagur 5 í tímaslotti 6. Er sending 494 er með ID: 1178 frá Vendor 550595-2579 A: 6 
+Dagur 5 í tímaslotti 6. Er sending 495 er með ID: 1179 frá Vendor 550595-2579 A: 6 
+Dagur 5 í tímaslotti 6. Er sending 498 er með ID: 1182 frá Vendor 550595-2579 A: 53 
+Dagur 5 í tímaslotti 6. Er sending 501 er með ID: 1185 frá Vendor 550595-2579 A: 9 
+Dagur 5 í tímaslotti 6. Er sending 502 er með ID: 1186 frá Vendor 550595-2579 A: 18 
+Dagur 5 í tímaslotti 6. Er sending 507 er með ID: 1191 frá Vendor 550595-2579 A: 55 
+Dagur 5 í tímaslotti 6. Er sending 510 er með ID: 1194 frá Vendor 550595-2579 A: 27 
+Dagur 1 í tímaslotti 7. Er sending 51 er með ID: 689 frá Vendor 470169-1419 A: 1 
+Dagur 1 í tímaslotti 7. Er sending 518 er með ID: 1203 frá Vendor 491007-1680 A: 44 
+Dagur 1 í tímaslotti 7. Er sending 520 er með ID: 1205 frá Vendor 491007-1680 A: 9 
+Dagur 1 í tímaslotti 7. Er sending 541 er með ID: 1227 frá Vendor 601083-0789 A: 30 
+Dagur 1 í tímaslotti 7. Er sending 560 er með ID: 1248 frá Vendor 601083-0789 A: 9 
+Dagur 1 í tímaslotti 7. Er sending 562 er með ID: 1250 frá Vendor 420178-0349 A: 5 
+Dagur 1 í tímaslotti 7. Er sending 578 er með ID: 1266 frá Vendor 601083-0789 A: 14 
+Dagur 1 í tímaslotti 7. Er sending 579 er með ID: 1267 frá Vendor 601083-0789 A: 14 
+Dagur 1 í tímaslotti 7. Er sending 580 er með ID: 1279 frá Vendor 670616-1690 A: 12 
+Dagur 1 í tímaslotti 7. Er sending 584 er með ID: 1283 frá Vendor 510515-1020 A: 0 
+Dagur 1 í tímaslotti 7. Er sending 649 er með ID: 1357 frá Vendor 501117-0210 A: 60 
+Dagur 2 í tímaslotti 7. Er sending 357 er með ID: 1028 frá Vendor 500316-0470 A: 6 
+Dagur 2 í tímaslotti 7. Er sending 515 er með ID: 1200 frá Vendor 491007-1680 A: 22 
+Dagur 2 í tímaslotti 7. Er sending 519 er með ID: 1204 frá Vendor 491007-1680 A: 7 
+Dagur 2 í tímaslotti 7. Er sending 522 er með ID: 1207 frá Vendor 491007-1680 A: 4 
+Dagur 2 í tímaslotti 7. Er sending 523 er með ID: 1208 frá Vendor 491007-1680 A: 7 
+Dagur 2 í tímaslotti 7. Er sending 525 er með ID: 1210 frá Vendor 420178-0349 A: 29 
+Dagur 2 í tímaslotti 7. Er sending 550 er með ID: 1238 frá Vendor 420178-0349 A: 9 
+Dagur 2 í tímaslotti 7. Er sending 552 er með ID: 1240 frá Vendor 420178-0349 A: 9 
+Dagur 2 í tímaslotti 7. Er sending 566 er með ID: 1254 frá Vendor 420178-0349 A: 44 
+Dagur 2 í tímaslotti 7. Er sending 570 er með ID: 1258 frá Vendor 420178-0349 A: 11 
+Dagur 2 í tímaslotti 7. Er sending 574 er með ID: 1262 frá Vendor 601083-0789 A: 14 
+Dagur 2 í tímaslotti 7. Er sending 575 er með ID: 1263 frá Vendor 601083-0789 A: 6 
+Dagur 2 í tímaslotti 7. Er sending 577 er með ID: 1265 frá Vendor 601083-0789 A: 8 
+Dagur 2 í tímaslotti 7. Er sending 648 er með ID: 1351 frá Vendor 601083-0789 A: 1 
+Dagur 3 í tímaslotti 7. Er sending 80 er með ID: 720 frá Vendor 700103-3660 A: 39 
+Dagur 3 í tímaslotti 7. Er sending 348 er með ID: 1018 frá Vendor 700103-3660 A: 12 
+Dagur 3 í tímaslotti 7. Er sending 517 er með ID: 1202 frá Vendor 491007-1680 A: 22 
+Dagur 3 í tímaslotti 7. Er sending 524 er með ID: 1209 frá Vendor 420178-0349 A: 71 
+Dagur 3 í tímaslotti 7. Er sending 543 er með ID: 1229 frá Vendor 601083-0789 A: 7 
+Dagur 3 í tímaslotti 7. Er sending 546 er með ID: 1232 frá Vendor 601083-0789 A: 4 
+Dagur 3 í tímaslotti 7. Er sending 549 er með ID: 1237 frá Vendor 420178-0349 A: 2 
+Dagur 3 í tímaslotti 7. Er sending 551 er með ID: 1239 frá Vendor 420178-0349 A: 5 
+Dagur 3 í tímaslotti 7. Er sending 565 er með ID: 1253 frá Vendor 420178-0349 A: 55 
+Dagur 3 í tímaslotti 7. Er sending 568 er með ID: 1256 frá Vendor 420178-0349 A: 133 
+Dagur 3 í tímaslotti 7. Er sending 573 er með ID: 1261 frá Vendor 601083-0789 A: 1 
+Dagur 4 í tímaslotti 7. Er sending 521 er með ID: 1206 frá Vendor 491007-1680 A: 9 
+Dagur 4 í tímaslotti 7. Er sending 526 er með ID: 1211 frá Vendor 420178-0349 A: 24 
+Dagur 4 í tímaslotti 7. Er sending 528 er með ID: 1213 frá Vendor 420178-0349 A: 7 
+Dagur 4 í tímaslotti 7. Er sending 529 er með ID: 1214 frá Vendor 420178-0349 A: 3 
+Dagur 4 í tímaslotti 7. Er sending 544 er með ID: 1230 frá Vendor 601083-0789 A: 7 
+Dagur 4 í tímaslotti 7. Er sending 547 er með ID: 1235 frá Vendor 601083-0789 A: 3 
+Dagur 4 í tímaslotti 7. Er sending 553 er með ID: 1241 frá Vendor 600112-1390 A: 4 
+Dagur 4 í tímaslotti 7. Er sending 556 er með ID: 1244 frá Vendor 491007-1680 A: 7 
+Dagur 4 í tímaslotti 7. Er sending 558 er með ID: 1246 frá Vendor 601083-0789 A: 8 
+Dagur 4 í tímaslotti 7. Er sending 559 er með ID: 1247 frá Vendor 601083-0789 A: 2 
+Dagur 4 í tímaslotti 7. Er sending 561 er með ID: 1249 frá Vendor 601083-0789 A: 7 
+Dagur 4 í tímaslotti 7. Er sending 563 er með ID: 1251 frá Vendor 650387-1399 A: 2 
+Dagur 4 í tímaslotti 7. Er sending 572 er með ID: 1260 frá Vendor 420178-0349 A: 25 
+Dagur 4 í tímaslotti 7. Er sending 600 er með ID: 1300 frá Vendor 420369-7789 A: 131 
+Dagur 5 í tímaslotti 7. Er sending 79 er með ID: 719 frá Vendor 420178-0349 A: 54 
+Dagur 5 í tímaslotti 7. Er sending 351 er með ID: 1021 frá Vendor 420178-0349 A: 0 
+Dagur 5 í tímaslotti 7. Er sending 516 er með ID: 1201 frá Vendor 491007-1680 A: 2 
+Dagur 5 í tímaslotti 7. Er sending 527 er með ID: 1212 frá Vendor 420178-0349 A: 5 
+Dagur 5 í tímaslotti 7. Er sending 530 er með ID: 1215 frá Vendor 420178-0349 A: 26 
+Dagur 5 í tímaslotti 7. Er sending 531 er með ID: 1216 frá Vendor 550405-0400 A: 8 
+Dagur 5 í tímaslotti 7. Er sending 542 er með ID: 1228 frá Vendor 601083-0789 A: 23 
+Dagur 5 í tímaslotti 7. Er sending 545 er með ID: 1231 frá Vendor 601083-0789 A: 9 
+Dagur 5 í tímaslotti 7. Er sending 548 er með ID: 1236 frá Vendor 601083-0789 A: 30 
+Dagur 5 í tímaslotti 7. Er sending 557 er með ID: 1245 frá Vendor 601083-0789 A: 3 
+Dagur 5 í tímaslotti 7. Er sending 567 er með ID: 1255 frá Vendor 420178-0349 A: 33 
+Dagur 5 í tímaslotti 7. Er sending 569 er með ID: 1257 frá Vendor 420178-0349 A: 44 
+Dagur 5 í tímaslotti 7. Er sending 571 er með ID: 1259 frá Vendor 420178-0349 A: 25 
+Dagur 5 í tímaslotti 7. Er sending 576 er með ID: 1264 frá Vendor 601083-0789 A: 11 
+Dagur 1 í tímaslotti 8. Er sending 6 er með ID: 630 frá Vendor 550394-2359 A: 2 
+Dagur 1 í tímaslotti 8. Er sending 9 er með ID: 633 frá Vendor 550394-2359 A: 9 
+Dagur 1 í tímaslotti 8. Er sending 25 er með ID: 650 frá Vendor 550394-2359 A: 6 
+Dagur 1 í tímaslotti 8. Er sending 26 er með ID: 651 frá Vendor 550394-2359 A: 21 
+Dagur 1 í tímaslotti 8. Er sending 39 er með ID: 665 frá Vendor 410999-2859 A: 12 
+Dagur 1 í tímaslotti 8. Er sending 96 er með ID: 738 frá Vendor 670616-1690 A: 108 
+Dagur 1 í tímaslotti 8. Er sending 97 er með ID: 739 frá Vendor 670616-1690 A: 46 
+Dagur 1 í tímaslotti 8. Er sending 98 er með ID: 741 frá Vendor 670616-1690 A: 1 
+Dagur 1 í tímaslotti 8. Er sending 172 er með ID: 833 frá Vendor 470415-1260 A: 1 
+Dagur 1 í tímaslotti 8. Er sending 174 er með ID: 835 frá Vendor 571214-0240 A: 36 
+Dagur 1 í tímaslotti 8. Er sending 187 er með ID: 848 frá Vendor 681215-1740 A: 10 
+Dagur 1 í tímaslotti 8. Er sending 191 er með ID: 852 frá Vendor 550394-2359 A: 7 
+Dagur 1 í tímaslotti 8. Er sending 197 er með ID: 858 frá Vendor 660509-0970 A: 8 
+Dagur 1 í tímaslotti 8. Er sending 202 er með ID: 863 frá Vendor 660509-0970 A: 5 
+Dagur 1 í tímaslotti 8. Er sending 205 er með ID: 866 frá Vendor 470415-1260 A: 27 
+Dagur 1 í tímaslotti 8. Er sending 215 er með ID: 877 frá Vendor 470710-0390 A: 9 
+Dagur 1 í tímaslotti 8. Er sending 228 er með ID: 893 frá Vendor 460999-2519 A: 4 
+Dagur 1 í tímaslotti 8. Er sending 235 er með ID: 900 frá Vendor 460999-2519 A: 4 
+Dagur 1 í tímaslotti 8. Er sending 237 er með ID: 902 frá Vendor 470710-0390 A: 13 
+Dagur 1 í tímaslotti 8. Er sending 241 er með ID: 906 frá Vendor 470710-0390 A: 7 
+Dagur 1 í tímaslotti 8. Er sending 258 er með ID: 923 frá Vendor 660509-0970 A: 4 
+Dagur 1 í tímaslotti 8. Er sending 260 er með ID: 926 frá Vendor 550405-0400 A: 0 
+Dagur 1 í tímaslotti 8. Er sending 296 er með ID: 964 frá Vendor 501117-0210 A: 15 
+Dagur 1 í tímaslotti 8. Er sending 374 er með ID: 1044 frá Vendor 660169-1729 A: 7 
+Dagur 1 í tímaslotti 8. Er sending 538 er með ID: 1223 frá Vendor 520914-2180 A: 2 
+Dagur 1 í tímaslotti 8. Er sending 609 er með ID: 1309 frá Vendor 550394-2359 A: 9 
+Dagur 1 í tímaslotti 8. Er sending 615 er með ID: 1315 frá Vendor 550394-2359 A: 4 
+Dagur 1 í tímaslotti 8. Er sending 625 er með ID: 1325 frá Vendor 550394-2359 A: 11 
+Dagur 1 í tímaslotti 8. Er sending 628 er með ID: 1328 frá Vendor 550394-2359 A: 18 
+Dagur 1 í tímaslotti 8. Er sending 634 er með ID: 1334 frá Vendor 550394-2359 A: 2 
+Dagur 1 í tímaslotti 8. Er sending 650 er með ID: 1358 frá Vendor 501117-0210 A: 158 
+Dagur 2 í tímaslotti 8. Er sending 5 er með ID: 629 frá Vendor 550394-2359 A: 4 
+Dagur 2 í tímaslotti 8. Er sending 8 er með ID: 632 frá Vendor 550394-2359 A: 16 
+Dagur 2 í tímaslotti 8. Er sending 15 er með ID: 639 frá Vendor 550394-2359 A: 9 
+Dagur 2 í tímaslotti 8. Er sending 16 er með ID: 640 frá Vendor 550394-2359 A: 15 
+Dagur 2 í tímaslotti 8. Er sending 24 er með ID: 649 frá Vendor 550394-2359 A: 24 
+Dagur 2 í tímaslotti 8. Er sending 30 er með ID: 655 frá Vendor 550394-2359 A: 8 
+Dagur 2 í tímaslotti 8. Er sending 31 er með ID: 656 frá Vendor 550394-2359 A: 7 
+Dagur 2 í tímaslotti 8. Er sending 32 er með ID: 657 frá Vendor 550394-2359 A: 7 
+Dagur 2 í tímaslotti 8. Er sending 33 er með ID: 658 frá Vendor 550394-2359 A: 18 
+Dagur 2 í tímaslotti 8. Er sending 35 er með ID: 660 frá Vendor 550394-2359 A: 7 
+Dagur 2 í tímaslotti 8. Er sending 91 er með ID: 731 frá Vendor 430913-0690 A: 2 
+Dagur 2 í tímaslotti 8. Er sending 93 er með ID: 733 frá Vendor 430913-0690 A: 9 
+Dagur 2 í tímaslotti 8. Er sending 94 er með ID: 736 frá Vendor 670616-1690 A: 40 
+Dagur 2 í tímaslotti 8. Er sending 189 er með ID: 850 frá Vendor 470415-1260 A: 27 
+Dagur 2 í tímaslotti 8. Er sending 190 er með ID: 851 frá Vendor 470415-1260 A: 22 
+Dagur 2 í tímaslotti 8. Er sending 195 er með ID: 856 frá Vendor 550394-2359 A: 13 
+Dagur 2 í tímaslotti 8. Er sending 199 er með ID: 860 frá Vendor 660509-0970 A: 4 
+Dagur 2 í tímaslotti 8. Er sending 201 er með ID: 862 frá Vendor 660509-0970 A: 8 
+Dagur 2 í tímaslotti 8. Er sending 204 er með ID: 865 frá Vendor 660509-0970 A: 1 
+Dagur 2 í tímaslotti 8. Er sending 207 er með ID: 869 frá Vendor 660509-0970 A: 0 
+Dagur 2 í tímaslotti 8. Er sending 217 er með ID: 881 frá Vendor 470710-0390 A: 12 
+Dagur 2 í tímaslotti 8. Er sending 221 er með ID: 885 frá Vendor 470710-0390 A: 2 
+Dagur 2 í tímaslotti 8. Er sending 225 er með ID: 890 frá Vendor 470710-0390 A: 2 
+Dagur 2 í tímaslotti 8. Er sending 227 er með ID: 892 frá Vendor 470710-0390 A: 1 
+Dagur 2 í tímaslotti 8. Er sending 229 er með ID: 894 frá Vendor 460999-2519 A: 4 
+Dagur 2 í tímaslotti 8. Er sending 231 er með ID: 896 frá Vendor 460999-2519 A: 2 
+Dagur 2 í tímaslotti 8. Er sending 242 er með ID: 907 frá Vendor 470710-0390 A: 15 
+Dagur 2 í tímaslotti 8. Er sending 243 er með ID: 908 frá Vendor 470710-0390 A: 0 
+Dagur 2 í tímaslotti 8. Er sending 246 er með ID: 911 frá Vendor 550394-2359 A: 14 
+Dagur 2 í tímaslotti 8. Er sending 247 er með ID: 912 frá Vendor 681215-1740 A: 4 
+Dagur 2 í tímaslotti 8. Er sending 248 er með ID: 913 frá Vendor 470710-0390 A: 13 
+Dagur 2 í tímaslotti 8. Er sending 293 er með ID: 961 frá Vendor 501117-0210 A: 36 
+Dagur 2 í tímaslotti 8. Er sending 297 er með ID: 965 frá Vendor 501117-0210 A: 39 
+Dagur 2 í tímaslotti 8. Er sending 299 er með ID: 967 frá Vendor 410999-2859 A: 52 
+Dagur 2 í tímaslotti 8. Er sending 353 er með ID: 1023 frá Vendor 700103-3660 A: 16 
+Dagur 2 í tímaslotti 8. Er sending 371 er með ID: 1041 frá Vendor 660169-1729 A: 12 
+Dagur 2 í tímaslotti 8. Er sending 372 er með ID: 1042 frá Vendor 660169-1729 A: 28 
+Dagur 2 í tímaslotti 8. Er sending 376 er með ID: 1058 frá Vendor 420369-7789 A: 4 
+Dagur 2 í tímaslotti 8. Er sending 532 er með ID: 1217 frá Vendor 550405-0400 A: 45 
+Dagur 2 í tímaslotti 8. Er sending 535 er með ID: 1220 frá Vendor 550405-0400 A: 11 
+Dagur 2 í tímaslotti 8. Er sending 536 er með ID: 1221 frá Vendor 520914-2180 A: 14 
+Dagur 2 í tímaslotti 8. Er sending 554 er með ID: 1242 frá Vendor 600112-1390 A: 7 
+Dagur 2 í tímaslotti 8. Er sending 555 er með ID: 1243 frá Vendor 491007-1680 A: 4 
+Dagur 2 í tímaslotti 8. Er sending 608 er með ID: 1308 frá Vendor 550394-2359 A: 13 
+Dagur 2 í tímaslotti 8. Er sending 623 er með ID: 1323 frá Vendor 550394-2359 A: 9 
+Dagur 2 í tímaslotti 8. Er sending 627 er með ID: 1327 frá Vendor 550394-2359 A: 72 
+Dagur 2 í tímaslotti 8. Er sending 630 er með ID: 1330 frá Vendor 440417-0510 A: 44 
+Dagur 2 í tímaslotti 8. Er sending 631 er með ID: 1331 frá Vendor 541205-1520 A: 140 
+Dagur 2 í tímaslotti 8. Er sending 639 er með ID: 1341 frá Vendor 420369-7789 A: 104 
+Dagur 2 í tímaslotti 8. Er sending 647 er með ID: 1351 frá Vendor 601083-0789 A: 16 
+Dagur 3 í tímaslotti 8. Er sending 2 er með ID: 626 frá Vendor 550394-2359 A: 9 
+Dagur 3 í tímaslotti 8. Er sending 3 er með ID: 627 frá Vendor 550394-2359 A: 9 
+Dagur 3 í tímaslotti 8. Er sending 4 er með ID: 628 frá Vendor 550394-2359 A: 4 
+Dagur 3 í tímaslotti 8. Er sending 10 er með ID: 634 frá Vendor 550394-2359 A: 2 
+Dagur 3 í tímaslotti 8. Er sending 12 er með ID: 636 frá Vendor 550394-2359 A: 29 
+Dagur 3 í tímaslotti 8. Er sending 27 er með ID: 652 frá Vendor 550394-2359 A: 2 
+Dagur 3 í tímaslotti 8. Er sending 28 er með ID: 653 frá Vendor 550394-2359 A: 3 
+Dagur 3 í tímaslotti 8. Er sending 29 er með ID: 654 frá Vendor 550394-2359 A: 2 
+Dagur 3 í tímaslotti 8. Er sending 92 er með ID: 732 frá Vendor 430913-0690 A: 22 
+Dagur 3 í tímaslotti 8. Er sending 95 er með ID: 737 frá Vendor 670616-1690 A: 27 
+Dagur 3 í tímaslotti 8. Er sending 100 er með ID: 748 frá Vendor 420369-7789 A: 50 
+Dagur 3 í tímaslotti 8. Er sending 176 er með ID: 837 frá Vendor 470415-1260 A: 4 
+Dagur 3 í tímaslotti 8. Er sending 177 er með ID: 838 frá Vendor 451115-1460 A: 23 
+Dagur 3 í tímaslotti 8. Er sending 184 er með ID: 845 frá Vendor 681215-1740 A: 9 
+Dagur 3 í tímaslotti 8. Er sending 188 er með ID: 849 frá Vendor 681215-1740 A: 13 
+Dagur 3 í tímaslotti 8. Er sending 192 er með ID: 853 frá Vendor 550394-2359 A: 7 
+Dagur 3 í tímaslotti 8. Er sending 196 er með ID: 857 frá Vendor 550394-2359 A: 7 
+Dagur 3 í tímaslotti 8. Er sending 206 er með ID: 867 frá Vendor 660509-0970 A: 1 
+Dagur 3 í tímaslotti 8. Er sending 211 er með ID: 873 frá Vendor 470710-0390 A: 7 
+Dagur 3 í tímaslotti 8. Er sending 216 er með ID: 878 frá Vendor 470710-0390 A: 9 
+Dagur 3 í tímaslotti 8. Er sending 218 er með ID: 882 frá Vendor 470710-0390 A: 18 
+Dagur 3 í tímaslotti 8. Er sending 222 er með ID: 886 frá Vendor 470710-0390 A: 13 
+Dagur 3 í tímaslotti 8. Er sending 223 er með ID: 887 frá Vendor 470710-0390 A: 13 
+Dagur 3 í tímaslotti 8. Er sending 256 er með ID: 921 frá Vendor 470710-0390 A: 13 
+Dagur 3 í tímaslotti 8. Er sending 289 er með ID: 956 frá Vendor 501117-0210 A: 9 
+Dagur 3 í tímaslotti 8. Er sending 290 er með ID: 957 frá Vendor 501117-0210 A: 4 
+Dagur 3 í tímaslotti 8. Er sending 291 er með ID: 959 frá Vendor 501117-0210 A: 13 
+Dagur 3 í tímaslotti 8. Er sending 295 er með ID: 963 frá Vendor 501117-0210 A: 107 
+Dagur 3 í tímaslotti 8. Er sending 356 er með ID: 1026 frá Vendor 420178-0349 A: 110 
+Dagur 3 í tímaslotti 8. Er sending 358 er með ID: 1029 frá Vendor 570169-0339 A: 3 
+Dagur 3 í tímaslotti 8. Er sending 370 er með ID: 1040 frá Vendor 660169-1729 A: 7 
+Dagur 3 í tímaslotti 8. Er sending 373 er með ID: 1043 frá Vendor 660169-1729 A: 28 
+Dagur 3 í tímaslotti 8. Er sending 375 er með ID: 1045 frá Vendor 660169-1729 A: 6 
+Dagur 3 í tímaslotti 8. Er sending 467 er með ID: 1151 frá Vendor 550595-2579 A: 94 
+Dagur 3 í tímaslotti 8. Er sending 534 er með ID: 1219 frá Vendor 550405-0400 A: 11 
+Dagur 3 í tímaslotti 8. Er sending 564 er með ID: 1252 frá Vendor 420178-0349 A: 46 
+Dagur 3 í tímaslotti 8. Er sending 583 er með ID: 1282 frá Vendor 601083-0789 A: 3 
+Dagur 3 í tímaslotti 8. Er sending 616 er með ID: 1316 frá Vendor 550394-2359 A: 1 
+Dagur 3 í tímaslotti 8. Er sending 618 er með ID: 1318 frá Vendor 550394-2359 A: 23 
+Dagur 3 í tímaslotti 8. Er sending 619 er með ID: 1319 frá Vendor 550394-2359 A: 16 
+Dagur 3 í tímaslotti 8. Er sending 621 er með ID: 1321 frá Vendor 550394-2359 A: 24 
+Dagur 3 í tímaslotti 8. Er sending 626 er með ID: 1326 frá Vendor 550394-2359 A: 55 
+Dagur 3 í tímaslotti 8. Er sending 635 er með ID: 1335 frá Vendor 550394-2359 A: 4 
+Dagur 3 í tímaslotti 8. Er sending 637 er með ID: 1337 frá Vendor 550394-2359 A: 5 
+Dagur 3 í tímaslotti 8. Er sending 651 er með ID: 1359 frá Vendor 660509-0970 A: 4 
+Dagur 3 í tímaslotti 8. Er sending 652 er með ID: 1366 frá Vendor 420369-7789 A: 50 
+Dagur 4 í tímaslotti 8. Er sending 17 er með ID: 642 frá Vendor 470169-1419 A: 146 
+Dagur 4 í tímaslotti 8. Er sending 22 er með ID: 647 frá Vendor 550394-2359 A: 54 
+Dagur 4 í tímaslotti 8. Er sending 36 er með ID: 661 frá Vendor 550394-2359 A: 18 
+Dagur 4 í tímaslotti 8. Er sending 37 er með ID: 662 frá Vendor 550394-2359 A: 7 
+Dagur 4 í tímaslotti 8. Er sending 90 er með ID: 730 frá Vendor 430913-0690 A: 5 
+Dagur 4 í tímaslotti 8. Er sending 99 er með ID: 742 frá Vendor 670616-1690 A: 3 
+Dagur 4 í tímaslotti 8. Er sending 130 er með ID: 791 frá Vendor 550595-2579 A: 7 
+Dagur 4 í tímaslotti 8. Er sending 147 er með ID: 808 frá Vendor 550595-2579 A: 56 
+Dagur 4 í tímaslotti 8. Er sending 182 er með ID: 843 frá Vendor 490211-0630 A: 55 
+Dagur 4 í tímaslotti 8. Er sending 185 er með ID: 846 frá Vendor 681215-1740 A: 18 
+Dagur 4 í tímaslotti 8. Er sending 186 er með ID: 847 frá Vendor 681215-1740 A: 22 
+Dagur 4 í tímaslotti 8. Er sending 198 er með ID: 859 frá Vendor 660509-0970 A: 4 
+Dagur 4 í tímaslotti 8. Er sending 200 er með ID: 861 frá Vendor 660509-0970 A: 4 
+Dagur 4 í tímaslotti 8. Er sending 210 er með ID: 872 frá Vendor 470710-0390 A: 44 
+Dagur 4 í tímaslotti 8. Er sending 213 er með ID: 875 frá Vendor 470710-0390 A: 13 
+Dagur 4 í tímaslotti 8. Er sending 220 er með ID: 884 frá Vendor 470710-0390 A: 12 
+Dagur 4 í tímaslotti 8. Er sending 233 er með ID: 898 frá Vendor 460999-2519 A: 2 
+Dagur 4 í tímaslotti 8. Er sending 234 er með ID: 899 frá Vendor 460999-2519 A: 27 
+Dagur 4 í tímaslotti 8. Er sending 238 er með ID: 903 frá Vendor 470710-0390 A: 11 
+Dagur 4 í tímaslotti 8. Er sending 239 er með ID: 904 frá Vendor 470710-0390 A: 9 
+Dagur 4 í tímaslotti 8. Er sending 251 er með ID: 916 frá Vendor 470710-0390 A: 13 
+Dagur 4 í tímaslotti 8. Er sending 253 er með ID: 918 frá Vendor 470710-0390 A: 18 
+Dagur 4 í tímaslotti 8. Er sending 254 er með ID: 919 frá Vendor 470710-0390 A: 11 
+Dagur 4 í tímaslotti 8. Er sending 259 er með ID: 924 frá Vendor 460999-2519 A: 4 
+Dagur 4 í tímaslotti 8. Er sending 294 er með ID: 962 frá Vendor 501117-0210 A: 46 
+Dagur 4 í tímaslotti 8. Er sending 298 er með ID: 966 frá Vendor 501117-0210 A: 4 
+Dagur 4 í tímaslotti 8. Er sending 340 er með ID: 1010 frá Vendor 700103-3660 A: 16 
+Dagur 4 í tímaslotti 8. Er sending 355 er með ID: 1025 frá Vendor 560793-2199 A: 9 
+Dagur 4 í tímaslotti 8. Er sending 610 er með ID: 1310 frá Vendor 550394-2359 A: 13 
+Dagur 4 í tímaslotti 8. Er sending 611 er með ID: 1311 frá Vendor 550394-2359 A: 7 
+Dagur 4 í tímaslotti 8. Er sending 613 er með ID: 1313 frá Vendor 550394-2359 A: 0 
+Dagur 4 í tímaslotti 8. Er sending 624 er með ID: 1324 frá Vendor 550394-2359 A: 36 
+Dagur 4 í tímaslotti 8. Er sending 629 er með ID: 1329 frá Vendor 550394-2359 A: 22 
+Dagur 5 í tímaslotti 8. Er sending 1 er með ID: 625 frá Vendor 550394-2359 A: 3 
+Dagur 5 í tímaslotti 8. Er sending 7 er með ID: 631 frá Vendor 550394-2359 A: 2 
+Dagur 5 í tímaslotti 8. Er sending 11 er með ID: 635 frá Vendor 550394-2359 A: 80 
+Dagur 5 í tímaslotti 8. Er sending 13 er með ID: 637 frá Vendor 550394-2359 A: 0 
+Dagur 5 í tímaslotti 8. Er sending 23 er með ID: 648 frá Vendor 550394-2359 A: 54 
+Dagur 5 í tímaslotti 8. Er sending 34 er með ID: 659 frá Vendor 550394-2359 A: 12 
+Dagur 5 í tímaslotti 8. Er sending 38 er með ID: 663 frá Vendor 550394-2359 A: 18 
+Dagur 5 í tímaslotti 8. Er sending 149 er með ID: 810 frá Vendor 550595-2579 A: 8 
+Dagur 5 í tímaslotti 8. Er sending 173 er með ID: 834 frá Vendor 470415-1260 A: 1 
+Dagur 5 í tímaslotti 8. Er sending 175 er með ID: 836 frá Vendor 451115-1460 A: 5 
+Dagur 5 í tímaslotti 8. Er sending 178 er með ID: 839 frá Vendor 451115-1460 A: 0 
+Dagur 5 í tímaslotti 8. Er sending 180 er með ID: 841 frá Vendor 470415-1260 A: 11 
+Dagur 5 í tímaslotti 8. Er sending 181 er með ID: 842 frá Vendor 470415-1260 A: 33 
+Dagur 5 í tímaslotti 8. Er sending 183 er með ID: 844 frá Vendor 490211-0630 A: 5 
+Dagur 5 í tímaslotti 8. Er sending 193 er með ID: 854 frá Vendor 550394-2359 A: 9 
+Dagur 5 í tímaslotti 8. Er sending 194 er með ID: 855 frá Vendor 550394-2359 A: 9 
+Dagur 5 í tímaslotti 8. Er sending 203 er með ID: 864 frá Vendor 660509-0970 A: 12 
+Dagur 5 í tímaslotti 8. Er sending 209 er með ID: 871 frá Vendor 470710-0390 A: 3 
+Dagur 5 í tímaslotti 8. Er sending 212 er með ID: 874 frá Vendor 470710-0390 A: 7 
+Dagur 5 í tímaslotti 8. Er sending 214 er með ID: 876 frá Vendor 470710-0390 A: 9 
+Dagur 5 í tímaslotti 8. Er sending 219 er með ID: 883 frá Vendor 470710-0390 A: 9 
+Dagur 5 í tímaslotti 8. Er sending 224 er með ID: 888 frá Vendor 470710-0390 A: 7 
+Dagur 5 í tímaslotti 8. Er sending 226 er með ID: 891 frá Vendor 470710-0390 A: 2 
+Dagur 5 í tímaslotti 8. Er sending 230 er með ID: 895 frá Vendor 460999-2519 A: 9 
+Dagur 5 í tímaslotti 8. Er sending 232 er með ID: 897 frá Vendor 460999-2519 A: 18 
+Dagur 5 í tímaslotti 8. Er sending 236 er með ID: 901 frá Vendor 470710-0390 A: 5 
+Dagur 5 í tímaslotti 8. Er sending 240 er með ID: 905 frá Vendor 470710-0390 A: 9 
+Dagur 5 í tímaslotti 8. Er sending 245 er með ID: 910 frá Vendor 470710-0390 A: 42 
+Dagur 5 í tímaslotti 8. Er sending 249 er með ID: 914 frá Vendor 470710-0390 A: 22 
+Dagur 5 í tímaslotti 8. Er sending 250 er með ID: 915 frá Vendor 470710-0390 A: 9 
+Dagur 5 í tímaslotti 8. Er sending 252 er með ID: 917 frá Vendor 470710-0390 A: 31 
+Dagur 5 í tímaslotti 8. Er sending 255 er með ID: 920 frá Vendor 470710-0390 A: 13 
+Dagur 5 í tímaslotti 8. Er sending 257 er með ID: 922 frá Vendor 470710-0390 A: 2 
+Dagur 5 í tímaslotti 8. Er sending 292 er með ID: 960 frá Vendor 501117-0210 A: 9 
+Dagur 5 í tímaslotti 8. Er sending 339 er með ID: 1008 frá Vendor 550609-1420 A: 15 
+Dagur 5 í tímaslotti 8. Er sending 533 er með ID: 1218 frá Vendor 550405-0400 A: 21 
+Dagur 5 í tímaslotti 8. Er sending 537 er með ID: 1222 frá Vendor 520914-2180 A: 7 
+Dagur 5 í tímaslotti 8. Er sending 539 er með ID: 1224 frá Vendor 520914-2180 A: 2 
+Dagur 5 í tímaslotti 8. Er sending 540 er með ID: 1226 frá Vendor 601083-0789 A: 9 
+Dagur 5 í tímaslotti 8. Er sending 581 er með ID: 1280 frá Vendor 670616-1690 A: 3 
+Dagur 5 í tímaslotti 8. Er sending 582 er með ID: 1281 frá Vendor 670616-1690 A: 12 
+Dagur 5 í tímaslotti 8. Er sending 612 er með ID: 1312 frá Vendor 550394-2359 A: 35 
+Dagur 5 í tímaslotti 8. Er sending 617 er með ID: 1317 frá Vendor 550394-2359 A: 5 
+Dagur 5 í tímaslotti 8. Er sending 620 er með ID: 1320 frá Vendor 550394-2359 A: 7 
+Dagur 5 í tímaslotti 8. Er sending 622 er með ID: 1322 frá Vendor 550394-2359 A: 18 
+Dagur 5 í tímaslotti 8. Er sending 633 er með ID: 1333 frá Vendor 550394-2359 A: 2 
+Dagur 5 í tímaslotti 8. Er sending 636 er með ID: 1336 frá Vendor 550394-2359 A: 4 
+Dagur 5 í tímaslotti 8. Er sending 638 er með ID: 1340 frá Vendor 590515-3290 A: 12 
