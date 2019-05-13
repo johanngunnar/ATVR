@@ -22,7 +22,7 @@ cursor = conn.cursor()
 #----------------------------------------------------------------------------
 # Write the select Q & OPEN
 #----------------------------------------------------------------------------
-date = '16/02/2018'
+date = '28/02/2018'
 selectstring = "Select inn.ItemNo,i.Tegund,i.Description, inn.Qty_perUnit, inn.Quantity, inn.Total_Qty, inn.Date, i.MilliL, i.Timevalue,(i.Timevalue*inn.Quantity) Alag,i.Timevalue_Liter ,(i.Timevalue_Liter*i.MilliL*inn.Total_Qty)/1000 ALAG_liter from Innstreymi inn, Item i where inn.ItemNo = i.id and inn.Date in('{}')".format(date)
 cursor.execute(selectstring)
 arr = cursor.fetchall()
@@ -52,8 +52,12 @@ for i in arr:
 	sendingar.append(i)
 	print(i)
 
+max_liter_alag = 20965
+max_kassa_alag = 20789
+
 print('Sending fyrir {} -----------'.format(date))
 print('Fjöldi sendingar: {} Litrar: {} LitraALag: {} / {} Kassar: {}  KassaAlag:  {}'.format(counter,round(Litrar),round(LitraAlag_test),round(LitraAlag),Kassar,round(KassaAlag)))
+print('Literprosenta: ({}/{})  Kassaprosenta: ({}/{}) '.format(round(LitraAlag/max_liter_alag*100,2),100,round(KassaAlag/max_kassa_alag*100,2),100))
 
 
 
