@@ -56,7 +56,7 @@ max_liter_alag = 20965
 max_kassa_alag = 20789
 
 print('Sending fyrir {} -----------'.format(date))
-print('Fjöldi sendingar: {} Litrar: {} LitraALag: {} / {} Kassar: {}  KassaAlag:  {}'.format(counter,round(Litrar),round(LitraAlag_test),round(LitraAlag),Kassar,round(KassaAlag)))
+print('Fjöldi sendingar: {} Litrar: {} LitraALag: {}  Kassar: {}  KassaAlag:  {}'.format(counter,round(Litrar),round(LitraAlag),Kassar,round(KassaAlag)))
 print('Literprosenta: ({}/{})  Kassaprosenta: ({}/{}) '.format(round(LitraAlag/max_liter_alag*100,2),100,round(KassaAlag/max_kassa_alag*100,2),100))
 
 
