@@ -24,8 +24,8 @@ cursor = conn.cursor()
 #----------------------------------------------------------------------------
 # Write the select Q
 #----------------------------------------------------------------------------
-
-selectstring = " select c.tegund, vi.Document_ID1, vi.UserID, vi.Quantity, vi.Qty_perUnit, vi.picked, vi.Picked_Unit,s.date,s.RE_number, s.Shelf, i.Vendor, i.Description, c.Timevalue from vinnsla vi, sending s, item i, Item_Category c where vi.itemno = i.id and s.ItemNo = i.id and s.RE_number = vi.Document_ID1 and c.name = i.Tegund and s.date = '09/02/2018' order by vi.Picked"
+date = '11/12/2018'
+selectstring = " select c.tegund, vi.Document_ID1, vi.UserID, vi.Quantity, vi.Qty_perUnit, vi.picked, vi.Picked_Unit,s.date,s.RE_number, s.Shelf, i.Vendor, i.Description, c.Timevalue from vinnsla vi, sending s, item i, Item_Category c where vi.itemno = i.id and s.ItemNo = i.id and s.RE_number = vi.Document_ID1 and c.name = i.Tegund and s.date = '{}' order by vi.Picked".format(date)
 
 cursor.execute(selectstring)
 arr = cursor.fetchall()
@@ -45,7 +45,7 @@ for x in arr:
 # Dictornary lykill kennitala, value index
 #----------------------------------------------------------------------------
 
-time_slot_length = 5
+time_slot_length = 20
 start_min_from_midnight = 450
 end_min_from_midnight = start_min_from_midnight+(60*9)
 
@@ -100,7 +100,7 @@ for i in range(start_min_from_midnight,end_min_from_midnight,60):
     start_min_from_midnight = start_min_from_midnight + (60)
 
 plt.xticks(j, (timeslots[0],timeslots[1],timeslots[2],timeslots[3],timeslots[4],timeslots[5],timeslots[6],timeslots[7]))
-plt.title('Magn af kössum inn í kerfið')
+plt.title('{}'.format(date))
 plt.xlabel('Timi')
 plt.ylabel('Álag [Magn * Margfoldunarstuðull]')
 # Show the plot
