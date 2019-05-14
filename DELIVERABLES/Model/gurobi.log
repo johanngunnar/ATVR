@@ -1295,3 +1295,63 @@ Best objective 8.231000000000e+03, best bound 8.231000000000e+03, gap 0.0000%
 
 Wrote result file 'solution.sol'
 
+
+Gurobi 8.1.0 (mac64) logging started Tue May 14 14:29:29 2019
+
+Academic license - for non-commercial use only
+
+Gurobi Optimizer version 8.1.0 build v8.1.0rc1 (mac64)
+Copyright (c) 2018, Gurobi Optimization, LLC
+
+Read LP format model from file lp_output.lp
+Reading time = 0.16 seconds
+MaxAlag: 55327 rows, 27729 columns, 162525 nonzeros
+Optimize a model with 55327 rows, 27729 columns and 162525 nonzeros
+Variable types: 49 continuous, 27680 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+02]
+  Objective range  [1e+00, 3e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 7e+02]
+Presolve removed 51190 rows and 24228 columns
+Presolve time: 0.13s
+Presolved: 4137 rows, 3501 columns, 16935 nonzeros
+Variable types: 0 continuous, 3501 integer (3460 binary)
+Found heuristic solution: objective 920926.00000
+Found heuristic solution: objective 216189.00000
+
+Root relaxation: objective 1.863040e+05, 4449 iterations, 0.09 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 186304.000    0 2848 216189.000 186304.000  13.8%     -    0s
+H    0     0                    196761.00000 186304.000  5.31%     -    0s
+H    0     0                    191150.00000 186304.000  2.54%     -    0s
+     0     0 186306.953    0 2369 191150.000 186306.953  2.53%     -    1s
+H    0     0                    186621.00000 186306.953  0.17%     -    1s
+     0     0 186314.181    0 1121 186621.000 186314.181  0.16%     -    1s
+     0     0 186314.181    0 1334 186621.000 186314.181  0.16%     -    2s
+H    0     0                    186431.00000 186314.181  0.06%     -    2s
+     0     0 186314.181    0 1338 186431.000 186314.181  0.06%     -    2s
+     0     0 186315.095    0 1049 186431.000 186315.095  0.06%     -    2s
+     0     0 186315.095    0 1009 186431.000 186315.095  0.06%     -    2s
+H    0     0                    186374.00000 186315.095  0.03%     -    2s
+H    0     0                    186352.00000 186315.095  0.02%     -    3s
+     0     2 186315.095    0 1009 186352.000 186315.095  0.02%     -    3s
+   141   142 186324.560   72  213 186352.000 186315.101  0.02%   154    5s
+H  147   142                    186329.00000 186315.101  0.01%   152    5s
+
+Cutting planes:
+  Gomory: 6
+
+Explored 220 nodes (46447 simplex iterations) in 5.05 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 9: 186329 186352 186374 ... 920926
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.863290000000e+05, best bound 1.863160000000e+05, gap 0.0070%
+
+Wrote result file 'solution.sol'
+

@@ -321,9 +321,9 @@ plt.subplots(1, 1, figsize=(12, 6))
 cmap = matplotlib.colors.ListedColormap(['red', 'green', 'orange'])
 plt.pcolor(A, edgecolors='k', linewidths=3, cmap=cmap)
 
-#first_date = '12/02/2018'
-#last_date = '16/02/2018'
-#plt.title('Stundatafla ' + first_date + ' - ' + last_date)
+first_date = '12/02/2018'
+last_date = '16/02/2018'
+plt.title('Stundatafla ' + first_date + ' - ' + last_date)
 plt.ylabel('Time')
 plt.xlabel('Date')
 
@@ -359,18 +359,19 @@ for i in Lausn_for_print:
 
 
 	# LAGA ÞARF EKKI ALLAR ÞESSAR IF SETNINGAR
-	insertstring = insertstring.format(Lausn_for_print[i][1], Lausn_for_print[i][0],current_set,string_print[:-1])
-	plt.text(float(int(i[1])) - 0.5, float(int(i[0])) - 0.9,
-	insertstring, size=5.5,
-	ha="center", va="bottom",
-	bbox=dict(boxstyle="square", ec=(0.1, 0.5, 0.9)))
+	if len(current_set) != 0:
+		insertstring = insertstring.format(Lausn_for_print[i][1], Lausn_for_print[i][0],current_set,string_print[:-1])
+		plt.text(float(int(i[1])) - 0.5, float(int(i[0])) - 0.9,
+		insertstring, size=5.5,
+		ha="center", va="bottom",
+		bbox=dict(boxstyle="square", ec=(0.1, 0.5, 0.9)))
 
-	# PRINT THE TARGET
-	for i in lausn:
-		mainstring = 'Target: {}'
-		plt.text(float(int(i[1])) - 0.5, float(int(i[0])) - 0.3, mainstring.format(target[int(i)][0]), size=4,
-		         ha="center", va="bottom",
-		         bbox=dict(boxstyle="square", ec=(0.1, 0.5, 0.5)))
+		# PRINT THE TARGET
+		for i in lausn:
+			mainstring = 'Target: {}'
+			plt.text(float(int(i[1])) - 0.5, float(int(i[0])) - 0.3, mainstring.format(target[int(i)][0]), size=5,
+			         ha="center", va="bottom",
+			         bbox=dict(boxstyle="square", ec=(0.1, 0.5, 0.5)))
 
 
 plt.show()
