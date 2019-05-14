@@ -76,7 +76,7 @@ set Samskip within {s in 1..S};
 
 /* ------ Markfall & Skorður --------*/
 minimize MaxAlag: 	sum{t in 1..T, d in 1..D} SuperAlag[t,d] 
-					+ 20*MaxDagsAlag				  
+					+ 30*MaxDagsAlag				  
 					+ sum{t in 1..T, d in 1..D}(OLG[t,d] + LB1[t,d] + LB2[t,d] + LB3[t,d] + LB4[t,d] + LB5[t,d] + LB6[t,d] + LB7[t,d] + EIMSKIP[t,d] + SAMSKIP[t,d]);
 
 s.t. Alagsmaeling{t in 1..(T-windowsize), d in 1..D}: sum{s in 1..S, k in t..(t+windowsize)} A[s]*x[s,k,d] <= (Ttarget[t,d] + SuperAlag[t,d]);
