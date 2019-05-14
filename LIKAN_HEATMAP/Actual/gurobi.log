@@ -8172,7 +8172,7 @@ Best objective 3.201500000000e+04, best bound 3.201500000000e+04, gap 0.0000%
 Wrote result file 'solution.sol'
 
 
-Gurobi 8.1.0 (mac64) logging started Mon May 13 09:15:31 2019
+Gurobi 8.1.0 (mac64) logging started Mon May 13 11:33:26 2019
 
 Academic license - for non-commercial use only
 
@@ -8181,31 +8181,31 @@ Copyright (c) 2018, Gurobi Optimization, LLC
 
 Read LP format model from file lp_output.lp
 Reading time = 0.07 seconds
-MaxAlag: 1442 rows, 27281 columns, 54641 nonzeros
-Optimize a model with 1442 rows, 27281 columns and 54641 nonzeros
-Variable types: 41 continuous, 27240 integer (0 binary)
+MaxAlag: 1908 rows, 36601 columns, 73194 nonzeros
+Optimize a model with 1908 rows, 36601 columns and 73194 nonzeros
+Variable types: 41 continuous, 36560 integer (0 binary)
 Coefficient statistics:
-  Matrix range     [1e+00, 4e+02]
+  Matrix range     [1e+00, 5e+02]
   Objective range  [1e+00, 6e+00]
   Bounds range     [1e+00, 1e+00]
   RHS range        [1e+00, 1e+03]
-Found heuristic solution: objective 31778.000000
-Presolve removed 1442 rows and 27281 columns
-Presolve time: 0.02s
+Found heuristic solution: objective 38515.000000
+Presolve removed 1908 rows and 36601 columns
+Presolve time: 0.03s
 Presolve: All rows and columns removed
 
-Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Explored 0 nodes (0 simplex iterations) in 0.05 seconds
 Thread count was 1 (of 4 available processors)
 
-Solution count 1: 31778 
+Solution count 1: 38515 
 
 Optimal solution found (tolerance 1.00e-04)
-Best objective 3.177800000000e+04, best bound 3.177800000000e+04, gap 0.0000%
+Best objective 3.851500000000e+04, best bound 3.851500000000e+04, gap 0.0000%
 
 Wrote result file 'solution.sol'
 
 
-Gurobi 8.1.0 (mac64) logging started Mon May 13 09:19:56 2019
+Gurobi 8.1.0 (mac64) logging started Mon May 13 12:06:51 2019
 
 Academic license - for non-commercial use only
 
@@ -8213,27 +8213,192 @@ Gurobi Optimizer version 8.1.0 build v8.1.0rc1 (mac64)
 Copyright (c) 2018, Gurobi Optimization, LLC
 
 Read LP format model from file lp_output.lp
-Reading time = 0.06 seconds
-MaxAlag: 1442 rows, 27281 columns, 54641 nonzeros
-Optimize a model with 1442 rows, 27281 columns and 54641 nonzeros
+Reading time = 0.10 seconds
+MaxAlag: 2694 rows, 52321 columns, 105107 nonzeros
+Optimize a model with 2694 rows, 52321 columns and 105107 nonzeros
+Variable types: 41 continuous, 52280 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+03]
+  Objective range  [1e+00, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+Found heuristic solution: objective 74885.000000
+Presolve removed 2694 rows and 52321 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 74885 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.488500000000e+04, best bound 7.488500000000e+04, gap 0.0000%
+
+Wrote result file 'solution.sol'
+
+
+Gurobi 8.1.0 (mac64) logging started Mon May 13 14:02:07 2019
+
+Academic license - for non-commercial use only
+
+Gurobi Optimizer version 8.1.0 build v8.1.0rc1 (mac64)
+Copyright (c) 2018, Gurobi Optimization, LLC
+
+Read LP format model from file lp_output.lp
+Reading time = 0.05 seconds
+MaxAlag: 1442 rows, 27281 columns, 54761 nonzeros
+Optimize a model with 1442 rows, 27281 columns and 54761 nonzeros
 Variable types: 41 continuous, 27240 integer (0 binary)
 Coefficient statistics:
   Matrix range     [1e+00, 4e+02]
   Objective range  [1e+00, 6e+00]
   Bounds range     [1e+00, 1e+00]
   RHS range        [1e+00, 1e+03]
-Found heuristic solution: objective 31778.000000
+Found heuristic solution: objective 32015.000000
 Presolve removed 1442 rows and 27281 columns
+Presolve time: 0.01s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 32015 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.201500000000e+04, best bound 3.201500000000e+04, gap 0.0000%
+
+Wrote result file 'solution.sol'
+
+
+Gurobi 8.1.0 (mac64) logging started Mon May 13 14:20:37 2019
+
+Academic license - for non-commercial use only
+
+Gurobi Optimizer version 8.1.0 build v8.1.0rc1 (mac64)
+Copyright (c) 2018, Gurobi Optimization, LLC
+
+Read LP format model from file lp_output.lp
+Reading time = 0.07 seconds
+MaxAlag: 1908 rows, 36601 columns, 73194 nonzeros
+Optimize a model with 1908 rows, 36601 columns and 73194 nonzeros
+Variable types: 41 continuous, 36560 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+02]
+  Objective range  [1e+00, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+Found heuristic solution: objective 38515.000000
+Presolve removed 1908 rows and 36601 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 38515 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.851500000000e+04, best bound 3.851500000000e+04, gap 0.0000%
+
+Wrote result file 'solution.sol'
+
+
+Gurobi 8.1.0 (mac64) logging started Mon May 13 14:22:06 2019
+
+Academic license - for non-commercial use only
+
+Gurobi Optimizer version 8.1.0 build v8.1.0rc1 (mac64)
+Copyright (c) 2018, Gurobi Optimization, LLC
+
+Read LP format model from file lp_output.lp
+Reading time = 0.07 seconds
+MaxAlag: 1908 rows, 36601 columns, 73194 nonzeros
+Optimize a model with 1908 rows, 36601 columns and 73194 nonzeros
+Variable types: 41 continuous, 36560 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+02]
+  Objective range  [1e+00, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+Found heuristic solution: objective 38515.000000
+Presolve removed 1908 rows and 36601 columns
 Presolve time: 0.01s
 Presolve: All rows and columns removed
 
 Explored 0 nodes (0 simplex iterations) in 0.02 seconds
 Thread count was 1 (of 4 available processors)
 
-Solution count 1: 31778 
+Solution count 1: 38515 
 
 Optimal solution found (tolerance 1.00e-04)
-Best objective 3.177800000000e+04, best bound 3.177800000000e+04, gap 0.0000%
+Best objective 3.851500000000e+04, best bound 3.851500000000e+04, gap 0.0000%
+
+Wrote result file 'solution.sol'
+
+
+Gurobi 8.1.0 (mac64) logging started Mon May 13 14:35:37 2019
+
+Academic license - for non-commercial use only
+
+Gurobi Optimizer version 8.1.0 build v8.1.0rc1 (mac64)
+Copyright (c) 2018, Gurobi Optimization, LLC
+
+Read LP format model from file lp_output.lp
+Reading time = 0.11 seconds
+MaxAlag: 2694 rows, 52321 columns, 105107 nonzeros
+Optimize a model with 2694 rows, 52321 columns and 105107 nonzeros
+Variable types: 41 continuous, 52280 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+03]
+  Objective range  [1e+00, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+Found heuristic solution: objective 74885.000000
+Presolve removed 2694 rows and 52321 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 74885 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.488500000000e+04, best bound 7.488500000000e+04, gap 0.0000%
+
+Wrote result file 'solution.sol'
+
+
+Gurobi 8.1.0 (mac64) logging started Mon May 13 15:11:45 2019
+
+Academic license - for non-commercial use only
+
+Gurobi Optimizer version 8.1.0 build v8.1.0rc1 (mac64)
+Copyright (c) 2018, Gurobi Optimization, LLC
+
+Read LP format model from file lp_output.lp
+Reading time = 0.05 seconds
+MaxAlag: 1442 rows, 27281 columns, 54761 nonzeros
+Optimize a model with 1442 rows, 27281 columns and 54761 nonzeros
+Variable types: 41 continuous, 27240 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+02]
+  Objective range  [1e+00, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+Found heuristic solution: objective 32015.000000
+Presolve removed 1442 rows and 27281 columns
+Presolve time: 0.01s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 32015 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.201500000000e+04, best bound 3.201500000000e+04, gap 0.0000%
 
 Wrote result file 'solution.sol'
 

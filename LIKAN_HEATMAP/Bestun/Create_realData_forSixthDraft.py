@@ -20,12 +20,14 @@ except psycopg2.OperationalError as e:
     exit()
 cursor = conn.cursor()
 
+vika = 1
+
 
 #----------------------------------------------------------------------------
 # Write the select Q
 #----------------------------------------------------------------------------
 
-selectstring = Select_string(1)
+selectstring = Select_string(vika)
 
 cursor.execute(selectstring)
 arr = cursor.fetchall()
@@ -193,3 +195,5 @@ f.write("set Fixlisti := \r\n")
 f.write(";\r\n")
 
 f.write("end;\r\n")
+
+print(selectstring)

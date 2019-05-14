@@ -21,12 +21,14 @@ except psycopg2.OperationalError as e:
     exit()
 cursor = conn.cursor()
 
+vika = 1
+
 
 #----------------------------------------------------------------------------
 # Write the select Q
 #----------------------------------------------------------------------------
 
-selectstring = Select_string(1)
+selectstring = Select_string(vika)
 
 cursor.execute(selectstring)
 arr = cursor.fetchall()
@@ -193,7 +195,6 @@ f.write("set Fixlisti := \r\n")
 
 
 for i in range(1,Sendingar+1):
-	print(i,arr[i][2][:2])
 	day = int(arr[i][2][:2].strip())-Start_day+1
 	slot_vendor_data = []
 	if arr[i][6].strip() == '420369-7789':
@@ -253,7 +254,6 @@ f.write("end;\r\n")
 #dags2 = (set(dags))
 
 #dags3 = sorted(dags2, key=lambda x: datetime.strptime(x, "%d/%m/%Y").strftime("%Y-%m-%d"))
-
 print(arr)
 print(selectstring)
 
