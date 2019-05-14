@@ -329,7 +329,7 @@ plt.xlabel('Date')
 
 
 plt.xticks(np.arange(dagar)+0.5, ['M \n Alag: {}'.format(mon_alag), 'T \n Alag: {}'.format(thr_alag), 'W \n Alag: {}'.format(mid_alag), 'T \n Alag: {}'.format(fim_alag), 'F \n Alag: {}'.format(fos_alag), 'S', 'S'])
-plt.yticks(np.arange(timeslott + 1), ['8:00', '9:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00','17:00','18:00','19:00','20:00'])
+plt.yticks(np.arange(timeslott + 1), ['7:30','8:30', '9:30', '10:30', '11:30', '12:30', '13:30', '14:30', '15:30', '16:30','17:30','18:30','19:30'])
 
 
 # PRINT ALAG & SENDINGAR
