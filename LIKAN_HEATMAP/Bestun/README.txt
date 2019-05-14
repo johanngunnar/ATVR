@@ -9,5 +9,5 @@ TIL AÐ RUNNA ÖLLU Í EINU:
 
 MANUAL WAY:
 
-glpsol --math -m model.mod -d data.dat --check --wlp lp_output.lp
-gurobi_cl ResultFile=solution.sol lp_output.lp
+glpsol --math -m bestun_likan_seventh_draft.mod -d demo_data_real.txt --check --wlp lp_output.lp
+gurobi_cl TimeLimit=300 ResultFile=solution.sol lp_output.lp

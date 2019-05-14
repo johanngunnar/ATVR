@@ -6,6 +6,7 @@ import matplotlib.colors
 
 import psycopg2
 from Functions.Select_function import Select_string
+vika = 1
 
 # ------------------------------------------------
 # Connection to SQL
@@ -94,7 +95,7 @@ for i in data[target_start:target_end]:
 # Create select_data and lausn
 # ----------------------------------------------------------
 
-selectstring = Select_string(1)  # call to SQL data base
+selectstring = Select_string(vika)  # call to SQL data base
 cursor.execute(selectstring)
 arr = cursor.fetchall()
 
@@ -215,8 +216,12 @@ for j in range(0, 8):
     for i in range(0, 5):
         sumOfAllFinal2[j][i] = sumOfAllFinal[counter]
         counter = counter + 1;
+
+first_date = select_data[0][2]
+last_date = select_data[len(select_data)-1][2]        
         
 plt.imshow(sumOfAllFinal2, cmap='RdYlGn_r' ,interpolation='nearest', origin='lower')
+plt.title(first_date + ' - ' + last_date)
 plt.ylabel('Time')
 plt.xlabel('Date')
 

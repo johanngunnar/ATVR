@@ -90,6 +90,8 @@ def Select_string(vikunumer):
 	arr.append(['21/07/2018'])
 	arr.append(['22/07/2018'])
 
+	arr.append(['30/07/2018'])
+
 	arr.append(['04/08/2018'])
 	arr.append(['05/08/2018'])
 
@@ -129,6 +131,9 @@ def Select_string(vikunumer):
 
 	arr.append(['03/11/2018'])
 	arr.append(['04/11/2018'])
+
+	arr.append(['12/11/2018'])
+
 
 	arr.append(['17/11/2018'])
 	arr.append(['18/11/2018'])
