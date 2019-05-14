@@ -170,8 +170,9 @@ for i in lausn:
 
     Lausn_for_print[i] = [alag_sum, counter]
 
-print(Lausn_for_print)
-
+# -------------------------------
+# Create ALAG for days in week 
+# -------------------------------
 mon_alag = 0
 thr_alag = 0
 mid_alag = 0

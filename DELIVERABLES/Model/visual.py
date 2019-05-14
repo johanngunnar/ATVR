@@ -207,6 +207,27 @@ for i in range(1,dagar+1):
 		number =  str(x) + str(i)
 		Lausn_for_print[(number)] = [alag_sum, counter]
 
+# -------------------------------
+# Create ALAG for days in week 
+# -------------------------------
+mon_alag = 0
+thr_alag = 0
+mid_alag = 0
+fim_alag = 0
+fos_alag = 0
+for i in Lausn_for_print:
+    print(i[1:],Lausn_for_print[i][0])
+    if int(i[1:]) == 1:
+        mon_alag = mon_alag + Lausn_for_print[i][0]
+    elif int(i[1:]) == 2:
+        thr_alag = thr_alag + Lausn_for_print[i][0]
+    elif int(i[1:]) == 3:
+        mid_alag = mid_alag + Lausn_for_print[i][0]
+    elif int(i[1:]) == 4:
+        fim_alag = fim_alag + Lausn_for_print[i][0]
+    elif int(i[1:]) == 5:
+        fos_alag = fos_alag + Lausn_for_print[i][0]
+        
 #-------------------------------
 #Create Lausn_for_vendor dictonary
 #-------------------------------
@@ -305,7 +326,7 @@ plt.pcolor(A, edgecolors='k', linewidths=3, cmap=cmap)
 plt.ylabel('Time')
 plt.xlabel('Date')
 
-plt.xticks(np.arange(dagar), ['M', 'T', 'W', 'T', 'F', 'S', 'S'])
+plt.xticks(np.arange(dagar)+0.5, ['M \n Alag: {}'.format(mon_alag), 'T \n Alag: {}'.format(thr_alag), 'W \n Alag: {}'.format(mid_alag), 'T \n Alag: {}'.format(fim_alag), 'F \n Alag: {}'.format(fos_alag), 'S', 'S'])
 plt.yticks(np.arange(timeslott + 1), ['8:00', '9:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00','17:00','18:00','19:00','20:00'])
 
 
