@@ -11,3 +11,6 @@ MANUAL WAY:
 
 glpsol --math -m model.mod -d data.dat --check --wlp lp_output.lp
 gurobi_cl ResultFile=solution.sol lp_output.lp
+
+
+glpsol --math -m model.mod -d demo_data_real.dat --check --wlp lp_output.lp

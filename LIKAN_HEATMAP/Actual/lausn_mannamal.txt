@@ -962,12 +962,6 @@ Dagur 1 í tímaslotti 8. Er sending 25 er með ID: 650 frá Vendor: Rolf Johans
 Sendingin inniheldur 33 stykki af Smirnoff Ice með álagsvalue 0.8 sem gerir álagið = 26 
 Dagur 1 í tímaslotti 8. Er sending 26 er með ID: 651 frá Vendor: Rolf Johansen & Co e með kennitölu 550394-2359 
 Sendingin inniheldur 33 stykki af Smirnoff Ice með álagsvalue 0.8 sem gerir álagið = 26 
-Dagur 1 í tímaslotti 8. Er sending 27 er með ID: 652 frá Vendor: Rolf Johansen & Co ehf með kennitölu 550394-2359 
-Sendingin inniheldur 33 stykki af Smirnoff Ice með álagsvalue 0.8 sem gerir álagið = 26 
-Dagur 1 í tímaslotti 8. Er sending 28 er með ID: 653 frá Vendor:  með kennitölu 550394-2359 
-Sendingin inniheldur 33 stykki af Smirnoff Ice með álagsvalue 0.8 sem gerir álagið = 26 
-Dagur 1 í tímaslotti 8. Er sending 29 er með ID: 654 frá Vendor:  með kennitölu 550394-2359 
-Sendingin inniheldur 33 stykki af Smirnoff Ice með álagsvalue 0.8 sem gerir álagið = 26 
 Dagur 1 í tímaslotti 8. Er sending 30 er með ID: 655 frá Vendor: Rolf Johansen & Comp með kennitölu 550394-2359 
 Sendingin inniheldur 33 stykki af Smirnoff Ice með álagsvalue 0.8 sem gerir álagið = 26 
 Dagur 1 í tímaslotti 8. Er sending 31 er með ID: 656 frá Vendor: Rolf Johansen & Co e með kennitölu 550394-2359 
@@ -1335,6 +1329,12 @@ Sendingin inniheldur 33 stykki af Smirnoff Ice með álagsvalue 0.8 sem gerir á
 Dagur 5 í tímaslotti 8. Er sending 651 er með ID: 1359 frá Vendor:  með kennitölu 660509-0970 
 Sendingin inniheldur 33 stykki af Smirnoff Ice með álagsvalue 0.8 sem gerir álagið = 26 
 Dagur 1 í tímaslotti 8. Er sending 13 er með ID: 637 frá Vendor: Ísdal ehf með kennitölu 550394-2359 
+Sendingin inniheldur 33 stykki af Smirnoff Ice með álagsvalue 0.8 sem gerir álagið = 26 
+Dagur 1 í tímaslotti 8. Er sending 27 er með ID: 652 frá Vendor: Rolf Johansen & Co ehf með kennitölu 550394-2359 
+Sendingin inniheldur 33 stykki af Smirnoff Ice með álagsvalue 0.8 sem gerir álagið = 26 
+Dagur 1 í tímaslotti 8. Er sending 28 er með ID: 653 frá Vendor:  með kennitölu 550394-2359 
+Sendingin inniheldur 33 stykki af Smirnoff Ice með álagsvalue 0.8 sem gerir álagið = 26 
+Dagur 1 í tímaslotti 8. Er sending 29 er með ID: 654 frá Vendor:  með kennitölu 550394-2359 
 Sendingin inniheldur 33 stykki af Smirnoff Ice með álagsvalue 0.8 sem gerir álagið = 26 
 Dagur 1 í tímaslotti 5. Er sending 76 er með ID: 717 frá Vendor: Vínheimar ehf með kennitölu 530303-2410 
 Sendingin inniheldur 33 stykki af Smirnoff Ice með álagsvalue 0.8 sem gerir álagið = 26 
