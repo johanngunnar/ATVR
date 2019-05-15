@@ -325,7 +325,7 @@ first_date = '12/02/2018'
 last_date = '16/02/2018'
 plt.title('Stundatafla ' + first_date + ' - ' + last_date)
 plt.ylabel('Time')
-plt.xlabel('Date')
+#plt.xlabel('Date')
 
 maxu = 20789
 plt.xticks(np.arange(dagar)+0.5, ['M \n Alag: {} \n Hlutfall: {}%'.format(mon_alag,round(mon_alag/maxu*100,2)),'T \n Alag: {}\n Hlutfall: {}%'.format(thr_alag,round(thr_alag/maxu*100,2)), 'W \n Alag: {}\n Hlutfall: {}%'.format(mid_alag,round(mid_alag/maxu*100,2)), 'T \n Alag: {}\n Hlutfall: {}%'.format(fim_alag,round(fim_alag/maxu*100,2)), 'F \n Alag: {}\n Hlutfall: {}%'.format(fos_alag,round(fos_alag/maxu*100,2)), 'S', 'S'])
