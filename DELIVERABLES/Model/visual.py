@@ -327,8 +327,8 @@ plt.title('Stundatafla ' + first_date + ' - ' + last_date)
 plt.ylabel('Time')
 plt.xlabel('Date')
 
-
-plt.xticks(np.arange(dagar)+0.5, ['M \n Alag: {}'.format(mon_alag), 'T \n Alag: {}'.format(thr_alag), 'W \n Alag: {}'.format(mid_alag), 'T \n Alag: {}'.format(fim_alag), 'F \n Alag: {}'.format(fos_alag), 'S', 'S'])
+maxu = 20789
+plt.xticks(np.arange(dagar)+0.5, ['M \n Alag: {} \n Hlutfall: {}%'.format(mon_alag,round(mon_alag/maxu*100,2)),'T \n Alag: {}\n Hlutfall: {}%'.format(thr_alag,round(thr_alag/maxu*100,2)), 'W \n Alag: {}\n Hlutfall: {}%'.format(mid_alag,round(mid_alag/maxu*100,2)), 'T \n Alag: {}\n Hlutfall: {}%'.format(fim_alag,round(fim_alag/maxu*100,2)), 'F \n Alag: {}\n Hlutfall: {}%'.format(fos_alag,round(fos_alag/maxu*100,2)), 'S', 'S'])
 plt.yticks(np.arange(timeslott + 1), ['8:00', '9:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00','17:00','18:00','19:00','20:00'])
 
 
